@@ -43,7 +43,7 @@ export default {
   data() {
     return {
       document: null,
-      head: { party: '', title: '', note: '', dateInvoice: '', dateValidUntil: '', paymentTermDays: '' },
+      head: { party: '', title: '', note: '', dateInvoice: '', dateValidUntil: '', paymentTermDays: '', currencyCode: '', exchangeRate: '' },
       line: this.emptyLine(),
       // The line being changed: sent again, then the old one removed.
       replacing: null,
@@ -111,8 +111,15 @@ export default {
       return this.trans(`${T}${key}`, parameters);
     },
 
+    // In the document's own currency, which may not be the ledger's.
     money(minor) {
-      return numberFormatMoney(minor, this.currency, this.locale);
+      return numberFormatMoney(minor, this.document?.currencyCode || this.currency, this.locale);
+    },
+
+    // Another currency than the ledger's: its rate is asked for, or fixed at
+    // emission when left empty.
+    foreign() {
+      return !!this.head.currencyCode && this.head.currencyCode !== this.currency;
     },
 
     rate(basisPoints) {
@@ -124,7 +131,7 @@ export default {
     },
 
     emptyLine() {
-      return { title: '', description: '', quantity: '1', unitPrice: '', vatRate: this.vatRates[0] ?? 0 };
+      return { title: '', description: '', quantity: '1', unitPrice: '', vatRate: this.vatRates[0] ?? 0, reverseCharge: false };
     },
 
     async request(url, options = {}) {
@@ -156,7 +163,9 @@ export default {
         note: document.note ?? '',
         dateInvoice: document.dateInvoice ?? '',
         dateValidUntil: document.dateValidUntil ?? '',
-        paymentTermDays: document.paymentTermDays ?? ''
+        paymentTermDays: document.paymentTermDays ?? '',
+        currencyCode: document.currencyCode ?? this.currency,
+        exchangeRate: document.exchangeRate ?? ''
       };
 
       return true;
@@ -170,8 +179,10 @@ export default {
     async saveHead(field) {
       let value = this.head[field];
 
-      if (field === 'party' || field === 'dateValidUntil' || field === 'title' || field === 'note') {
-        value = value === '' ? null : value;
+      if (field === 'currencyCode') {
+        value = String(value).trim().toUpperCase() || null;
+      } else if (field === 'party' || field === 'dateValidUntil' || field === 'title' || field === 'note' || field === 'exchangeRate') {
+        value = value === '' ? null : String(value).replace(',', '.');
       } else if (field === 'paymentTermDays') {
         value = value === '' ? null : Number(value);
       }
@@ -195,7 +206,8 @@ export default {
           description: this.line.description.trim() || null,
           unitPrice: Math.round(unit * 100),
           quantity: Math.round(quantity * SCALE),
-          vatRate: Number(this.line.vatRate)
+          vatRate: Number(this.line.vatRate),
+          domesticReverseCharge: !!this.line.reverseCharge
         })
       }));
 

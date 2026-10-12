@@ -92,6 +92,26 @@
                     </section>
                 {%- endif -%}
 
+                {%- if peppol -%}
+                    <section class="block block--card">
+                        <div class="block--title"><span class="block--title-label">Peppol</span></div>
+                        <div class="block--body stack--vertical">
+                            {%- for transmission in peppol.transmissions -%}
+                                <div class="cluster">
+                                    {{ marker(transmission.status.value in ['delivered', 'accepted'] ? 'success' : (transmission.status.value in ['failed', 'rejected'] ? 'error' : 'info'), transmission.status.value, { compact: true }) }}
+                                    <span>{{ date_display(transmission.dateSent, 'date_time_short') }} — {{ transmission.receiver }}</span>
+                                    {%- if transmission.message -%}<small>{{ transmission.message }}</small>{%- endif -%}
+                                </div>
+                            {%- else -%}
+                                <p>{{ (peppol.reachable ? '@page::peppol.reachable' : '@page::peppol.unreachable') | trans }}</p>
+                            {%- endfor -%}
+                            {%- if can_edit and peppol.reachable -%}
+                                {{ accounting.action('ph:bold/paper-plane-right', '@page::peppol.send' | trans, path('accounting_documents_peppol', base), { confirm: '@page::peppol.confirm' | trans }) }}
+                            {%- endif -%}
+                        </div>
+                    </section>
+                {%- endif -%}
+
                 {%- if relations is not empty -%}
                     <section class="block block--card">
                         <div class="block--title"><span class="block--title-label">{{ '@page::relations' | trans }}</span></div>

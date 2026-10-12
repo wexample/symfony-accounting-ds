@@ -19,6 +19,8 @@ en:
   apply: Accept
   by_hand: By hand
   invoice: A document it pays
+  invoice_amount: What it pays of it, in the document's currency
+  invoice_amount_help: Only for a document in another currency
   or_account: Or an account
   account_label: Label
   vat_rate: VAT (basis points)
@@ -52,6 +54,8 @@ fr:
   apply: Accepter
   by_hand: À la main
   invoice: Une pièce qu'elle paie
+  invoice_amount: Ce qu'elle en paie, dans la devise de la pièce
+  invoice_amount_help: Seulement pour une pièce en devise
   or_account: Ou un compte
   account_label: Libellé
   vat_rate: TVA (points de base)

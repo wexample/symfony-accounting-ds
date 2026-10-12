@@ -1,0 +1,40 @@
+{%- extends '@WexampleSymfonyAccountingDsBundle/layouts/ledger/layout.html.twig' -%}
+
+{%- import '@WexampleSymfonyAccountingDsBundle/partials/macros.html.twig' as accounting -%}
+
+{%- set page_title = '@page::page_title' | trans ~ ' ' ~ year -%}
+
+{#- A year's partial deduction: what was eligible, what the provisional
+    coefficient deducted, what the final one gives; the entry setting it
+    right, which also makes the final coefficient next year's. -#}
+{%- block page_body -%}
+    {%- set currency = ledger.currencyCode -%}
+    {%- set locale = app.request.locale -%}
+    <section class="block block--card">
+        <div class="block--body stack--vertical">
+            <div class="cluster">
+                {%- for candidate in years -%}
+                    {{ button_link('ph:bold/calendar', candidate, path('accounting_vat_deduction', { ledger: ledger.id, year: candidate }), { class: candidate == year ? '' : 'button--flat' }) }}
+                {%- endfor -%}
+            </div>
+            <form method="get" class="cluster">
+                <input type="hidden" name="year" value="{{ year }}">
+                <label class="form--label">{{ '@page::final_rate' | trans }}
+                    <input class="form--input" name="rate" inputmode="decimal" value="{{ rate / 100 }}">
+                </label>
+                {{ button('ph:bold/calculator', '@page::compute' | trans, { type: 'submit', class: 'button--flat' }) }}
+            </form>
+            <dl class="accounting-figures">
+                <dt>{{ '@page::eligible' | trans }}</dt><dd>{{ computed.eligible|price(currency, locale) }}</dd>
+                <dt>{{ '@page::deducted' | trans }}</dt><dd>{{ computed.deducted|price(currency, locale) }}</dd>
+                <dt>{{ '@page::target' | trans }}</dt><dd>{{ computed.target|price(currency, locale) }}</dd>
+                <dt>{{ '@page::difference' | trans }}</dt><dd><strong>{{ computed.difference|price(currency, locale) }}</strong></dd>
+            </dl>
+        </div>
+        {%- if can_edit -%}
+            <div class="block--footer">
+                {{ accounting.action('ph:bold/stamp', '@page::regularize' | trans, path('accounting_vat_regularize', { ledger: ledger.id }), { fields: { year: year, rate: rate }, confirm: '@page::confirm' | trans, class: 'button--invert' }) }}
+            </div>
+        {%- endif -%}
+    </section>
+{%- endblock -%}

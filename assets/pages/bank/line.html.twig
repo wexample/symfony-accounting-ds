@@ -89,6 +89,9 @@
                                 {%- endfor -%}
                             </select>
                         </label>
+                        <label class="form--label">{{ '@page::invoice_amount' | trans }}
+                            <input class="form--input" name="invoiceAmount" inputmode="decimal" placeholder="{{ '@page::invoice_amount_help' | trans }}">
+                        </label>
                         <div class="cluster">
                             <label class="form--label">{{ '@page::or_account' | trans }}<input class="form--input" name="accountNumber" placeholder="6278"></label>
                             <label class="form--label">{{ '@page::account_label' | trans }}<input class="form--input" name="label"></label>

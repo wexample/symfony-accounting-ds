@@ -1,0 +1,15 @@
+@use '@wexample/symfony-design-system/css/shapes/block';
+@use '@wexample/symfony-design-system/css/shapes/form';
+
+.accounting-figures {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: start;
+  gap: var(--space-1) var(--space-4);
+  margin: 0;
+
+  dd {
+    margin: 0;
+    text-align: end;
+  }
+}

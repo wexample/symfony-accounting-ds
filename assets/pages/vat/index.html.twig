@@ -1,5 +1,10 @@
 {%- extends '@WexampleSymfonyAccountingDsBundle/layouts/ledger/layout.html.twig' -%}
 
+{%- set ledger_actions = [
+    { icon: 'ph:bold/globe-hemisphere-west', label: '@page::action.oss' | trans, href: path('accounting_vat_oss', { ledger: ledger.id }) },
+    { icon: 'ph:bold/chart-pie-slice', label: '@page::action.deduction' | trans, href: path('accounting_vat_deduction', { ledger: ledger.id }) },
+] -%}
+
 {#- Where the year's VAT stands, period by period: collected, deductible, the
     deposits paid and expected; each period opens its return. -#}
 {%- block page_body -%}

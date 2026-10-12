@@ -28,6 +28,12 @@
                 <label v-else class="form--label">[[ t('head.term') ]]
                     <input class="form--input" type="number" min="0" step="1" v-model="head.paymentTermDays" @change="saveHead('paymentTermDays')">
                 </label>
+                <label class="form--label">[[ t('head.currency') ]]
+                    <input class="form--input" maxlength="3" v-model="head.currencyCode" @change="saveHead('currencyCode')">
+                </label>
+                <label v-if="foreign()" class="form--label">[[ t('head.rate', { '%currency%': currency }) ]]
+                    <input class="form--input" inputmode="decimal" v-model="head.exchangeRate" :placeholder="t('head.rate_at_emission')" @change="saveHead('exchangeRate')">
+                </label>
                 <label class="form--label invoice-editor--note">[[ t('head.note') ]]
                     <textarea class="form--input" rows="2" v-model="head.note" @change="saveHead('note')"></textarea>
                 </label>
@@ -64,6 +70,7 @@
                             <td>
                                 <input ref="title" class="form--input" v-model="line.title" :placeholder="t('line.new')" @paste="onPaste" @keydown.enter.prevent="addLine">
                                 <input class="form--input invoice-editor--description" v-model="line.description" :placeholder="t('line.description')" @keydown.enter.prevent="addLine">
+                                <label class="invoice-editor--flag"><input type="checkbox" v-model="line.reverseCharge"> [[ t('line.reverse_charge') ]]</label>
                             </td>
                             <td><input class="form--input" inputmode="decimal" v-model="line.quantity" @keydown.enter.prevent="addLine"></td>
                             <td><input class="form--input" inputmode="decimal" v-model="line.unitPrice" :placeholder="t('line.unit_price')" @keydown.enter.prevent="addLine"></td>

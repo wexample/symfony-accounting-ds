@@ -56,7 +56,9 @@ en:
     reopened: Fiscal year reopened.
     next: Next fiscal year opened.
     settled: VAT settled.
+    regularized: Deduction set right.
     received: Invoice received as a purchase draft.
+    sent: Sent over Peppol.
 
 fr:
   tab:
@@ -116,4 +118,6 @@ fr:
     reopened: Exercice rouvert.
     next: Exercice suivant ouvert.
     settled: TVA liquidée.
+    regularized: Déduction régularisée.
     received: Facture reçue en brouillon d'achat.
+    sent: Envoyée par Peppol.

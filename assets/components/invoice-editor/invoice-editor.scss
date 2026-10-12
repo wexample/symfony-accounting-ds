@@ -35,6 +35,15 @@
   font-size: var(--font-size-3);
 }
 
+.invoice-editor--flag {
+  display: flex;
+  gap: var(--space-1);
+  align-items: center;
+  margin-top: var(--space-1);
+  font-size: var(--font-size-3);
+  color: var(--text-color-muted);
+}
+
 .invoice-editor--row-actions {
   white-space: nowrap;
 }

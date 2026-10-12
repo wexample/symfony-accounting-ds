@@ -17,7 +17,9 @@ use Wexample\SymfonyAccounting\Enum\LedgerPermission;
 use Wexample\SymfonyAccounting\Exception\AccountingException;
 use Wexample\SymfonyAccounting\Repository\InvoiceRepository;
 use Wexample\SymfonyAccounting\Repository\PartyRepository;
+use Wexample\SymfonyAccounting\Repository\InvoiceTransmissionRepository;
 use Wexample\SymfonyAccounting\Service\Document\ElectronicInvoiceReceiver;
+use Wexample\SymfonyAccounting\Service\Document\PeppolInvoiceService;
 use Wexample\SymfonyAccounting\Service\Invoice\InvoiceEmissionService;
 use Wexample\SymfonyAccounting\Service\Invoice\InvoiceFactory;
 use Wexample\SymfonyAccounting\Service\Jurisdiction\JurisdictionRegistry;
@@ -53,6 +55,8 @@ final class DocumentsController extends AbstractAccountingController
     final public const string ROUTE_CREDIT = 'credit';
 
     final public const string ROUTE_DELETE = 'delete';
+
+    final public const string ROUTE_PEPPOL = 'peppol';
 
     /**
      * What a reader can start, as type and direction.
@@ -188,9 +192,12 @@ final class DocumentsController extends AbstractAccountingController
         InvoiceRepository $invoices,
         PartyRepository $parties,
         JurisdictionRegistry $jurisdictions,
+        PeppolInvoiceService $peppol,
+        InvoiceTransmissionRepository $transmissions,
     ): Response {
         $ledger = $this->ledger($ledger);
         $invoice = $this->document($ledger, $id, $invoices);
+        $sentSale = ! $invoice->isEditable() && InvoiceDirection::Sale === $invoice->getDirection();
 
         return $this->renderPage(self::ROUTE_SHOW, [
             'ledger' => $ledger,
@@ -201,6 +208,12 @@ final class DocumentsController extends AbstractAccountingController
             'parties' => array_map(static fn ($party) => ['id' => (string) $party->getId(), 'name' => $party->getName()], $parties->findBy(['ledger' => $ledger], ['name' => 'ASC'])),
             'vat_rates' => $jurisdictions->forLedger($ledger)->getVatRates(),
             'relations' => $invoice->getOutgoingRelations(),
+            // Peppol, for an issued sale once the application has an access
+            // point: whether the client receives over it, what was sent.
+            'peppol' => $sentSale && $peppol->isAvailable() ? [
+                'reachable' => $peppol->isReachable($invoice),
+                'transmissions' => $transmissions->findForInvoice($invoice),
+            ] : null,
         ]);
     }
 
@@ -284,6 +297,23 @@ final class DocumentsController extends AbstractAccountingController
 
             return $this->showUrl($credit);
         }, 'credited');
+    }
+
+    #[Route(path: '{id}/peppol', name: self::ROUTE_PEPPOL, requirements: ['id' => Requirement::UUID], methods: [Request::METHOD_POST])]
+    public function peppol(
+        string $ledger,
+        string $id,
+        Request $request,
+        InvoiceRepository $invoices,
+        PeppolInvoiceService $peppol,
+    ): Response {
+        $invoice = $this->document($this->ledger($ledger, LedgerPermission::EDIT), $id, $invoices);
+
+        return $this->act($request, function () use ($invoice, $peppol) {
+            $peppol->send($invoice);
+
+            return null;
+        }, 'sent');
     }
 
     #[Route(path: '{id}/delete', name: self::ROUTE_DELETE, requirements: ['id' => Requirement::UUID], methods: [Request::METHOD_POST])]

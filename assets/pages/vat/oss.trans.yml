@@ -1,0 +1,31 @@
+en:
+  page_title: One-stop shop
+  page_icon: ph:bold/globe-hemisphere-west
+  previous: Previous quarter
+  next: Next quarter
+  threshold: 'Distance sales this year: %sales%, for a threshold of %threshold%.'
+  empty: No distance sale taxed in another country this quarter.
+  csv: Download the CSV for the portal
+  settle: Book the settlement
+  confirm_settle: The quarter's OSS VAT moves to the VAT payable. Go on?
+  column:
+    country: Country
+    rate: Rate
+    base: Base
+    vat: VAT
+
+fr:
+  page_title: Guichet unique (OSS)
+  page_icon: ph:bold/globe-hemisphere-west
+  previous: Trimestre précédent
+  next: Trimestre suivant
+  threshold: 'Ventes à distance de l''année : %sales%, pour un seuil de %threshold%.'
+  empty: Aucune vente à distance taxée dans un autre pays ce trimestre.
+  csv: Télécharger le CSV du portail
+  settle: Comptabiliser la liquidation
+  confirm_settle: La TVA OSS du trimestre passe en TVA à payer. Continuer ?
+  column:
+    country: Pays
+    rate: Taux
+    base: Base
+    vat: TVA

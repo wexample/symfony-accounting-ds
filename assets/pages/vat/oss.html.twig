@@ -1,0 +1,38 @@
+{%- extends '@WexampleSymfonyAccountingDsBundle/layouts/ledger/layout.html.twig' -%}
+
+{%- import '@WexampleSymfonyAccountingDsBundle/partials/macros.html.twig' as accounting -%}
+
+{%- set page_title = 'OSS ' ~ from|date('d/m/Y') ~ ' → ' ~ to|date('d/m/Y') -%}
+
+{#- The quarter's distance sales by country and rate, the year's total against
+    the threshold; its CSV for the portal, its settlement. -#}
+{%- block page_body -%}
+    {%- set currency = ledger.currencyCode -%}
+    {%- set locale = app.request.locale -%}
+    <section class="block block--card">
+        <div class="block--body stack--vertical">
+            <div class="cluster">
+                {{ button_link('ph:bold/caret-left', '@page::previous' | trans, path('accounting_vat_oss', { ledger: ledger.id, from: from|date_modify('-3 months')|date('Y-m-d') }), { class: 'button--flat' }) }}
+                {{ button_link('ph:bold/caret-right', '@page::next' | trans, path('accounting_vat_oss', { ledger: ledger.id, from: from|date_modify('+3 months')|date('Y-m-d') }), { class: 'button--flat' }) }}
+            </div>
+            <p>{{ '@page::threshold' | trans({ '%sales%': distance_sales|price(currency, locale), '%threshold%': threshold|price(currency, locale) }) }}</p>
+            {{ data_table([
+                { key: 'country', label: '@page::column.country' | trans },
+                { key: 'rate', label: '@page::column.rate' | trans, align: 'end' },
+                { key: 'base', label: '@page::column.base' | trans, align: 'end' },
+                { key: 'vat', label: '@page::column.vat' | trans, align: 'end' },
+            ], lines|map(line => {
+                country: line.country,
+                rate: line.rate|rate(locale),
+                base: line.base|price(currency, locale),
+                vat: line.vat|price(currency, locale),
+            }), { empty_label: '@page::empty' | trans }) }}
+        </div>
+        <div class="block--footer cluster">
+            <a class="button button--flat" href="{{ path('accounting_vat_oss_csv', { ledger: ledger.id, from: from|date('Y-m-d') }) }}" download>{{ icon('ph:bold/download-simple') }} <span>{{ '@page::csv' | trans }}</span></a>
+            {%- if can_edit and lines is not empty -%}
+                {{ accounting.action('ph:bold/stamp', '@page::settle' | trans, path('accounting_vat_oss_settle', { ledger: ledger.id }), { fields: { from: from|date('Y-m-d') }, confirm: '@page::confirm_settle' | trans, class: 'button--invert' }) }}
+            {%- endif -%}
+        </div>
+    </section>
+{%- endblock -%}

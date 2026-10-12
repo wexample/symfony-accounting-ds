@@ -6,6 +6,13 @@ en:
   exports: Exports
   no_export: No export for this fiscal year.
   trial_balance: Trial balance
+  nbb:
+    title: Annual accounts for the National Bank
+    model: Model
+    micro: Micro
+    abridged: Abridged
+    approval: Approved by the general meeting on
+    submit: Download the XBRL
   empty: Nothing booked yet.
   total: Total
   no_fiscal_year: The ledger has no fiscal year yet.
@@ -24,6 +31,13 @@ fr:
   exports: Exports
   no_export: Aucun export pour cet exercice.
   trial_balance: Balance
+  nbb:
+    title: Comptes annuels pour la Banque nationale
+    model: Modèle
+    micro: Micro
+    abridged: Abrégé
+    approval: Approuvés par l'assemblée générale le
+    submit: Télécharger le XBRL
   empty: Rien de comptabilisé pour l'instant.
   total: Total
   no_fiscal_year: Le dossier n'a pas encore d'exercice.

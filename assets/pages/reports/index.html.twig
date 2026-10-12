@@ -27,6 +27,27 @@
                     {%- endfor -%}
                 </div>
             </section>
+            {%- if nbb -%}
+                <section class="block block--card">
+                    <div class="block--title"><span class="block--title-label">{{ '@page::nbb.title' | trans }}</span></div>
+                    <div class="block--body">
+                        {#- Downloaded, not posted to the page: the form leaves no page behind. -#}
+                        <form method="post" action="{{ path('accounting_reports_nbb', { ledger: ledger.id }) }}" class="stack--vertical">
+                            <input type="hidden" name="fiscalYear" value="{{ fiscal_year.id }}">
+                            <label class="form--label">{{ '@page::nbb.model' | trans }}
+                                <select class="form--input" name="model">
+                                    <option value="micro">{{ '@page::nbb.micro' | trans }}</option>
+                                    <option value="abridged">{{ '@page::nbb.abridged' | trans }}</option>
+                                </select>
+                            </label>
+                            <label class="form--label">{{ '@page::nbb.approval' | trans }}
+                                <input class="form--input" type="date" name="approval" value="{{ 'now'|date('Y-m-d') }}">
+                            </label>
+                            <div class="cluster">{{ button('ph:bold/download-simple', '@page::nbb.submit' | trans, { type: 'submit' }) }}</div>
+                        </form>
+                    </div>
+                </section>
+            {%- endif -%}
         </div>
         <section class="block block--card">
             <div class="block--title"><span class="block--title-label">{{ '@page::trial_balance' | trans }}</span></div>

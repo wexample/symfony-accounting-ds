@@ -2,7 +2,23 @@ en:
   group:
     identity: Who it is
     books: Its books
+    vat: VAT, further
+    nbb: Annual accounts (National Bank of Belgium)
   field:
+    ossRegistered:
+      label: Registered with the one-stop shop (OSS) from the first distance sale
+    ossElectronicServices:
+      label: Sells services delivered electronically (they count for the OSS)
+    vatDeductionRate:
+      label: Share of VAT deductible, in % (100 when everything is deductible)
+    vatAdmissionRates:
+      label: 'Admission by expense account, one per line: account: percent (e.g. 6257: 0)'
+    nbbCourt:
+      label: Enterprise court (NBB code, e.g. m31)
+    nbbLastDeedDate:
+      label: Filing date of the latest deed
+    nbbLegalForm:
+      label: Legal form, NBB code (only when not SRL, SA or SC)
     name:
       label: Name
     legalForm:
@@ -53,7 +69,23 @@ fr:
   group:
     identity: Identité
     books: Tenue des comptes
+    vat: TVA, au-delà
+    nbb: Comptes annuels (Banque nationale de Belgique)
   field:
+    ossRegistered:
+      label: Inscrit au guichet unique (OSS) dès la première vente à distance
+    ossElectronicServices:
+      label: Vend des services fournis par voie électronique (ils comptent pour l'OSS)
+    vatDeductionRate:
+      label: Part de TVA déductible, en % (100 quand tout est déductible)
+    vatAdmissionRates:
+      label: 'Admission par compte de charge, une par ligne : compte: pourcentage (ex. 6257: 0)'
+    nbbCourt:
+      label: Tribunal de l'entreprise (code BNB, ex. m31)
+    nbbLastDeedDate:
+      label: Date de dépôt du dernier acte
+    nbbLegalForm:
+      label: Forme juridique, code BNB (seulement si autre que SRL, SA ou SC)
     name:
       label: Nom
     legalForm:

@@ -24,5 +24,20 @@
         {{ form_row(form.paymentTermDays) }}
         {{ form_row(form.legalMentions) }}
     </fieldset>
+    <fieldset class="stack--vertical">
+        <legend>{{ '@form::group.vat' | trans }}</legend>
+        {{ form_row(form.ossRegistered) }}
+        {{ form_row(form.ossElectronicServices) }}
+        {{ form_row(form.vatDeductionRate) }}
+        {{ form_row(form.vatAdmissionRates) }}
+    </fieldset>
+    {%- if form.nbbCourt is defined -%}
+        <fieldset class="stack--vertical">
+            <legend>{{ '@form::group.nbb' | trans }}</legend>
+            {{ form_row(form.nbbCourt) }}
+            {{ form_row(form.nbbLastDeedDate) }}
+            {{ form_row(form.nbbLegalForm) }}
+        </fieldset>
+    {%- endif -%}
     {{ form_actions(form) }}
 {% endblock %}

@@ -256,7 +256,9 @@ final class BankController extends AbstractAccountingController
                     throw new AccountingException('This document is not one of these books.');
                 }
 
-                $allocations->allocate($line, $invoice, $amount);
+                // A document in another currency is settled in its own: what
+                // this payment pays of it, when the line does not pay it all.
+                $allocations->allocate($line, $invoice, $amount, invoiceAmount: $this->minor($request->request->getString('invoiceAmount')));
             } else {
                 $number = trim($request->request->getString('accountNumber'));
 

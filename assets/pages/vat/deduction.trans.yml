@@ -1,0 +1,23 @@
+en:
+  page_title: Partial deduction
+  page_icon: ph:bold/chart-pie-slice
+  final_rate: Final coefficient, in %
+  compute: Compute
+  eligible: VAT eligible for deduction
+  deducted: Deducted during the year
+  target: Deductible at the final coefficient
+  difference: To set right
+  regularize: Book the regularization
+  confirm: The year's deduction is set right on its last day, and the final coefficient becomes next year's. Go on?
+
+fr:
+  page_title: Déduction partielle
+  page_icon: ph:bold/chart-pie-slice
+  final_rate: Coefficient définitif, en %
+  compute: Calculer
+  eligible: TVA ouvrant droit à déduction
+  deducted: Déduite pendant l'année
+  target: Déductible au coefficient définitif
+  difference: À régulariser
+  regularize: Comptabiliser la régularisation
+  confirm: La déduction de l'année est régularisée à son dernier jour, et le coefficient définitif devient celui de l'année suivante. Continuer ?

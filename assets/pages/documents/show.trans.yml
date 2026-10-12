@@ -15,6 +15,11 @@ en:
   label: Bank line
   amount: Amount
   relations: Linked documents
+  peppol:
+    reachable: The client receives invoices over Peppol.
+    unreachable: The client is not found in the Peppol directory.
+    send: Send over Peppol
+    confirm: The invoice is sent to the client's access point. Go on?
   download:
     ubl: Download as UBL (Peppol)
     cii: Download as CII (Factur-X)
@@ -51,6 +56,11 @@ fr:
   label: Ligne bancaire
   amount: Montant
   relations: Pièces liées
+  peppol:
+    reachable: Le client reçoit ses factures par Peppol.
+    unreachable: Le client n'est pas dans l'annuaire Peppol.
+    send: Envoyer par Peppol
+    confirm: La facture part vers le point d'accès du client. Continuer ?
   download:
     ubl: Télécharger en UBL (Peppol)
     cii: Télécharger en CII (Factur-X)

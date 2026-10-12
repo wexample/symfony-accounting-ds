@@ -7,6 +7,9 @@ en:
     valid_until: Valid until
     term: Payment term (days)
     note: Note printed on the document
+    currency: Currency
+    rate: 'Rate: one unit in %currency%'
+    rate_at_emission: Taken at emission
   line:
     title: Line
     description: Description (optional)
@@ -21,6 +24,7 @@ en:
     edit: Change
     remove: Remove
     paste_hint: Rows copied from a spreadsheet can be pasted into the new line.
+    reverse_charge: Reverse charge (construction work, the client accounts for the VAT)
   total:
     net: Net
     vat: VAT
@@ -51,6 +55,9 @@ fr:
     valid_until: Valable jusqu'au
     term: Délai de paiement (jours)
     note: Note imprimée sur la pièce
+    currency: Devise
+    rate: 'Taux : une unité en %currency%'
+    rate_at_emission: Pris à l'émission
   line:
     title: Ligne
     description: Description (facultative)
@@ -65,6 +72,7 @@ fr:
     edit: Modifier
     remove: Retirer
     paste_hint: Des lignes copiées d'un tableur peuvent être collées dans la nouvelle ligne.
+    reverse_charge: Autoliquidation (travaux de construction, le client déclare la TVA)
   total:
     net: HT
     vat: TVA

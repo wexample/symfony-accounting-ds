@@ -1,4 +1,5 @@
 @use '@wexample/symfony-design-system/css/shapes/block';
+@use '@wexample/symfony-design-system/css/shapes/form';
 
 .accounting-reports {
   grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
