@@ -1,6 +1,6 @@
 @use '@wexample/symfony-design-system/css/shapes/block';
 @use '@wexample/symfony-design-system/css/shapes/form';
-@use '@wexample/symfony-design-system/css/shapes/table';
+@use '@wexample/symfony-design-system/components/data-table/data-table';
 
 .accounting-entry-head {
   grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
