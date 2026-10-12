@@ -1,0 +1,65 @@
+en:
+  page_title: Bank line
+  page_icon: ph:bold/bank
+  account: Account
+  date: Date
+  counterparty: From or to
+  reference: Reference
+  amount: Amount
+  left: Left to explain
+  explained: What explains it
+  nothing_yet: Nothing yet.
+  transfer_with: 'Transfer with %account%:'
+  to_account: 'Account %account%'
+  remove: Remove
+  confirm_remove: The payment is removed, and its entry reversed. Go on?
+  unlink: Unlink the transfer
+  proposals: What the matchers propose
+  confidence: '%confidence% %'
+  apply: Accept
+  by_hand: By hand
+  invoice: A document it pays
+  or_account: Or an account
+  account_label: Label
+  vat_rate: VAT (basis points)
+  allocate_amount: Amount
+  all_left: All of what is left
+  allocate: Record
+  link: It is the other half of this transfer
+  allocation:
+    pending: to check
+    validated: checked
+    excluded: removed
+
+fr:
+  page_title: Ligne bancaire
+  page_icon: ph:bold/bank
+  account: Compte
+  date: Date
+  counterparty: Émetteur ou bénéficiaire
+  reference: Référence
+  amount: Montant
+  left: Reste à expliquer
+  explained: Ce qui l'explique
+  nothing_yet: Rien pour l'instant.
+  transfer_with: 'Virement avec %account% :'
+  to_account: 'Compte %account%'
+  remove: Retirer
+  confirm_remove: Le paiement est retiré et son écriture contre-passée. Continuer ?
+  unlink: Détacher le virement
+  proposals: Ce que proposent les rapprochements
+  confidence: '%confidence% %'
+  apply: Accepter
+  by_hand: À la main
+  invoice: Une pièce qu'elle paie
+  or_account: Ou un compte
+  account_label: Libellé
+  vat_rate: TVA (points de base)
+  allocate_amount: Montant
+  all_left: Tout le reste
+  allocate: Enregistrer
+  link: C'est l'autre moitié de ce virement
+  allocation:
+    pending: à vérifier
+    validated: vérifié
+    excluded: retiré

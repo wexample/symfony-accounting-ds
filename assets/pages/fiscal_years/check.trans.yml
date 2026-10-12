@@ -1,0 +1,35 @@
+en:
+  page_title: Fiscal year
+  page_icon: ph:bold/calendar-check
+  result: 'Result:'
+  clean: The check finds nothing to fix.
+  severity: Severity
+  subject: About
+  finding: Finding
+  level:
+    error: Error
+    warning: Warning
+    info: Note
+  close: Close it
+  force: Close it despite the warnings
+  reopen: Reopen it
+  confirm_close: Closed, the fiscal year takes no more entries and its balances are carried forward. Close it?
+  confirm_reopen: Reopening removes what the closing booked. Reopen it?
+
+fr:
+  page_title: Exercice
+  page_icon: ph:bold/calendar-check
+  result: 'Résultat :'
+  clean: Le contrôle ne trouve rien à corriger.
+  severity: Gravité
+  subject: Sujet
+  finding: Constat
+  level:
+    error: Erreur
+    warning: Avertissement
+    info: Note
+  close: Le clôturer
+  force: Le clôturer malgré les avertissements
+  reopen: Le rouvrir
+  confirm_close: Clôturé, l'exercice ne prend plus d'écriture et ses soldes sont reportés. Le clôturer ?
+  confirm_reopen: Rouvrir retire ce que la clôture a comptabilisé. Le rouvrir ?

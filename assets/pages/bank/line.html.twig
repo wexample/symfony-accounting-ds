@@ -1,0 +1,117 @@
+{%- extends '@WexampleSymfonyAccountingDsBundle/layouts/ledger/layout.html.twig' -%}
+
+{%- import '@WexampleSymfonyAccountingDsBundle/partials/macros.html.twig' as accounting -%}
+
+{%- set page_title = line.label -%}
+
+{#- One line: what explains it so far, what the matchers propose for the
+    rest, then the ways to explain it by hand — a document it pays, an
+    account, the other half of a transfer. -#}
+{%- block page_body -%}
+    {%- set currency = line.bankAccount.currencyCode -%}
+    {%- set locale = app.request.locale -%}
+    {%- set base = { ledger: ledger.id, id: line.id } -%}
+    <div class="grid accounting-line">
+        <section class="block block--card">
+            <div class="block--body">
+                <dl class="accounting-figures">
+                    <dt>{{ '@page::account' | trans }}</dt><dd>{{ line.bankAccount.label }}</dd>
+                    <dt>{{ '@page::date' | trans }}</dt><dd>{{ date_display(line.date, 'date_short') }}</dd>
+                    {%- if line.counterpartyName -%}<dt>{{ '@page::counterparty' | trans }}</dt><dd>{{ line.counterpartyName }}</dd>{%- endif -%}
+                    {%- if line.reference -%}<dt>{{ '@page::reference' | trans }}</dt><dd>{{ line.reference }}</dd>{%- endif -%}
+                    <dt>{{ '@page::amount' | trans }}</dt><dd><strong>{{ line.amount|price(currency, locale) }}</strong></dd>
+                    <dt>{{ '@page::left' | trans }}</dt><dd>{{ line.unallocatedAmount|price(currency, locale) }}</dd>
+                </dl>
+            </div>
+        </section>
+
+        <section class="block block--card">
+            <div class="block--title"><span class="block--title-label">{{ '@page::explained' | trans }}</span></div>
+            <div class="block--body stack--vertical">
+                {%- if peer -%}
+                    <p>{{ '@page::transfer_with' | trans({ '%account%': peer.bankAccount.label }) }}
+                        <a href="{{ path('accounting_bank_line', { ledger: ledger.id, id: peer.id }) }}">{{ date_display(peer.date, 'date_short') }} — {{ peer.label }}</a></p>
+                    {%- if can_edit -%}{{ accounting.action('ph:bold/link-break', '@page::unlink' | trans, path('accounting_bank_unlink_transfer', base)) }}{%- endif -%}
+                {%- endif -%}
+                {%- set active = line.activeAllocations -%}
+                {%- if active is empty and not peer -%}
+                    <p class="fallback">{{ '@page::nothing_yet' | trans }}</p>
+                {%- endif -%}
+                {%- for allocation in active -%}
+                    <div class="cluster accounting-allocation">
+                        <span>
+                            {%- if allocation.invoice -%}
+                                <a href="{{ path('accounting_documents_show', { ledger: ledger.id, id: allocation.invoice.id }) }}">{{ allocation.invoice.number }}</a>
+                                {{- allocation.invoice.party ? ' — ' ~ allocation.invoice.party.name : '' -}}
+                            {%- else -%}
+                                {{ '@page::to_account' | trans({ '%account%': allocation.accountNumber }) }}{{ allocation.label ? ' — ' ~ allocation.label : '' }}
+                            {%- endif -%}
+                        </span>
+                        <strong>{{ allocation.amount|price(currency, locale) }}</strong>
+                        {{ marker(allocation.status.value == 'validated' ? 'success' : 'info', ('@page::allocation.' ~ allocation.status.value) | trans, { compact: true }) }}
+                        {%- if can_edit -%}{{ accounting.action('ph:bold/x', '@page::remove' | trans, path('accounting_bank_unallocate', { ledger: ledger.id, id: allocation.id }), { confirm: '@page::confirm_remove' | trans }) }}{%- endif -%}
+                    </div>
+                {%- endfor -%}
+            </div>
+        </section>
+
+        {%- if can_edit and proposals is not empty -%}
+            <section class="block block--card">
+                <div class="block--title"><span class="block--title-label">{{ '@page::proposals' | trans }}</span></div>
+                <div class="block--body stack--vertical">
+                    {%- for index, proposal in proposals -%}
+                        <div class="cluster accounting-allocation">
+                            <span>
+                                {%- if proposal.invoice -%}{{ proposal.invoice.number }}{{ proposal.invoice.party ? ' — ' ~ proposal.invoice.party.name : '' }}
+                                {%- elseif proposal.transferPeer -%}{{ '@page::transfer_with' | trans({ '%account%': proposal.transferPeer.bankAccount.label }) }}
+                                {%- else -%}{{ '@page::to_account' | trans({ '%account%': proposal.accountNumber }) }}{{ proposal.label ? ' — ' ~ proposal.label : '' }}{%- endif -%}
+                            </span>
+                            {%- if proposal.amount -%}<strong>{{ proposal.amount|price(currency, locale) }}</strong>{%- endif -%}
+                            {{ marker('neutral', '@page::confidence' | trans({ '%confidence%': proposal.confidence }), { compact: true }) }}
+                            {{ accounting.action('ph:bold/check', '@page::apply' | trans, path('accounting_bank_apply', base), { fields: { proposal: index }, class: 'button--compact' }) }}
+                        </div>
+                    {%- endfor -%}
+                </div>
+            </section>
+        {%- endif -%}
+
+        {%- if can_edit and not line.settled and not peer -%}
+            <section class="block block--card">
+                <div class="block--title"><span class="block--title-label">{{ '@page::by_hand' | trans }}</span></div>
+                <div class="block--body stack--vertical">
+                    <form method="post" action="{{ path('accounting_bank_allocate', base) }}" class="stack--vertical">
+                        <input type="hidden" name="_token" value="{{ csrf_token('accounting') }}">
+                        <label class="form--label">{{ '@page::invoice' | trans }}
+                            <select class="form--input" name="invoice">
+                                <option value="">—</option>
+                                {%- for invoice in invoices -%}
+                                    <option value="{{ invoice.id }}">{{ invoice.number }}{{ invoice.party ? ' — ' ~ invoice.party.name : '' }} — {{ invoice.calcRemainingAmount()|price(invoice.currencyCode, locale) }}</option>
+                                {%- endfor -%}
+                            </select>
+                        </label>
+                        <div class="cluster">
+                            <label class="form--label">{{ '@page::or_account' | trans }}<input class="form--input" name="accountNumber" placeholder="6278"></label>
+                            <label class="form--label">{{ '@page::account_label' | trans }}<input class="form--input" name="label"></label>
+                            <label class="form--label">{{ '@page::vat_rate' | trans }}<input class="form--input" name="vatRate" type="number" min="0" step="1" value="0"></label>
+                        </div>
+                        <label class="form--label">{{ '@page::allocate_amount' | trans }}
+                            <input class="form--input" name="amount" inputmode="decimal" placeholder="{{ '@page::all_left' | trans }}">
+                        </label>
+                        <div class="cluster">{{ button('ph:bold/link', '@page::allocate' | trans, { type: 'submit' }) }}</div>
+                    </form>
+                    {%- if transfer_candidates is not empty -%}
+                        <form method="post" action="{{ path('accounting_bank_link_transfer', base) }}" class="cluster">
+                            <input type="hidden" name="_token" value="{{ csrf_token('accounting') }}">
+                            <select class="form--input" name="peer">
+                                {%- for candidate in transfer_candidates -%}
+                                    <option value="{{ candidate.id }}">{{ candidate.bankAccount.label }} — {{ candidate.date|date('Y-m-d') }} — {{ candidate.label }}</option>
+                                {%- endfor -%}
+                            </select>
+                            {{ button('ph:bold/arrows-left-right', '@page::link' | trans, { type: 'submit', class: 'button--flat' }) }}
+                        </form>
+                    {%- endif -%}
+                </div>
+            </section>
+        {%- endif -%}
+    </div>
+{%- endblock -%}

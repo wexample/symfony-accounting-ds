@@ -1,0 +1,37 @@
+en:
+  page_title: Chart of accounts
+  page_icon: ph:bold/list-numbers
+  search: A number or a word
+  search_submit: Search
+  empty: No account matches.
+  class: 'Class %class%'
+  lettrable: lettered
+  inactive: inactive
+  column:
+    number: Number
+    label: Label
+    nature: Nature
+    class: Class
+  nature:
+    debit: Debit
+    credit: Credit
+    both: Either
+
+fr:
+  page_title: Plan comptable
+  page_icon: ph:bold/list-numbers
+  search: Un numéro ou un mot
+  search_submit: Rechercher
+  empty: Aucun compte ne correspond.
+  class: 'Classe %class%'
+  lettrable: lettrable
+  inactive: inactif
+  column:
+    number: Numéro
+    label: Libellé
+    nature: Nature
+    class: Classe
+  nature:
+    debit: Débiteur
+    credit: Créditeur
+    both: Mixte

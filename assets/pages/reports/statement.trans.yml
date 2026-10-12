@@ -1,0 +1,15 @@
+en:
+  page_title: Statement
+  page_icon: ph:bold/file-text
+  line: Line
+  gross: Gross
+  deduct: Less
+  amount: Net
+
+fr:
+  page_title: État
+  page_icon: ph:bold/file-text
+  line: Poste
+  gross: Brut
+  deduct: Amort. / dépréc.
+  amount: Net

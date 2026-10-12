@@ -1,0 +1,7 @@
+{%- extends '@WexampleSymfonyAccountingDsBundle/layouts/ledger/layout.html.twig' -%}
+
+{%- block page_body -%}
+    <div class="block block--padded">
+        {{ form_load(render_pass, form_settings, '@WexampleSymfonyAccountingDsBundle/forms/ledger_settings_form.html.twig') }}
+    </div>
+{%- endblock -%}

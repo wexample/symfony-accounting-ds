@@ -1,0 +1,23 @@
+en:
+  page_title: Accounting
+  page_icon: ph:bold/calculator
+  empty: No ledger is open to you.
+  column:
+    name: Ledger
+    country: Country
+    fiscal_year: Fiscal year
+    receivable: Owed by customers
+    payable: Owed to suppliers
+    unsettled: Bank lines to explain
+
+fr:
+  page_title: Comptabilité
+  page_icon: ph:bold/calculator
+  empty: Aucun dossier ne vous est ouvert.
+  column:
+    name: Dossier
+    country: Pays
+    fiscal_year: Exercice
+    receivable: Dû par les clients
+    payable: Dû aux fournisseurs
+    unsettled: Lignes bancaires à expliquer

@@ -1,0 +1,43 @@
+en:
+  page_title: Entries
+  page_icon: ph:bold/notebook
+  empty: No entry here.
+  action:
+    new: Write an entry
+    lettering: Lettering
+  filter:
+    fiscal_year: Fiscal year
+  column:
+    date: Date
+    journal: Journal
+    number: No.
+    label: Label
+    piece: Document
+    amount: Amount
+    status: Status
+  status:
+    draft: Draft
+    posted: Booked
+    validated: Validated
+
+fr:
+  page_title: Écritures
+  page_icon: ph:bold/notebook
+  empty: Aucune écriture ici.
+  action:
+    new: Saisir une écriture
+    lettering: Lettrage
+  filter:
+    fiscal_year: Exercice
+  column:
+    date: Date
+    journal: Journal
+    number: N°
+    label: Libellé
+    piece: Pièce
+    amount: Montant
+    status: Statut
+  status:
+    draft: Brouillard
+    posted: Comptabilisée
+    validated: Validée

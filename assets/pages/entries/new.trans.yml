@@ -1,0 +1,25 @@
+en:
+  page_title: Write an entry
+  page_icon: ph:bold/pencil-line
+  journal: Journal
+  date: Date
+  label: Label
+  piece: Document reference
+  account: Account
+  line_label: Line label
+  debit: Debit
+  credit: Credit
+  submit: Book it
+
+fr:
+  page_title: Saisir une écriture
+  page_icon: ph:bold/pencil-line
+  journal: Journal
+  date: Date
+  label: Libellé
+  piece: Référence de la pièce
+  account: Compte
+  line_label: Libellé de la ligne
+  debit: Débit
+  credit: Crédit
+  submit: La comptabiliser

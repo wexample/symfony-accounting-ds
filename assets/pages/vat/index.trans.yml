@@ -1,0 +1,25 @@
+en:
+  page_title: VAT
+  page_icon: ph:bold/percent
+  empty: The ledger files no VAT return.
+  total: The year
+  previous_credit: 'Credit carried from last year: %amount%'
+  column:
+    period: Period
+    collected: Collected
+    deductible: Deductible
+    net: Due (credit if negative)
+    deposits: Deposits paid / expected
+
+fr:
+  page_title: TVA
+  page_icon: ph:bold/percent
+  empty: Le dossier ne dépose pas de déclaration de TVA.
+  total: L'année
+  previous_credit: 'Crédit reporté de l''an dernier : %amount%'
+  column:
+    period: Période
+    collected: Collectée
+    deductible: Déductible
+    net: Due (crédit si négatif)
+    deposits: Acomptes payés / attendus

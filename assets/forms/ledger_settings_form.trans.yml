@@ -1,0 +1,101 @@
+en:
+  group:
+    identity: Who it is
+    books: Its books
+  field:
+    name:
+      label: Name
+    legalForm:
+      label: Legal form
+    legalIdentifier:
+      label: Registration number
+    vatNumber:
+      label: VAT number
+    email:
+      label: Email
+    phone:
+      label: Phone
+    website:
+      label: Website
+    postalAddress:
+      label: Address
+    postCode:
+      label: Post code
+    city:
+      label: City
+    vatSubject:
+      label: Subject to VAT
+    vatPeriodicity:
+      label: VAT returns
+      choice:
+        monthly:
+          label: Monthly
+        quarterly:
+          label: Quarterly
+        annual:
+          label: Annual
+        none:
+          label: None
+    vatOnPayments:
+      label: VAT due on payments
+    invoicePrefix:
+      label: Document number prefix
+    paymentTermDays:
+      label: Payment term (days)
+    legalMentions:
+      label: Legal mentions printed on documents
+  action:
+    submit: Save
+  success:
+    message: Settings saved
+
+fr:
+  group:
+    identity: Identité
+    books: Tenue des comptes
+  field:
+    name:
+      label: Nom
+    legalForm:
+      label: Forme juridique
+    legalIdentifier:
+      label: Numéro d'immatriculation
+    vatNumber:
+      label: Numéro de TVA
+    email:
+      label: E-mail
+    phone:
+      label: Téléphone
+    website:
+      label: Site web
+    postalAddress:
+      label: Adresse
+    postCode:
+      label: Code postal
+    city:
+      label: Ville
+    vatSubject:
+      label: Assujetti à la TVA
+    vatPeriodicity:
+      label: Déclarations de TVA
+      choice:
+        monthly:
+          label: Mensuelles
+        quarterly:
+          label: Trimestrielles
+        annual:
+          label: Annuelles
+        none:
+          label: Aucune
+    vatOnPayments:
+      label: TVA exigible sur les encaissements
+    invoicePrefix:
+      label: Préfixe des numéros de pièce
+    paymentTermDays:
+      label: Délai de paiement (jours)
+    legalMentions:
+      label: Mentions légales imprimées sur les pièces
+  action:
+    submit: Enregistrer
+  success:
+    message: Réglages enregistrés

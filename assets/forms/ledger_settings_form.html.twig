@@ -1,0 +1,28 @@
+{%- extends '@WexampleSymfonyLoaderBundle/bases/form.html.twig' -%}
+
+{#- Who the ledger is, then how it keeps its books. -#}
+{% block form_body %}
+    <fieldset class="stack--vertical">
+        <legend>{{ '@form::group.identity' | trans }}</legend>
+        {{ form_row(form.name) }}
+        {{ form_row(form.legalForm) }}
+        {{ form_row(form.legalIdentifier) }}
+        {{ form_row(form.vatNumber) }}
+        {{ form_row(form.email) }}
+        {{ form_row(form.phone) }}
+        {{ form_row(form.website) }}
+        {{ form_row(form.postalAddress) }}
+        {{ form_row(form.postCode) }}
+        {{ form_row(form.city) }}
+    </fieldset>
+    <fieldset class="stack--vertical">
+        <legend>{{ '@form::group.books' | trans }}</legend>
+        {{ form_row(form.vatSubject) }}
+        {{ form_row(form.vatPeriodicity) }}
+        {{ form_row(form.vatOnPayments) }}
+        {{ form_row(form.invoicePrefix) }}
+        {{ form_row(form.paymentTermDays) }}
+        {{ form_row(form.legalMentions) }}
+    </fieldset>
+    {{ form_actions(form) }}
+{% endblock %}

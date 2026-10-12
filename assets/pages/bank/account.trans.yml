@@ -1,0 +1,11 @@
+en:
+  page_title: Bank account
+  page_icon: ph:bold/bank
+  empty: No line here.
+  only_unsettled: Only those to explain
+
+fr:
+  page_title: Compte bancaire
+  page_icon: ph:bold/bank
+  empty: Aucune ligne ici.
+  only_unsettled: Seulement celles à expliquer

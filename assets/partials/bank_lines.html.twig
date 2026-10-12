@@ -1,0 +1,19 @@
+{#- Bank lines, each opening its page: when, what the bank said, how much,
+    how much of it is explained. -#}
+{%- set p = 'WexampleSymfonyAccountingDsBundle.partials.bank_lines::' -%}
+{{ data_table([
+    { key: 'date', label: (p ~ 'date') | trans, cell: 'html' },
+    { key: 'label', label: (p ~ 'label') | trans },
+    { key: 'amount', label: (p ~ 'amount') | trans, align: 'end' },
+    { key: 'state', label: (p ~ 'state') | trans, cell: 'html' },
+], lines|map(line => {
+    href: path('accounting_bank_line', { ledger: ledger.id, id: line.id }),
+    date: date_display(line.date, 'date_short'),
+    label: line.label ~ (line.counterpartyName ? ' — ' ~ line.counterpartyName : ''),
+    amount: line.amount|price(line.bankAccount.currencyCode, app.request.locale),
+    state: line.transfer
+        ? marker('neutral', (p ~ 'transfer') | trans, { compact: true })
+        : (line.settled
+            ? marker('success', (p ~ 'settled') | trans, { compact: true })
+            : marker('warning', (p ~ 'left') | trans({ '%amount%': line.unallocatedAmount|price(line.bankAccount.currencyCode, app.request.locale) }), { compact: true })),
+}), { row_link: { key: 'href' }, show_count: true, empty_label: empty|default('') }) }}

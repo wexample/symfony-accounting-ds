@@ -1,0 +1,12 @@
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+        public: false
+
+    Wexample\SymfonyAccountingDs\:
+        resource: '../../{Form,Service,Twig}'
+
+    Wexample\SymfonyAccountingDs\Controller\:
+        resource: '../../Controller/'
+        tags: ['controller.service_arguments']

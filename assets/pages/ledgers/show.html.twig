@@ -1,0 +1,48 @@
+{%- extends '@WexampleSymfonyAccountingDsBundle/layouts/ledger/layout.html.twig' -%}
+
+{%- set page_title = ledger.name -%}
+
+{#- A ledger at a glance: what is still expected from customers and owed to
+    suppliers, the late part of it, then what waits to be done. -#}
+{%- block page_body -%}
+    {%- set currency = ledger.currencyCode -%}
+    {%- set locale = app.request.locale -%}
+    {%- set params = { ledger: ledger.id } -%}
+    <div class="grid accounting-overview">
+        {%- for direction in ['sale', 'purchase'] -%}
+            {%- set side = overview.open[direction] -%}
+            <section class="block block--card">
+                <div class="block--title">
+                    <span class="block--title-label">{{ ('@page::open.' ~ direction) | trans }}</span>
+                </div>
+                <div class="block--body stack--vertical">
+                    <p class="accounting-overview--figure">{{ side.amount|price(currency, locale) }}</p>
+                    <p>{{ '@page::open.count' | trans({ '%count%': side.count }) }}</p>
+                    {%- if side.late -%}
+                        {{ marker('error', '@page::open.late' | trans({ '%amount%': side.late|price(currency, locale) }), { compact: true }) }}
+                    {%- endif -%}
+                </div>
+                <div class="block--footer">
+                    {{ button_link('ph:bold/receipt', '@page::open.see' | trans, path('accounting_documents_index', params|merge({ direction: direction, status: 'emitted,partially_paid' })), { class: 'button--flat' }) }}
+                </div>
+            </section>
+        {%- endfor -%}
+        <section class="block block--card">
+            <div class="block--title">
+                <span class="block--title-label">{{ '@page::todo.title' | trans }}</span>
+            </div>
+            <div class="block--body stack--vertical">
+                <p>{{ '@page::todo.drafts' | trans({ '%count%': overview.drafts }) }}</p>
+                <p>{{ '@page::todo.unsettled' | trans({ '%count%': overview.unsettled }) }}</p>
+                {%- if overview.fiscalYear -%}
+                    <p>{{ '@page::todo.fiscal_year' | trans({ '%label%': overview.fiscalYear.label }) }}
+                        {{ marker(overview.fiscalYear.closed ? 'neutral' : 'success', ('@page::fiscal_year.' ~ overview.fiscalYear.status.value) | trans, { compact: true }) }}</p>
+                {%- endif -%}
+            </div>
+            <div class="block--footer cluster">
+                {{ button_link('ph:bold/file-plus', '@page::todo.new_document' | trans, path('accounting_documents_new', params), { class: 'button--flat' }) }}
+                {{ button_link('ph:bold/bank', '@page::todo.reconcile' | trans, path('accounting_bank_index', params), { class: 'button--flat' }) }}
+            </div>
+        </section>
+    </div>
+{%- endblock -%}

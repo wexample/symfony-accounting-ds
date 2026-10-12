@@ -1,0 +1,7 @@
+@use '@wexample/symfony-design-system/css/shapes/block';
+@use '@wexample/symfony-design-system/css/shapes/form';
+
+.accounting--search .form--input {
+  flex: 1;
+  min-width: 12rem;
+}

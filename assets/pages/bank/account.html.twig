@@ -1,0 +1,20 @@
+{%- extends '@WexampleSymfonyAccountingDsBundle/layouts/ledger/layout.html.twig' -%}
+
+{%- set page_title = account.label -%}
+
+{#- An account's lines, the latest first, by year, or only those left to
+    explain. -#}
+{%- block page_body -%}
+    <section class="block block--card">
+        <div class="block--body">
+            {%- set lines_table -%}{%- include '@WexampleSymfonyAccountingDsBundle/partials/bank_lines.html.twig' with { lines: lines, empty: '@page::empty' | trans } -%}{%- endset -%}
+            {{ lines_table }}
+        </div>
+        <div class="block--footer cluster">
+            {%- for year in years -%}
+                {{ button_link('ph:bold/calendar', year, path('accounting_bank_account', { ledger: ledger.id, id: account.id, year: year }), { class: 'button--flat' }) }}
+            {%- endfor -%}
+            {{ button_link('ph:bold/warning', '@page::only_unsettled' | trans, path('accounting_bank_account', { ledger: ledger.id, id: account.id, only: 'unsettled' }), { class: 'button--flat' }) }}
+        </div>
+    </section>
+{%- endblock -%}

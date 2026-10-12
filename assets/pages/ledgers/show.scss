@@ -1,0 +1,11 @@
+@use '@wexample/symfony-design-system/css/shapes/block';
+
+// The two sums first, large enough to be read from across the room.
+.accounting-overview {
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+}
+
+.accounting-overview--figure {
+  font-size: var(--font-size-8);
+  font-weight: var(--font-weight-bold, 700);
+}

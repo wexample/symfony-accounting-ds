@@ -1,0 +1,132 @@
+{%- extends '@WexampleSymfonyDesignSystemBundle/components/_abstract/vue/vue.vue.twig' -%}
+
+{%- block vue_config -%}
+    {{ parent() }}
+    {{ trans_js(render_pass, 'WexampleSymfonyAccountingDsBundle.components.invoice-editor.invoice-editor::*') }}
+{%- endblock -%}
+
+{%- block vue_body -%}
+    <div class="invoice-editor stack--vertical" :aria-busy="busy ? 'true' : null">
+        {#- The head: who, when, what it is about. Each field saved as it is left. -#}
+        <section class="block block--card">
+            <div class="block--body invoice-editor--head">
+                <label class="form--label">[[ t('head.party') ]]
+                    <select class="form--input" v-model="head.party" @change="saveHead('party')">
+                        <option value="">[[ t('head.no_party') ]]</option>
+                        <option v-for="party in parties" :key="party.id" :value="party.id">[[ party.name ]]</option>
+                    </select>
+                </label>
+                <label class="form--label">[[ t('head.title') ]]
+                    <input class="form--input" v-model="head.title" @change="saveHead('title')">
+                </label>
+                <label class="form--label">[[ t('head.date') ]]
+                    <input class="form--input" type="date" v-model="head.dateInvoice" @change="saveHead('dateInvoice')">
+                </label>
+                <label v-if="quotation" class="form--label">[[ t('head.valid_until') ]]
+                    <input class="form--input" type="date" v-model="head.dateValidUntil" @change="saveHead('dateValidUntil')">
+                </label>
+                <label v-else class="form--label">[[ t('head.term') ]]
+                    <input class="form--input" type="number" min="0" step="1" v-model="head.paymentTermDays" @change="saveHead('paymentTermDays')">
+                </label>
+                <label class="form--label invoice-editor--note">[[ t('head.note') ]]
+                    <textarea class="form--input" rows="2" v-model="head.note" @change="saveHead('note')"></textarea>
+                </label>
+            </div>
+        </section>
+
+        {#- The lines, then the one being typed, then what it all comes to. -#}
+        <section class="block block--card">
+            <div class="block--body">
+                <table class="table invoice-editor--lines">
+                    <thead>
+                        <tr>
+                            <th>[[ t('line.title') ]]</th>
+                            <th class="table--cell--end">[[ t('line.quantity') ]]</th>
+                            <th class="table--cell--end">[[ t('line.unit_price') ]]</th>
+                            <th class="table--cell--end">[[ t('line.vat') ]]</th>
+                            <th class="table--cell--end">[[ t('line.total') ]]</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr v-for="item in items" :key="item.id" :class="{ 'is-replaced': replacing === item.id }">
+                            <td><strong>[[ item.title ]]</strong><br v-if="item.description"><small v-if="item.description">[[ item.description ]]</small></td>
+                            <td class="table--cell--end">[[ quantity(item.quantity) ]]</td>
+                            <td class="table--cell--end">[[ money(item.unitPrice) ]]</td>
+                            <td class="table--cell--end">[[ rate(item.vatRate) ]]</td>
+                            <td class="table--cell--end">[[ money(item.total) ]]</td>
+                            <td class="table--cell--end invoice-editor--row-actions">
+                                <button type="button" class="table--icon-button" :title="t('line.edit')" :aria-label="t('line.edit')" @click="editLine(item)" v-html="app.getServiceOrFail('icon').icon('ph:bold/pencil-simple')"></button>
+                                <button type="button" class="table--icon-button" :title="t('line.remove')" :aria-label="t('line.remove')" @click="removeLine(item)" v-html="app.getServiceOrFail('icon').icon('ph:bold/trash')"></button>
+                            </td>
+                        </tr>
+                        <tr class="invoice-editor--new">
+                            <td>
+                                <input ref="title" class="form--input" v-model="line.title" :placeholder="t('line.new')" @paste="onPaste" @keydown.enter.prevent="addLine">
+                                <input class="form--input invoice-editor--description" v-model="line.description" :placeholder="t('line.description')" @keydown.enter.prevent="addLine">
+                            </td>
+                            <td><input class="form--input" inputmode="decimal" v-model="line.quantity" @keydown.enter.prevent="addLine"></td>
+                            <td><input class="form--input" inputmode="decimal" v-model="line.unitPrice" :placeholder="t('line.unit_price')" @keydown.enter.prevent="addLine"></td>
+                            <td>
+                                <select class="form--input" v-model="line.vatRate">
+                                    <option v-for="rateValue in vatRates" :key="rateValue" :value="rateValue">[[ rate(rateValue) ]]</option>
+                                </select>
+                            </td>
+                            <td class="table--cell--end">[[ preview ? money(preview.net) : '' ]]</td>
+                            <td class="table--cell--end invoice-editor--row-actions">
+                                <button type="button" class="button button--compact" :disabled="busy || !line.title.trim() || !preview" @click="addLine">[[ replacing ? t('line.replace') : t('line.add') ]]</button>
+                                <button v-if="replacing" type="button" class="button button--flat button--compact" @click="cancelLine">[[ t('line.cancel') ]]</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="invoice-editor--hint">[[ t('line.paste_hint') ]]
+                    <button type="button" class="button button--flat button--compact" @click="pickFile">[[ t('import.file') ]]</button>
+                    <input ref="file" type="file" hidden accept=".csv,.tsv,.xlsx,.xls,.ods,.docx,.odt,.pdf" @change="onFile">
+                </p>
+            </div>
+            <div class="block--footer invoice-editor--totals">
+                <dl>
+                    <dt>[[ t('total.net') ]]</dt><dd>[[ money(totals.net) ]]</dd>
+                    <dt>[[ t('total.vat') ]]</dt><dd>[[ money(totals.vat) ]]</dd>
+                    <dt>[[ t('total.total') ]]</dt><dd><strong>[[ money(totals.total) ]]</strong></dd>
+                </dl>
+                <small v-if="totals.pending">[[ t('total.pending') ]]</small>
+                <a class="button button--flat" :href="pdfUrl" target="_blank" rel="noopener">[[ t('pdf') ]]</a>
+            </div>
+        </section>
+
+        {#- A table pasted or dropped: which field each column holds, whether
+            the first row is a header; then all its rows added at once. -#}
+        <section v-if="table" class="block block--card invoice-editor--import">
+            <div class="block--title"><span class="block--title-label">[[ t('import.title', { '%count%': table.header ? table.rows.length - 1 : table.rows.length }) ]]</span></div>
+            <div class="block--body stack--vertical">
+                <label class="cluster"><input type="checkbox" v-model="table.header"> [[ t('import.header') ]]</label>
+                <div class="invoice-editor--import-scroll">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th v-for="(field, index) in table.columns" :key="index">
+                                    <select class="form--input" v-model="table.columns[index]">
+                                        <option value="">[[ t('import.ignore') ]]</option>
+                                        <option v-for="candidate in importFields" :key="candidate" :value="candidate">[[ t('import.field.' + candidate) ]]</option>
+                                    </select>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr v-for="(row, rowIndex) in table.rows.slice(0, 8)" :key="rowIndex" :class="{ 'is-header': table.header && rowIndex === 0 }">
+                                <td v-for="(field, index) in table.columns" :key="index">[[ row[index] ?? '' ]]</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p v-if="!tableReady"><small>[[ t('import.required') ]]</small></p>
+            </div>
+            <div class="block--footer cluster">
+                <button type="button" class="button button--flat" @click="table = null">[[ t('line.cancel') ]]</button>
+                <button type="button" class="button button--invert" :disabled="busy || !tableReady" @click="importTable">[[ t('import.submit') ]]</button>
+            </div>
+        </section>
+    </div>
+{%- endblock -%}

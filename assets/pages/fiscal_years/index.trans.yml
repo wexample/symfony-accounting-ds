@@ -1,0 +1,29 @@
+en:
+  page_title: Fiscal years
+  page_icon: ph:bold/calendar-check
+  empty: No fiscal year yet.
+  next: Open the next one
+  column:
+    label: Fiscal year
+    start: From
+    end: To
+    result: Result
+    status: Status
+  status:
+    open: Open
+    closed: Closed
+
+fr:
+  page_title: Exercices
+  page_icon: ph:bold/calendar-check
+  empty: Aucun exercice pour l'instant.
+  next: Ouvrir le suivant
+  column:
+    label: Exercice
+    start: Du
+    end: Au
+    result: Résultat
+    status: Statut
+  status:
+    open: Ouvert
+    closed: Clôturé

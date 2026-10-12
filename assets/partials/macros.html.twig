@@ -1,0 +1,29 @@
+{#- What the pages of the books draw the same way. -#}
+
+{#- A document's status as a capsule of its colour, everywhere, read-only or
+    not; `late` when a payable one is past its due date. -#}
+{%- macro status(status, late = false) -%}
+    {%- set tones = {
+        draft: 'neutral', model: 'neutral', waiting: 'info', approved: 'info',
+        emitted: 'info', partially_paid: 'warning', paid: 'success',
+        canceled: 'neutral', accepted: 'success', refused: 'error',
+    } -%}
+    {%- if late and status in ['emitted', 'partially_paid'] -%}
+        {{- marker('error', 'WexampleSymfonyAccountingDsBundle.common.accounting::status.late' | trans, { compact: true }) -}}
+    {%- else -%}
+        {{- marker(tones[status] ?? 'neutral', ('WexampleSymfonyAccountingDsBundle.common.accounting::status.' ~ status) | trans, { compact: true }) -}}
+    {%- endif -%}
+{%- endmacro -%}
+
+{#- An action of the books, as a button posting its form: its token, and the
+    question asked first when it says `confirm`. -#}
+{%- macro action(icon, label, href, options = {}) -%}
+    <form method="post" action="{{ href }}" class="accounting--action"
+          {%- if options.confirm|default(null) %} data-confirm-message="{{ options.confirm }}"{% endif %}>
+        <input type="hidden" name="_token" value="{{ csrf_token('accounting') }}">
+        {%- for name, value in options.fields|default({}) -%}
+            <input type="hidden" name="{{ name }}" value="{{ value }}">
+        {%- endfor -%}
+        {{ button(icon, label, { type: 'submit', class: options.class|default('button--flat') }) }}
+    </form>
+{%- endmacro -%}

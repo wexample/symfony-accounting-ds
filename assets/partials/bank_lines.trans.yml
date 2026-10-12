@@ -1,0 +1,17 @@
+en:
+  date: Date
+  label: Line
+  amount: Amount
+  state: Explained
+  transfer: Transfer
+  settled: Yes
+  left: '%amount% left'
+
+fr:
+  date: Date
+  label: Ligne
+  amount: Montant
+  state: Expliquée
+  transfer: Virement interne
+  settled: Oui
+  left: '%amount% restant'

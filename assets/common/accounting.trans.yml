@@ -1,0 +1,119 @@
+en:
+  tab:
+    overview: Overview
+    documents: Documents
+    parties: Parties
+    bank: Bank
+    entries: Entries
+    fiscal_years: Fiscal years
+    vat: VAT
+    reports: Reports
+    chart: Chart of accounts
+    settings: Settings
+  status:
+    draft: Draft
+    model: Model
+    waiting: Awaiting approval
+    approved: Approved
+    emitted: Issued
+    partially_paid: Partly paid
+    paid: Paid
+    canceled: Cancelled
+    accepted: Accepted
+    refused: Refused
+    late: Late
+  type:
+    bill: Invoice
+    credit_note: Credit note
+    quotation: Quotation
+    penalty: Late fee
+    receipt: Receipt
+    pro_forma: Pro forma
+  direction:
+    sale: Sale
+    purchase: Purchase
+  refused:
+    token: The page was left open too long. Try again.
+  done:
+    created: Created.
+    saved: Saved.
+    deleted: Deleted.
+    emitted: Document issued.
+    credited: Credit note issued.
+    billed: Invoice drawn from the quotation.
+    duplicated: Copy created as a draft.
+    imported: Statement imported.
+    matched: Matching done.
+    allocated: Payment recorded.
+    unallocated: Payment removed.
+    linked: Transfer linked.
+    unlinked: Transfer unlinked.
+    posted: Entry recorded.
+    reversed: Entry reversed.
+    lettered: Lines lettered.
+    unlettered: Lettering removed.
+    closed: Fiscal year closed.
+    reopened: Fiscal year reopened.
+    next: Next fiscal year opened.
+    settled: VAT settled.
+    received: Invoice received as a purchase draft.
+
+fr:
+  tab:
+    overview: Aperçu
+    documents: Pièces
+    parties: Tiers
+    bank: Banque
+    entries: Écritures
+    fiscal_years: Exercices
+    vat: TVA
+    reports: États
+    chart: Plan comptable
+    settings: Réglages
+  status:
+    draft: Brouillon
+    model: Modèle
+    waiting: En attente de validation
+    approved: Validé
+    emitted: Émis
+    partially_paid: Payé en partie
+    paid: Payé
+    canceled: Annulé
+    accepted: Accepté
+    refused: Refusé
+    late: En retard
+  type:
+    bill: Facture
+    credit_note: Avoir
+    quotation: Devis
+    penalty: Pénalité de retard
+    receipt: Reçu
+    pro_forma: Pro forma
+  direction:
+    sale: Vente
+    purchase: Achat
+  refused:
+    token: La page est restée ouverte trop longtemps. Réessayez.
+  done:
+    created: Créé.
+    saved: Enregistré.
+    deleted: Supprimé.
+    emitted: Pièce émise.
+    credited: Avoir émis.
+    billed: Facture tirée du devis.
+    duplicated: Copie créée en brouillon.
+    imported: Relevé importé.
+    matched: Rapprochement effectué.
+    allocated: Paiement enregistré.
+    unallocated: Paiement retiré.
+    linked: Virement relié.
+    unlinked: Virement détaché.
+    posted: Écriture enregistrée.
+    reversed: Écriture contre-passée.
+    lettered: Lignes lettrées.
+    unlettered: Lettrage retiré.
+    closed: Exercice clôturé.
+    reopened: Exercice rouvert.
+    next: Exercice suivant ouvert.
+    settled: TVA liquidée.
+    received: Facture reçue en brouillon d'achat.

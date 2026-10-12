@@ -1,0 +1,35 @@
+en:
+  page_title: Reports
+  page_icon: ph:bold/chart-bar
+  statements: Statements
+  general_ledger: General ledger
+  exports: Exports
+  no_export: No export for this fiscal year.
+  trial_balance: Trial balance
+  empty: Nothing booked yet.
+  total: Total
+  no_fiscal_year: The ledger has no fiscal year yet.
+  column:
+    number: Account
+    label: Label
+    debit: Debit
+    credit: Credit
+    balance: Balance
+
+fr:
+  page_title: États
+  page_icon: ph:bold/chart-bar
+  statements: États financiers
+  general_ledger: Grand livre
+  exports: Exports
+  no_export: Aucun export pour cet exercice.
+  trial_balance: Balance
+  empty: Rien de comptabilisé pour l'instant.
+  total: Total
+  no_fiscal_year: Le dossier n'a pas encore d'exercice.
+  column:
+    number: Compte
+    label: Libellé
+    debit: Débit
+    credit: Crédit
+    balance: Solde

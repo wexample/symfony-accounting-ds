@@ -1,0 +1,27 @@
+en:
+  page_title: General ledger
+  page_icon: ph:bold/book-open
+  account: An account, or the start of its number
+  show: Show
+  empty: Nothing booked on it.
+  date: Date
+  journal: Journal
+  label: Label
+  debit: Debit
+  credit: Credit
+  balance: Balance
+  total: Total
+
+fr:
+  page_title: Grand livre
+  page_icon: ph:bold/book-open
+  account: Un compte, ou le début de son numéro
+  show: Afficher
+  empty: Rien de comptabilisé dessus.
+  date: Date
+  journal: Journal
+  label: Libellé
+  debit: Débit
+  credit: Crédit
+  balance: Solde
+  total: Total

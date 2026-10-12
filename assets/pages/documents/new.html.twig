@@ -1,0 +1,23 @@
+{%- extends '@WexampleSymfonyAccountingDsBundle/layouts/ledger/layout.html.twig' -%}
+
+{%- import '@WexampleSymfonyAccountingDsBundle/partials/macros.html.twig' as accounting -%}
+
+{#- What to start: each a draft opened in its editor. -#}
+{%- block page_body -%}
+    <div class="grid accounting-starts">
+        {%- for start in starts -%}
+            {%- set key = start[0] ~ '_' ~ start[1] -%}
+            <section class="block block--card">
+                <div class="block--title">
+                    <span class="block--title-label">{{ ('@page::start.' ~ key ~ '.title') | trans }}</span>
+                </div>
+                <div class="block--body">
+                    <p>{{ ('@page::start.' ~ key ~ '.help') | trans }}</p>
+                </div>
+                <div class="block--footer">
+                    {{ accounting.action('ph:bold/file-plus', '@page::create' | trans, path('accounting_documents_create', { ledger: ledger.id }), { fields: { type: start[0], direction: start[1] }, class: 'button--invert' }) }}
+                </div>
+            </section>
+        {%- endfor -%}
+    </div>
+{%- endblock -%}

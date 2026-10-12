@@ -1,0 +1,11 @@
+@use '@wexample/symfony-design-system/css/shapes/block';
+@use '@wexample/symfony-design-system/css/shapes/table';
+
+.accounting-statement {
+  width: 100%;
+}
+
+// The totals stand out from the lines they sum.
+.accounting-statement--level-0 td {
+  font-weight: bold;
+}

@@ -1,0 +1,32 @@
+{%- extends '@WexampleSymfonyAccountingDsBundle/layouts/ledger/layout.html.twig' -%}
+
+{%- set page_title = entry.journal.code ~ ' ' ~ entry.number ~ ' — ' ~ entry.label -%}
+{%- set ledger_actions = can_edit and entry.status.value != 'draft' ? [
+    { icon: 'ph:bold/arrow-u-up-left', label: '@page::reverse' | trans, href: path('accounting_entries_reverse', { ledger: ledger.id, id: entry.id }), method: 'post', token: csrf_token('accounting'), confirm: { message: '@page::confirm_reverse' | trans } },
+] : null -%}
+
+{#- An entry: its lines, debit and credit, the letter of each that has one. -#}
+{%- block page_body -%}
+    {%- set currency = ledger.currencyCode -%}
+    {%- set locale = app.request.locale -%}
+    <section class="block block--card">
+        <div class="block--body stack--vertical">
+            <p>{{ date_display(entry.date, 'date_short') }}{{ entry.pieceReference ? ' · ' ~ entry.pieceReference : '' }}</p>
+            {{ data_table([
+                { key: 'account', label: '@page::account' | trans },
+                { key: 'label', label: '@page::label' | trans },
+                { key: 'party', label: '@page::party' | trans },
+                { key: 'debit', label: '@page::debit' | trans, align: 'end' },
+                { key: 'credit', label: '@page::credit' | trans, align: 'end' },
+                { key: 'letter', label: '@page::letter' | trans },
+            ], entry.lines|map(line => {
+                account: line.account.number ~ ' ' ~ line.account.label,
+                label: line.label,
+                party: line.party ? line.party.name : '',
+                debit: line.getDebit() ? line.getDebit()|price(currency, locale) : '',
+                credit: line.getCredit() ? line.getCredit()|price(currency, locale) : '',
+                letter: line.letter,
+            }), { totals: { debit: entry.totalDebit|price(currency, locale), credit: entry.totalCredit|price(currency, locale) } }) }}
+        </div>
+    </section>
+{%- endblock -%}

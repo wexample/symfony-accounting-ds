@@ -1,0 +1,75 @@
+en:
+  group:
+    who: Who it is
+    payment: Payment
+  field:
+    name:
+      label: Name
+    customer:
+      label: Customer
+    supplier:
+      label: Supplier
+    individual:
+      label: A person, not a company
+    legalIdentifier:
+      label: Registration number
+    vatNumber:
+      label: VAT number
+    email:
+      label: Email
+    phone:
+      label: Phone
+    postalAddress:
+      label: Address
+    postCode:
+      label: Post code
+    city:
+      label: City
+    iban:
+      label: IBAN
+    paymentTermDays:
+      label: Payment term (days), when not the ledger's
+    notes:
+      label: Notes
+  action:
+    submit: Save
+  success:
+    message: Party saved
+
+fr:
+  group:
+    who: Identité
+    payment: Paiement
+  field:
+    name:
+      label: Nom
+    customer:
+      label: Client
+    supplier:
+      label: Fournisseur
+    individual:
+      label: Une personne, pas une société
+    legalIdentifier:
+      label: Numéro d'immatriculation
+    vatNumber:
+      label: Numéro de TVA
+    email:
+      label: E-mail
+    phone:
+      label: Téléphone
+    postalAddress:
+      label: Adresse
+    postCode:
+      label: Code postal
+    city:
+      label: Ville
+    iban:
+      label: IBAN
+    paymentTermDays:
+      label: Délai de paiement (jours), s'il diffère de celui du dossier
+    notes:
+      label: Notes
+  action:
+    submit: Enregistrer
+  success:
+    message: Tiers enregistré

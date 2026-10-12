@@ -1,0 +1,41 @@
+en:
+  page_title: Bank
+  page_icon: ph:bold/bank
+  accounts: Accounts
+  no_account: No bank account yet.
+  unsettled: Lines to explain
+  all_settled: Every line is explained.
+  column:
+    account: Account
+    balance: Balance
+    unsettled: To explain
+  new:
+    label: A new account's name
+    submit: Add the account
+  import:
+    title: Import a statement
+    detect: Format found from the file
+    submit: Import
+  action:
+    match: Match the lines
+
+fr:
+  page_title: Banque
+  page_icon: ph:bold/bank
+  accounts: Comptes
+  no_account: Aucun compte bancaire pour l'instant.
+  unsettled: Lignes à expliquer
+  all_settled: Toutes les lignes sont expliquées.
+  column:
+    account: Compte
+    balance: Solde
+    unsettled: À expliquer
+  new:
+    label: Le nom d'un nouveau compte
+    submit: Ajouter le compte
+  import:
+    title: Importer un relevé
+    detect: Format déduit du fichier
+    submit: Importer
+  action:
+    match: Rapprocher les lignes

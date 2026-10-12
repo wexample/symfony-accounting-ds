@@ -1,0 +1,27 @@
+en:
+  page_title: Lettering
+  page_icon: ph:bold/link
+  auto: Letter everything that matches
+  date: Date
+  label: Label
+  party: Party
+  debit: Debit
+  credit: Credit
+  all_lettered: Every line of this account is lettered.
+  letter: Letter the lines ticked
+  letters: Letters given
+  unletter: Take it back
+
+fr:
+  page_title: Lettrage
+  page_icon: ph:bold/link
+  auto: Lettrer tout ce qui correspond
+  date: Date
+  label: Libellé
+  party: Tiers
+  debit: Débit
+  credit: Crédit
+  all_lettered: Toutes les lignes de ce compte sont lettrées.
+  letter: Lettrer les lignes cochées
+  letters: Lettres attribuées
+  unletter: La retirer

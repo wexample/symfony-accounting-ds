@@ -1,0 +1,6 @@
+@use '@wexample/symfony-design-system/css/shapes/block';
+
+.accounting-party {
+  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  align-items: start;
+}

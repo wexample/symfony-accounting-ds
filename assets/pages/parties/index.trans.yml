@@ -1,0 +1,35 @@
+en:
+  page_title: Parties
+  page_icon: ph:bold/address-book
+  empty: No party matches.
+  search: Search
+  new:
+    name: The name of a new party
+    submit: Add
+  role:
+    customer: Customer
+    supplier: Supplier
+    both: Both
+  column:
+    name: Name
+    roles: Role
+    codes: Auxiliary codes
+    contact: Contact
+
+fr:
+  page_title: Tiers
+  page_icon: ph:bold/address-book
+  empty: Aucun tiers ne correspond.
+  search: Rechercher
+  new:
+    name: Le nom d'un nouveau tiers
+    submit: Ajouter
+  role:
+    customer: Client
+    supplier: Fournisseur
+    both: Les deux
+  column:
+    name: Nom
+    roles: Rôle
+    codes: Comptes auxiliaires
+    contact: Contact

@@ -1,0 +1,6 @@
+{#- The fiscal years as buttons, the one shown lit; the page's query kept. -#}
+<div class="cluster">
+    {%- for year in fiscal_years -%}
+        {{ button_link('ph:bold/calendar', year.label, path(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')|merge(app.request.query.all)|merge({ fiscalYear: year.id })), { class: fiscal_year and year.id == fiscal_year.id ? '' : 'button--flat' }) }}
+    {%- endfor -%}
+</div>

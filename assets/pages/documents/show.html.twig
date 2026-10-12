@@ -1,0 +1,129 @@
+{%- extends '@WexampleSymfonyAccountingDsBundle/layouts/ledger/layout.html.twig' -%}
+
+{%- import '@WexampleSymfonyAccountingDsBundle/partials/macros.html.twig' as accounting -%}
+
+{%- set c = 'WexampleSymfonyAccountingDsBundle.common.accounting::' -%}
+{%- set page_title = (invoice.number ?? ('@page::draft' | trans)) ~ ' — ' ~ (c ~ 'type.' ~ invoice.type.value) | trans -%}
+{%- set base = { ledger: ledger.id, id: invoice.id } -%}
+{%- set confirm = '@page::confirm.' -%}
+{%- set ledger_actions = can_edit ? (editable ? [
+    { icon: 'ph:bold/paper-plane-tilt', label: '@page::action.emit' | trans, href: path('accounting_documents_emit', base), method: 'post', token: csrf_token('accounting'), confirm: { message: (confirm ~ 'emit') | trans } },
+    { icon: 'ph:bold/copy', label: '@page::action.duplicate' | trans, href: path('accounting_documents_duplicate', base), method: 'post', token: csrf_token('accounting') },
+    { icon: 'ph:bold/trash', label: '@page::action.delete' | trans, href: path('accounting_documents_delete', base), method: 'post', token: csrf_token('accounting'), confirm: { message: (confirm ~ 'delete') | trans } },
+] : [
+    { icon: 'ph:bold/copy', label: '@page::action.duplicate' | trans, href: path('accounting_documents_duplicate', base), method: 'post', token: csrf_token('accounting') },
+]|merge(invoice.type.value == 'quotation' ? [
+    { icon: 'ph:bold/receipt', label: '@page::action.bill' | trans, href: path('accounting_documents_bill', base), method: 'post', token: csrf_token('accounting') },
+] : [])) : null -%}
+
+{#- A draft is written in its editor. Issued, a document is read: its PDF,
+    what it comes to and what is left to pay, what paid it, and what can still
+    be done — a credit note, a copy, its structured forms. -#}
+{%- block page_body -%}
+    {%- set currency = invoice.currencyCode -%}
+    {%- set locale = app.request.locale -%}
+    {%- if editable -%}
+        {{ vue(render_pass, '@WexampleSymfonyAccountingDsBundle/components/invoice-editor', {
+            invoice: invoice.id,
+            ledger: ledger.id,
+            showUrl: path('api_invoice_show', { id: invoice.id }),
+            updateUrl: path('api_invoice_update', { id: invoice.id }),
+            itemCreateUrl: path('api_invoice_item_create'),
+            itemDeleteUrl: path('api_invoice_item_delete', { id: '__id__' }),
+            importUrl: path('api_invoice_item_import'),
+            readTableUrl: path('api_invoice_item_read_table', { ledger: ledger.id }),
+            pdfUrl: path('api_invoice_pdf', { id: invoice.id }),
+            parties: parties,
+            vatRates: vat_rates,
+            currency: currency,
+            locale: locale,
+            quotation: invoice.type.value == 'quotation',
+        }) }}
+    {%- else -%}
+        <div class="grid accounting-document">
+            <div class="accounting-document--pdf">
+                {{ document_embed(path('api_invoice_pdf', { id: invoice.id }), page_title, { actions: [
+                    { icon: 'ph:bold/arrow-square-out', label: 'WexampleSymfonyDesignSystemBundle.common.system::frontend.document.open' | trans, href: path('api_invoice_pdf', { id: invoice.id }), new_window: true },
+                ]|merge(invoice.type.isAccountable() and invoice.direction.value == 'sale' ? [
+                    { icon: 'ph:bold/file-code', label: '@page::download.ubl' | trans, href: path('api_invoice_electronic', { id: invoice.id, format: 'ubl' }), download: true },
+                    { icon: 'ph:bold/file-code', label: '@page::download.cii' | trans, href: path('api_invoice_electronic', { id: invoice.id, format: 'cii' }), download: true },
+                ] : []) }) }}
+            </div>
+            <div class="stack--vertical">
+                <section class="block block--card">
+                    <div class="block--body stack--vertical">
+                        <p>{{ accounting.status(invoice.status.value) }}</p>
+                        <dl class="accounting-figures">
+                            {%- if invoice.party -%}
+                                <dt>{{ '@page::party' | trans }}</dt><dd>{{ invoice.party.name }}</dd>
+                            {%- endif -%}
+                            <dt>{{ '@page::date' | trans }}</dt><dd>{{ date_display(invoice.dateInvoice, 'date_short') }}</dd>
+                            {%- if invoice.type.isPayable() -%}
+                                <dt>{{ '@page::date_due' | trans }}</dt><dd>{{ date_display(invoice.calcDateDue(), 'date_short') }}</dd>
+                            {%- endif -%}
+                            <dt>{{ '@page::net' | trans }}</dt><dd>{{ breakdown.net|price(currency, locale) }}</dd>
+                            <dt>{{ '@page::vat' | trans }}</dt><dd>{{ breakdown.vat|price(currency, locale) }}</dd>
+                            <dt>{{ '@page::total' | trans }}</dt><dd><strong>{{ breakdown.final|price(currency, locale) }}</strong></dd>
+                            {%- if invoice.type.isPayable() -%}
+                                {%- if invoice.calcCreditedAmount() -%}
+                                    <dt>{{ '@page::credited' | trans }}</dt><dd>{{ invoice.calcCreditedAmount()|price(currency, locale) }}</dd>
+                                {%- endif -%}
+                                <dt>{{ '@page::paid' | trans }}</dt><dd>{{ invoice.calcPaidAmount()|price(currency, locale) }}</dd>
+                                <dt>{{ '@page::due' | trans }}</dt><dd><strong>{{ invoice.calcRemainingAmount()|price(currency, locale) }}</strong></dd>
+                            {%- endif -%}
+                        </dl>
+                    </div>
+                </section>
+
+                {%- if invoice.allocations is not empty -%}
+                    <section class="block block--card">
+                        <div class="block--title"><span class="block--title-label">{{ '@page::payments' | trans }}</span></div>
+                        <div class="block--body">
+                            {{ data_table([
+                                { key: 'date', label: '@page::date' | trans, cell: 'html' },
+                                { key: 'label', label: '@page::label' | trans },
+                                { key: 'amount', label: '@page::amount' | trans, align: 'end' },
+                            ], invoice.allocations|map(allocation => {
+                                date: date_display(allocation.transaction.date, 'date_short'),
+                                label: allocation.transaction.label,
+                                amount: allocation.amount|price(currency, locale),
+                            })) }}
+                        </div>
+                    </section>
+                {%- endif -%}
+
+                {%- if relations is not empty -%}
+                    <section class="block block--card">
+                        <div class="block--title"><span class="block--title-label">{{ '@page::relations' | trans }}</span></div>
+                        <div class="block--body">
+                            <ul>
+                                {%- for relation in relations -%}
+                                    <li><a href="{{ path('accounting_documents_show', { ledger: ledger.id, id: relation.target.id }) }}">{{ relation.target.number ?? ('@page::draft' | trans) }}</a> — {{ (c ~ 'type.' ~ relation.target.type.value) | trans }}</li>
+                                {%- endfor -%}
+                            </ul>
+                        </div>
+                    </section>
+                {%- endif -%}
+
+                {%- if can_edit and invoice.type.value == 'bill' and invoice.calcRemainingAmount() > 0 -%}
+                    <section class="block block--card">
+                        <div class="block--title"><span class="block--title-label">{{ '@page::credit.title' | trans }}</span></div>
+                        <div class="block--body">
+                            <form method="post" action="{{ path('accounting_documents_credit', base) }}" class="stack--vertical"
+                                  data-confirm-message="{{ (confirm ~ 'credit') | trans }}">
+                                <input type="hidden" name="_token" value="{{ csrf_token('accounting') }}">
+                                <label class="form--label">{{ '@page::credit.amount' | trans }}
+                                    <input class="form--input" name="amount" inputmode="decimal" placeholder="{{ '@page::credit.whole' | trans }}">
+                                </label>
+                                <label class="form--label">{{ '@page::credit.reason' | trans }}
+                                    <input class="form--input" name="reason">
+                                </label>
+                                <div class="cluster">{{ button('ph:bold/arrow-u-up-left', '@page::credit.submit' | trans, { type: 'submit' }) }}</div>
+                            </form>
+                        </div>
+                    </section>
+                {%- endif -%}
+            </div>
+        </div>
+    {%- endif -%}
+{%- endblock -%}

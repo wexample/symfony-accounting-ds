@@ -1,0 +1,21 @@
+en:
+  page_title: Party
+  page_icon: ph:bold/address-book
+  documents: Its documents
+  empty: No document yet.
+  column:
+    number: Document
+    date: Date
+    total: Total
+    status: Status
+
+fr:
+  page_title: Tiers
+  page_icon: ph:bold/address-book
+  documents: Ses pièces
+  empty: Aucune pièce pour l'instant.
+  column:
+    number: Pièce
+    date: Date
+    total: TTC
+    status: Statut

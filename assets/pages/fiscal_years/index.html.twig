@@ -1,0 +1,28 @@
+{%- extends '@WexampleSymfonyAccountingDsBundle/layouts/ledger/layout.html.twig' -%}
+
+{%- set ledger_actions = can_administer ? [
+    { icon: 'ph:bold/calendar-plus', label: '@page::next' | trans, href: path('accounting_fiscal_years_next', { ledger: ledger.id }), method: 'post', token: csrf_token('accounting') },
+] : null -%}
+
+{#- The fiscal years, the latest first: each opens its check, from where it is
+    closed or reopened. -#}
+{%- block page_body -%}
+    <section class="block block--card">
+        <div class="block--body">
+            {{ data_table([
+                { key: 'label', label: '@page::column.label' | trans },
+                { key: 'start', label: '@page::column.start' | trans, cell: 'html' },
+                { key: 'end', label: '@page::column.end' | trans, cell: 'html' },
+                { key: 'result', label: '@page::column.result' | trans, align: 'end' },
+                { key: 'status', label: '@page::column.status' | trans, cell: 'html' },
+            ], fiscal_years|map(year => {
+                href: path('accounting_fiscal_years_check', { ledger: ledger.id, id: year.id }),
+                label: year.label,
+                start: date_display(year.dateStart, 'date_short'),
+                end: date_display(year.dateEnd, 'date_short'),
+                result: year.result is null ? '' : year.result|price(ledger.currencyCode, app.request.locale),
+                status: marker(year.closed ? 'neutral' : 'success', ('@page::status.' ~ year.status.value) | trans, { compact: true }),
+            }), { row_link: { key: 'href' }, empty_label: '@page::empty' | trans }) }}
+        </div>
+    </section>
+{%- endblock -%}

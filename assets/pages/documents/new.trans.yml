@@ -1,0 +1,29 @@
+en:
+  page_title: New document
+  page_icon: ph:bold/file-plus
+  create: Start it
+  start:
+    bill_sale:
+      title: An invoice
+      help: Sent to a customer, numbered when it is issued.
+    quotation_sale:
+      title: A quotation
+      help: Never due; billed once accepted.
+    bill_purchase:
+      title: A supplier invoice
+      help: What a supplier sent you, written down to be paid and booked.
+
+fr:
+  page_title: Nouvelle pièce
+  page_icon: ph:bold/file-plus
+  create: La commencer
+  start:
+    bill_sale:
+      title: Une facture
+      help: Envoyée à un client, numérotée à son émission.
+    quotation_sale:
+      title: Un devis
+      help: Jamais exigible ; facturé une fois accepté.
+    bill_purchase:
+      title: Une facture fournisseur
+      help: Ce qu'un fournisseur vous a envoyé, saisi pour être payé et comptabilisé.

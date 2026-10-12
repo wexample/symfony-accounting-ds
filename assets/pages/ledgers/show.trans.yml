@@ -1,0 +1,39 @@
+en:
+  page_title: Ledger
+  page_icon: ph:bold/calculator
+  open:
+    sale: Owed by customers
+    purchase: Owed to suppliers
+    count: '%count% document(s) awaiting payment'
+    late: '%amount% past due'
+    see: See them
+  todo:
+    title: To do
+    drafts: '%count% draft(s)'
+    unsettled: '%count% bank line(s) to explain'
+    fiscal_year: 'Fiscal year %label%'
+    new_document: New document
+    reconcile: Reconcile the bank
+  fiscal_year:
+    open: open
+    closed: closed
+
+fr:
+  page_title: Dossier
+  page_icon: ph:bold/calculator
+  open:
+    sale: Dû par les clients
+    purchase: Dû aux fournisseurs
+    count: '%count% pièce(s) en attente de paiement'
+    late: '%amount% échu'
+    see: Les voir
+  todo:
+    title: À faire
+    drafts: '%count% brouillon(s)'
+    unsettled: '%count% ligne(s) bancaire(s) à expliquer'
+    fiscal_year: 'Exercice %label%'
+    new_document: Nouvelle pièce
+    reconcile: Rapprocher la banque
+  fiscal_year:
+    open: ouvert
+    closed: clôturé

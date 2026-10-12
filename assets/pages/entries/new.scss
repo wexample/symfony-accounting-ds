@@ -1,0 +1,15 @@
+@use '@wexample/symfony-design-system/css/shapes/block';
+@use '@wexample/symfony-design-system/css/shapes/form';
+@use '@wexample/symfony-design-system/css/shapes/table';
+
+.accounting-entry-head {
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+}
+
+.accounting-entry-lines {
+  width: 100%;
+
+  .form--input {
+    width: 100%;
+  }
+}

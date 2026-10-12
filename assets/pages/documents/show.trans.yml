@@ -1,0 +1,71 @@
+en:
+  page_title: Document
+  page_icon: ph:bold/receipt
+  draft: Draft
+  party: Party
+  date: Date
+  date_due: Due
+  net: Net
+  vat: VAT
+  total: Total
+  credited: Credited
+  paid: Paid
+  due: Left to pay
+  payments: What paid it
+  label: Bank line
+  amount: Amount
+  relations: Linked documents
+  download:
+    ubl: Download as UBL (Peppol)
+    cii: Download as CII (Factur-X)
+  action:
+    emit: Issue
+    duplicate: Copy as a draft
+    delete: Delete the draft
+    bill: Bill it
+  confirm:
+    emit: Issued, the document is numbered and booked, and can no longer change. Issue it?
+    delete: Delete this draft?
+    credit: The credit note is issued at once. Go on?
+  credit:
+    title: Cancel by a credit note
+    amount: Amount, tax included
+    whole: All of what is left
+    reason: Reason
+    submit: Issue the credit note
+
+fr:
+  page_title: Pièce
+  page_icon: ph:bold/receipt
+  draft: Brouillon
+  party: Tiers
+  date: Date
+  date_due: Échéance
+  net: HT
+  vat: TVA
+  total: TTC
+  credited: Avoirs
+  paid: Payé
+  due: Reste à payer
+  payments: Ce qui l'a payée
+  label: Ligne bancaire
+  amount: Montant
+  relations: Pièces liées
+  download:
+    ubl: Télécharger en UBL (Peppol)
+    cii: Télécharger en CII (Factur-X)
+  action:
+    emit: Émettre
+    duplicate: Copier en brouillon
+    delete: Supprimer le brouillon
+    bill: Le facturer
+  confirm:
+    emit: Émise, la pièce est numérotée et comptabilisée, et ne peut plus changer. L'émettre ?
+    delete: Supprimer ce brouillon ?
+    credit: L'avoir est émis aussitôt. Continuer ?
+  credit:
+    title: Annuler par un avoir
+    amount: Montant TTC
+    whole: Tout le reste dû
+    reason: Motif
+    submit: Émettre l'avoir

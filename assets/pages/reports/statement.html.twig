@@ -1,0 +1,28 @@
+{%- extends '@WexampleSymfonyAccountingDsBundle/layouts/ledger/layout.html.twig' -%}
+
+{%- set page_title = result.definition.label | trans({}, 'accounting') -%}
+
+{#- A statement of the ledger's country, its lines indented by level: gross,
+    what is deducted, and the net. -#}
+{%- block page_body -%}
+    {%- set currency = ledger.currencyCode -%}
+    {%- set locale = app.request.locale -%}
+    {%- include '@WexampleSymfonyAccountingDsBundle/partials/fiscal_year_picker.html.twig' -%}
+    <section class="block block--card">
+        <div class="block--body">
+            <table class="table accounting-statement">
+                <thead><tr><th>{{ '@page::line' | trans }}</th><th class="table--cell--end">{{ '@page::gross' | trans }}</th><th class="table--cell--end">{{ '@page::deduct' | trans }}</th><th class="table--cell--end">{{ '@page::amount' | trans }}</th></tr></thead>
+                <tbody>
+                    {%- for key, line in result.lines -%}
+                        <tr class="accounting-statement--level-{{ line.level }}">
+                            <td style="padding-inline-start: {{ 0.5 + line.level * 1.25 }}rem">{{ line.label | trans({}, 'accounting') }}</td>
+                            <td class="table--cell--end">{{ line.deduct ? line.gross|price(currency, locale) }}</td>
+                            <td class="table--cell--end">{{ line.deduct ? line.deduct|price(currency, locale) }}</td>
+                            <td class="table--cell--end">{{ line.amount|price(currency, locale) }}</td>
+                        </tr>
+                    {%- endfor -%}
+                </tbody>
+            </table>
+        </div>
+    </section>
+{%- endblock -%}

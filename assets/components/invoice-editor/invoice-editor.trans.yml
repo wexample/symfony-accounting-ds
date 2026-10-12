@@ -1,0 +1,87 @@
+en:
+  head:
+    party: Party
+    no_party: Not chosen yet
+    title: Subject
+    date: Date
+    valid_until: Valid until
+    term: Payment term (days)
+    note: Note printed on the document
+  line:
+    title: Line
+    description: Description (optional)
+    quantity: Quantity
+    unit_price: Unit price, net
+    vat: VAT
+    total: Net
+    new: A new line…
+    add: Add
+    replace: Replace
+    cancel: Cancel
+    edit: Change
+    remove: Remove
+    paste_hint: Rows copied from a spreadsheet can be pasted into the new line.
+  total:
+    net: Net
+    vat: VAT
+    total: Total
+    pending: With the line being typed.
+  pdf: Preview the PDF
+  import:
+    file: Or pick a file
+    title: '%count% line(s) to add'
+    header: The first row is a header
+    ignore: Ignore
+    required: Name the column of the line and the one of its unit price.
+    submit: Add these lines
+    no_table: No table was found in this file.
+    field:
+      title: Line
+      description: Description
+      quantity: Quantity
+      unitPrice: Unit price
+      vatRate: VAT rate
+
+fr:
+  head:
+    party: Tiers
+    no_party: Pas encore choisi
+    title: Objet
+    date: Date
+    valid_until: Valable jusqu'au
+    term: Délai de paiement (jours)
+    note: Note imprimée sur la pièce
+  line:
+    title: Ligne
+    description: Description (facultative)
+    quantity: Quantité
+    unit_price: Prix unitaire HT
+    vat: TVA
+    total: HT
+    new: Une nouvelle ligne…
+    add: Ajouter
+    replace: Remplacer
+    cancel: Annuler
+    edit: Modifier
+    remove: Retirer
+    paste_hint: Des lignes copiées d'un tableur peuvent être collées dans la nouvelle ligne.
+  total:
+    net: HT
+    vat: TVA
+    total: TTC
+    pending: Avec la ligne en cours de saisie.
+  pdf: Aperçu du PDF
+  import:
+    file: Ou choisir un fichier
+    title: '%count% ligne(s) à ajouter'
+    header: La première ligne est un en-tête
+    ignore: Ignorer
+    required: Désignez la colonne de la ligne et celle de son prix unitaire.
+    submit: Ajouter ces lignes
+    no_table: Aucun tableau n'a été trouvé dans ce fichier.
+    field:
+      title: Ligne
+      description: Description
+      quantity: Quantité
+      unitPrice: Prix unitaire
+      vatRate: Taux de TVA

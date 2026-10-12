@@ -1,0 +1,64 @@
+{%- extends '@WexampleSymfonyAccountingDsBundle/layouts/ledger/layout.html.twig' -%}
+
+{%- import '@WexampleSymfonyAccountingDsBundle/partials/macros.html.twig' as accounting -%}
+
+{%- set ledger_actions = can_edit ? [
+    { icon: 'ph:bold/magic-wand', label: '@page::auto' | trans, href: path('accounting_entries_letter_all', { ledger: ledger.id }), method: 'post', token: csrf_token('accounting') },
+] : null -%}
+
+{#- An account's lines not lettered yet, ticked together when they settle
+    each other; then the letters given, each to be taken back. -#}
+{%- block page_body -%}
+    {%- set currency = ledger.currencyCode -%}
+    {%- set locale = app.request.locale -%}
+    <section class="block block--card">
+        <div class="block--body stack--vertical">
+            <form method="get" class="cluster">
+                <select class="form--input" name="account" onchange="this.form.submit()">
+                    {%- for candidate in accounts -%}
+                        <option value="{{ candidate.number }}"{{ account and candidate.number == account.number ? ' selected' }}>{{ candidate.number }} — {{ candidate.label }}</option>
+                    {%- endfor -%}
+                </select>
+            </form>
+            {%- if account -%}
+                <form method="post" action="{{ path('accounting_entries_letter', { ledger: ledger.id }) }}" class="stack--vertical">
+                    <input type="hidden" name="_token" value="{{ csrf_token('accounting') }}">
+                    <table class="table accounting-lettering">
+                        <thead><tr><th></th><th>{{ '@page::date' | trans }}</th><th>{{ '@page::label' | trans }}</th><th>{{ '@page::party' | trans }}</th><th class="table--cell--end">{{ '@page::debit' | trans }}</th><th class="table--cell--end">{{ '@page::credit' | trans }}</th></tr></thead>
+                        <tbody>
+                            {%- for line in open -%}
+                                <tr>
+                                    <td>{%- if can_edit -%}<input type="checkbox" name="lines[]" value="{{ line.id }}">{%- endif -%}</td>
+                                    <td>{{ line.entry.date|date('Y-m-d') }}</td>
+                                    <td>{{ line.label }}</td>
+                                    <td>{{ line.party ? line.party.name }}</td>
+                                    <td class="table--cell--end">{{ line.getDebit() ? line.getDebit()|price(currency, locale) }}</td>
+                                    <td class="table--cell--end">{{ line.getCredit() ? line.getCredit()|price(currency, locale) }}</td>
+                                </tr>
+                            {%- else -%}
+                                <tr><td colspan="6" class="fallback">{{ '@page::all_lettered' | trans }}</td></tr>
+                            {%- endfor -%}
+                        </tbody>
+                    </table>
+                    {%- if can_edit and open is not empty -%}
+                        <div class="cluster">{{ button('ph:bold/link', '@page::letter' | trans, { type: 'submit' }) }}</div>
+                    {%- endif -%}
+                </form>
+            {%- endif -%}
+        </div>
+    </section>
+    {%- if letters is not empty -%}
+        <section class="block block--card">
+            <div class="block--title"><span class="block--title-label">{{ '@page::letters' | trans }}</span></div>
+            <div class="block--body stack--vertical">
+                {%- for letter, lines in letters -%}
+                    <div class="cluster accounting-letter">
+                        <strong>{{ letter }}</strong>
+                        <span>{{ lines|map(line => line.label)|join(' · ') }}</span>
+                        {%- if can_edit -%}{{ accounting.action('ph:bold/link-break', '@page::unletter' | trans, path('accounting_entries_unletter', { ledger: ledger.id }), { fields: { account: account.number, letter: letter } }) }}{%- endif -%}
+                    </div>
+                {%- endfor -%}
+            </div>
+        </section>
+    {%- endif -%}
+{%- endblock -%}

@@ -1,0 +1,57 @@
+{%- extends '@WexampleSymfonyAccountingDsBundle/layouts/ledger/layout.html.twig' -%}
+
+{#- A fiscal year's statements and exports, then its trial balance. -#}
+{%- block page_body -%}
+    {%- set currency = ledger.currencyCode -%}
+    {%- set locale = app.request.locale -%}
+    {%- include '@WexampleSymfonyAccountingDsBundle/partials/fiscal_year_picker.html.twig' -%}
+    {%- if fiscal_year -%}
+        {%- set params = { ledger: ledger.id, fiscalYear: fiscal_year.id } -%}
+        <div class="grid accounting-reports">
+            <section class="block block--card">
+                <div class="block--title"><span class="block--title-label">{{ '@page::statements' | trans }}</span></div>
+                <div class="block--body stack--vertical">
+                    {%- for statement in statements -%}
+                        {{ button_link('ph:bold/file-text', statement.label | trans({}, 'accounting'), path('accounting_reports_statement', params|merge({ key: statement.key })), { class: 'button--flat' }) }}
+                    {%- endfor -%}
+                    {{ button_link('ph:bold/book-open', '@page::general_ledger' | trans, path('accounting_reports_general_ledger', params), { class: 'button--flat' }) }}
+                </div>
+            </section>
+            <section class="block block--card">
+                <div class="block--title"><span class="block--title-label">{{ '@page::exports' | trans }}</span></div>
+                <div class="block--body stack--vertical">
+                    {%- for key, label in exports -%}
+                        <a class="button button--flat" href="{{ path('accounting_reports_export', params|merge({ key: key })) }}" download>{{ icon('ph:bold/download-simple') }} <span>{{ label }}</span></a>
+                    {%- else -%}
+                        <p class="fallback">{{ '@page::no_export' | trans }}</p>
+                    {%- endfor -%}
+                </div>
+            </section>
+        </div>
+        <section class="block block--card">
+            <div class="block--title"><span class="block--title-label">{{ '@page::trial_balance' | trans }}</span></div>
+            <div class="block--body">
+                {{ data_table([
+                    { key: 'number', label: '@page::column.number' | trans },
+                    { key: 'label', label: '@page::column.label' | trans },
+                    { key: 'debit', label: '@page::column.debit' | trans, align: 'end' },
+                    { key: 'credit', label: '@page::column.credit' | trans, align: 'end' },
+                    { key: 'balance', label: '@page::column.balance' | trans, align: 'end' },
+                ], trial_balance.rows|map(row => {
+                    href: path('accounting_reports_general_ledger', params|merge({ account: row.number })),
+                    number: row.number,
+                    label: row.label,
+                    debit: row.debit|price(currency, locale),
+                    credit: row.credit|price(currency, locale),
+                    balance: row.balance|price(currency, locale),
+                }), {
+                    row_link: { key: 'href' },
+                    empty_label: '@page::empty' | trans,
+                    totals: { label: '@page::total' | trans, debit: trial_balance.totalDebit|price(currency, locale), credit: trial_balance.totalCredit|price(currency, locale) },
+                }) }}
+            </div>
+        </section>
+    {%- else -%}
+        <p class="fallback">{{ '@page::no_fiscal_year' | trans }}</p>
+    {%- endif -%}
+{%- endblock -%}

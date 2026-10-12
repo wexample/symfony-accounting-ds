@@ -1,0 +1,23 @@
+en:
+  page_title: Entry
+  page_icon: ph:bold/notebook
+  account: Account
+  label: Label
+  party: Party
+  debit: Debit
+  credit: Credit
+  letter: Letter
+  reverse: Reverse
+  confirm_reverse: An entry of the opposite amounts is booked. Go on?
+
+fr:
+  page_title: Écriture
+  page_icon: ph:bold/notebook
+  account: Compte
+  label: Libellé
+  party: Tiers
+  debit: Débit
+  credit: Crédit
+  letter: Lettre
+  reverse: Contre-passer
+  confirm_reverse: Une écriture de montants opposés est comptabilisée. Continuer ?

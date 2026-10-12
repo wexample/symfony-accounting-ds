@@ -1,0 +1,40 @@
+{%- extends '@WexampleSymfonyAccountingDsBundle/layouts/ledger/layout.html.twig' -%}
+
+{#- An entry written by hand: its journal, date and label, then its lines —
+    an account and a debit or a credit each, the empty ones left out. The
+    books refuse it unless it balances. -#}
+{%- block page_body -%}
+    <section class="block block--card">
+        <form method="post" action="{{ path('accounting_entries_create', { ledger: ledger.id }) }}">
+            <input type="hidden" name="_token" value="{{ csrf_token('accounting') }}">
+            <div class="block--body stack--vertical">
+                <div class="grid accounting-entry-head">
+                    <label class="form--label">{{ '@page::journal' | trans }}
+                        <select class="form--input" name="journal">
+                            {%- for journal in journals -%}<option value="{{ journal.code }}"{{ journal.type.value == 'miscellaneous' ? ' selected' }}>{{ journal.code }} — {{ journal.label }}</option>{%- endfor -%}
+                        </select>
+                    </label>
+                    <label class="form--label">{{ '@page::date' | trans }}<input class="form--input" type="date" name="date" value="{{ 'now'|date('Y-m-d') }}" required></label>
+                    <label class="form--label">{{ '@page::label' | trans }}<input class="form--input" name="label" required></label>
+                    <label class="form--label">{{ '@page::piece' | trans }}<input class="form--input" name="piece"></label>
+                </div>
+                <table class="table accounting-entry-lines">
+                    <thead><tr><th>{{ '@page::account' | trans }}</th><th>{{ '@page::line_label' | trans }}</th><th>{{ '@page::debit' | trans }}</th><th>{{ '@page::credit' | trans }}</th></tr></thead>
+                    <tbody>
+                        {%- for index in lines -%}
+                            <tr>
+                                <td><input class="form--input" name="lines[{{ index }}][account]" placeholder="{{ index == 1 ? '6061' : '' }}"></td>
+                                <td><input class="form--input" name="lines[{{ index }}][label]"></td>
+                                <td><input class="form--input" name="lines[{{ index }}][debit]" inputmode="decimal"></td>
+                                <td><input class="form--input" name="lines[{{ index }}][credit]" inputmode="decimal"></td>
+                            </tr>
+                        {%- endfor -%}
+                    </tbody>
+                </table>
+            </div>
+            <div class="block--footer cluster">
+                {{ button('ph:bold/check', '@page::submit' | trans, { type: 'submit', class: 'button--invert' }) }}
+            </div>
+        </form>
+    </section>
+{%- endblock -%}

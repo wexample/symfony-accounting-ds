@@ -1,0 +1,47 @@
+en:
+  page_title: Documents
+  page_icon: ph:bold/receipt
+  empty: No document matches.
+  draft: Draft
+  search: Search
+  action:
+    new: New document
+  filter:
+    direction: Way
+    year: Year
+  column:
+    number: Number
+    type: What
+    party: Party
+    date: Date
+    total: Total
+    due: Left to pay
+    status: Status
+  receive:
+    title: Receive an invoice
+    help: A Factur-X PDF, or a CII or UBL file, becomes a purchase draft — its supplier created when unknown.
+    submit: Receive
+
+fr:
+  page_title: Pièces
+  page_icon: ph:bold/receipt
+  empty: Aucune pièce ne correspond.
+  draft: Brouillon
+  search: Rechercher
+  action:
+    new: Nouvelle pièce
+  filter:
+    direction: Sens
+    year: Année
+  column:
+    number: Numéro
+    type: Nature
+    party: Tiers
+    date: Date
+    total: Total
+    due: Reste à payer
+    status: Statut
+  receive:
+    title: Recevoir une facture
+    help: Un PDF Factur-X, ou un fichier CII ou UBL, devient un brouillon d'achat — son fournisseur créé s'il est inconnu.
+    submit: Recevoir

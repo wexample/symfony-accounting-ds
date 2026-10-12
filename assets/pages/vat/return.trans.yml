@@ -1,0 +1,41 @@
+en:
+  page_title: VAT return
+  page_icon: ph:bold/percent
+  empty: Nothing taxed in this period.
+  total: Total
+  previous_credit: Credit carried forward
+  deposits: Deposits paid
+  to_pay: To pay
+  credit: Credit
+  settle: Book the settlement
+  confirm_settle: The return is booked, moving what is due to the account paid to the State. Go on?
+  form: 'Form %form%'
+  column:
+    code: VAT
+    rate: Rate
+    base: Base
+    due: Collected
+    deductible: Deductible
+    box: Box
+    amount: Amount
+
+fr:
+  page_title: Déclaration de TVA
+  page_icon: ph:bold/percent
+  empty: Rien de taxé sur la période.
+  total: Total
+  previous_credit: Crédit reporté
+  deposits: Acomptes payés
+  to_pay: À payer
+  credit: Crédit
+  settle: Comptabiliser la liquidation
+  confirm_settle: La déclaration est comptabilisée, ce qui est dû passe au compte de l'État. Continuer ?
+  form: 'Formulaire %form%'
+  column:
+    code: TVA
+    rate: Taux
+    base: Base
+    due: Collectée
+    deductible: Déductible
+    box: Case
+    amount: Montant
