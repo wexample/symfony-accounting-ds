@@ -7,7 +7,6 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
 use Symfony\Component\Routing\Requirement\Requirement;
-use Symfony\Component\Security\Http\Attribute\IsGranted;
 use Wexample\SymfonyAccounting\Entity\Party;
 use Wexample\SymfonyAccounting\Enum\LedgerPermission;
 use Wexample\SymfonyAccounting\Exception\AccountingException;
@@ -25,7 +24,6 @@ use Wexample\SymfonyHelpers\Helper\VariableHelper;
  * where its documents are listed too.
  */
 #[Route(path: '/accounting/{ledger}/parties/', name: 'accounting_parties_', requirements: ['ledger' => Requirement::UUID])]
-#[IsGranted('IS_AUTHENTICATED')]
 final class PartiesController extends AbstractAccountingController
 {
     final public const string ROUTE_INDEX = VariableHelper::INDEX;

@@ -6,7 +6,6 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
 use Symfony\Component\Routing\Requirement\Requirement;
-use Symfony\Component\Security\Http\Attribute\IsGranted;
 use Wexample\SymfonyAccounting\Entity\FiscalYear;
 use Wexample\SymfonyAccounting\Entity\Ledger;
 use Wexample\SymfonyAccounting\Enum\LedgerPermission;
@@ -21,7 +20,6 @@ use Wexample\SymfonyHelpers\Helper\VariableHelper;
  * check finds, by how grave —, closed, reopened, and the next one opened.
  */
 #[Route(path: '/accounting/{ledger}/fiscal-years/', name: 'accounting_fiscal_years_', requirements: ['ledger' => Requirement::UUID])]
-#[IsGranted('IS_AUTHENTICATED')]
 final class FiscalYearsController extends AbstractAccountingController
 {
     final public const string ROUTE_INDEX = VariableHelper::INDEX;

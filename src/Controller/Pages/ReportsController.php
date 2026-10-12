@@ -7,7 +7,6 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\ResponseHeaderBag;
 use Symfony\Component\Routing\Attribute\Route;
 use Symfony\Component\Routing\Requirement\Requirement;
-use Symfony\Component\Security\Http\Attribute\IsGranted;
 use Wexample\SymfonyAccounting\Entity\FiscalYear;
 use Wexample\SymfonyAccounting\Entity\Ledger;
 use Wexample\SymfonyAccounting\Exception\AccountingException;
@@ -26,7 +25,6 @@ use Wexample\SymfonyHelpers\Helper\VariableHelper;
  * follow them —, the general ledger of an account, and the exports.
  */
 #[Route(path: '/accounting/{ledger}/reports/', name: 'accounting_reports_', requirements: ['ledger' => Requirement::UUID])]
-#[IsGranted('IS_AUTHENTICATED')]
 final class ReportsController extends AbstractAccountingController
 {
     final public const string ROUTE_INDEX = VariableHelper::INDEX;

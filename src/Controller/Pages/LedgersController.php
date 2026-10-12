@@ -6,7 +6,6 @@ use Symfony\Component\Form\FormInterface;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
 use Symfony\Component\Routing\Requirement\Requirement;
-use Symfony\Component\Security\Http\Attribute\IsGranted;
 use Wexample\SymfonyAccounting\Entity\Ledger;
 use Wexample\SymfonyAccounting\Enum\LedgerPermission;
 use Wexample\SymfonyAccounting\Service\Ledger\LedgerAccessService;
@@ -21,7 +20,6 @@ use Wexample\SymfonyHelpers\Helper\VariableHelper;
  * it and by it, what waits to be done —, and its settings.
  */
 #[Route(path: '/accounting/', name: 'accounting_')]
-#[IsGranted('IS_AUTHENTICATED')]
 final class LedgersController extends AbstractAccountingController
 {
     final public const string ROUTE_INDEX = VariableHelper::INDEX;

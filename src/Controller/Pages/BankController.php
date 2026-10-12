@@ -8,7 +8,6 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
 use Symfony\Component\Routing\Requirement\Requirement;
-use Symfony\Component\Security\Http\Attribute\IsGranted;
 use Wexample\SymfonyAccounting\Entity\Allocation;
 use Wexample\SymfonyAccounting\Entity\BankAccount;
 use Wexample\SymfonyAccounting\Entity\BankTransaction;
@@ -34,7 +33,6 @@ use Wexample\SymfonyHelpers\Helper\VariableHelper;
  * or by hand: a document, an account, the other half of a transfer.
  */
 #[Route(path: '/accounting/{ledger}/bank/', name: 'accounting_bank_', requirements: ['ledger' => Requirement::UUID])]
-#[IsGranted('IS_AUTHENTICATED')]
 final class BankController extends AbstractAccountingController
 {
     final public const string ROUTE_INDEX = VariableHelper::INDEX;

@@ -7,7 +7,6 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
 use Symfony\Component\Routing\Requirement\Requirement;
-use Symfony\Component\Security\Http\Attribute\IsGranted;
 use Wexample\SymfonyAccounting\Class\EntryDraft;
 use Wexample\SymfonyAccounting\Entity\EntryLine;
 use Wexample\SymfonyAccounting\Entity\JournalEntry;
@@ -31,7 +30,6 @@ use Wexample\SymfonyHelpers\Helper\VariableHelper;
  * which of its lines settle each other — is done here too.
  */
 #[Route(path: '/accounting/{ledger}/entries/', name: 'accounting_entries_', requirements: ['ledger' => Requirement::UUID])]
-#[IsGranted('IS_AUTHENTICATED')]
 final class EntriesController extends AbstractAccountingController
 {
     final public const string ROUTE_INDEX = VariableHelper::INDEX;

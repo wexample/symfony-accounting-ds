@@ -7,7 +7,6 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
 use Symfony\Component\Routing\Requirement\Requirement;
-use Symfony\Component\Security\Http\Attribute\IsGranted;
 use Wexample\SymfonyAccounting\Enum\LedgerPermission;
 use Wexample\SymfonyAccounting\Service\Vat\VatPositionService;
 use Wexample\SymfonyAccounting\Service\Vat\VatReturnService;
@@ -20,7 +19,6 @@ use Wexample\SymfonyHelpers\Helper\VariableHelper;
  * lines and the boxes of the country's forms, and its settlement booked.
  */
 #[Route(path: '/accounting/{ledger}/vat/', name: 'accounting_vat_', requirements: ['ledger' => Requirement::UUID])]
-#[IsGranted('IS_AUTHENTICATED')]
 final class VatController extends AbstractAccountingController
 {
     final public const string ROUTE_INDEX = VariableHelper::INDEX;

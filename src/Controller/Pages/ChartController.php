@@ -6,7 +6,6 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
 use Symfony\Component\Routing\Requirement\Requirement;
-use Symfony\Component\Security\Http\Attribute\IsGranted;
 use Wexample\SymfonyAccounting\Entity\Account;
 use Wexample\SymfonyAccounting\Repository\AccountRepository;
 use Wexample\SymfonyAccountingDs\Controller\AbstractAccountingController;
@@ -17,7 +16,6 @@ use Wexample\SymfonyHelpers\Helper\VariableHelper;
  * and the accounts created on first use. Each leads to its general ledger.
  */
 #[Route(path: '/accounting/{ledger}/chart/', name: 'accounting_chart_', requirements: ['ledger' => Requirement::UUID])]
-#[IsGranted('IS_AUTHENTICATED')]
 final class ChartController extends AbstractAccountingController
 {
     final public const string ROUTE_INDEX = VariableHelper::INDEX;
