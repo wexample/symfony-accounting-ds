@@ -9,8 +9,10 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
 use Symfony\Component\Routing\Requirement\Requirement;
 use Wexample\SymfonyAccounting\Entity\Invoice;
+use Wexample\SymfonyAccounting\Entity\InvoiceRelation;
 use Wexample\SymfonyAccounting\Entity\Ledger;
 use Wexample\SymfonyAccounting\Enum\InvoiceDirection;
+use Wexample\SymfonyAccounting\Enum\InvoiceRelationType;
 use Wexample\SymfonyAccounting\Enum\InvoiceStatus;
 use Wexample\SymfonyAccounting\Enum\InvoiceType;
 use Wexample\SymfonyAccounting\Enum\LedgerPermission;
@@ -57,6 +59,10 @@ final class DocumentsController extends AbstractAccountingController
     final public const string ROUTE_DELETE = 'delete';
 
     final public const string ROUTE_PEPPOL = 'peppol';
+
+    final public const string ROUTE_RELATE = 'relate';
+
+    final public const string ROUTE_UNRELATE = 'unrelate';
 
     /**
      * What a reader can start, as type and direction.
@@ -207,7 +213,20 @@ final class DocumentsController extends AbstractAccountingController
             'breakdown' => $invoice->calcPriceBreakdown(),
             'parties' => array_map(static fn ($party) => ['id' => (string) $party->getId(), 'name' => $party->getName()], $parties->findBy(['ledger' => $ledger], ['name' => 'ASC'])),
             'vat_rates' => $jurisdictions->forLedger($ledger)->getVatRates(),
-            'relations' => $invoice->getOutgoingRelations(),
+            // Every document linked, either way: those an action linked —
+            // the quotation billed, the credit notes, the deposits —, and
+            // those linked by hand, which alone can be unlinked.
+            'related' => [
+                ...$invoice->getOutgoingRelations()->map(static fn (InvoiceRelation $relation) => ['relation' => $relation, 'other' => $relation->getTarget(), 'way' => 'to'])->getValues(),
+                ...$invoice->getIncomingRelations()->map(static fn (InvoiceRelation $relation) => ['relation' => $relation, 'other' => $relation->getSource(), 'way' => 'from'])->getValues(),
+            ],
+            // What can be linked to it by hand: the other documents of the
+            // ledger, a rebilled purchase always to a sale.
+            'candidates' => array_values(array_filter(
+                $invoices->findBy(['ledger' => $ledger], ['dateInvoice' => 'DESC'], 300),
+                static fn (Invoice $candidate) => $candidate !== $invoice
+            )),
+            'import_warnings' => $invoice->getMetadata()['import_warnings'] ?? [],
             // Peppol, for an issued sale once the application has an access
             // point: whether the client receives over it, what was sent.
             'peppol' => $sentSale && $peppol->isAvailable() ? [
@@ -314,6 +333,63 @@ final class DocumentsController extends AbstractAccountingController
 
             return null;
         }, 'sent');
+    }
+
+    /**
+     * A document linked by hand to another: a purchase rebilled on a sale —
+     * always from the purchase to the sale —, or a financing, either way.
+     */
+    #[Route(path: '{id}/relate', name: self::ROUTE_RELATE, requirements: ['id' => Requirement::UUID], methods: [Request::METHOD_POST])]
+    public function relate(
+        string $ledger,
+        string $id,
+        Request $request,
+        InvoiceRepository $invoices,
+        InvoiceFactory $factory,
+    ): Response {
+        $ledger = $this->ledger($ledger, LedgerPermission::EDIT);
+        $invoice = $this->document($ledger, $id, $invoices);
+
+        return $this->act($request, function () use ($ledger, $invoice, $request, $invoices, $factory) {
+            $other = $request->request->getString('other');
+
+            if ('' === $other) {
+                throw new AccountingException('Choose the document to link.');
+            }
+
+            $other = $this->document($ledger, $other, $invoices);
+            $type = InvoiceRelationType::tryFrom($request->request->getString('type')) ?? throw new AccountingException('Unknown link type.');
+            $way = InvoiceRelationType::Rebill === $type
+                ? (InvoiceDirection::Purchase === $invoice->getDirection() ? 'to' : 'from')
+                : $request->request->getString('way', 'to');
+
+            'from' === $way ? $factory->relate($other, $invoice, $type) : $factory->relate($invoice, $other, $type);
+
+            return null;
+        }, 'related');
+    }
+
+    #[Route(path: '{id}/unrelate/{relation}', name: self::ROUTE_UNRELATE, requirements: ['id' => Requirement::UUID, 'relation' => Requirement::UUID], methods: [Request::METHOD_POST])]
+    public function unrelate(
+        string $ledger,
+        string $id,
+        string $relation,
+        Request $request,
+        InvoiceRepository $invoices,
+        InvoiceFactory $factory,
+    ): Response {
+        $invoice = $this->document($this->ledger($ledger, LedgerPermission::EDIT), $id, $invoices);
+        $link = $this->entityManager->find(InvoiceRelation::class, $relation);
+
+        if (! $link || ($link->getSource() !== $invoice && $link->getTarget() !== $invoice)) {
+            throw $this->createNotFoundException();
+        }
+
+        return $this->act($request, function () use ($link, $factory) {
+            $factory->unrelate($link);
+
+            return null;
+        }, 'unrelated');
     }
 
     #[Route(path: '{id}/delete', name: self::ROUTE_DELETE, requirements: ['id' => Requirement::UUID], methods: [Request::METHOD_POST])]

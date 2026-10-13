@@ -15,6 +15,35 @@ en:
   label: Bank line
   amount: Amount
   relations: Linked documents
+  no_relation: No document linked.
+  import_warnings: What reading the received invoice noticed
+  unrelate: Unlink
+  relate:
+    choose: A document to link…
+    rebill: Rebilled (purchase → sale)
+    financing: Financing
+    to: This one is the source
+    from: This one is the target
+    submit: Link
+  relation:
+    quotation:
+      to: Billed as
+      from: Billed from the quotation
+    credit:
+      to: Credited by
+      from: Credit note of
+    deposit:
+      to: Deposit
+      from: Deposit of
+    penalty:
+      to: Late fee
+      from: Late fee of
+    rebill:
+      to: Rebilled on
+      from: Rebills the purchase
+    financing:
+      to: Finances
+      from: Financed by
   peppol:
     reachable: The client receives invoices over Peppol.
     unreachable: The client is not found in the Peppol directory.
@@ -56,6 +85,35 @@ fr:
   label: Ligne bancaire
   amount: Montant
   relations: Pièces liées
+  no_relation: Aucune pièce liée.
+  import_warnings: Ce que la lecture de la facture reçue a relevé
+  unrelate: Délier
+  relate:
+    choose: Une pièce à lier…
+    rebill: Refacturation (achat → vente)
+    financing: Financement
+    to: Celle-ci est la source
+    from: Celle-ci est la cible
+    submit: Associer
+  relation:
+    quotation:
+      to: Facturé par
+      from: Facture du devis
+    credit:
+      to: Avoir
+      from: Avoir de
+    deposit:
+      to: Acompte
+      from: Acompte de
+    penalty:
+      to: Pénalité de retard
+      from: Pénalité de
+    rebill:
+      to: Refacturé sur
+      from: Refacture l'achat
+    financing:
+      to: Finance
+      from: Financé par
   peppol:
     reachable: Le client reçoit ses factures par Peppol.
     unreachable: Le client n'est pas dans l'annuaire Peppol.

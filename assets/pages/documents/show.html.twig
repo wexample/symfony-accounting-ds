@@ -22,6 +22,10 @@
 {%- block page_body -%}
     {%- set currency = invoice.currencyCode -%}
     {%- set locale = app.request.locale -%}
+    {#- What reading a received invoice noticed: kept on it, said until it is issued. -#}
+    {%- if import_warnings is not empty -%}
+        {{ message_warning('@page::import_warnings' | trans, import_warnings|join(' ')) }}
+    {%- endif -%}
     {%- if editable -%}
         {{ vue(render_pass, '@WexampleSymfonyAccountingDsBundle/components/invoice-editor', {
             invoice: invoice.id,
@@ -40,6 +44,7 @@
             locale: locale,
             quotation: invoice.type.value == 'quotation',
         }) }}
+        {{ block('related_documents') }}
     {%- else -%}
         <div class="grid accounting-document">
             <div class="accounting-document--pdf">
@@ -113,18 +118,7 @@
                     </section>
                 {%- endif -%}
 
-                {%- if relations is not empty -%}
-                    <section class="block block--card">
-                        <div class="block--title"><span class="block--title-label">{{ '@page::relations' | trans }}</span></div>
-                        <div class="block--body">
-                            <ul>
-                                {%- for relation in relations -%}
-                                    <li><a href="{{ path('accounting_documents_show', { ledger: ledger.id, id: relation.target.id }) }}">{{ relation.target.number ?? ('@page::draft' | trans) }}</a> — {{ (c ~ 'type.' ~ relation.target.type.value) | trans }}</li>
-                                {%- endfor -%}
-                            </ul>
-                        </div>
-                    </section>
-                {%- endif -%}
+{{- block('related_documents') -}}
 
                 {%- if can_edit and invoice.type.value == 'bill' and invoice.calcRemainingAmount() > 0 -%}
                     <section class="block block--card">
@@ -146,5 +140,54 @@
                 {%- endif -%}
             </div>
         </div>
+    {%- endif -%}
+{%- endblock -%}
+
+{#- The documents linked to this one, either way, each opening its page; those
+    linked by hand unlinked here. Then linking another by hand: the list only
+    chooses, the button links. -#}
+{%- block related_documents -%}
+    {%- set c = 'WexampleSymfonyAccountingDsBundle.common.accounting::' -%}
+    {%- import '@WexampleSymfonyAccountingDsBundle/partials/macros.html.twig' as accounting -%}
+    {%- set base = { ledger: ledger.id, id: invoice.id } -%}
+    {%- if related is not empty or can_edit -%}
+        <section class="block block--card">
+            <div class="block--title"><span class="block--title-label">{{ '@page::relations' | trans }}</span></div>
+            <div class="block--body stack--vertical">
+                {%- for link in related -%}
+                    <div class="cluster accounting-related">
+                        <span>{{ ('@page::relation.' ~ link.relation.type.value ~ '.' ~ link.way) | trans }}</span>
+                        <a href="{{ path('accounting_documents_show', { ledger: ledger.id, id: link.other.id }) }}">{{ link.other.number ?? (c ~ 'status.draft') | trans }} — {{ (c ~ 'type.' ~ link.other.type.value) | trans }}</a>
+                        {{ accounting.status(link.other.status.value) }}
+                        {%- if link.relation.amount -%}<strong>{{ link.relation.amount|price(link.other.currencyCode, app.request.locale) }}</strong>{%- endif -%}
+                        {%- if can_edit and link.relation.type.isManual() -%}
+                            {{ accounting.action('ph:bold/link-break', '@page::unrelate' | trans, path('accounting_documents_unrelate', base|merge({ relation: link.relation.id }))) }}
+                        {%- endif -%}
+                    </div>
+                {%- else -%}
+                    <p class="fallback">{{ '@page::no_relation' | trans }}</p>
+                {%- endfor -%}
+                {%- if can_edit and candidates is not empty -%}
+                    <form method="post" action="{{ path('accounting_documents_relate', base) }}" class="cluster">
+                        <input type="hidden" name="_token" value="{{ csrf_token('accounting') }}">
+                        <select class="form--input accounting--grow" name="other" required>
+                            <option value="">{{ '@page::relate.choose' | trans }}</option>
+                            {%- for candidate in candidates -%}
+                                <option value="{{ candidate.id }}">{{ candidate.number ?? (c ~ 'status.draft') | trans }} — {{ (c ~ 'type.' ~ candidate.type.value) | trans }} · {{ (c ~ 'direction.' ~ candidate.direction.value) | trans }}{{ candidate.party ? ' — ' ~ candidate.party.name : '' }}</option>
+                            {%- endfor -%}
+                        </select>
+                        <select class="form--input" name="type">
+                            <option value="rebill">{{ '@page::relate.rebill' | trans }}</option>
+                            <option value="financing">{{ '@page::relate.financing' | trans }}</option>
+                        </select>
+                        <select class="form--input" name="way">
+                            <option value="to">{{ '@page::relate.to' | trans }}</option>
+                            <option value="from">{{ '@page::relate.from' | trans }}</option>
+                        </select>
+                        {{ button('ph:bold/link', '@page::relate.submit' | trans, { type: 'submit' }) }}
+                    </form>
+                {%- endif -%}
+            </div>
+        </section>
     {%- endif -%}
 {%- endblock -%}

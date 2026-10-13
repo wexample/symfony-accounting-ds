@@ -59,6 +59,8 @@ en:
     regularized: Deduction set right.
     received: Invoice received as a purchase draft.
     sent: Sent over Peppol.
+    related: Documents linked.
+    unrelated: Link removed.
 
 fr:
   tab:
@@ -121,3 +123,5 @@ fr:
     regularized: Déduction régularisée.
     received: Facture reçue en brouillon d'achat.
     sent: Envoyée par Peppol.
+    related: Pièces associées.
+    unrelated: Lien retiré.
