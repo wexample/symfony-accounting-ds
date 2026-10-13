@@ -1,6 +1,6 @@
 @use '@wexample/symfony-design-system/css/shapes/block';
 @use '@wexample/symfony-design-system/css/shapes/form';
-@use '@wexample/symfony-design-system/components/data-table/data-table';
+@use '../invoice-item-grid/invoice-item-grid';
 
 .invoice-editor--head {
   display: grid;
@@ -10,52 +10,6 @@
 
 .invoice-editor--note {
   grid-column: 1 / -1;
-}
-
-.invoice-editor--lines {
-  width: 100%;
-
-  td {
-    vertical-align: top;
-  }
-
-  .form--input {
-    width: 100%;
-  }
-}
-
-// A rate is read whole, never cut to its first digits.
-.invoice-editor--new select.form--input {
-  min-width: 6rem;
-}
-
-// The line being typed, set apart from the ones sent.
-.invoice-editor--new td {
-  border-top: var(--border-shell);
-  padding-top: var(--space-2);
-}
-
-.invoice-editor--description {
-  margin-top: var(--space-1);
-  font-size: var(--font-size-3);
-}
-
-.invoice-editor--flag {
-  display: flex;
-  gap: var(--space-1);
-  align-items: center;
-  margin-top: var(--space-1);
-  font-size: var(--font-size-3);
-  color: var(--text-color-muted);
-}
-
-.invoice-editor--row-actions {
-  white-space: nowrap;
-}
-
-// The line taken back into the form: still counted until it is replaced.
-tr.is-replaced {
-  opacity: 0.5;
 }
 
 .invoice-editor--hint {
@@ -80,13 +34,4 @@ tr.is-replaced {
     margin: 0;
     text-align: end;
   }
-}
-
-.invoice-editor--import-scroll {
-  overflow-x: auto;
-}
-
-tr.is-header td {
-  font-weight: bold;
-  opacity: 0.6;
 }

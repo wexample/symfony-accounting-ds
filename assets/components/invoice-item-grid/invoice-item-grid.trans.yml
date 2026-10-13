@@ -1,0 +1,21 @@
+en:
+  new: A new line…
+  column:
+    title: Line
+    description: Description
+    quantity: Quantity
+    unit_price: Unit price, net
+    vat: VAT
+    reverse_charge: Reverse charge
+    net: Net
+
+fr:
+  new: Une nouvelle ligne…
+  column:
+    title: Ligne
+    description: Description
+    quantity: Quantité
+    unit_price: Prix unitaire HT
+    vat: TVA
+    reverse_charge: Autoliquidation
+    net: HT

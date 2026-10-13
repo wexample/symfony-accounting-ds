@@ -1,0 +1,6 @@
+{%- extends '@WexampleSymfonyDesignSystemBundle/components/collection/grid/abstract-entity-grid/abstract-entity-grid.vue.twig' -%}
+
+{%- block vue_config -%}
+    {{ parent() }}
+    {{ trans_js(render_pass, 'WexampleSymfonyAccountingDsBundle.components.invoice-item-grid.invoice-item-grid::*') }}
+{%- endblock -%}
