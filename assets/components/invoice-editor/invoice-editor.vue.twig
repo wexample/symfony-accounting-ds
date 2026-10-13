@@ -26,7 +26,7 @@
                     <input class="form--input" type="date" v-model="head.dateValidUntil" @change="saveHead('dateValidUntil')">
                 </label>
                 <label v-else class="form--label">[[ t('head.term') ]]
-                    <input class="form--input" type="number" min="0" step="1" v-model="head.paymentTermDays" @change="saveHead('paymentTermDays')">
+                    <input class="form--input" type="number" min="0" step="1" v-model="head.paymentTermDays" :placeholder="document ? String(document.paymentTermDaysDefault ?? '') : ''" @change="saveHead('paymentTermDays')">
                 </label>
                 <label class="form--label">[[ t('head.currency') ]]
                     <input class="form--input" maxlength="3" v-model="head.currencyCode" @change="saveHead('currencyCode')">
@@ -56,7 +56,10 @@
                     </thead>
                     <tbody>
                         <tr v-for="item in items" :key="item.id" :class="{ 'is-replaced': replacing === item.id }">
-                            <td><strong>[[ item.title ]]</strong><br v-if="item.description"><small v-if="item.description">[[ item.description ]]</small></td>
+                            <td>
+                                <strong>[[ item.title ]]</strong><br v-if="item.description"><small v-if="item.description">[[ item.description ]]</small>
+                                <small v-if="item.domesticReverseCharge" class="invoice-editor--flag">[[ t('line.reverse_charge_short') ]]</small>
+                            </td>
                             <td class="table--cell--end">[[ quantity(item.quantity) ]]</td>
                             <td class="table--cell--end">[[ money(item.unitPrice) ]]</td>
                             <td class="table--cell--end">[[ rate(item.vatRate) ]]</td>

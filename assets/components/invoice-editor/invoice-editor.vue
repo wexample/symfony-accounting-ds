@@ -13,7 +13,8 @@ const IMPORT_FIELDS = ['title', 'description', 'quantity', 'unitPrice', 'vatRate
 
 // A draft written in place, against the API of the books: its head saved as
 // each field is left, its lines added one by one — the line being typed shows
-// what it comes to before it is sent —, or many at once from a table pasted
+// what it comes to before it is sent; one taken back is changed in place —,
+// or many at once from a table pasted
 // out of a spreadsheet or a file dropped, whose columns the reader names.
 // Everything the server answers replaces what is shown: its totals are the
 // ones that count.
@@ -26,7 +27,8 @@ export default {
     showUrl: { type: String, required: true },
     updateUrl: { type: String, required: true },
     itemCreateUrl: { type: String, required: true },
-    // Holds `__id__`, where the line's id goes.
+    // Both hold `__id__`, where the line's id goes.
+    itemUpdateUrl: { type: String, required: true },
     itemDeleteUrl: { type: String, required: true },
     importUrl: { type: String, required: true },
     readTableUrl: { type: String, required: true },
@@ -45,7 +47,7 @@ export default {
       document: null,
       head: { party: '', title: '', note: '', dateInvoice: '', dateValidUntil: '', paymentTermDays: '', currencyCode: '', exchangeRate: '' },
       line: this.emptyLine(),
-      // The line being changed: sent again, then the old one removed.
+      // The id of the line taken back into the form, changed in place when sent.
       replacing: null,
       busy: false,
       // A table waiting for its columns: { rows, columns: [field|''], header }.
@@ -170,6 +172,8 @@ export default {
         note: document.note ?? '',
         dateInvoice: document.dateInvoice ?? '',
         dateValidUntil: document.dateValidUntil ?? '',
+        // Empty while it follows the party's or the ledger's term, shown as
+        // the field's placeholder (`paymentTermDaysDefault`).
         paymentTermDays: document.paymentTermDays ?? '',
         currencyCode: document.currencyCode ?? this.currency,
         exchangeRate: document.exchangeRate ?? ''
@@ -205,25 +209,21 @@ export default {
         return;
       }
 
-      const sent = this.apply(await this.request(this.itemCreateUrl, {
-        method: 'POST',
-        body: JSON.stringify({
-          invoice: this.invoice,
-          title: this.line.title.trim(),
-          description: this.line.description.trim() || null,
-          unitPrice: Math.round(unit * 100),
-          quantity: Math.round(quantity * SCALE),
-          vatRate: Number(this.line.vatRate),
-          domesticReverseCharge: !!this.line.reverseCharge
-        })
-      }));
+      const fields = {
+        title: this.line.title.trim(),
+        description: this.line.description.trim() || null,
+        unitPrice: Math.round(unit * 100),
+        quantity: Math.round(quantity * SCALE),
+        vatRate: Number(this.line.vatRate),
+        domesticReverseCharge: !!this.line.reverseCharge
+      };
+      const sent = this.apply(await this.request(
+        this.replacing ? this.itemUpdateUrl.replace('__id__', this.replacing) : this.itemCreateUrl,
+        { method: 'POST', body: JSON.stringify(this.replacing ? fields : { invoice: this.invoice, ...fields }) }
+      ));
 
       if (!sent) {
         return;
-      }
-
-      if (this.replacing) {
-        await this.removeLine({ id: this.replacing });
       }
 
       this.replacing = null;
@@ -235,8 +235,7 @@ export default {
       this.apply(await this.request(this.itemDeleteUrl.replace('__id__', item.id), { method: 'DELETE' }));
     },
 
-    // A line taken back into the one being typed; added again, it replaces
-    // the old one.
+    // A line taken back into the one being typed, to be changed where it is.
     editLine(item) {
       this.replacing = item.id;
       this.line = {
@@ -244,7 +243,8 @@ export default {
         description: item.description ?? '',
         quantity: String(item.quantity / SCALE),
         unitPrice: String(item.unitPrice / 100),
-        vatRate: item.vatRate
+        vatRate: item.vatRate,
+        reverseCharge: !!item.domesticReverseCharge
       };
       this.$nextTick(() => this.$refs.title?.focus());
     },

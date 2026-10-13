@@ -29,6 +29,7 @@
             showUrl: path('api_invoice_show', { id: invoice.id }),
             updateUrl: path('api_invoice_update', { id: invoice.id }),
             itemCreateUrl: path('api_invoice_item_create'),
+            itemUpdateUrl: path('api_invoice_item_update', { id: '__id__' }),
             itemDeleteUrl: path('api_invoice_item_delete', { id: '__id__' }),
             importUrl: path('api_invoice_item_import'),
             readTableUrl: path('api_invoice_item_read_table', { ledger: ledger.id }),

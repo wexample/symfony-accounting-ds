@@ -19,12 +19,13 @@ en:
     total: Net
     new: A new line…
     add: Add
-    replace: Replace
+    replace: Save the change
     cancel: Cancel
     edit: Change
     remove: Remove
     paste_hint: Rows copied from a spreadsheet can be pasted into the new line.
     reverse_charge: Reverse charge (construction work, the client accounts for the VAT)
+    reverse_charge_short: Reverse charge
   total:
     net: Net
     vat: VAT
@@ -67,12 +68,13 @@ fr:
     total: HT
     new: Une nouvelle ligne…
     add: Ajouter
-    replace: Remplacer
+    replace: Enregistrer la modification
     cancel: Annuler
     edit: Modifier
     remove: Retirer
     paste_hint: Des lignes copiées d'un tableur peuvent être collées dans la nouvelle ligne.
     reverse_charge: Autoliquidation (travaux de construction, le client déclare la TVA)
+    reverse_charge_short: Autoliquidation
   total:
     net: HT
     vat: TVA
