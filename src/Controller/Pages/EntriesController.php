@@ -18,7 +18,6 @@ use Wexample\SymfonyAccounting\Repository\EntryLineRepository;
 use Wexample\SymfonyAccounting\Repository\FiscalYearRepository;
 use Wexample\SymfonyAccounting\Repository\JournalEntryRepository;
 use Wexample\SymfonyAccounting\Repository\JournalRepository;
-use Wexample\SymfonyAccounting\Service\Ledger\ChartService;
 use Wexample\SymfonyAccounting\Service\Ledger\LetteringService;
 use Wexample\SymfonyAccounting\Service\Ledger\PostingService;
 use Wexample\SymfonyAccountingDs\Controller\AbstractAccountingController;

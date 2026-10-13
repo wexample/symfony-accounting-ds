@@ -2,8 +2,8 @@
 
 namespace Wexample\SymfonyAccountingDs\Traits;
 
-use Wexample\SymfonyHelpers\Traits\BundleClassTrait;
 use Wexample\SymfonyAccountingDs\WexampleSymfonyAccountingDsBundle;
+use Wexample\SymfonyHelpers\Traits\BundleClassTrait;
 
 trait SymfonyAccountingDsBundleClassTrait
 {

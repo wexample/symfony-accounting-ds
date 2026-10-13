@@ -10,8 +10,8 @@ use Wexample\SymfonyAccounting\Entity\Ledger;
 use Wexample\SymfonyAccounting\Enum\LedgerPermission;
 use Wexample\SymfonyAccounting\Service\Ledger\LedgerAccessService;
 use Wexample\SymfonyAccountingDs\Controller\AbstractAccountingController;
-use Wexample\SymfonyAccountingDs\Service\LedgerOverviewService;
 use Wexample\SymfonyAccountingDs\Service\FormProcessor\LedgerSettingsFormProcessor;
+use Wexample\SymfonyAccountingDs\Service\LedgerOverviewService;
 use Wexample\SymfonyForms\Attribute\EntityFormProcessor;
 use Wexample\SymfonyHelpers\Helper\VariableHelper;
 
