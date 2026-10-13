@@ -24,6 +24,11 @@
   }
 }
 
+// A rate is read whole, never cut to its first digits.
+.invoice-editor--new select.form--input {
+  min-width: 6rem;
+}
+
 // The line being typed, set apart from the ones sent.
 .invoice-editor--new td {
   border-top: var(--border-shell);

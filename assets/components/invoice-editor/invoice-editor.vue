@@ -150,11 +150,18 @@ export default {
       }
     },
 
-    // What the server holds becomes what is shown.
-    apply(document) {
-      if (!document) {
+    // What the server holds becomes what is shown. The API answers the
+    // document under `entity`, its lines and party as ids found again in
+    // `relationships`.
+    apply(data) {
+      if (!data) {
         return false;
       }
+
+      const relationships = data.relationships ?? {};
+      const resolve = (reference) => (typeof reference === 'string' && relationships[reference] ? relationships[reference].entity : reference);
+      const entity = data.entity ?? data;
+      const document = { ...entity, items: (entity.items ?? []).map(resolve), party: resolve(entity.party) };
 
       this.document = document;
       this.head = {

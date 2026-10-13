@@ -35,7 +35,8 @@ final class ReportsController extends AbstractAccountingController
 
     /**
      * symfony-accounting-be's writer of the NBB's XBRL, named rather than
-     * imported: this package does not require the Belgian one.
+     * imported: this package does not require the Belgian one. Missing, the
+     * argument asking for it is given null.
      */
     private const string NBB_WRITER = 'Wexample\\SymfonyAccountingBe\\Service\\Nbb\\NbbXbrlWriter';
 
@@ -47,7 +48,7 @@ final class ReportsController extends AbstractAccountingController
         TrialBalanceService $trialBalances,
         JurisdictionRegistry $jurisdictions,
         LedgerExportService $exports,
-        #[Autowire(service: '?'.self::NBB_WRITER)]
+        #[Autowire(service: self::NBB_WRITER)]
         ?object $nbbWriter = null,
     ): Response {
         $ledger = $this->ledger($ledger);
@@ -145,7 +146,7 @@ final class ReportsController extends AbstractAccountingController
         string $ledger,
         Request $request,
         FiscalYearRepository $fiscalYears,
-        #[Autowire(service: '?'.self::NBB_WRITER)]
+        #[Autowire(service: self::NBB_WRITER)]
         ?object $nbbWriter = null,
     ): Response {
         $ledger = $this->ledger($ledger);
