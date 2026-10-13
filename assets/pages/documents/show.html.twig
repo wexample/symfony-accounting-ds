@@ -30,8 +30,6 @@
         {{ vue(render_pass, '@WexampleSymfonyAccountingDsBundle/components/invoice-editor', {
             invoice: invoice.id,
             ledger: ledger.id,
-            showUrl: path('api_invoice_show', { id: invoice.id }),
-            updateUrl: path('api_invoice_update', { id: invoice.id }),
             pdfUrl: path('api_invoice_pdf', { id: invoice.id }),
             parties: parties,
             vatRates: vat_rates,

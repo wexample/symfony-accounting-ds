@@ -1,16 +1,19 @@
 <script>
-import { unwrapApiEnvelope } from '@wexample/js-api-entity/Common/ApiEnvelope';
+import AbstractEntityManipulatorVueMixin from '@wexample/symfony-design-system/js/Vue/AbstractEntityManipulatorVueMixin';
 import { numberFormatMoney } from '@wexample/symfony-design-system/js/Helper/NumberHelper';
+import Invoice from '@wexample/symfony-accounting/Entity/Invoice';
 import InvoiceItemGrid from '../invoice-item-grid/invoice-item-grid.vue';
 
 const T = 'WexampleSymfonyAccountingDsBundle.components.invoice-editor.invoice-editor::';
 
-// A draft written in place, against the API of the books: its head saved as
-// each field is left, its lines in the entity grid under it. What the server
-// answers replaces what is shown — its totals, read again whenever a line
-// changes, are the ones that count.
+// A draft written in place, through the repository of its entity: its head
+// saved as each field is left, its lines in the entity grid under it. What the
+// server answers replaces what is shown — its totals, read again whenever a
+// line changes, are the ones that count.
 export default {
   template: '#vue-template-wexample-symfony-accounting-ds-bundle-components-invoice-editor-invoice-editor',
+
+  mixins: [AbstractEntityManipulatorVueMixin],
 
   components: {
     InvoiceItemGrid
@@ -19,8 +22,6 @@ export default {
   props: {
     invoice: { type: String, required: true },
     ledger: { type: String, required: true },
-    showUrl: { type: String, required: true },
-    updateUrl: { type: String, required: true },
     pdfUrl: { type: String, required: true },
     // [{ id, name }]
     parties: { type: Array, default: () => [] },
@@ -71,15 +72,20 @@ export default {
       return !!this.head.currencyCode && this.head.currencyCode !== this.currency;
     },
 
-    async request(url, options = {}) {
+    getEntityClass() {
+      return Invoice;
+    },
+
+    // A request to the books, its failure told as a toast; null then.
+    async request(action) {
       this.busy = true;
 
       try {
-        const response = await fetch(url, { headers: { Accept: 'application/json', ...(options.body ? { 'Content-Type': 'application/json' } : {}) }, ...options });
-
-        return unwrapApiEnvelope(await response.json());
+        return await action();
       } catch (error) {
-        this.app.getServiceOrFail('toast').show({ type: 'error', message: error.message });
+        const body = await error?.response?.clone().json().catch(() => null);
+
+        this.app.getServiceOrFail('toast').show({ type: 'error', message: body?.message || error.message });
 
         return null;
       } finally {
@@ -87,17 +93,15 @@ export default {
       }
     },
 
-    // What the server holds becomes what is shown: the document under
-    // `entity`, what is computed of it under `metadata`.
-    apply(data) {
-      if (!data) {
+    // What the server holds becomes what is shown: the document's fields, and
+    // what is computed of it in its metadata.
+    apply(document) {
+      if (!document) {
         return false;
       }
 
-      const document = data.entity ?? data;
-
       this.document = document;
-      this.computed = data.metadata ?? {};
+      this.computed = document.metadata ?? {};
       this.head = {
         party: document.party ?? '',
         title: document.title ?? '',
@@ -115,7 +119,7 @@ export default {
     },
 
     async load() {
-      this.apply(await this.request(this.showUrl));
+      this.apply(await this.request(() => this.getEntityRepository().fetch({ identifier: this.invoice })));
     },
 
     // One field of the head, saved as it is left: only it is sent.
@@ -130,7 +134,11 @@ export default {
         value = value === '' ? null : Number(value);
       }
 
-      this.apply(await this.request(this.updateUrl, { method: 'POST', body: JSON.stringify({ [field]: value }) }));
+      this.apply(await this.request(() => this.getEntityRepository().postEntityById({
+        endpoint: 'update',
+        id: this.invoice,
+        entity: new Invoice({ [field]: value })
+      })));
     }
   }
 };
