@@ -82,8 +82,8 @@ export default {
       const t = (key) => this.trans(`${T}${key}`);
 
       return [
-        { key: 'title', label: t('column.title'), editor: 'text', required: true, placeholder: t('new') },
-        { key: 'description', label: t('column.description'), editor: 'text' },
+        { key: 'title', label: t('column.title'), editor: 'text', required: true, placeholder: t('new'), width: 'l' },
+        { key: 'description', label: t('column.description'), editor: 'text', width: 'l' },
         { key: 'quantity', label: t('column.quantity'), editor: 'number', scale: SCALE, default: SCALE, width: 's' },
         { key: 'priceRaw', label: t('column.unit_price'), editor: 'money', required: true, width: 'm' },
         {
