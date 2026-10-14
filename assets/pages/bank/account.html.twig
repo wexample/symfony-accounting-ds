@@ -3,8 +3,29 @@
 {%- set page_title = account.label -%}
 
 {#- An account's lines, the latest first, by year, or only those left to
-    explain. -#}
+    explain; for whoever administers the books, what names it. -#}
 {%- block page_body -%}
+    {%- if can_administer -%}
+        <section class="block block--card">
+            <div class="block--title">
+                <span class="block--title-leading">{{ icon('ph:bold/pencil-simple') }}</span>
+                <span class="block--title-label">{{ '@page::edit.title' | trans }}</span>
+            </div>
+            <div class="block--body">
+                <form method="post" action="{{ path('accounting_bank_account_update', { ledger: ledger.id, id: account.id }) }}" class="cluster">
+                    <input type="hidden" name="_token" value="{{ csrf_token('accounting') }}">
+                    <input class="form--input" name="label" required value="{{ account.label }}" placeholder="{{ '@page::edit.label' | trans }}" aria-label="{{ '@page::edit.label' | trans }}">
+                    <input class="form--input" name="iban" value="{{ account.iban }}" placeholder="IBAN" aria-label="IBAN">
+                    <input class="form--input" name="bic" value="{{ account.bic }}" placeholder="BIC" aria-label="BIC">
+                    <input class="form--input" name="holder" value="{{ account.holder }}" placeholder="{{ '@page::edit.holder' | trans }}" aria-label="{{ '@page::edit.holder' | trans }}">
+                    <input class="form--input" name="bankName" value="{{ account.bankName }}" placeholder="{{ '@page::edit.bank_name' | trans }}" aria-label="{{ '@page::edit.bank_name' | trans }}">
+                    <label class="cluster"><input type="checkbox" name="active" value="1"{{ account.active ? ' checked' }}> {{ '@page::edit.active' | trans }}</label>
+                    <label class="cluster"><input type="checkbox" name="default" value="1"{{ ledger.defaultBankAccount and ledger.defaultBankAccount.id == account.id ? ' checked' }}> {{ '@page::edit.default' | trans }}</label>
+                    {{ button('ph:bold/floppy-disk', '@page::edit.submit' | trans, { type: 'submit', class: 'button--flat' }) }}
+                </form>
+            </div>
+        </section>
+    {%- endif -%}
     <section class="block block--card">
         <div class="block--body">
             {%- set lines_table -%}{%- include '@WexampleSymfonyAccountingDsBundle/partials/bank_lines.html.twig' with { lines: lines, empty: '@page::empty' | trans } -%}{%- endset -%}

@@ -3,9 +3,25 @@ en:
   page_icon: ph:bold/bank
   empty: No line here.
   only_unsettled: Only those to explain
+  edit:
+    title: Account
+    label: Label
+    holder: Holder
+    bank_name: Bank
+    active: In use
+    default: Shown on documents
+    submit: Save
 
 fr:
   page_title: Compte bancaire
   page_icon: ph:bold/bank
   empty: Aucune ligne ici.
   only_unsettled: Seulement celles à expliquer
+  edit:
+    title: Compte
+    label: Libellé
+    holder: Titulaire
+    bank_name: Banque
+    active: En service
+    default: Affiché sur les pièces
+    submit: Enregistrer

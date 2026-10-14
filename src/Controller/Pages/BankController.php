@@ -127,7 +127,49 @@ final class BankController extends AbstractAccountingController
             'account' => $account,
             'lines' => $lines,
             'years' => range((int) date('Y'), (int) date('Y') - 4),
+            'can_administer' => $this->isGranted(LedgerPermission::ADMINISTER->value, $ledger),
         ]);
+    }
+
+    /**
+     * What names the account — its label, its bank's details —, whether it is
+     * still in use, and whether it is the one the books' documents show.
+     */
+    #[Route(path: 'account/{id}/update', name: 'account_update', requirements: ['id' => Requirement::UUID], methods: [Request::METHOD_POST])]
+    public function updateAccount(
+        string $ledger,
+        string $id,
+        Request $request,
+        BankAccountRepository $bankAccounts,
+    ): Response {
+        $ledger = $this->ledger($ledger, LedgerPermission::ADMINISTER);
+        $account = $this->owned($ledger, $bankAccounts->find($id));
+
+        return $this->act($request, function () use ($ledger, $account, $request) {
+            $label = trim($request->request->getString('label'));
+
+            if ('' === $label) {
+                throw new AccountingException('A bank account needs a label.');
+            }
+
+            $text = static fn (string $key) => trim($request->request->getString($key)) ?: null;
+
+            $account
+                ->setLabel($label)
+                ->setIban(preg_replace('/\s+/', '', (string) $text('iban')) ?: null)
+                ->setBic($text('bic'))
+                ->setHolder($text('holder'))
+                ->setBankName($text('bankName'))
+                ->setActive($request->request->getBoolean('active'));
+
+            if ($request->request->getBoolean('default')) {
+                $ledger->setDefaultBankAccount($account);
+            } elseif ($ledger->getDefaultBankAccount() === $account) {
+                $ledger->setDefaultBankAccount(null);
+            }
+
+            return null;
+        }, 'saved');
     }
 
     /**
