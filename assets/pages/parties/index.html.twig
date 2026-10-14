@@ -38,7 +38,7 @@
                 name: party.name,
                 roles: (party.customer ? marker('cat-mint', '@page::role.customer' | trans, { compact: true }) : '') ~ ' ' ~ (party.supplier ? marker('cat-sunflower', '@page::role.supplier' | trans, { compact: true }) : ''),
                 codes: [party.customerCode, party.supplierCode]|filter(v => v)|join(' · '),
-                contact: [party.email, party.city]|filter(v => v)|join(' · '),
+                contact: [party.email, party.address ? party.address.city : null]|filter(v => v)|join(' · '),
             }), {
                 row_link: { key: 'href' },
                 show_count: true,
