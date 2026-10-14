@@ -10,13 +10,12 @@ use Wexample\SymfonyAccounting\Entity\Ledger;
 use Wexample\SymfonyAccounting\Enum\VatPeriodicity;
 use Wexample\SymfonyForms\Form\AbstractForm;
 use Wexample\SymfonyForms\Form\Type\DateInputType;
-use Wexample\SymfonyForms\Form\Type\EmailInputType;
 use Wexample\SymfonyForms\Form\Type\NumberInputType;
 use Wexample\SymfonyForms\Form\Type\SelectInputType;
 use Wexample\SymfonyForms\Form\Type\SwitchInputType;
 use Wexample\SymfonyForms\Form\Type\TextareaInputType;
 use Wexample\SymfonyForms\Form\Type\TextInputType;
-use Wexample\SymfonyForms\Form\Type\UrlInputType;
+use Wexample\SymfonyOrganizationDs\Form\Type\LegalIdentityType;
 
 /**
  * Who the ledger is — the name, the identifiers and the address printed on
@@ -47,16 +46,8 @@ class LedgerSettingsForm extends AbstractForm
         $optional = [self::FIELD_OPTION_NAME_LABEL => true, self::FIELD_OPTION_NAME_REQUIRED => false];
 
         $builder
-            ->add('name', TextInputType::class, [self::FIELD_OPTION_NAME_LABEL => true])
-            ->add('legalForm', TextInputType::class, $optional)
-            ->add('legalIdentifier', TextInputType::class, $optional)
-            ->add('vatNumber', TextInputType::class, $optional)
-            ->add('email', EmailInputType::class, $optional)
-            ->add('phone', TextInputType::class, $optional)
-            ->add('website', UrlInputType::class, $optional)
-            ->add('postalAddress', TextareaInputType::class, $optional)
-            ->add('postCode', TextInputType::class, $optional)
-            ->add('city', TextInputType::class, $optional)
+            // The country is the jurisdiction of the books: not changed here.
+            ->add('organization', LegalIdentityType::class, ['with_legal_form' => true, 'with_website' => true, 'with_country' => false])
             ->add('vatSubject', SwitchInputType::class, $optional)
             ->add('vatPeriodicity', SelectInputType::class, [
                 self::FIELD_OPTION_NAME_LABEL => true,

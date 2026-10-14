@@ -4,16 +4,7 @@
 {% block form_body %}
     <fieldset class="stack--vertical">
         <legend>{{ '@form::group.identity' | trans }}</legend>
-        {{ form_row(form.name) }}
-        {{ form_row(form.legalForm) }}
-        {{ form_row(form.legalIdentifier) }}
-        {{ form_row(form.vatNumber) }}
-        {{ form_row(form.email) }}
-        {{ form_row(form.phone) }}
-        {{ form_row(form.website) }}
-        {{ form_row(form.postalAddress) }}
-        {{ form_row(form.postCode) }}
-        {{ form_row(form.city) }}
+        {{ form_widget(form.organization) }}
     </fieldset>
     <fieldset class="stack--vertical">
         <legend>{{ '@form::group.books' | trans }}</legend>

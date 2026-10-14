@@ -43,16 +43,18 @@ final class PartiesController extends AbstractAccountingController
         $search = trim($request->query->getString('search'));
 
         $query = $parties->createQueryBuilder('party')
+            ->join('party.organization', 'organization')
+            ->addSelect('organization')
             ->andWhere('party.ledger = :ledger')
             ->setParameter('ledger', $ledger->getId(), 'uuid')
-            ->orderBy('party.name', 'ASC');
+            ->orderBy('organization.name', 'ASC');
 
         if (in_array($role, ['customer', 'supplier'], true)) {
             $query->andWhere("party.$role = true");
         }
 
         if ('' !== $search) {
-            $query->andWhere('LOWER(party.name) LIKE :search OR LOWER(party.customerCode) LIKE :search OR LOWER(party.supplierCode) LIKE :search')
+            $query->andWhere('LOWER(organization.name) LIKE :search OR LOWER(party.customerCode) LIKE :search OR LOWER(party.supplierCode) LIKE :search')
                 ->setParameter('search', '%'.mb_strtolower($search).'%');
         }
 

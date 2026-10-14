@@ -210,7 +210,7 @@ final class DocumentsController extends AbstractAccountingController
             'editable' => $invoice->isEditable() && $this->isGranted(LedgerPermission::EDIT->value, $ledger),
             'can_edit' => $this->isGranted(LedgerPermission::EDIT->value, $ledger),
             'breakdown' => $invoice->calcPriceBreakdown(),
-            'parties' => array_map(static fn ($party) => ['id' => (string) $party->getId(), 'name' => $party->getName()], $parties->findBy(['ledger' => $ledger], ['name' => 'ASC'])),
+            'parties' => array_map(static fn ($party) => ['id' => (string) $party->getId(), 'name' => $party->getName()], $parties->findByLedgerSortedByName($ledger)),
             'vat_rates' => $jurisdictions->forLedger($ledger)->getVatRates(),
             // Every document linked, either way: those an action linked —
             // the quotation billed, the credit notes, the deposits —, and

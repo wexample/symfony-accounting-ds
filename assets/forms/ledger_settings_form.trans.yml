@@ -19,26 +19,6 @@ en:
       label: Filing date of the latest deed
     nbbLegalForm:
       label: Legal form, NBB code (only when not SRL, SA or SC)
-    name:
-      label: Name
-    legalForm:
-      label: Legal form
-    legalIdentifier:
-      label: Registration number
-    vatNumber:
-      label: VAT number
-    email:
-      label: Email
-    phone:
-      label: Phone
-    website:
-      label: Website
-    postalAddress:
-      label: Address
-    postCode:
-      label: Post code
-    city:
-      label: City
     vatSubject:
       label: Subject to VAT
     vatPeriodicity:
@@ -86,26 +66,6 @@ fr:
       label: Date de dépôt du dernier acte
     nbbLegalForm:
       label: Forme juridique, code BNB (seulement si autre que SRL, SA ou SC)
-    name:
-      label: Nom
-    legalForm:
-      label: Forme juridique
-    legalIdentifier:
-      label: Numéro d'immatriculation
-    vatNumber:
-      label: Numéro de TVA
-    email:
-      label: E-mail
-    phone:
-      label: Téléphone
-    website:
-      label: Site web
-    postalAddress:
-      label: Adresse
-    postCode:
-      label: Code postal
-    city:
-      label: Ville
     vatSubject:
       label: Assujetti à la TVA
     vatPeriodicity:

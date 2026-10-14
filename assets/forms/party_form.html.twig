@@ -3,19 +3,11 @@
 {% block form_body %}
     <fieldset class="stack--vertical">
         <legend>{{ '@form::group.who' | trans }}</legend>
-        {{ form_row(form.name) }}
+        {{ form_widget(form.organization) }}
         <div class="cluster">
             {{ form_row(form.customer) }}
             {{ form_row(form.supplier) }}
-            {{ form_row(form.individual) }}
         </div>
-        {{ form_row(form.legalIdentifier) }}
-        {{ form_row(form.vatNumber) }}
-        {{ form_row(form.email) }}
-        {{ form_row(form.phone) }}
-        {{ form_row(form.postalAddress) }}
-        {{ form_row(form.postCode) }}
-        {{ form_row(form.city) }}
     </fieldset>
     <fieldset class="stack--vertical">
         <legend>{{ '@form::group.payment' | trans }}</legend>
