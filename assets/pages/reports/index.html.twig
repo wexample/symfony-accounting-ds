@@ -49,29 +49,25 @@
                 </section>
             {%- endif -%}
         </div>
-        <section class="block block--card">
-            <div class="block--title"><span class="block--title-label">{{ '@page::trial_balance' | trans }}</span></div>
-            <div class="block--body">
-                {{ data_table([
-                    { key: 'number', label: '@page::column.number' | trans },
-                    { key: 'label', label: '@page::column.label' | trans },
-                    { key: 'debit', label: '@page::column.debit' | trans, align: 'end' },
-                    { key: 'credit', label: '@page::column.credit' | trans, align: 'end' },
-                    { key: 'balance', label: '@page::column.balance' | trans, align: 'end' },
-                ], trial_balance.rows|map(row => {
-                    href: path('accounting_reports_general_ledger', params|merge({ account: row.number })),
-                    number: row.number,
-                    label: row.label,
-                    debit: row.debit|price(currency, locale),
-                    credit: row.credit|price(currency, locale),
-                    balance: row.balance|price(currency, locale),
-                }), {
-                    row_link: { key: 'href' },
-                    empty_label: '@page::empty' | trans,
-                    totals: { label: '@page::total' | trans, debit: trial_balance.totalDebit|price(currency, locale), credit: trial_balance.totalCredit|price(currency, locale) },
-                }) }}
-            </div>
-        </section>
+        <h2>{{ '@page::trial_balance' | trans }}</h2>
+        {{ data_table([
+            { key: 'number', label: '@page::column.number' | trans },
+            { key: 'label', label: '@page::column.label' | trans },
+            { key: 'debit', label: '@page::column.debit' | trans, align: 'end' },
+            { key: 'credit', label: '@page::column.credit' | trans, align: 'end' },
+            { key: 'balance', label: '@page::column.balance' | trans, align: 'end' },
+        ], trial_balance.rows|map(row => {
+            href: path('accounting_reports_general_ledger', params|merge({ account: row.number })),
+            number: row.number,
+            label: row.label,
+            debit: row.debit|price(currency, locale),
+            credit: row.credit|price(currency, locale),
+            balance: row.balance|price(currency, locale),
+        }), {
+            row_link: { key: 'href' },
+            empty_label: '@page::empty' | trans,
+            totals: { label: '@page::total' | trans, debit: trial_balance.totalDebit|price(currency, locale), credit: trial_balance.totalCredit|price(currency, locale) },
+        }) }}
     {%- else -%}
         <p class="fallback">{{ '@page::no_fiscal_year' | trans }}</p>
     {%- endif -%}

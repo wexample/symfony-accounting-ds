@@ -13,45 +13,43 @@
 {%- block page_body -%}
     {%- set currency = ledger.currencyCode -%}
     {%- set locale = app.request.locale -%}
-    <section class="block block--card">
-        <div class="block--body stack--vertical">
-            <form method="get" class="cluster accounting--search">
-                {%- for key, value in filters|filter((v, k) => k != 'search' and v) -%}
-                    <input type="hidden" name="{{ key }}" value="{{ value }}">
-                {%- endfor -%}
-                <input type="search" class="form--input" name="search" value="{{ filters.search }}" placeholder="{{ '@page::search' | trans }}">
-                {{ button('ph:bold/magnifying-glass', '@page::search' | trans, { type: 'submit', class: 'button--flat' }) }}
-            </form>
-            {{ data_table([
-                { key: 'number', label: '@page::column.number' | trans, cell: 'html' },
-                { key: 'type', label: '@page::column.type' | trans },
-                { key: 'party', label: '@page::column.party' | trans },
-                { key: 'date', label: '@page::column.date' | trans, cell: 'html' },
-                { key: 'total', label: '@page::column.total' | trans, align: 'end' },
-                { key: 'due', label: '@page::column.due' | trans, align: 'end' },
-                { key: 'status', label: '@page::column.status' | trans, cell: 'html' },
-            ], documents|map(row => {
-                href: row.href,
-                number: '<strong>' ~ (row.invoice.number ?? ('@page::draft' | trans))|e ~ '</strong>' ~ (row.invoice.title ? '<br><small>' ~ row.invoice.title|e ~ '</small>' : ''),
-                type: (c ~ 'type.' ~ row.invoice.type.value) | trans ~ ' · ' ~ (c ~ 'direction.' ~ row.invoice.direction.value) | trans,
-                party: row.invoice.party ? row.invoice.party.name : '',
-                date: date_display(row.invoice.dateInvoice, 'date_short'),
-                total: row.total|price(currency, locale),
-                due: row.due is null ? '' : row.due|price(currency, locale),
-                status: accounting.status(row.invoice.status.value, row.late),
-            }), {
-                row_link: { key: 'href' },
-                show_count: true,
-                empty_label: '@page::empty' | trans,
-                filters: [
-                    { key: 'type', label: '@page::column.type' | trans, options: ['bill', 'credit_note', 'quotation', 'penalty']|map(v => { value: v, label: (c ~ 'type.' ~ v) | trans }) },
-                    { key: 'direction', label: '@page::filter.direction' | trans, options: ['sale', 'purchase']|map(v => { value: v, label: (c ~ 'direction.' ~ v) | trans }) },
-                    { key: 'status', label: '@page::column.status' | trans, options: ['draft', 'emitted', 'partially_paid', 'paid', 'canceled', 'accepted', 'refused']|map(v => { value: v, label: (c ~ 'status.' ~ v) | trans }) },
-                    { key: 'year', label: '@page::filter.year' | trans, options: years|map(v => { value: v, label: v }) },
-                ],
-            }) }}
-        </div>
-    </section>
+    <div class="stack--vertical">
+        <form method="get" class="cluster accounting--search">
+            {%- for key, value in filters|filter((v, k) => k != 'search' and v) -%}
+                <input type="hidden" name="{{ key }}" value="{{ value }}">
+            {%- endfor -%}
+            <input type="search" class="form--input" name="search" value="{{ filters.search }}" placeholder="{{ '@page::search' | trans }}">
+            {{ button('ph:bold/magnifying-glass', '@page::search' | trans, { type: 'submit', class: 'button--flat' }) }}
+        </form>
+        {{ data_table([
+            { key: 'number', label: '@page::column.number' | trans, cell: 'html' },
+            { key: 'type', label: '@page::column.type' | trans },
+            { key: 'party', label: '@page::column.party' | trans },
+            { key: 'date', label: '@page::column.date' | trans, cell: 'html' },
+            { key: 'total', label: '@page::column.total' | trans, align: 'end' },
+            { key: 'due', label: '@page::column.due' | trans, align: 'end' },
+            { key: 'status', label: '@page::column.status' | trans, cell: 'html' },
+        ], documents|map(row => {
+            href: row.href,
+            number: '<strong>' ~ (row.invoice.number ?? ('@page::draft' | trans))|e ~ '</strong>' ~ (row.invoice.title ? '<br><small>' ~ row.invoice.title|e ~ '</small>' : ''),
+            type: (c ~ 'type.' ~ row.invoice.type.value) | trans ~ ' · ' ~ (c ~ 'direction.' ~ row.invoice.direction.value) | trans,
+            party: row.invoice.party ? row.invoice.party.name : '',
+            date: date_display(row.invoice.dateInvoice, 'date_short'),
+            total: row.total|price(currency, locale),
+            due: row.due is null ? '' : row.due|price(currency, locale),
+            status: accounting.status(row.invoice.status.value, row.late),
+        }), {
+            row_link: { key: 'href' },
+            show_count: true,
+            empty_label: '@page::empty' | trans,
+            filters: [
+                { key: 'type', label: '@page::column.type' | trans, options: ['bill', 'credit_note', 'quotation', 'penalty']|map(v => { value: v, label: (c ~ 'type.' ~ v) | trans }) },
+                { key: 'direction', label: '@page::filter.direction' | trans, options: ['sale', 'purchase']|map(v => { value: v, label: (c ~ 'direction.' ~ v) | trans }) },
+                { key: 'status', label: '@page::column.status' | trans, options: ['draft', 'emitted', 'partially_paid', 'paid', 'canceled', 'accepted', 'refused']|map(v => { value: v, label: (c ~ 'status.' ~ v) | trans }) },
+                { key: 'year', label: '@page::filter.year' | trans, options: years|map(v => { value: v, label: v }) },
+            ],
+        }) }}
+    </div>
 
     <section class="block block--card">
         <div class="block--title">

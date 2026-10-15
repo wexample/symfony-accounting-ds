@@ -3,32 +3,30 @@
 {#- The chart by number, filtered by class or by a number's start or a word;
     each account opens its general ledger. -#}
 {%- block page_body -%}
-    <section class="block block--card">
-        <div class="block--body stack--vertical">
-            <form method="get" class="cluster">
-                {%- if app.request.query.get('class') -%}<input type="hidden" name="class" value="{{ app.request.query.get('class') }}">{%- endif -%}
-                <input type="search" class="form--input accounting--grow" name="search" value="{{ search }}" placeholder="{{ '@page::search' | trans }}">
-                {{ button('ph:bold/magnifying-glass', '@page::search_submit' | trans, { type: 'submit', class: 'button--flat' }) }}
-            </form>
-            {{ data_table([
-                { key: 'number', label: '@page::column.number' | trans },
-                { key: 'label', label: '@page::column.label' | trans },
-                { key: 'nature', label: '@page::column.nature' | trans },
-                { key: 'flags', label: '', cell: 'html' },
-            ], accounts|map(account => {
-                href: path('accounting_reports_general_ledger', { ledger: ledger.id, account: account.number }),
-                number: account.number,
-                label: account.label,
-                nature: ('@page::nature.' ~ account.nature.value) | trans,
-                flags: (account.lettrable ? marker('neutral', '@page::lettrable' | trans, { compact: true }) : '') ~ (account.active ? '' : ' ' ~ marker('neutral', '@page::inactive' | trans, { compact: true })),
-            }), {
-                row_link: { key: 'href' },
-                show_count: true,
-                empty_label: '@page::empty' | trans,
-                filters: [
-                    { key: 'class', label: '@page::column.class' | trans, options: range(1, 9)|map(v => { value: v, label: ('@page::class' | trans({ '%class%': v })) }) },
-                ],
-            }) }}
-        </div>
-    </section>
+    <div class="stack--vertical">
+        <form method="get" class="cluster">
+            {%- if app.request.query.get('class') -%}<input type="hidden" name="class" value="{{ app.request.query.get('class') }}">{%- endif -%}
+            <input type="search" class="form--input accounting--grow" name="search" value="{{ search }}" placeholder="{{ '@page::search' | trans }}">
+            {{ button('ph:bold/magnifying-glass', '@page::search_submit' | trans, { type: 'submit', class: 'button--flat' }) }}
+        </form>
+        {{ data_table([
+            { key: 'number', label: '@page::column.number' | trans },
+            { key: 'label', label: '@page::column.label' | trans },
+            { key: 'nature', label: '@page::column.nature' | trans },
+            { key: 'flags', label: '', cell: 'html' },
+        ], accounts|map(account => {
+            href: path('accounting_reports_general_ledger', { ledger: ledger.id, account: account.number }),
+            number: account.number,
+            label: account.label,
+            nature: ('@page::nature.' ~ account.nature.value) | trans,
+            flags: (account.lettrable ? marker('neutral', '@page::lettrable' | trans, { compact: true }) : '') ~ (account.active ? '' : ' ' ~ marker('neutral', '@page::inactive' | trans, { compact: true })),
+        }), {
+            row_link: { key: 'href' },
+            show_count: true,
+            empty_label: '@page::empty' | trans,
+            filters: [
+                { key: 'class', label: '@page::column.class' | trans, options: range(1, 9)|map(v => { value: v, label: ('@page::class' | trans({ '%class%': v })) }) },
+            ],
+        }) }}
+    </div>
 {%- endblock -%}

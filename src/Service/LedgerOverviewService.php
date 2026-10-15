@@ -36,7 +36,7 @@ class LedgerOverviewService
             'ledger' => $ledger,
             'receivable' => $open['sale']['amount'],
             'payable' => $open['purchase']['amount'],
-            'unsettled' => count($this->transactionRepository->findUnsettled($ledger)),
+            'unsettled' => $this->transactionRepository->countUnsettled($ledger),
             'fiscalYear' => $this->currentFiscalYear($ledger),
         ];
     }
@@ -49,7 +49,7 @@ class LedgerOverviewService
         return [
             'open' => $this->open($ledger),
             'drafts' => $this->invoiceRepository->count(['ledger' => $ledger, 'status' => InvoiceStatus::Draft]),
-            'unsettled' => count($this->transactionRepository->findUnsettled($ledger)),
+            'unsettled' => $this->transactionRepository->countUnsettled($ledger),
             'fiscalYear' => $this->currentFiscalYear($ledger),
             'fiscalYears' => $this->fiscalYearRepository->findByLedger($ledger),
         ];

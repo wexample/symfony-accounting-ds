@@ -45,6 +45,7 @@ en:
     duplicated: Copy created as a draft.
     imported: Statement imported.
     matched: Matching done.
+    assigned: Lines pointed.
     allocated: Payment recorded.
     unallocated: Payment removed.
     linked: Transfer linked.
@@ -110,6 +111,7 @@ fr:
     duplicated: Copie créée en brouillon.
     imported: Relevé importé.
     matched: Rapprochement effectué.
+    assigned: Lignes pointées.
     allocated: Paiement enregistré.
     unallocated: Paiement retiré.
     linked: Virement relié.

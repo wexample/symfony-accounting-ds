@@ -10,34 +10,32 @@
 {%- block page_body -%}
     {%- set currency = ledger.currencyCode -%}
     {%- set locale = app.request.locale -%}
-    <section class="block block--card">
-        <div class="block--body stack--vertical">
-            <div class="cluster">
-                {%- for candidate in years -%}
-                    {{ button_link('ph:bold/calendar', candidate, path('accounting_vat_index', { ledger: ledger.id, year: candidate }), { class: candidate == year ? '' : 'button--flat' }) }}
-                {%- endfor -%}
-            </div>
-            {{ data_table([
-                { key: 'period', label: '@page::column.period' | trans },
-                { key: 'collected', label: '@page::column.collected' | trans, align: 'end' },
-                { key: 'deductible', label: '@page::column.deductible' | trans, align: 'end' },
-                { key: 'net', label: '@page::column.net' | trans, align: 'end' },
-                { key: 'deposits', label: '@page::column.deposits' | trans, align: 'end' },
-            ], position.periods|map(period => {
-                href: path('accounting_vat_return', { ledger: ledger.id, from: period.from|date('Y-m-d'), to: period.to|date('Y-m-d') }),
-                period: period.from|date('d/m/Y') ~ ' → ' ~ period.to|date('d/m/Y'),
-                collected: period.collected|price(currency, locale),
-                deductible: (period.deductible + period.deductibleAssets)|price(currency, locale),
-                net: period.net|price(currency, locale),
-                deposits: period.depositsExpected ? period.depositsPaid|price(currency, locale) ~ ' / ' ~ period.depositsExpected|price(currency, locale) : '',
-            }), {
-                row_link: { key: 'href' },
-                empty_label: '@page::empty' | trans,
-                totals: { period: '@page::total' | trans, net: position.net|price(currency, locale) },
-            }) }}
-            {%- if position.previousCredit -%}
-                <p>{{ '@page::previous_credit' | trans({ '%amount%': position.previousCredit|price(currency, locale) }) }}</p>
-            {%- endif -%}
+    <div class="stack--vertical">
+        <div class="cluster">
+            {%- for candidate in years -%}
+                {{ button_link('ph:bold/calendar', candidate, path('accounting_vat_index', { ledger: ledger.id, year: candidate }), { class: candidate == year ? '' : 'button--flat' }) }}
+            {%- endfor -%}
         </div>
-    </section>
+        {{ data_table([
+            { key: 'period', label: '@page::column.period' | trans },
+            { key: 'collected', label: '@page::column.collected' | trans, align: 'end' },
+            { key: 'deductible', label: '@page::column.deductible' | trans, align: 'end' },
+            { key: 'net', label: '@page::column.net' | trans, align: 'end' },
+            { key: 'deposits', label: '@page::column.deposits' | trans, align: 'end' },
+        ], position.periods|map(period => {
+            href: path('accounting_vat_return', { ledger: ledger.id, from: period.from|date('Y-m-d'), to: period.to|date('Y-m-d') }),
+            period: period.from|date('d/m/Y') ~ ' → ' ~ period.to|date('d/m/Y'),
+            collected: period.collected|price(currency, locale),
+            deductible: (period.deductible + period.deductibleAssets)|price(currency, locale),
+            net: period.net|price(currency, locale),
+            deposits: period.depositsExpected ? period.depositsPaid|price(currency, locale) ~ ' / ' ~ period.depositsExpected|price(currency, locale) : '',
+        }), {
+            row_link: { key: 'href' },
+            empty_label: '@page::empty' | trans,
+            totals: { period: '@page::total' | trans, net: position.net|price(currency, locale) },
+        }) }}
+        {%- if position.previousCredit -%}
+            <p>{{ '@page::previous_credit' | trans({ '%amount%': position.previousCredit|price(currency, locale) }) }}</p>
+        {%- endif -%}
+    </div>
 {%- endblock -%}

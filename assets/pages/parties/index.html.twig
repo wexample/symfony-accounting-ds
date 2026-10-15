@@ -21,35 +21,33 @@
             </div>
         </section>
     {%- endif -%}
-    <section class="block block--card">
-        <div class="block--body stack--vertical">
-            <form method="get" class="cluster">
-                {%- if app.request.query.get('role') -%}<input type="hidden" name="role" value="{{ app.request.query.get('role') }}">{%- endif -%}
-                <input type="search" class="form--input accounting--grow" name="search" value="{{ search }}" placeholder="{{ '@page::search' | trans }}">
-                {{ button('ph:bold/magnifying-glass', '@page::search' | trans, { type: 'submit', class: 'button--flat' }) }}
-            </form>
-            {{ data_table([
-                { key: 'name', label: '@page::column.name' | trans },
-                { key: 'roles', label: '@page::column.roles' | trans, cell: 'html' },
-                { key: 'codes', label: '@page::column.codes' | trans },
-                { key: 'contact', label: '@page::column.contact' | trans },
-            ], parties|map(party => {
-                href: path('accounting_parties_edit', { ledger: ledger.id, id: party.id }),
-                name: party.name,
-                roles: (party.customer ? marker('cat-mint', '@page::role.customer' | trans, { compact: true }) : '') ~ ' ' ~ (party.supplier ? marker('cat-sunflower', '@page::role.supplier' | trans, { compact: true }) : ''),
-                codes: [party.customerCode, party.supplierCode]|filter(v => v)|join(' · '),
-                contact: [party.email, party.address ? party.address.city : null]|filter(v => v)|join(' · '),
-            }), {
-                row_link: { key: 'href' },
-                show_count: true,
-                empty_label: '@page::empty' | trans,
-                filters: [
-                    { key: 'role', label: '@page::column.roles' | trans, options: [
-                        { value: 'customer', label: '@page::role.customer' | trans },
-                        { value: 'supplier', label: '@page::role.supplier' | trans },
-                    ] },
-                ],
-            }) }}
-        </div>
-    </section>
+    <div class="stack--vertical">
+        <form method="get" class="cluster">
+            {%- if app.request.query.get('role') -%}<input type="hidden" name="role" value="{{ app.request.query.get('role') }}">{%- endif -%}
+            <input type="search" class="form--input accounting--grow" name="search" value="{{ search }}" placeholder="{{ '@page::search' | trans }}">
+            {{ button('ph:bold/magnifying-glass', '@page::search' | trans, { type: 'submit', class: 'button--flat' }) }}
+        </form>
+        {{ data_table([
+            { key: 'name', label: '@page::column.name' | trans },
+            { key: 'roles', label: '@page::column.roles' | trans, cell: 'html' },
+            { key: 'codes', label: '@page::column.codes' | trans },
+            { key: 'contact', label: '@page::column.contact' | trans },
+        ], parties|map(party => {
+            href: path('accounting_parties_edit', { ledger: ledger.id, id: party.id }),
+            name: party.name,
+            roles: (party.customer ? marker('cat-mint', '@page::role.customer' | trans, { compact: true }) : '') ~ ' ' ~ (party.supplier ? marker('cat-sunflower', '@page::role.supplier' | trans, { compact: true }) : ''),
+            codes: [party.customerCode, party.supplierCode]|filter(v => v)|join(' · '),
+            contact: [party.email, party.address ? party.address.city : null]|filter(v => v)|join(' · '),
+        }), {
+            row_link: { key: 'href' },
+            show_count: true,
+            empty_label: '@page::empty' | trans,
+            filters: [
+                { key: 'role', label: '@page::column.roles' | trans, options: [
+                    { value: 'customer', label: '@page::role.customer' | trans },
+                    { value: 'supplier', label: '@page::role.supplier' | trans },
+                ] },
+            ],
+        }) }}
+    </div>
 {%- endblock -%}

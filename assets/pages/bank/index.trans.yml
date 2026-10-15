@@ -18,6 +18,7 @@ en:
     submit: Import
   action:
     match: Match the lines
+  unsettled_more: The %shown% oldest of %count%; an account's page shows them all, by year.
 
 fr:
   page_title: Banque
@@ -39,3 +40,4 @@ fr:
     submit: Importer
   action:
     match: Rapprocher les lignes
+  unsettled_more: Les %shown% plus anciennes sur %count% ; la page d'un compte les montre toutes, par année.

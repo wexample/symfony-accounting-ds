@@ -10,34 +10,30 @@
 {%- block page_body -%}
     {%- set currency = ledger.currencyCode -%}
     {%- set locale = app.request.locale -%}
-    <section class="block block--card">
-        <div class="block--body">
-            {{ data_table([
-                { key: 'date', label: '@page::column.date' | trans, cell: 'html' },
-                { key: 'journal', label: '@page::column.journal' | trans },
-                { key: 'number', label: '@page::column.number' | trans, align: 'end' },
-                { key: 'label', label: '@page::column.label' | trans },
-                { key: 'piece', label: '@page::column.piece' | trans },
-                { key: 'amount', label: '@page::column.amount' | trans, align: 'end' },
-                { key: 'status', label: '@page::column.status' | trans, cell: 'html' },
-            ], entries|map(entry => {
-                href: path('accounting_entries_show', { ledger: ledger.id, id: entry.id }),
-                date: date_display(entry.date, 'date_short'),
-                journal: entry.journal.code,
-                number: entry.number,
-                label: entry.label,
-                piece: entry.pieceReference,
-                amount: entry.totalDebit|price(currency, locale),
-                status: marker(entry.status.value == 'draft' ? 'warning' : (entry.status.value == 'validated' ? 'success' : 'info'), ('@page::status.' ~ entry.status.value) | trans, { compact: true }),
-            }), {
-                row_link: { key: 'href' },
-                show_count: true,
-                empty_label: '@page::empty' | trans,
-                filters: [
-                    { key: 'fiscalYear', label: '@page::filter.fiscal_year' | trans, options: fiscal_years|map(year => { value: year.id, label: year.label }) },
-                    { key: 'journal', label: '@page::column.journal' | trans, options: journals|map(journal => { value: journal.code, label: journal.code ~ ' — ' ~ journal.label }) },
-                ],
-            }) }}
-        </div>
-    </section>
+    {{ data_table([
+        { key: 'date', label: '@page::column.date' | trans, cell: 'html' },
+        { key: 'journal', label: '@page::column.journal' | trans },
+        { key: 'number', label: '@page::column.number' | trans, align: 'end' },
+        { key: 'label', label: '@page::column.label' | trans },
+        { key: 'piece', label: '@page::column.piece' | trans },
+        { key: 'amount', label: '@page::column.amount' | trans, align: 'end' },
+        { key: 'status', label: '@page::column.status' | trans, cell: 'html' },
+    ], entries|map(entry => {
+        href: path('accounting_entries_show', { ledger: ledger.id, id: entry.id }),
+        date: date_display(entry.date, 'date_short'),
+        journal: entry.journal.code,
+        number: entry.number,
+        label: entry.label,
+        piece: entry.pieceReference,
+        amount: entry.totalDebit|price(currency, locale),
+        status: marker(entry.status.value == 'draft' ? 'warning' : (entry.status.value == 'validated' ? 'success' : 'info'), ('@page::status.' ~ entry.status.value) | trans, { compact: true }),
+    }), {
+        row_link: { key: 'href' },
+        show_count: true,
+        empty_label: '@page::empty' | trans,
+        filters: [
+            { key: 'fiscalYear', label: '@page::filter.fiscal_year' | trans, options: fiscal_years|map(year => { value: year.id, label: year.label }) },
+            { key: 'journal', label: '@page::column.journal' | trans, options: journals|map(journal => { value: journal.code, label: journal.code ~ ' — ' ~ journal.label }) },
+        ],
+    }) }}
 {%- endblock -%}

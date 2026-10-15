@@ -3,7 +3,9 @@
 {%- set page_title = account.label -%}
 
 {#- An account's lines, the latest first, by year, or only those left to
-    explain; for whoever administers the books, what names it. -#}
+    explain; for whoever administers the books, what names it. The owner of
+    an account shared between organizations sees all its lines, each with
+    the organization it is pointed to. -#}
 {%- block page_body -%}
     {%- if can_administer -%}
         <section class="block block--card">
@@ -26,16 +28,38 @@
             </div>
         </section>
     {%- endif -%}
-    <section class="block block--card">
-        <div class="block--body">
-            {%- set lines_table -%}{%- include '@WexampleSymfonyAccountingDsBundle/partials/bank_lines.html.twig' with { lines: lines, empty: '@page::empty' | trans } -%}{%- endset -%}
-            {{ lines_table }}
-        </div>
-        <div class="block--footer cluster">
-            {%- for year in years -%}
-                {{ button_link('ph:bold/calendar', year, path('accounting_bank_account', { ledger: ledger.id, id: account.id, year: year }), { class: 'button--flat' }) }}
-            {%- endfor -%}
-            {{ button_link('ph:bold/warning', '@page::only_unsettled' | trans, path('accounting_bank_account', { ledger: ledger.id, id: account.id, only: 'unsettled' }), { class: 'button--flat' }) }}
-        </div>
-    </section>
+    {#- An account shared between organizations: its lines pointed, all at
+        once, by words their label holds. -#}
+    {%- if targets|length > 1 -%}
+        <section class="block block--card">
+            <div class="block--title">
+                <span class="block--title-leading">{{ icon('ph:bold/arrow-bend-up-right') }}</span>
+                <span class="block--title-label">{{ '@page::assign.title' | trans }}</span>
+            </div>
+            <div class="block--body">
+                <form method="post" action="{{ path('accounting_bank_account_assign', { ledger: ledger.id, id: account.id }) }}" class="cluster">
+                    <input type="hidden" name="_token" value="{{ csrf_token('accounting') }}">
+                    <input class="form--input" name="label" required placeholder="{{ '@page::assign.label' | trans }}" aria-label="{{ '@page::assign.label' | trans }}">
+                    <input class="form--input" type="date" name="from" aria-label="{{ '@page::assign.from' | trans }}">
+                    <input class="form--input" type="date" name="to" aria-label="{{ '@page::assign.to' | trans }}">
+                    <select class="form--input" name="target" aria-label="{{ '@page::assign.target' | trans }}">
+                        {%- for target in targets -%}<option value="{{ target.id }}">{{ target.name }}</option>{%- endfor -%}
+                    </select>
+                    {{ button('ph:bold/arrow-bend-up-right', '@page::assign.submit' | trans, { type: 'submit', class: 'button--flat' }) }}
+                </form>
+            </div>
+        </section>
+    {%- endif -%}
+
+    <h2>{{ '@page::lines' | trans }}</h2>
+    <div class="cluster">
+        {%- for year in years -%}
+            {{ button_link('ph:bold/calendar', year, path('accounting_bank_account', { ledger: ledger.id, id: account.id, year: year }), { class: 'button--flat' }) }}
+        {%- endfor -%}
+        {{ button_link('ph:bold/warning', '@page::only_unsettled' | trans, path('accounting_bank_account', { ledger: ledger.id, id: account.id, only: 'unsettled' }), { class: 'button--flat' }) }}
+        {%- if shared -%}
+            {{ button_link('ph:bold/user', '@page::only_owner' | trans, path('accounting_bank_account', { ledger: ledger.id, id: account.id, only: 'owner' }), { class: 'button--flat' }) }}
+        {%- endif -%}
+    </div>
+    {%- include '@WexampleSymfonyAccountingDsBundle/partials/bank_lines.html.twig' with { lines: lines, empty: '@page::empty' | trans, show_organization: shared } -%}
 {%- endblock -%}

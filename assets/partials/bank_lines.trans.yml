@@ -1,6 +1,7 @@
 en:
   date: Date
   label: Line
+  organization: Organization
   amount: Amount
   state: Explained
   transfer: Transfer
@@ -10,6 +11,7 @@ en:
 fr:
   date: Date
   label: Ligne
+  organization: Organisation
   amount: Montant
   state: Expliquée
   transfer: Virement interne

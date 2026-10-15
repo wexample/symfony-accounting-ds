@@ -16,6 +16,7 @@
             <div class="block--body">
                 <dl class="accounting-figures">
                     <dt>{{ '@page::account' | trans }}</dt><dd>{{ line.bankAccount.label }}</dd>
+                    <dt>{{ '@page::organization' | trans }}</dt><dd>{{ line.ledger.name }}</dd>
                     <dt>{{ '@page::date' | trans }}</dt><dd>{{ date_display(line.date, 'date_short') }}</dd>
                     {%- if line.counterpartyName -%}<dt>{{ '@page::counterparty' | trans }}</dt><dd>{{ line.counterpartyName }}</dd>{%- endif -%}
                     {%- if line.reference -%}<dt>{{ '@page::reference' | trans }}</dt><dd>{{ line.reference }}</dd>{%- endif -%}
@@ -24,6 +25,25 @@
                 </dl>
             </div>
         </section>
+
+        {#- A line of an account shared between organizations: which one it is
+            of. Once explained in its books, it stays there. -#}
+        {%- if targets|length > 1 and line.activeAllocations is empty and not peer -%}
+            <section class="block block--card">
+                <div class="block--title"><span class="block--title-label">{{ '@page::assign.title' | trans }}</span></div>
+                <div class="block--body">
+                    <form method="post" action="{{ path('accounting_bank_assign', base) }}" class="cluster">
+                        <input type="hidden" name="_token" value="{{ csrf_token('accounting') }}">
+                        <select class="form--input" name="target" aria-label="{{ '@page::organization' | trans }}">
+                            {%- for target in targets -%}
+                                <option value="{{ target.id }}"{{ target.id == ledger.id ? ' selected' }}>{{ target.name }}</option>
+                            {%- endfor -%}
+                        </select>
+                        {{ button('ph:bold/arrow-bend-up-right', '@page::assign.submit' | trans, { type: 'submit', class: 'button--flat' }) }}
+                    </form>
+                </div>
+            </section>
+        {%- endif -%}
 
         <section class="block block--card">
             <div class="block--title"><span class="block--title-label">{{ '@page::explained' | trans }}</span></div>

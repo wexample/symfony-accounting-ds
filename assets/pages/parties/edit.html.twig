@@ -11,22 +11,18 @@
         <div class="block block--padded">
             {{ form_load(render_pass, form_party, '@WexampleSymfonyAccountingDsBundle/forms/party_form.html.twig') }}
         </div>
-        <section class="block block--card">
-            <div class="block--title"><span class="block--title-label">{{ '@page::documents' | trans }}</span></div>
-            <div class="block--body">
-                {{ data_table([
-                    { key: 'number', label: '@page::column.number' | trans },
-                    { key: 'date', label: '@page::column.date' | trans, cell: 'html' },
-                    { key: 'total', label: '@page::column.total' | trans, align: 'end' },
-                    { key: 'status', label: '@page::column.status' | trans, cell: 'html' },
-                ], documents|map(invoice => {
-                    href: path('accounting_documents_show', { ledger: ledger.id, id: invoice.id }),
-                    number: (invoice.number ?? (c ~ 'status.draft') | trans) ~ ' · ' ~ (c ~ 'type.' ~ invoice.type.value) | trans,
-                    date: date_display(invoice.dateInvoice, 'date_short'),
-                    total: invoice.calcPriceBreakdown().final|price(invoice.currencyCode, app.request.locale),
-                    status: accounting.status(invoice.status.value),
-                }), { row_link: { key: 'href' }, empty_label: '@page::empty' | trans }) }}
-            </div>
-        </section>
+        <h2>{{ '@page::documents' | trans }}</h2>
+        {{ data_table([
+            { key: 'number', label: '@page::column.number' | trans },
+            { key: 'date', label: '@page::column.date' | trans, cell: 'html' },
+            { key: 'total', label: '@page::column.total' | trans, align: 'end' },
+            { key: 'status', label: '@page::column.status' | trans, cell: 'html' },
+        ], documents|map(invoice => {
+            href: path('accounting_documents_show', { ledger: ledger.id, id: invoice.id }),
+            number: (invoice.number ?? (c ~ 'status.draft') | trans) ~ ' · ' ~ (c ~ 'type.' ~ invoice.type.value) | trans,
+            date: date_display(invoice.dateInvoice, 'date_short'),
+            total: invoice.calcPriceBreakdown().final|price(invoice.currencyCode, app.request.locale),
+            status: accounting.status(invoice.status.value),
+        }), { row_link: { key: 'href' }, empty_label: '@page::empty' | trans }) }}
     </div>
 {%- endblock -%}

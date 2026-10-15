@@ -2,6 +2,10 @@ en:
   page_title: Bank line
   page_icon: ph:bold/bank
   account: Account
+  organization: Organization
+  assign:
+    title: Whose line
+    submit: Point it there
   date: Date
   counterparty: From or to
   reference: Reference
@@ -37,6 +41,10 @@ fr:
   page_title: Ligne bancaire
   page_icon: ph:bold/bank
   account: Compte
+  organization: Organisation
+  assign:
+    title: À qui est cette ligne
+    submit: L'y pointer
   date: Date
   counterparty: Émetteur ou bénéficiaire
   reference: Référence

@@ -6,37 +6,35 @@
     {%- set currency = ledger.currencyCode -%}
     {%- set locale = app.request.locale -%}
     {%- include '@WexampleSymfonyAccountingDsBundle/partials/fiscal_year_picker.html.twig' -%}
-    <section class="block block--card">
-        <div class="block--body stack--vertical">
-            <form method="get" class="cluster">
-                {%- if fiscal_year -%}<input type="hidden" name="fiscalYear" value="{{ fiscal_year.id }}">{%- endif -%}
-                <input class="form--input" name="account" value="{{ account }}" placeholder="{{ '@page::account' | trans }}" required>
-                {{ button('ph:bold/magnifying-glass', '@page::show' | trans, { type: 'submit', class: 'button--flat' }) }}
-            </form>
-            {%- for number, block in accounts -%}
-                <h3>{{ block.number }} — {{ block.label }}</h3>
-                {{ data_table([
-                    { key: 'date', label: '@page::date' | trans },
-                    { key: 'journal', label: '@page::journal' | trans },
-                    { key: 'label', label: '@page::label' | trans },
-                    { key: 'debit', label: '@page::debit' | trans, align: 'end' },
-                    { key: 'credit', label: '@page::credit' | trans, align: 'end' },
-                    { key: 'balance', label: '@page::balance' | trans, align: 'end' },
-                ], block.lines|map(row => {
-                    href: path('accounting_entries_show', { ledger: ledger.id, id: row.line.entry.id }),
-                    date: row.line.entry.date|date('d/m/Y'),
-                    journal: row.line.entry.journal.code,
-                    label: row.line.label,
-                    debit: row.line.getDebit() ? row.line.getDebit()|price(currency, locale),
-                    credit: row.line.getCredit() ? row.line.getCredit()|price(currency, locale),
-                    balance: row.balance|price(currency, locale),
-                }), {
-                    row_link: { key: 'href' },
-                    totals: { label: '@page::total' | trans, debit: block.debit|price(currency, locale), credit: block.credit|price(currency, locale), balance: block.balance|price(currency, locale) },
-                }) }}
-            {%- else -%}
-                {%- if account -%}<p class="fallback">{{ '@page::empty' | trans }}</p>{%- endif -%}
-            {%- endfor -%}
-        </div>
-    </section>
+    <div class="stack--vertical">
+        <form method="get" class="cluster">
+            {%- if fiscal_year -%}<input type="hidden" name="fiscalYear" value="{{ fiscal_year.id }}">{%- endif -%}
+            <input class="form--input" name="account" value="{{ account }}" placeholder="{{ '@page::account' | trans }}" required>
+            {{ button('ph:bold/magnifying-glass', '@page::show' | trans, { type: 'submit', class: 'button--flat' }) }}
+        </form>
+        {%- for number, block in accounts -%}
+            <h3>{{ block.number }} — {{ block.label }}</h3>
+            {{ data_table([
+                { key: 'date', label: '@page::date' | trans },
+                { key: 'journal', label: '@page::journal' | trans },
+                { key: 'label', label: '@page::label' | trans },
+                { key: 'debit', label: '@page::debit' | trans, align: 'end' },
+                { key: 'credit', label: '@page::credit' | trans, align: 'end' },
+                { key: 'balance', label: '@page::balance' | trans, align: 'end' },
+            ], block.lines|map(row => {
+                href: path('accounting_entries_show', { ledger: ledger.id, id: row.line.entry.id }),
+                date: row.line.entry.date|date('d/m/Y'),
+                journal: row.line.entry.journal.code,
+                label: row.line.label,
+                debit: row.line.getDebit() ? row.line.getDebit()|price(currency, locale),
+                credit: row.line.getCredit() ? row.line.getCredit()|price(currency, locale),
+                balance: row.balance|price(currency, locale),
+            }), {
+                row_link: { key: 'href' },
+                totals: { label: '@page::total' | trans, debit: block.debit|price(currency, locale), credit: block.credit|price(currency, locale), balance: block.balance|price(currency, locale) },
+            }) }}
+        {%- else -%}
+            {%- if account -%}<p class="fallback">{{ '@page::empty' | trans }}</p>{%- endif -%}
+        {%- endfor -%}
+    </div>
 {%- endblock -%}

@@ -11,31 +11,29 @@
 {%- block page_body -%}
     {%- set currency = ledger.currencyCode -%}
     {%- set locale = app.request.locale -%}
-    <section class="block block--card">
-        <div class="block--title"><span class="block--title-label">{{ '@page::accounts' | trans }}</span></div>
-        <div class="block--body stack--vertical">
-            {{ data_table([
-                { key: 'label', label: '@page::column.account' | trans },
-                { key: 'iban', label: 'IBAN' },
-                { key: 'balance', label: '@page::column.balance' | trans, align: 'end' },
-                { key: 'unsettled', label: '@page::column.unsettled' | trans, align: 'end' },
-            ], accounts|map(row => {
-                href: path('accounting_bank_account', { ledger: ledger.id, id: row.account.id }),
-                label: row.account.label,
-                iban: row.account.iban,
-                balance: row.balance|price(currency, locale),
-                unsettled: row.unsettled,
-            }), { row_link: { key: 'href' }, empty_label: '@page::no_account' | trans }) }}
-            {%- if can_edit -%}
-                <form method="post" action="{{ path('accounting_bank_account_create', { ledger: ledger.id }) }}" class="cluster">
-                    <input type="hidden" name="_token" value="{{ csrf_token('accounting') }}">
-                    <input class="form--input" name="label" required placeholder="{{ '@page::new.label' | trans }}">
-                    <input class="form--input" name="iban" placeholder="IBAN">
-                    {{ button('ph:bold/plus', '@page::new.submit' | trans, { type: 'submit', class: 'button--flat' }) }}
-                </form>
-            {%- endif -%}
-        </div>
-    </section>
+    <h2>{{ '@page::accounts' | trans }}</h2>
+    <div class="stack--vertical">
+        {{ data_table([
+            { key: 'label', label: '@page::column.account' | trans },
+            { key: 'iban', label: 'IBAN' },
+            { key: 'balance', label: '@page::column.balance' | trans, align: 'end' },
+            { key: 'unsettled', label: '@page::column.unsettled' | trans, align: 'end' },
+        ], accounts|map(row => {
+            href: path('accounting_bank_account', { ledger: ledger.id, id: row.account.id }),
+            label: row.account.label,
+            iban: row.account.iban,
+            balance: row.balance|price(currency, locale),
+            unsettled: row.unsettled,
+        }), { row_link: { key: 'href' }, empty_label: '@page::no_account' | trans }) }}
+        {%- if can_edit -%}
+            <form method="post" action="{{ path('accounting_bank_account_create', { ledger: ledger.id }) }}" class="cluster">
+                <input type="hidden" name="_token" value="{{ csrf_token('accounting') }}">
+                <input class="form--input" name="label" required placeholder="{{ '@page::new.label' | trans }}">
+                <input class="form--input" name="iban" placeholder="IBAN">
+                {{ button('ph:bold/plus', '@page::new.submit' | trans, { type: 'submit', class: 'button--flat' }) }}
+            </form>
+        {%- endif -%}
+    </div>
 
     {%- if can_edit and accounts is not empty -%}
         <section class="block block--card">
@@ -60,10 +58,9 @@
         </section>
     {%- endif -%}
 
-    <section class="block block--card">
-        <div class="block--title"><span class="block--title-label">{{ '@page::unsettled' | trans }}</span></div>
-        <div class="block--body">
-            {%- include '@WexampleSymfonyAccountingDsBundle/partials/bank_lines.html.twig' with { lines: unsettled, empty: '@page::all_settled' | trans } -%}
-        </div>
-    </section>
+    <h2>{{ '@page::unsettled' | trans }}</h2>
+    {%- if unsettled_count > unsettled|length -%}
+        <p class="text-secondary">{{ '@page::unsettled_more' | trans({ '%shown%': unsettled|length, '%count%': unsettled_count }) }}</p>
+    {%- endif -%}
+    {%- include '@WexampleSymfonyAccountingDsBundle/partials/bank_lines.html.twig' with { lines: unsettled, empty: '@page::all_settled' | trans } -%}
 {%- endblock -%}

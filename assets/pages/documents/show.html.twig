@@ -75,20 +75,16 @@
                 </section>
 
                 {%- if invoice.allocations is not empty -%}
-                    <section class="block block--card">
-                        <div class="block--title"><span class="block--title-label">{{ '@page::payments' | trans }}</span></div>
-                        <div class="block--body">
-                            {{ data_table([
-                                { key: 'date', label: '@page::date' | trans, cell: 'html' },
-                                { key: 'label', label: '@page::label' | trans },
-                                { key: 'amount', label: '@page::amount' | trans, align: 'end' },
-                            ], invoice.allocations|map(allocation => {
-                                date: date_display(allocation.transaction.date, 'date_short'),
-                                label: allocation.transaction.label,
-                                amount: allocation.amount|price(currency, locale),
-                            })) }}
-                        </div>
-                    </section>
+                    <h2>{{ '@page::payments' | trans }}</h2>
+                    {{ data_table([
+                        { key: 'date', label: '@page::date' | trans, cell: 'html' },
+                        { key: 'label', label: '@page::label' | trans },
+                        { key: 'amount', label: '@page::amount' | trans, align: 'end' },
+                    ], invoice.allocations|map(allocation => {
+                        date: date_display(allocation.transaction.date, 'date_short'),
+                        label: allocation.transaction.label,
+                        amount: allocation.amount|price(currency, locale),
+                    })) }}
                 {%- endif -%}
 
                 {%- if peppol -%}

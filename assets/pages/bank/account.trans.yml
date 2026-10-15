@@ -3,6 +3,15 @@ en:
   page_icon: ph:bold/bank
   empty: No line here.
   only_unsettled: Only those to explain
+  only_owner: Only the owner's
+  lines: Lines
+  assign:
+    title: Point lines to an organization
+    label: Words of the label
+    from: From
+    to: To
+    target: Organization
+    submit: Point them
   edit:
     title: Account
     label: Label
@@ -17,6 +26,15 @@ fr:
   page_icon: ph:bold/bank
   empty: Aucune ligne ici.
   only_unsettled: Seulement celles à expliquer
+  only_owner: Seulement celles du titulaire
+  lines: Lignes
+  assign:
+    title: Pointer des lignes vers une organisation
+    label: Mots du libellé
+    from: Du
+    to: Au
+    target: Organisation
+    submit: Les pointer
   edit:
     title: Compte
     label: Libellé

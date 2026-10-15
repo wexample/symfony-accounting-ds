@@ -8,6 +8,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
 use Symfony\Component\Routing\Requirement\Requirement;
+use Symfony\Contracts\Service\Attribute\Required;
 use Wexample\SymfonyAccounting\Entity\Allocation;
 use Wexample\SymfonyAccounting\Entity\BankAccount;
 use Wexample\SymfonyAccounting\Entity\BankTransaction;
@@ -21,9 +22,11 @@ use Wexample\SymfonyAccounting\Repository\BankTransactionRepository;
 use Wexample\SymfonyAccounting\Repository\InvoiceRepository;
 use Wexample\SymfonyAccounting\Service\Bank\AllocationService;
 use Wexample\SymfonyAccounting\Service\Bank\BankImportService;
+use Wexample\SymfonyAccounting\Service\Bank\BankLineAssignmentService;
 use Wexample\SymfonyAccounting\Service\Bank\BankStatementParserRegistry;
 use Wexample\SymfonyAccounting\Service\Bank\MatchingService;
 use Wexample\SymfonyAccounting\Service\Ledger\ChartService;
+use Wexample\SymfonyAccounting\Service\Ledger\LedgerAccessService;
 use Wexample\SymfonyAccountingDs\Controller\AbstractAccountingController;
 use Wexample\SymfonyHelpers\Helper\VariableHelper;
 
@@ -31,6 +34,11 @@ use Wexample\SymfonyHelpers\Helper\VariableHelper;
  * The bank of a ledger: its accounts and their balance, a statement imported,
  * the lines matched to what they pay — by the matchers, from their proposals,
  * or by hand: a document, an account, the other half of a transfer.
+ *
+ * An account its owner shares with other organizations (a personal account a
+ * sole trader is paid on) is one account: its owner's page shows all its
+ * lines, each with the organization it is pointed to, and points them — one
+ * by one on the line's page, or all those whose label says so.
  */
 #[Route(path: '/accounting/{ledger}/bank/', name: 'accounting_bank_', requirements: ['ledger' => Requirement::UUID])]
 final class BankController extends AbstractAccountingController
@@ -41,6 +49,24 @@ final class BankController extends AbstractAccountingController
      * How many days apart the two halves of a transfer may be.
      */
     private const int TRANSFER_WINDOW_DAYS = 5;
+
+    /**
+     * How many of the lines left to explain the bank page lists, the oldest first.
+     */
+    private const int UNSETTLED_SHOWN = 200;
+
+    private BankAccountRepository $bankAccountRepository;
+
+    private LedgerAccessService $ledgerAccess;
+
+    #[Required]
+    public function setBankServices(
+        BankAccountRepository $bankAccountRepository,
+        LedgerAccessService $ledgerAccess,
+    ): void {
+        $this->bankAccountRepository = $bankAccountRepository;
+        $this->ledgerAccess = $ledgerAccess;
+    }
 
     #[Route(path: '', name: self::ROUTE_INDEX)]
     public function index(
@@ -54,12 +80,14 @@ final class BankController extends AbstractAccountingController
 
         return $this->renderPage(self::ROUTE_INDEX, [
             'ledger' => $ledger,
-            'accounts' => array_map(static fn (BankAccount $account) => [
+            'accounts' => array_map(fn (BankAccount $account) => [
                 'account' => $account,
-                'balance' => $transactions->sumBetween($account, null, $today->modify('+10 years')),
-                'unsettled' => count($transactions->findUnsettled($ledger, $account)),
+                // The owner's share stands for the whole account, as the bank states it.
+                'balance' => $transactions->sumBetween($account->isOwnerShare() ? $this->bankAccountRepository->findShares($account) : $account, null, $today->modify('+10 years')),
+                'unsettled' => $transactions->countUnsettled($ledger, $account),
             ], $bankAccounts->findBy(['ledger' => $ledger], ['label' => 'ASC'])),
-            'unsettled' => $transactions->findUnsettled($ledger),
+            'unsettled' => $transactions->findUnsettled($ledger, limit: self::UNSETTLED_SHOWN),
+            'unsettled_count' => $transactions->countUnsettled($ledger),
             'parsers' => $parsers->getChoices(),
             'can_edit' => $this->isGranted(LedgerPermission::EDIT->value, $ledger),
         ]);
@@ -103,32 +131,96 @@ final class BankController extends AbstractAccountingController
         $account = $this->owned($ledger, $bankAccounts->find($id));
         $year = $request->query->getString('year');
         $only = $request->query->getString('only');
+        // The owner sees the whole account; another organization, its share.
+        $shares = $account->isOwnerShare() ? $bankAccounts->findShares($account) : [$account];
+        $from = ctype_digit($year) ? new DateTimeImmutable($year.'-01-01') : null;
 
-        $query = $transactions->createQueryBuilder('t')
-            ->andWhere('t.bankAccount = :account')
-            ->setParameter('account', $account->getId(), 'uuid')
-            ->orderBy('t.date', 'DESC')
-            ->setMaxResults(300);
-
-        if (ctype_digit($year)) {
-            $query->andWhere('t.date >= :from AND t.date < :to')
-                ->setParameter('from', new DateTimeImmutable($year.'-01-01'), 'date_immutable')
-                ->setParameter('to', new DateTimeImmutable(((int) $year + 1).'-01-01'), 'date_immutable');
-        }
-
-        $lines = $query->getQuery()->getResult();
+        $lines = $transactions->findLatest($shares, $from, $from?->modify('+1 year'));
 
         if ('unsettled' === $only) {
             $lines = array_values(array_filter($lines, static fn (BankTransaction $line) => ! $line->isSettled() && ! $line->isTransfer()));
+        } elseif ('owner' === $only) {
+            $lines = array_values(array_filter($lines, static fn (BankTransaction $line) => $line->getBankAccount() === $account));
         }
 
         return $this->renderPage('account', [
             'ledger' => $ledger,
             'account' => $account,
             'lines' => $lines,
-            'years' => range((int) date('Y'), (int) date('Y') - 4),
+            'shared' => count($shares) > 1,
+            'targets' => $this->targets($ledger, $account),
+            'years' => range((int) date('Y'), (int) date('Y') - 10),
             'can_administer' => $this->isGranted(LedgerPermission::ADMINISTER->value, $ledger),
         ]);
+    }
+
+    /**
+     * The lines of the account whose label holds the words, between the dates,
+     * pointed to an organization — those already explained stay where they are.
+     */
+    #[Route(path: 'account/{id}/assign', name: 'account_assign', requirements: ['id' => Requirement::UUID], methods: [Request::METHOD_POST])]
+    public function assignAccount(
+        string $ledger,
+        string $id,
+        Request $request,
+        BankAccountRepository $bankAccounts,
+        BankTransactionRepository $transactions,
+        BankLineAssignmentService $assignment,
+    ): Response {
+        $ledger = $this->ledger($ledger, LedgerPermission::EDIT);
+        $account = $this->owned($ledger, $bankAccounts->find($id));
+
+        return $this->act($request, function () use ($ledger, $account, $request, $bankAccounts, $transactions, $assignment) {
+            $target = $this->ledger($request->request->getString('target'), LedgerPermission::EDIT);
+            $words = mb_strtolower(trim($request->request->getString('label')));
+            $from = $request->request->getString('from') ?: null;
+            $to = $request->request->getString('to') ?: null;
+
+            if ('' === $words) {
+                throw new AccountingException('Say which lines: words their label holds.');
+            }
+
+            $moved = 0;
+
+            foreach ($bankAccounts->findShares($account) as $share) {
+                if ($share->getLedger() === $target || ! $this->isGranted(LedgerPermission::EDIT->value, $share->getLedger())) {
+                    continue;
+                }
+
+                foreach ($transactions->findPointable($share, $words, $from ? new DateTimeImmutable($from) : null, $to ? new DateTimeImmutable($to) : null) as $line) {
+                    $assignment->assign($line, $target);
+                    ++$moved;
+                }
+            }
+
+            $this->notify('info', sprintf('%d line(s) pointed to %s; those already explained stay where they are.', $moved, $target->getName()));
+
+            return null;
+        }, 'assigned');
+    }
+
+    /**
+     * One line pointed to an organization.
+     */
+    #[Route(path: 'line/{id}/assign', name: 'assign', requirements: ['id' => Requirement::UUID], methods: [Request::METHOD_POST])]
+    public function assign(
+        string $ledger,
+        string $id,
+        Request $request,
+        BankTransactionRepository $transactions,
+        BankLineAssignmentService $assignment,
+    ): Response {
+        $line = $this->ownedLine($this->ledger($ledger, LedgerPermission::EDIT), $transactions->find($id));
+
+        return $this->act($request, function () use ($line, $request, $assignment) {
+            $target = $this->ledger($request->request->getString('target'), LedgerPermission::EDIT);
+            $assignment->assign($line, $target);
+
+            // The line now lives in its new books.
+            return $this->isGranted(LedgerPermission::VIEW->value, $target)
+                ? $this->generateUrl('accounting_bank_line', ['ledger' => (string) $target->getId(), 'id' => (string) $line->getId()])
+                : null;
+        }, 'assigned');
     }
 
     /**
@@ -250,6 +342,7 @@ final class BankController extends AbstractAccountingController
             'transfer_candidates' => $line->isTransfer() ? [] : $transactions->findTransferCandidates($line, self::TRANSFER_WINDOW_DAYS),
             'peer' => $line->getTransferPeer() ?? $transactions->findTransferSource($line),
             'can_edit' => $this->isGranted(LedgerPermission::EDIT->value, $ledger),
+            'targets' => $this->targets($ledger, $line->getBankAccount()),
         ]);
     }
 
@@ -373,6 +466,30 @@ final class BankController extends AbstractAccountingController
 
             return null;
         }, 'unlinked');
+    }
+
+    /**
+     * Where the lines of the account may be pointed: the organizations already
+     * holding a share of it, and those whose books the reader keeps.
+     *
+     * @return list<Ledger>
+     */
+    private function targets(
+        Ledger $ledger,
+        BankAccount $account
+    ): array {
+        if (null === $account->getIban() || ! $this->isGranted(LedgerPermission::EDIT->value, $ledger)) {
+            return [];
+        }
+
+        $ledgers = [];
+
+        foreach ([...$this->bankAccountRepository->findShares($account), ...$this->ledgerAccess->getAccessible(LedgerPermission::EDIT)] as $item) {
+            $target = $item instanceof BankAccount ? $item->getLedger() : $item;
+            $ledgers[(string) $target->getId()] = $target;
+        }
+
+        return array_values($ledgers);
     }
 
     private function owned(

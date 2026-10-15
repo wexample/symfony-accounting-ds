@@ -10,35 +10,33 @@
 {%- block page_body -%}
     {%- set base = { ledger: ledger.id, id: fiscal_year.id } -%}
     {%- set errors = findings|filter(f => f.severity == 'error')|length -%}
-    <section class="block block--card">
-        <div class="block--body stack--vertical">
-            <p>{{ date_display(fiscal_year.dateStart, 'date_short') }} → {{ date_display(fiscal_year.dateEnd, 'date_short') }}</p>
-            <p>{{ '@page::result' | trans }} <strong>{{ result|price(ledger.currencyCode, app.request.locale) }}</strong></p>
-            {%- if findings is empty -%}
-                {{ message_success('@page::clean' | trans) }}
+    <div class="stack--vertical">
+        <p>{{ date_display(fiscal_year.dateStart, 'date_short') }} → {{ date_display(fiscal_year.dateEnd, 'date_short') }}</p>
+        <p>{{ '@page::result' | trans }} <strong>{{ result|price(ledger.currencyCode, app.request.locale) }}</strong></p>
+        {%- if findings is empty -%}
+            {{ message_success('@page::clean' | trans) }}
+        {%- else -%}
+            {{ data_table([
+                { key: 'severity', label: '@page::severity' | trans, cell: 'html' },
+                { key: 'subject', label: '@page::subject' | trans },
+                { key: 'message', label: '@page::finding' | trans },
+            ], findings|map(f => {
+                severity: marker(f.severity == 'info' ? 'info' : f.severity, ('@page::level.' ~ f.severity) | trans, { compact: true }),
+                subject: f.subject,
+                message: f.code | trans(f.parameters, f.domain),
+            }), { show_count: true }) }}
+        {%- endif -%}
+    </div>
+    {%- if can_administer -%}
+        <div class="block--footer cluster">
+            {%- if fiscal_year.closed -%}
+                {{ accounting.action('ph:bold/lock-open', '@page::reopen' | trans, path('accounting_fiscal_years_reopen', base), { confirm: '@page::confirm_reopen' | trans }) }}
             {%- else -%}
-                {{ data_table([
-                    { key: 'severity', label: '@page::severity' | trans, cell: 'html' },
-                    { key: 'subject', label: '@page::subject' | trans },
-                    { key: 'message', label: '@page::finding' | trans },
-                ], findings|map(f => {
-                    severity: marker(f.severity == 'info' ? 'info' : f.severity, ('@page::level.' ~ f.severity) | trans, { compact: true }),
-                    subject: f.subject,
-                    message: f.code | trans(f.parameters, f.domain),
-                }), { show_count: true }) }}
+                {{ accounting.action('ph:bold/lock', '@page::close' | trans, path('accounting_fiscal_years_close', base), { confirm: '@page::confirm_close' | trans, class: 'button--invert' }) }}
+                {%- if findings is not empty and not errors -%}
+                    {{ accounting.action('ph:bold/lock', '@page::force' | trans, path('accounting_fiscal_years_close', base), { confirm: '@page::confirm_close' | trans, fields: { force: 1 } }) }}
+                {%- endif -%}
             {%- endif -%}
         </div>
-        {%- if can_administer -%}
-            <div class="block--footer cluster">
-                {%- if fiscal_year.closed -%}
-                    {{ accounting.action('ph:bold/lock-open', '@page::reopen' | trans, path('accounting_fiscal_years_reopen', base), { confirm: '@page::confirm_reopen' | trans }) }}
-                {%- else -%}
-                    {{ accounting.action('ph:bold/lock', '@page::close' | trans, path('accounting_fiscal_years_close', base), { confirm: '@page::confirm_close' | trans, class: 'button--invert' }) }}
-                    {%- if findings is not empty and not errors -%}
-                        {{ accounting.action('ph:bold/lock', '@page::force' | trans, path('accounting_fiscal_years_close', base), { confirm: '@page::confirm_close' | trans, fields: { force: 1 } }) }}
-                    {%- endif -%}
-                {%- endif -%}
-            </div>
-        {%- endif -%}
-    </section>
+    {%- endif -%}
 {%- endblock -%}

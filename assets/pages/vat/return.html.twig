@@ -10,45 +10,39 @@
 {%- block page_body -%}
     {%- set currency = ledger.currencyCode -%}
     {%- set locale = app.request.locale -%}
-    <section class="block block--card">
-        <div class="block--body stack--vertical">
-            {{ data_table([
-                { key: 'code', label: '@page::column.code' | trans },
-                { key: 'rate', label: '@page::column.rate' | trans, align: 'end' },
-                { key: 'base', label: '@page::column.base' | trans, align: 'end' },
-                { key: 'due', label: '@page::column.due' | trans, align: 'end' },
-                { key: 'deductible', label: '@page::column.deductible' | trans, align: 'end' },
-            ], vat_return.lines|map(line => {
-                code: line.code,
-                rate: line.rate|rate(locale),
-                base: line.base|price(currency, locale),
-                due: line.due|price(currency, locale),
-                deductible: (line.deductible + line.deductibleAssets)|price(currency, locale),
-            }), {
-                empty_label: '@page::empty' | trans,
-                totals: { code: '@page::total' | trans, due: vat_return.due|price(currency, locale), deductible: (vat_return.deductible + vat_return.deductibleAssets)|price(currency, locale) },
-            }) }}
-            <dl class="accounting-figures">
-                {%- if vat_return.previousCredit -%}<dt>{{ '@page::previous_credit' | trans }}</dt><dd>{{ vat_return.previousCredit|price(currency, locale) }}</dd>{%- endif -%}
-                {%- if vat_return.deposits -%}<dt>{{ '@page::deposits' | trans }}</dt><dd>{{ vat_return.deposits|price(currency, locale) }}</dd>{%- endif -%}
-                <dt>{{ vat_return.net >= 0 ? '@page::to_pay' | trans : '@page::credit' | trans }}</dt><dd><strong>{{ vat_return.net|abs|price(currency, locale) }}</strong></dd>
-            </dl>
+    <div class="stack--vertical">
+        {{ data_table([
+            { key: 'code', label: '@page::column.code' | trans },
+            { key: 'rate', label: '@page::column.rate' | trans, align: 'end' },
+            { key: 'base', label: '@page::column.base' | trans, align: 'end' },
+            { key: 'due', label: '@page::column.due' | trans, align: 'end' },
+            { key: 'deductible', label: '@page::column.deductible' | trans, align: 'end' },
+        ], vat_return.lines|map(line => {
+            code: line.code,
+            rate: line.rate|rate(locale),
+            base: line.base|price(currency, locale),
+            due: line.due|price(currency, locale),
+            deductible: (line.deductible + line.deductibleAssets)|price(currency, locale),
+        }), {
+            empty_label: '@page::empty' | trans,
+            totals: { code: '@page::total' | trans, due: vat_return.due|price(currency, locale), deductible: (vat_return.deductible + vat_return.deductibleAssets)|price(currency, locale) },
+        }) }}
+        <dl class="accounting-figures">
+            {%- if vat_return.previousCredit -%}<dt>{{ '@page::previous_credit' | trans }}</dt><dd>{{ vat_return.previousCredit|price(currency, locale) }}</dd>{%- endif -%}
+            {%- if vat_return.deposits -%}<dt>{{ '@page::deposits' | trans }}</dt><dd>{{ vat_return.deposits|price(currency, locale) }}</dd>{%- endif -%}
+            <dt>{{ vat_return.net >= 0 ? '@page::to_pay' | trans : '@page::credit' | trans }}</dt><dd><strong>{{ vat_return.net|abs|price(currency, locale) }}</strong></dd>
+        </dl>
+    </div>
+    {%- if can_edit -%}
+        <div class="block--footer">
+            {{ accounting.action('ph:bold/stamp', '@page::settle' | trans, path('accounting_vat_settle', { ledger: ledger.id }), { fields: { from: vat_return.from|date('Y-m-d'), to: vat_return.to|date('Y-m-d') }, confirm: '@page::confirm_settle' | trans, class: 'button--invert' }) }}
         </div>
-        {%- if can_edit -%}
-            <div class="block--footer">
-                {{ accounting.action('ph:bold/stamp', '@page::settle' | trans, path('accounting_vat_settle', { ledger: ledger.id }), { fields: { from: vat_return.from|date('Y-m-d'), to: vat_return.to|date('Y-m-d') }, confirm: '@page::confirm_settle' | trans, class: 'button--invert' }) }}
-            </div>
-        {%- endif -%}
-    </section>
+    {%- endif -%}
     {%- for key, boxes in forms -%}
-        <section class="block block--card">
-            <div class="block--title"><span class="block--title-label">{{ '@page::form' | trans({ '%form%': key|upper }) }}</span></div>
-            <div class="block--body">
-                {{ data_table([
-                    { key: 'box', label: '@page::column.box' | trans },
-                    { key: 'amount', label: '@page::column.amount' | trans, align: 'end' },
-                ], boxes|map((amount, box) => { box: box, amount: amount|price(currency, locale) })|filter(row => true)) }}
-            </div>
-        </section>
+        <h2>{{ '@page::form' | trans({ '%form%': key|upper }) }}</h2>
+        {{ data_table([
+            { key: 'box', label: '@page::column.box' | trans },
+            { key: 'amount', label: '@page::column.amount' | trans, align: 'end' },
+        ], boxes|map((amount, box) => { box: box, amount: amount|price(currency, locale) })|filter(row => true)) }}
     {%- endfor -%}
 {%- endblock -%}

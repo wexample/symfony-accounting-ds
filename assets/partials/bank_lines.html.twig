@@ -1,15 +1,21 @@
-{#- Bank lines, each opening its page: when, what the bank said, how much,
-    how much of it is explained. -#}
+{#- Bank lines, each opening its page in the books holding it: when, what the
+    bank said, how much, how much of it is explained — and, for an account
+    shared between organizations (`show_organization`), whose line it is. -#}
 {%- set p = 'WexampleSymfonyAccountingDsBundle.partials.bank_lines::' -%}
+{%- set show_organization = show_organization|default(false) -%}
 {{ data_table([
     { key: 'date', label: (p ~ 'date') | trans, cell: 'html' },
     { key: 'label', label: (p ~ 'label') | trans },
+]|merge(show_organization ? [
+    { key: 'organization', label: (p ~ 'organization') | trans, cell: 'html' },
+] : [])|merge([
     { key: 'amount', label: (p ~ 'amount') | trans, align: 'end' },
     { key: 'state', label: (p ~ 'state') | trans, cell: 'html' },
-], lines|map(line => {
-    href: path('accounting_bank_line', { ledger: ledger.id, id: line.id }),
+]), lines|map(line => {
+    href: path('accounting_bank_line', { ledger: line.ledger.id, id: line.id }),
     date: date_display(line.date, 'date_short'),
     label: line.label ~ (line.counterpartyName ? ' — ' ~ line.counterpartyName : ''),
+    organization: show_organization ? marker(line.bankAccount.ownerShare ? 'neutral' : 'info', line.ledger.name, { compact: true }) : '',
     amount: line.amount|price(line.bankAccount.currencyCode, app.request.locale),
     state: line.transfer
         ? marker('neutral', (p ~ 'transfer') | trans, { compact: true })
