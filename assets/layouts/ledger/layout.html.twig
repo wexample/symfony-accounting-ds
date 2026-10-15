@@ -2,7 +2,9 @@
 
 {#- A page of one ledger: its name as the page's trail, its sections as tabs
     under the header. `ledger` is given by every page extending this one; the
-    actions of the page, if any, at the far end of the bar (`ledger_actions`). -#}
+    actions of the page, if any, at the far end of the bar (`ledger_actions`).
+    The way back leads to the organization the books are of, for one of its
+    owners; to the list of ledgers for a reader reaching them by role. -#}
 {%- set page_show_title = true -%}
 
 {%- block page_navigation -%}
@@ -20,5 +22,5 @@
         { label: t ~ 'reports', icon: 'ph:bold/chart-bar', route: 'accounting_reports_index', params: params, active: route starts with 'accounting_reports_' },
         { label: t ~ 'chart', icon: 'ph:bold/list-numbers', route: 'accounting_chart_index', params: params, active: route starts with 'accounting_chart_' },
         { label: t ~ 'settings', icon: 'ph:bold/gear', route: 'accounting_settings', params: { id: ledger.id } },
-    ], { back: { href: path('accounting_index'), label: ledger.name }, actions: ledger_actions|default(null) }) }}
+    ], { back: { href: is_granted('owner', ledger.organization) ? path('organization_show', { id: ledger.organization.id }) : path('accounting_index'), label: ledger.name }, actions: ledger_actions|default(null) }) }}
 {%- endblock -%}
