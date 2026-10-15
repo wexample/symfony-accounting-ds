@@ -1,26 +1,11 @@
 {%- extends '@front/layouts/private/layout.html.twig' -%}
 
-{#- A page of one ledger: its name as the page's trail, its sections as tabs
-    under the header. `ledger` is given by every page extending this one; the
-    actions of the page, if any, at the far end of the bar (`ledger_actions`).
-    The way back leads to the organization the books are of, for one of its
-    owners; to the list of ledgers for a reader reaching them by role. -#}
+{#- A page of one ledger, read inside its organization: the organization's
+    navigation (`organization_navigation`), where the books are a section of
+    their own holding every view of the ledger (LedgerOrganizationSectionService)
+    — as tabs, the ledger's views under the way back to the organization; as the
+    side menu, the organization whole, the books unfolded. `ledger` is given by
+    every page extending this one; the actions of the page, if any, at the far
+    end of the bar (`ledger_actions`). -#}
 {%- set page_show_title = true -%}
-
-{%- block page_navigation -%}
-    {%- set t = 'WexampleSymfonyAccountingDsBundle.common.accounting::tab.' -%}
-    {%- set params = { ledger: ledger.id } -%}
-    {%- set route = app.request.attributes.get('_route') -%}
-    {{ page_tabs([
-        { label: t ~ 'overview', icon: 'ph:bold/gauge', route: 'accounting_show', params: { id: ledger.id } },
-        { label: t ~ 'documents', icon: 'ph:bold/receipt', route: 'accounting_documents_index', params: params, active: route starts with 'accounting_documents_' },
-        { label: t ~ 'parties', icon: 'ph:bold/address-book', route: 'accounting_parties_index', params: params, active: route starts with 'accounting_parties_' },
-        { label: t ~ 'bank', icon: 'ph:bold/bank', route: 'accounting_bank_index', params: params, active: route starts with 'accounting_bank_' },
-        { label: t ~ 'entries', icon: 'ph:bold/notebook', route: 'accounting_entries_index', params: params, active: route starts with 'accounting_entries_' },
-        { label: t ~ 'fiscal_years', icon: 'ph:bold/calendar-check', route: 'accounting_fiscal_years_index', params: params, active: route starts with 'accounting_fiscal_years_' },
-        { label: t ~ 'vat', icon: 'ph:bold/percent', route: 'accounting_vat_index', params: params, active: route starts with 'accounting_vat_' },
-        { label: t ~ 'reports', icon: 'ph:bold/chart-bar', route: 'accounting_reports_index', params: params, active: route starts with 'accounting_reports_' },
-        { label: t ~ 'chart', icon: 'ph:bold/list-numbers', route: 'accounting_chart_index', params: params, active: route starts with 'accounting_chart_' },
-        { label: t ~ 'settings', icon: 'ph:bold/gear', route: 'accounting_settings', params: { id: ledger.id } },
-    ], { back: { href: is_granted('owner', ledger.organization) ? path('organization_show', { id: ledger.organization.id }) : path('accounting_index'), label: ledger.name }, actions: ledger_actions|default(null) }) }}
-{%- endblock -%}
+{%- set page_section_navigation = organization_navigation(ledger.organization)|merge({ actions: ledger_actions|default(null) }) -%}
