@@ -27,11 +27,11 @@
     "wexample/symfony-design-system": ">=35.0.0",
     "wexample/symfony-api": ">=13.0.0",
     "wexample/symfony-forms": ">=12.0.0",
-    "wexample/symfony-money": ">=6.0.0",
-    "wexample/symfony-geo": ">=6.0.0",
-    "wexample/symfony-accounting": ">=6.0.0",
-    "wexample/symfony-organization": ">=1.0.1",
-    "wexample/symfony-organization-ds": ">=1.0.1"
+    "wexample/symfony-money": ">=7.0.0",
+    "wexample/symfony-geo": ">=7.0.0",
+    "wexample/symfony-accounting": ">=7.0.0",
+    "wexample/symfony-organization": ">=2.0.0",
+    "wexample/symfony-organization-ds": ">=2.0.0"
   },
   "require-dev": {
     "phpunit/phpunit": "^13"
