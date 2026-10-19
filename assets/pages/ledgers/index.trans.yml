@@ -21,3 +21,15 @@ fr:
     receivable: Dû par les clients
     payable: Dû aux fournisseurs
     unsettled: Lignes bancaires à expliquer
+
+zh:
+  page_title: 会计
+  page_icon: 'ph:bold/calculator'
+  empty: 没有打开的账本。
+  column:
+    name: 账本
+    country: 国家
+    fiscal_year: 财年
+    receivable: 客户应收款
+    payable: 供应商应付款
+    unsettled: 待解释的银行额度

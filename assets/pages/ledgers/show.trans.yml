@@ -37,3 +37,23 @@ fr:
   fiscal_year:
     open: ouvert
     closed: clôturé
+
+zh:
+  page_title: 账本
+  page_icon: 'ph:bold/calculator'
+  open:
+    sale: 客户欠款
+    purchase: 供应商欠款
+    count: '%count% 个待付款文件'
+    late: '%amount% 个逾期'
+    see: 查看它们
+  todo:
+    title: 待办事项
+    drafts: '%count% 个草稿'
+    unsettled: '%count% 条银行明细待解释'
+    fiscal_year: '财年 %label%'
+    new_document: 新文件
+    reconcile: 对账
+  fiscal_year:
+    open: 开启
+    closed: 关闭

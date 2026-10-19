@@ -27,3 +27,18 @@ fr:
     bill_purchase:
       title: Une facture fournisseur
       help: Ce qu'un fournisseur vous a envoyé, saisi pour être payé et comptabilisé.
+
+zh:
+  page_title: 新文档
+  page_icon: 'ph:bold/file-plus'
+  create: 开始
+  start:
+    bill_sale:
+      title: 发票
+      help: 发送给客户，发出时编号。
+    quotation_sale:
+      title: 报价单
+      help: 无需到期；接受后开票。
+    bill_purchase:
+      title: 供应商发票
+      help: 供应商发送给你的，记录以便支付和记账。

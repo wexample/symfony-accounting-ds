@@ -37,3 +37,23 @@ fr:
     submit: Enregistrer
   success:
     message: Tiers enregistré
+
+zh:
+  group:
+    who: 这是谁
+    payment: 付款
+  field:
+    customer:
+      label: 客户
+    supplier:
+      label: 供应商
+    iban:
+      label: 国际银行帐户号码
+    paymentTermDays:
+      label: 付款期限（天），如果不是账簿的
+    notes:
+      label: 备注
+  action:
+    submit: 保存
+  success:
+    message: 方已保存

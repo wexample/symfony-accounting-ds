@@ -21,3 +21,15 @@ fr:
   letter: Lettre
   reverse: Contre-passer
   confirm_reverse: Une écriture de montants opposés est comptabilisée. Continuer ?
+
+zh:
+  page_title: 录入
+  page_icon: 'ph:bold/notebook'
+  account: 账户
+  label: 标签
+  party: 方
+  debit: 借方
+  credit: 贷方
+  letter: 信件
+  reverse: 反转
+  confirm_reverse: 已记录相反金额的条目。继续吗？

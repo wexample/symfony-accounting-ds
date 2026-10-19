@@ -43,3 +43,26 @@ fr:
     active: En service
     default: Affiché sur les pièces
     submit: Enregistrer
+
+zh:
+  page_title: 银行账户
+  page_icon: 'ph:bold/bank'
+  empty: 这里没有任何记录。
+  only_unsettled: 仅未结算的
+  only_owner: 仅限于所有者的
+  lines: 记录
+  assign:
+    title: 将记录指向一个组织
+    label: 标签的文字
+    from: 来自
+    to: 到
+    target: 组织
+    submit: 指向它们
+  edit:
+    title: 账户
+    label: 标签
+    holder: 持有人
+    bank_name: 银行
+    active: 正在使用
+    default: 在文件中显示
+    submit: 保存

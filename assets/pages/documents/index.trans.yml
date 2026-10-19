@@ -45,3 +45,27 @@ fr:
     title: Recevoir une facture
     help: Un PDF Factur-X, ou un fichier CII ou UBL, devient un brouillon d'achat — son fournisseur créé s'il est inconnu.
     submit: Recevoir
+
+zh:
+  page_title: 文档
+  page_icon: 'ph:bold/receipt'
+  empty: 没有匹配的文档。
+  draft: 草稿
+  search: 搜索
+  action:
+    new: 新建文档
+  filter:
+    direction: 方式
+    year: 年份
+  column:
+    number: 编号
+    type: 类型
+    party: 方
+    date: 日期
+    total: 总计
+    due: 剩余应付
+    status: 状态
+  receive:
+    title: 接收发票
+    help: 'Factur-X PDF、CII或UBL文件将变为采购草稿——其供应商在未知时创建。'
+    submit: 接收

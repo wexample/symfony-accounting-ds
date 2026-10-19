@@ -47,3 +47,28 @@ fr:
     debit: Débit
     credit: Crédit
     balance: Solde
+
+zh:
+  page_title: 报告
+  page_icon: 'ph:bold/chart-bar'
+  statements: 对账单
+  general_ledger: 总账
+  exports: 导出
+  no_export: 本财年没有导出。
+  trial_balance: 试算表
+  nbb:
+    title: 国家银行年度账目
+    model: 模型
+    micro: 微型
+    abridged: 简缩版
+    approval: 已于会议批准
+    submit: 下载XBRL
+  empty: 尚未预订任何内容。
+  total: 总计
+  no_fiscal_year: 账本尚未设定财年。
+  column:
+    number: 账户
+    label: 标签
+    debit: 借方
+    credit: 贷方
+    balance: 余额

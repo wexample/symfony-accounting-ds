@@ -39,3 +39,24 @@ fr:
     deductible: Déductible
     box: Case
     amount: Montant
+
+zh:
+  page_title: 增值税申报
+  page_icon: 'ph:bold/percent'
+  empty: 本期没有征税。
+  total: 总计
+  previous_credit: 结转信用
+  deposits: 已支付存款
+  to_pay: 应支付
+  credit: 信用
+  settle: 登记结算
+  confirm_settle: 申报已登记，正在将应付金额转入支付给国家的账户。继续吗？
+  form: '表格 %form%'
+  column:
+    code: 增值税
+    rate: 税率
+    base: 基数
+    due: 已收款
+    deductible: 可抵扣
+    box: 框
+    amount: 金额

@@ -33,3 +33,21 @@ fr:
     roles: Rôle
     codes: Comptes auxiliaires
     contact: Contact
+
+zh:
+  page_title: 派对
+  page_icon: 'ph:bold/address-book'
+  empty: 没有匹配的派对。
+  search: 搜索
+  new:
+    name: 新派对的名称
+    submit: 添加
+  role:
+    customer: 客户
+    supplier: 供应商
+    both: 两者
+  column:
+    name: 名称
+    roles: 角色
+    codes: 辅助代码
+    contact: 联系人

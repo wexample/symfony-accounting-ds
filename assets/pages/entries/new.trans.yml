@@ -23,3 +23,16 @@ fr:
   debit: Débit
   credit: Crédit
   submit: La comptabiliser
+
+zh:
+  page_title: 写条目
+  page_icon: 'ph:bold/pencil-line'
+  journal: 日记
+  date: 日期
+  label: 标签
+  piece: 文件参考
+  account: 账户
+  line_label: 行标签
+  debit: 借记
+  credit: 贷记
+  submit: 记账

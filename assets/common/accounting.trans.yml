@@ -129,3 +129,69 @@ fr:
     sent: Envoyée par Peppol.
     related: Pièces associées.
     unrelated: Lien retiré.
+
+zh:
+  tab:
+    overview: 概览
+    accounting: 会计
+    documents: 文件
+    parties: 参与方
+    bank: 银行
+    entries: 条目
+    fiscal_years: 财年
+    vat: 增值税
+    reports: 报告
+    chart: 会计科目表
+    settings: 设置
+  status:
+    draft: 草稿
+    model: 模板
+    waiting: 等待批准
+    approved: 已批准
+    emitted: 已发出
+    partially_paid: 部分支付
+    paid: 已支付
+    canceled: 已取消
+    accepted: 已接受
+    refused: 已拒绝
+    late: 逾期
+  type:
+    bill: 发票
+    credit_note: 信用凭证
+    quotation: 报价单
+    penalty: 滞纳金
+    receipt: 收据
+    pro_forma: 形式发票
+  direction:
+    sale: 销售
+    purchase: 采购
+  refused:
+    token: 页面保持打开时间过长。请重试。
+  done:
+    created: 已创建。
+    saved: 已保存。
+    deleted: 已删除。
+    emitted: 文件已发出。
+    credited: 信用凭证已发出。
+    billed: 发票已从报价单中生成。
+    duplicated: 已创建副本作为草稿。
+    imported: 已导入对账单。
+    matched: 匹配完成。
+    assigned: 已指明条目。
+    allocated: 已记录付款。
+    unallocated: 已移除付款。
+    linked: 转账已链接。
+    unlinked: 转账已取消链接。
+    posted: 条目已记录。
+    reversed: 条目已撤销。
+    lettered: 条目已编号。
+    unlettered: 已移除编号。
+    closed: 财年已关闭。
+    reopened: 财年已重新开启。
+    next: 下一个财年已开启。
+    settled: 增值税已结算。
+    regularized: 扣除已调整。
+    received: 发票作为采购草稿已收到。
+    sent: 已通过Peppol发送。
+    related: 文件已链接。
+    unrelated: 链接已移除。

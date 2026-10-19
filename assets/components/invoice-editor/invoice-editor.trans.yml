@@ -37,3 +37,23 @@ fr:
     vat: TVA
     total: TTC
   pdf: Aperçu du PDF
+
+zh:
+  head:
+    party: 派对
+    no_party: 尚未选择
+    title: 主题
+    date: 日期
+    valid_until: 有效期至
+    term: 付款期限（天）
+    note: 文件上的备注
+    currency: 货币
+    rate: '汇率：每单位 %currency%'
+    rate_at_emission: 按发行时计
+  line:
+    paste_hint: 从电子表格复制的行可以粘贴到新行中；可以导入包含表格的文件。
+  total:
+    net: 净额
+    vat: 增值税
+    total: 总计
+  pdf: '预览 PDF'

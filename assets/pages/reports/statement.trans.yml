@@ -13,3 +13,11 @@ fr:
   gross: Brut
   deduct: Amort. / dépréc.
   amount: Net
+
+zh:
+  page_title: 声明
+  page_icon: 'ph:bold/file-text'
+  line: 行
+  gross: 总额
+  deduct: 减去
+  amount: 净额

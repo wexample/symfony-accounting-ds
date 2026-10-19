@@ -137,3 +137,73 @@ fr:
     whole: Tout le reste dû
     reason: Motif
     submit: Émettre l'avoir
+
+zh:
+  page_title: 文档
+  page_icon: 'ph:bold/receipt'
+  draft: 草稿
+  party: 方
+  date: 日期
+  date_due: 到期
+  net: 净额
+  vat: 增值税
+  total: 总计
+  credited: 已记入
+  paid: 已支付
+  due: 剩余应付
+  payments: 已支付的款项
+  label: 银行流水
+  amount: 金额
+  relations: 关联文档
+  no_relation: 没有关联文档。
+  import_warnings: 读取收到的发票时注意到的内容
+  unrelate: 解除关联
+  relate:
+    choose: 要关联的文档…
+    rebill: '重新开票（采购 → 销售）'
+    financing: 融资
+    to: 这是来源文档
+    from: 这是目标文档
+    submit: 关联
+  relation:
+    quotation:
+      to: 开票为
+      from: 根据报价开票
+    credit:
+      to: 由…记入
+      from: 信用票据
+    deposit:
+      to: 押金
+      from: 押金来源
+    penalty:
+      to: 逾期费
+      from: 逾期费用为
+    rebill:
+      to: 重新开票于
+      from: 重新开票采购
+    financing:
+      to: 融资
+      from: 由…融资
+  peppol:
+    reachable: 客户通过Peppol接收发票。
+    unreachable: 在Peppol目录中找不到客户。
+    send: 通过Peppol发送
+    confirm: 发票已发送至客户的接入点。继续吗？
+  download:
+    ubl: 下载为UBL（Peppol）
+    cii: 下载为CII（Factur-X）
+  action:
+    emit: 发出
+    duplicate: 复制为草稿
+    delete: 删除草稿
+    bill: 开票
+  confirm:
+    emit: 已发出，文档已编号并登记，无法更改。发出吗？
+    delete: 删除此草稿吗？
+    credit: 信用票据将立即发出。继续吗？
+  credit:
+    title: 通过信用票据取消
+    amount: 金额，含税
+    whole: 剩余全部
+    reason: 原因
+    submit: 发出信用票据

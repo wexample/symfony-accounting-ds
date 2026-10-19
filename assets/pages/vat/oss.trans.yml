@@ -29,3 +29,19 @@ fr:
     rate: Taux
     base: Base
     vat: TVA
+
+zh:
+  page_title: 一站式商店
+  page_icon: 'ph:bold/globe-hemisphere-west'
+  previous: 上一个季度
+  next: 下一个季度
+  threshold: '今年的远程销售: %sales%, 阈值为 %threshold%.'
+  empty: 本季度没有在其他国家征税的远程销售。
+  csv: 下载门户的CSV文件
+  settle: 预约结算
+  confirm_settle: 本季度的OSS增值税将转入应付增值税。继续吗？
+  column:
+    country: 国家
+    rate: 税率
+    base: 基数
+    vat: 增值税

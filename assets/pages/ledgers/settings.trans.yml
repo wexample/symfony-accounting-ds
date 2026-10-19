@@ -5,3 +5,7 @@ en:
 fr:
   page_title: Réglages
   page_icon: ph:bold/gear
+
+zh:
+  page_title: 设置
+  page_icon: 'ph:bold/gear'

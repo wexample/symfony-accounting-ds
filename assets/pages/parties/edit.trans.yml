@@ -19,3 +19,14 @@ fr:
     date: Date
     total: TTC
     status: Statut
+
+zh:
+  page_title: 派对
+  page_icon: 'ph:bold/address-book'
+  documents: 其文档
+  empty: 尚无文档。
+  column:
+    number: 文档
+    date: 日期
+    total: 总计
+    status: 状态

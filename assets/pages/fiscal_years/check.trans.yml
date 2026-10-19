@@ -33,3 +33,21 @@ fr:
   reopen: Le rouvrir
   confirm_close: Clôturé, l'exercice ne prend plus d'écriture et ses soldes sont reportés. Le clôturer ?
   confirm_reopen: Rouvrir retire ce que la clôture a comptabilisé. Le rouvrir ?
+
+zh:
+  page_title: 财政年度
+  page_icon: 'ph:bold/calendar-check'
+  result: 结果：
+  clean: 检查未发现需要修复的内容。
+  severity: 严重性
+  subject: 关于
+  finding: 发现
+  level:
+    error: 错误
+    warning: 警告
+    info: 注意
+  close: 关闭它
+  force: 强制关闭，尽管有警告
+  reopen: 重新打开它
+  confirm_close: 已关闭，财政年度不再接受任何条目，其余额将被结转。要关闭吗？
+  confirm_reopen: 重新打开将移除关闭时记录的内容。要重新打开吗？

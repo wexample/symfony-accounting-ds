@@ -25,3 +25,17 @@ fr:
   letter: Lettrer les lignes cochées
   letters: Lettres attribuées
   unletter: La retirer
+
+zh:
+  page_title: 字母化
+  page_icon: 'ph:bold/link'
+  auto: 将所有匹配的内容字母化
+  date: 日期
+  label: 标签
+  party: 方
+  debit: 借记
+  credit: 贷记
+  all_lettered: 此账户的每一行都已字母化。
+  letter: 字母化已勾选的行
+  letters: 已分配的字母
+  unletter: 撤回

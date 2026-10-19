@@ -41,3 +41,25 @@ fr:
     draft: Brouillard
     posted: Comptabilisée
     validated: Validée
+
+zh:
+  page_title: 条目
+  page_icon: 'ph:bold/notebook'
+  empty: 这里没有条目。
+  action:
+    new: 写一个条目
+    lettering: 书写
+  filter:
+    fiscal_year: 财年
+  column:
+    date: 日期
+    journal: 日志
+    number: 编号
+    label: 标签
+    piece: 文件
+    amount: 金额
+    status: 状态
+  status:
+    draft: 草稿
+    posted: 已记账
+    validated: 已验证

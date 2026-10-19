@@ -75,3 +75,42 @@ fr:
     pending: à vérifier
     validated: vérifié
     excluded: retiré
+
+zh:
+  page_title: 银行交易
+  page_icon: 'ph:bold/bank'
+  account: 账户
+  organization: 组织
+  assign:
+    title: 谁的交易
+    submit: 指向那里
+  date: 日期
+  counterparty: 从或到
+  reference: 参考
+  amount: 金额
+  left: 剩下的解释
+  explained: 解释内容
+  nothing_yet: 还没有。
+  transfer_with: '转账给 %account%:'
+  to_account: '账户 %account%'
+  remove: 移除
+  confirm_remove: 付款已被移除，条目已撤销。继续吗？
+  unlink: 解除转账链接
+  proposals: 匹配者的提议
+  confidence: '%confidence% %'
+  apply: 接受
+  by_hand: 手动
+  invoice: 支付的文件
+  invoice_amount: 它在文件货币中的支付额
+  invoice_amount_help: 仅适用于其他货币的文件
+  or_account: 或一个账户
+  account_label: 标签
+  vat_rate: 增值税（基点）
+  allocate_amount: 金额
+  all_left: 所有剩余的
+  allocate: 记录
+  link: 这是此转账的另一半
+  allocation:
+    pending: 待检查
+    validated: 已检查
+    excluded: 已移除

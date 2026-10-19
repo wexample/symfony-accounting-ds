@@ -27,3 +27,18 @@ fr:
   status:
     open: Ouvert
     closed: Clôturé
+
+zh:
+  page_title: 财年
+  page_icon: 'ph:bold/calendar-check'
+  empty: 还没有财年。
+  next: 打开下一个
+  column:
+    label: 财年
+    start: 开始于
+    end: 结束于
+    result: 结果
+    status: 状态
+  status:
+    open: 开启
+    closed: 已结束

@@ -41,3 +41,25 @@ fr:
   action:
     match: Rapprocher les lignes
   unsettled_more: Les %shown% plus anciennes sur %count% ; la page d'un compte les montre toutes, par année.
+
+zh:
+  page_title: 银行
+  page_icon: 'ph:bold/bank'
+  accounts: 账户
+  no_account: 还没有银行账户。
+  unsettled: 待解释的项目
+  all_settled: 每一项都已解释。
+  column:
+    account: 账户
+    balance: 余额
+    unsettled: 待解释
+  new:
+    label: 新账户名称
+    submit: 添加账户
+  import:
+    title: 导入对账单
+    detect: 从文件中找到的格式
+    submit: 导入
+  action:
+    match: 匹配项目
+  unsettled_more: '%shown% 最旧的 %count%；账户页面会按年份显示它们所有。'

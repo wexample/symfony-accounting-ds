@@ -19,3 +19,14 @@ fr:
     vat: TVA
     reverse_charge: Autoliquidation
     net: HT
+
+zh:
+  new: 一行新的…
+  column:
+    title: 行
+    description: 描述
+    quantity: 数量
+    unit_price: 单价（净）
+    vat: 增值税
+    reverse_charge: 反向收费
+    net: 净值

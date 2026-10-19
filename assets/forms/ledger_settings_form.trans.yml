@@ -91,3 +91,50 @@ fr:
     submit: Enregistrer
   success:
     message: Réglages enregistrés
+
+zh:
+  group:
+    identity: 它是谁
+    books: 它的书籍
+    vat: 增值税，进一步
+    nbb: 年度财务报告（比利时国家银行）
+  field:
+    ossRegistered:
+      label: 首次远程销售已在一站式服务中心（OSS）注册
+    ossElectronicServices:
+      label: 销售以电子方式交付的服务（计入OSS）
+    vatDeductionRate:
+      label: 可扣除的增值税比例，以%计算（全部可扣除时为100）
+    vatAdmissionRates:
+      label: 按费用账户入账，每行一个：账户：百分比（例如6257：0）
+    nbbCourt:
+      label: 企业法庭（NBB代码，例如m31）
+    nbbLastDeedDate:
+      label: 最新契约的提交日期
+    nbbLegalForm:
+      label: 法律形式，NBB代码（仅在不是SRL、SA或SC时）
+    vatSubject:
+      label: 适用增值税
+    vatPeriodicity:
+      label: 增值税申报
+      choice:
+        monthly:
+          label: 每月
+        quarterly:
+          label: 每季度
+        annual:
+          label: 每年
+        none:
+          label: 无
+    vatOnPayments:
+      label: 支付中的增值税
+    invoicePrefix:
+      label: 文档编号前缀
+    paymentTermDays:
+      label: 付款期限（天）
+    legalMentions:
+      label: 文件上的法律声明
+  action:
+    submit: 保存
+  success:
+    message: 设置已保存

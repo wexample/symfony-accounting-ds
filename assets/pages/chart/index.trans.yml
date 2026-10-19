@@ -35,3 +35,22 @@ fr:
     debit: Débiteur
     credit: Créditeur
     both: Mixte
+
+zh:
+  page_title: 账户图表
+  page_icon: 'ph:bold/list-numbers'
+  search: 一个数字或一个词
+  search_submit: 搜索
+  empty: 没有匹配的账户。
+  class: '类别 %class%'
+  lettrable: 字母
+  inactive: 不活跃
+  column:
+    number: 编号
+    label: 标签
+    nature: 性质
+    class: 类别
+  nature:
+    debit: 借方
+    credit: 贷方
+    both: 任意

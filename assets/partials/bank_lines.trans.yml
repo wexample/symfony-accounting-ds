@@ -17,3 +17,13 @@ fr:
   transfer: Virement interne
   settled: Oui
   left: '%amount% restant'
+
+zh:
+  date: 日期
+  label: 行
+  organization: 组织
+  amount: 金额
+  state: 已说明
+  transfer: 转账
+  settled: 是
+  left: '%amount% 剩余'

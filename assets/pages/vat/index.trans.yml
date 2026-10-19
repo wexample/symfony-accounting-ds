@@ -29,3 +29,19 @@ fr:
     deductible: Déductible
     net: Due (crédit si négatif)
     deposits: Acomptes payés / attendus
+
+zh:
+  page_title: 增值税
+  page_icon: 'ph:bold/percent'
+  empty: 账本中没有增值税申报。
+  total: 年份
+  action:
+    oss: 一站式服务
+    deduction: 部分扣除
+  previous_credit: '上一年结转的信用: %amount%'
+  column:
+    period: 期间
+    collected: 已收
+    deductible: 可扣除
+    net: 应付（如果为负则为信用）
+    deposits: 已支付/预计支付的存款

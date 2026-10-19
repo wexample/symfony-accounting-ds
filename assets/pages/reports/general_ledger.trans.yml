@@ -25,3 +25,17 @@ fr:
   credit: Crédit
   balance: Solde
   total: Total
+
+zh:
+  page_title: 总账
+  page_icon: 'ph:bold/book-open'
+  account: 一个账户，或其编号的开始
+  show: 显示
+  empty: 此处没有记录。
+  date: 日期
+  journal: 日记账
+  label: 标签
+  debit: 借方
+  credit: 贷方
+  balance: 余额
+  total: 总计
