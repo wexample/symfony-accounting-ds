@@ -57,3 +57,403 @@ zh:
     submit: 保存
   success:
     message: 方已保存
+
+ar:
+  group:
+    who: 'من هو'
+    payment: الدفع
+  field:
+    customer:
+      label: العميل
+    supplier:
+      label: المورد
+    iban:
+      label: IBAN
+    paymentTermDays:
+      label: 'مدة الدفع (بالأيام) عند عدم وجود دفتر الحسابات'
+    notes:
+      label: ملاحظات
+  action:
+    submit: حفظ
+  success:
+    message: 'تم حفظ الطرف'
+
+hi:
+  group:
+    who: 'यह कौन है'
+    payment: भुगतान
+  field:
+    customer:
+      label: ग्राहक
+    supplier:
+      label: आपूर्तिकर्ता
+    iban:
+      label: IBAN
+    paymentTermDays:
+      label: 'भुगतान की अवधि (दिन), जब खाता नहीं है'
+    notes:
+      label: नोट्स
+  action:
+    submit: सहेजें
+  success:
+    message: 'पार्टी सहेजी गई'
+
+he:
+  group:
+    who: 'מי זה'
+    payment: תשלום
+  field:
+    customer:
+      label: לקוח
+    supplier:
+      label: ספק
+    iban:
+      label: IBAN
+    paymentTermDays:
+      label: 'תנאי תשלום (ימים), כאשר לא מדובר בספרי החשבונות'
+    notes:
+      label: הערות
+  action:
+    submit: שמור
+  success:
+    message: 'הצד נשמר'
+
+fa:
+  group:
+    who: 'این کیست'
+    payment: پرداخت
+  field:
+    customer:
+      label: مشتری
+    supplier:
+      label: 'تأمین کننده'
+    iban:
+      label: 'شماره IBAN'
+    paymentTermDays:
+      label: 'مدت پرداخت (روز)، زمانی که دفتر کل نیست'
+    notes:
+      label: یادداشت‌ها
+  action:
+    submit: ذخیره
+  success:
+    message: 'طرف ذخیره شد'
+
+ur:
+  group:
+    who: 'یہ کون ہے'
+    payment: ادائیگی
+  field:
+    customer:
+      label: کسٹمر
+    supplier:
+      label: سپلائر
+    iban:
+      label: IBAN
+    paymentTermDays:
+      label: 'ادائیگی کی مدت (دن)، جب لیجر نہیں ہے'
+    notes:
+      label: نوٹس
+  action:
+    submit: 'محفوظ کریں'
+  success:
+    message: 'فریق محفوظ کر لیا گیا'
+
+ja:
+  group:
+    who: 誰ですか
+    payment: 支払い
+  field:
+    customer:
+      label: 顧客
+    supplier:
+      label: サプライヤー
+    iban:
+      label: IBAN
+    paymentTermDays:
+      label: 支払い条件（日数）、元帳のものではない場合
+    notes:
+      label: メモ
+  action:
+    submit: 保存
+  success:
+    message: 取引先が保存されました
+
+ko:
+  group:
+    who: '이 사람은 누구인가'
+    payment: 결제
+  field:
+    customer:
+      label: 고객
+    supplier:
+      label: 공급업체
+    iban:
+      label: IBAN
+    paymentTermDays:
+      label: '결제 조건(일), 장부와 다를 때'
+    notes:
+      label: 비고
+  action:
+    submit: 저장
+  success:
+    message: '파트너가 저장되었습니다'
+
+bn:
+  group:
+    who: 'এটি কে'
+    payment: পেমেন্ট
+  field:
+    customer:
+      label: গ্রাহক
+    supplier:
+      label: সরবরাহকারী
+    iban:
+      label: আইবিএএন
+    paymentTermDays:
+      label: 'পেমেন্টের শর্ত (দিন), যখন লেজারের নয়'
+    notes:
+      label: নোট
+  action:
+    submit: 'সংরক্ষণ করুন'
+  success:
+    message: 'পক্ষ সংরক্ষিত'
+
+th:
+  group:
+    who: ใครเป็นคนนี้
+    payment: การชำระเงิน
+  field:
+    customer:
+      label: ลูกค้า
+    supplier:
+      label: ผู้จัดหา
+    iban:
+      label: IBAN
+    paymentTermDays:
+      label: 'ระยะเวลาการชำระเงิน (วัน) เมื่อไม่ใช่บัญชีแยกประเภท'
+    notes:
+      label: หมายเหตุ
+  action:
+    submit: บันทึก
+  success:
+    message: บันทึกข้อมูลสำเร็จ
+
+de:
+  group:
+    who: 'Wer ist es'
+    payment: Zahlung
+  field:
+    customer:
+      label: Kunde
+    supplier:
+      label: Lieferant
+    iban:
+      label: IBAN
+    paymentTermDays:
+      label: 'Zahlungsfrist (Tage), wenn nicht im Hauptbuch'
+    notes:
+      label: Notizen
+  action:
+    submit: Speichern
+  success:
+    message: 'Partei gespeichert'
+
+fi:
+  group:
+    who: 'Kuka se on'
+    payment: Maksu
+  field:
+    customer:
+      label: Asiakas
+    supplier:
+      label: Toimittaja
+    iban:
+      label: IBAN
+    paymentTermDays:
+      label: 'Maksuehto (päivinä), kun ei ole kirjanpidossa'
+    notes:
+      label: Muistiinpanot
+  action:
+    submit: Tallenna
+  success:
+    message: 'Osapuoli tallennettu'
+
+ru:
+  group:
+    who: 'Кто это'
+    payment: Оплата
+  field:
+    customer:
+      label: Клиент
+    supplier:
+      label: Поставщик
+    iban:
+      label: IBAN
+    paymentTermDays:
+      label: 'Срок оплаты (дни), когда не ведется учет'
+    notes:
+      label: Заметки
+  action:
+    submit: Сохранить
+  success:
+    message: 'Сторона сохранена'
+
+pl:
+  group:
+    who: 'Kto to jest'
+    payment: Płatność
+  field:
+    customer:
+      label: Klient
+    supplier:
+      label: Dostawca
+    iban:
+      label: IBAN
+    paymentTermDays:
+      label: 'Termin płatności (dni), gdy nie jest księgowy'
+    notes:
+      label: Notatki
+  action:
+    submit: Zapisz
+  success:
+    message: 'Strona zapisana'
+
+es:
+  group:
+    who: 'Quién es'
+    payment: Pago
+  field:
+    customer:
+      label: Cliente
+    supplier:
+      label: Proveedor
+    iban:
+      label: IBAN
+    paymentTermDays:
+      label: 'Plazo de pago (días), cuando no es el libro mayor'
+    notes:
+      label: Notas
+  action:
+    submit: Guardar
+  success:
+    message: 'Parte guardada'
+
+it:
+  group:
+    who: 'Chi è'
+    payment: Pagamento
+  field:
+    customer:
+      label: Cliente
+    supplier:
+      label: Fornitore
+    iban:
+      label: IBAN
+    paymentTermDays:
+      label: 'Termine di pagamento (giorni), quando non il libro mastro'
+    notes:
+      label: Note
+  action:
+    submit: Salva
+  success:
+    message: 'Parte salvata'
+
+pt_BR:
+  group:
+    who: 'Quem é'
+    payment: Pagamento
+  field:
+    customer:
+      label: Cliente
+    supplier:
+      label: Fornecedor
+    iban:
+      label: IBAN
+    paymentTermDays:
+      label: 'Prazo de pagamento (dias), quando não for do livro razão'
+    notes:
+      label: Notas
+  action:
+    submit: Salvar
+  success:
+    message: 'Parte salva'
+
+tr:
+  group:
+    who: 'Bu kim'
+    payment: Ödeme
+  field:
+    customer:
+      label: Müşteri
+    supplier:
+      label: Tedarikçi
+    iban:
+      label: IBAN
+    paymentTermDays:
+      label: 'Ödeme süresi (gün), defterin dışında olduğunda'
+    notes:
+      label: Notlar
+  action:
+    submit: Kaydet
+  success:
+    message: 'Taraf kaydedildi'
+
+vi:
+  group:
+    who: 'Ai đây'
+    payment: 'Thanh toán'
+  field:
+    customer:
+      label: 'Khách hàng'
+    supplier:
+      label: 'Nhà cung cấp'
+    iban:
+      label: IBAN
+    paymentTermDays:
+      label: 'Thời hạn thanh toán (ngày), khi không phải là sổ cái'
+    notes:
+      label: 'Ghi chú'
+  action:
+    submit: Lưu
+  success:
+    message: 'Đối tác đã được lưu'
+
+id:
+  group:
+    who: 'Siapa ini'
+    payment: Pembayaran
+  field:
+    customer:
+      label: Pelanggan
+    supplier:
+      label: Pemasok
+    iban:
+      label: IBAN
+    paymentTermDays:
+      label: 'Jangka waktu pembayaran (hari), ketika bukan buku besar'
+    notes:
+      label: Catatan
+  action:
+    submit: Simpan
+  success:
+    message: 'Pihak disimpan'
+
+nl:
+  group:
+    who: 'Wie het is'
+    payment: Betaling
+  field:
+    customer:
+      label: Klant
+    supplier:
+      label: Leverancier
+    iban:
+      label: IBAN
+    paymentTermDays:
+      label: 'Betalingstermijn (dagen), wanneer niet het grootboek'
+    notes:
+      label: Notities
+  action:
+    submit: Opslaan
+  success:
+    message: 'Partij opgeslagen'

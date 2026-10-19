@@ -138,3 +138,943 @@ zh:
     submit: 保存
   success:
     message: 设置已保存
+
+ar:
+  group:
+    identity: 'من هو'
+    books: كتبه
+    vat: 'ضريبة القيمة المضافة، المزيد'
+    nbb: 'الحسابات السنوية (البنك الوطني البلجيكي)'
+  field:
+    ossRegistered:
+      label: 'مسجل في المتجر الشامل (OSS) من أول عملية بيع عن بُعد'
+    ossElectronicServices:
+      label: 'يبيع خدمات تُقدَّم إلكترونيًا (تُحتسب للـ OSS)'
+    vatDeductionRate:
+      label: 'نسبة ضريبة القيمة المضافة القابلة للاقتطاع، بالنسب المئوية (100 عندما تكون جميعها قابلة للاقتطاع)'
+    vatAdmissionRates:
+      label: 'قبول حسب حساب المصاريف، واحد لكل سطر: الحساب: النسبة المئوية (مثال: 6257: 0)'
+    nbbCourt:
+      label: 'محكمة الشركات (رمز NBB، مثال: m31)'
+    nbbLastDeedDate:
+      label: 'تاريخ تقديم آخر صك'
+    nbbLegalForm:
+      label: 'الهيئة القانونية، رمز NBB (فقط عندما لا تكون SRL أو SA أو SC)'
+    vatSubject:
+      label: 'خاضع لضريبة القيمة المضافة'
+    vatPeriodicity:
+      label: 'الإقرارات الضريبية'
+      choice:
+        monthly:
+          label: شهري
+        quarterly:
+          label: 'ربع سنوي'
+        annual:
+          label: سنوي
+        none:
+          label: 'لا شيء'
+    vatOnPayments:
+      label: 'ضريبة القيمة المضافة المستحقة على المدفوعات'
+    invoicePrefix:
+      label: 'بادئة رقم الوثيقة'
+    paymentTermDays:
+      label: 'أجل الدفع (بالأيام)'
+    legalMentions:
+      label: 'الإشعارات القانونية المطبوعة على الوثائق'
+  action:
+    submit: حفظ
+  success:
+    message: 'تم حفظ الإعدادات'
+
+hi:
+  group:
+    identity: 'यह कौन है'
+    books: 'इसके पुस्तकें'
+    vat: 'वैट, आगे'
+    nbb: 'वार्षिक खातें (बेल्जियम का राष्ट्रीय बैंक)'
+  field:
+    ossRegistered:
+      label: 'पहली दूरस्थ बिक्री से एक-स्टॉप शॉप (OSS) में पंजीकृत'
+    ossElectronicServices:
+      label: 'इलेक्ट्रॉनिक रूप से प्रदान की गई सेवाएँ बेचता है (ये OSS के लिए गिनती हैं)'
+    vatDeductionRate:
+      label: 'वैट की कटौती योग्य हिस्सेदारी, % में (जब सब कुछ कटौती योग्य हो तब 100)'
+    vatAdmissionRates:
+      label: 'खर्च खाता द्वारा प्रवेश, एक प्रति पंक्ति: खाता: प्रतिशत (जैसे 6257: 0)'
+    nbbCourt:
+      label: 'उद्योग न्यायालय (NBB कोड, जैसे m31)'
+    nbbLastDeedDate:
+      label: 'अंतिम विलेख की फाइलिंग तिथि'
+    nbbLegalForm:
+      label: 'कानूनी रूप, NBB कोड (केवल जब SRL, SA या SC न हो)'
+    vatSubject:
+      label: 'वैट के अधीन'
+    vatPeriodicity:
+      label: 'वैट रिटर्न'
+      choice:
+        monthly:
+          label: मासिक
+        quarterly:
+          label: तिमाही
+        annual:
+          label: वार्षिक
+        none:
+          label: 'कोई नहीं'
+    vatOnPayments:
+      label: 'भुगतान पर देय वैट'
+    invoicePrefix:
+      label: 'दस्तावेज़ संख्या उपसर्ग'
+    paymentTermDays:
+      label: 'भुगतान की अवधि (दिनों में)'
+    legalMentions:
+      label: 'दस्तावेज़ों पर मुद्रित कानूनी उल्लेख'
+  action:
+    submit: सहेजें
+  success:
+    message: 'सेटिंग्स सहेजी गईं'
+
+he:
+  group:
+    identity: 'מי זה'
+    books: 'הספרים שלו'
+    vat: 'מע"מ, נוסף'
+    nbb: 'דוחות שנתיים (הבנק הלאומי של בלגיה)'
+  field:
+    ossRegistered:
+      label: 'רשום אצל החנות המקיפה (OSS) מהמכירה הראשונה מרחוק'
+    ossElectronicServices:
+      label: 'מוכר שירותים הנמסרים בצורה אלקטרונית (הם נחשבים ל-OSS)'
+    vatDeductionRate:
+      label: 'שיעור המע"מ שניתן לנכות, באחוזים (100 כאשר הכל ניתן לניכוי)'
+    vatAdmissionRates:
+      label: 'קבלה לפי חשבון הוצאות, אחד לכל שורה: חשבון: אחוז (למשל 6257: 0)'
+    nbbCourt:
+      label: 'בית משפט לעסקים (קוד NBB, למשל m31)'
+    nbbLastDeedDate:
+      label: 'תאריך הגשת המסמך האחרון'
+    nbbLegalForm:
+      label: 'צורת משפטית, קוד NBB (רק כאשר לא SRL, SA או SC)'
+    vatSubject:
+      label: 'נושא למע"מ'
+    vatPeriodicity:
+      label: 'החזרי מע"מ'
+      choice:
+        monthly:
+          label: חודשי
+        quarterly:
+          label: רבעוני
+        annual:
+          label: שנתי
+        none:
+          label: אין
+    vatOnPayments:
+      label: 'מע"מ חייב על תשלומים'
+    invoicePrefix:
+      label: 'קידומת מספר מסמך'
+    paymentTermDays:
+      label: 'מועד תשלום (ימים)'
+    legalMentions:
+      label: 'הערות משפטיות המודפסות על מסמכים'
+  action:
+    submit: שמור
+  success:
+    message: 'הגדרות נשמרו'
+
+fa:
+  group:
+    identity: 'این کیست'
+    books: 'کتاب‌های آن'
+    vat: 'مالیات بر ارزش افزوده، بیشتر'
+    nbb: 'گزارش‌های سالانه (بانک ملی بلژیک)'
+  field:
+    ossRegistered:
+      label: 'ثبت شده در فروشگاه یک‌ساعته (OSS) از اولین فروش از راه دور'
+    ossElectronicServices:
+      label: 'فروش خدمات ارائه شده به صورت الکترونیکی (این‌ها برای OSS محاسبه می‌شوند)'
+    vatDeductionRate:
+      label: 'سهم مالیات بر ارزش افزوده قابل کسر، به درصد (100 وقتی که همه چیز قابل کسر است)'
+    vatAdmissionRates:
+      label: 'قبول به حساب هزینه، یکی در هر خط: حساب: درصد (مثلاً 6257: 0)'
+    nbbCourt:
+      label: 'دادگاه تجاری (کد NBB، مثلاً m31)'
+    nbbLastDeedDate:
+      label: 'تاریخ ثبت آخرین سند'
+    nbbLegalForm:
+      label: 'نوع حقوقی، کد NBB (فقط زمانی که SRL، SA یا SC نیست)'
+    vatSubject:
+      label: 'مشمول مالیات بر ارزش افزوده'
+    vatPeriodicity:
+      label: 'گزارش‌های مالیات بر ارزش افزوده'
+      choice:
+        monthly:
+          label: ماهانه
+        quarterly:
+          label: فصلی
+        annual:
+          label: سالانه
+        none:
+          label: هیچ‌کدام
+    vatOnPayments:
+      label: 'مالیات بر ارزش افزوده بر پرداخت‌ها'
+    invoicePrefix:
+      label: 'پیشوند شماره سند'
+    paymentTermDays:
+      label: 'مدت زمان پرداخت (روز)'
+    legalMentions:
+      label: 'موارد قانونی چاپ شده روی اسناد'
+  action:
+    submit: ذخیره
+  success:
+    message: 'تنظیمات ذخیره شد'
+
+ur:
+  group:
+    identity: 'یہ کون ہے'
+    books: 'اس کی کتابیں'
+    vat: 'VAT، مزید'
+    nbb: 'سالانہ حسابات (قومی بینک آف بیلجیئم)'
+  field:
+    ossRegistered:
+      label: 'پہلی دور کی فروخت سے ایک سٹاپ شاپ (OSS) کے ساتھ رجسٹرڈ'
+    ossElectronicServices:
+      label: 'ایسی خدمات بیچتا ہے جو الیکٹرانک طور پر فراہم کی جاتی ہیں (یہ OSS کے لئے شمار ہوتی ہیں)'
+    vatDeductionRate:
+      label: 'VAT کی کٹوتی کی شرح، % میں (جب سب کچھ کٹوتی کے قابل ہو تو 100)'
+    vatAdmissionRates:
+      label: 'اخراجات کے کھاتے کے ذریعہ داخلہ، ہر لائن پر: کھاتہ: فیصد (جیسے 6257: 0)'
+    nbbCourt:
+      label: 'ادارہ عدالت (NBB کوڈ، جیسے m31)'
+    nbbLastDeedDate:
+      label: 'آخری دستاویز کی جمع کروانے کی تاریخ'
+    nbbLegalForm:
+      label: 'قانونی شکل، NBB کوڈ (صرف جب SRL، SA یا SC نہ ہو)'
+    vatSubject:
+      label: 'VAT کے تابع'
+    vatPeriodicity:
+      label: 'VAT کی واپسی'
+      choice:
+        monthly:
+          label: ماہانہ
+        quarterly:
+          label: 'ہفتہ وار'
+        annual:
+          label: سالانہ
+        none:
+          label: 'کوئی نہیں'
+    vatOnPayments:
+      label: 'ادائیگیوں پر VAT'
+    invoicePrefix:
+      label: 'دستاویز نمبر کا پیش لفظ'
+    paymentTermDays:
+      label: 'ادائیگی کی مدت (دن)'
+    legalMentions:
+      label: 'دستاویزات پر درج قانونی ذکر'
+  action:
+    submit: 'محفوظ کریں'
+  success:
+    message: 'ترتیبات محفوظ کرلی گئی ہیں'
+
+ja:
+  group:
+    identity: 誰ですか
+    books: その書籍
+    vat: VAT、さらに
+    nbb: 年次会計（ベルギー国立銀行）
+  field:
+    ossRegistered:
+      label: 初回の遠隔販売からワンストップショップ（OSS）に登録済み
+    ossElectronicServices:
+      label: 電子的に提供されるサービスを販売（OSSにカウントされる）
+    vatDeductionRate:
+      label: VAT控除可能な割合、%で（全て控除可能な場合は100）
+    vatAdmissionRates:
+      label: '費用勘定による承認、1行につき：勘定：パーセント（例：6257: 0）'
+    nbbCourt:
+      label: 企業裁判所（NBBコード、例：m31）
+    nbbLastDeedDate:
+      label: 最新の契約書の提出日
+    nbbLegalForm:
+      label: 法人形態、NBBコード（SRL、SAまたはSCでない場合のみ）
+    vatSubject:
+      label: VATの対象
+    vatPeriodicity:
+      label: VAT申告
+      choice:
+        monthly:
+          label: 毎月
+        quarterly:
+          label: 四半期ごと
+        annual:
+          label: 年次
+        none:
+          label: なし
+    vatOnPayments:
+      label: 支払いに対するVAT
+    invoicePrefix:
+      label: 文書番号の接頭辞
+    paymentTermDays:
+      label: 支払条件（日数）
+    legalMentions:
+      label: 文書に印刷された法的記載
+  action:
+    submit: 保存
+  success:
+    message: 設定が保存されました
+
+ko:
+  group:
+    identity: 누구인가
+    books: '그의 책들'
+    vat: '부가가치세, 추가'
+    nbb: '연간 재무제표 (벨기에 중앙은행)'
+  field:
+    ossRegistered:
+      label: '최초 원거리 판매로 원스톱 샵(OSS)에 등록됨'
+    ossElectronicServices:
+      label: '전자적으로 제공되는 서비스 판매(OSS에 포함됨)'
+    vatDeductionRate:
+      label: '부가가치세 공제 비율, %로 표시 (모두 공제 가능할 경우 100)'
+    vatAdmissionRates:
+      label: '비용 계정에 의한 승인, 한 줄당: 계정: 비율 (예: 6257: 0)'
+    nbbCourt:
+      label: '기업 법원 (NBB 코드, 예: m31)'
+    nbbLastDeedDate:
+      label: '최신 계약서 제출일'
+    nbbLegalForm:
+      label: '법적 형태, NBB 코드 (SRL, SA 또는 SC가 아닐 경우에만)'
+    vatSubject:
+      label: '부가가치세 적용 대상'
+    vatPeriodicity:
+      label: '부가가치세 신고'
+      choice:
+        monthly:
+          label: 매월
+        quarterly:
+          label: '매 분기'
+        annual:
+          label: 연간
+        none:
+          label: 없음
+    vatOnPayments:
+      label: '지급에 대한 부가가치세'
+    invoicePrefix:
+      label: '문서 번호 접두사'
+    paymentTermDays:
+      label: '지급 조건 (일수)'
+    legalMentions:
+      label: '문서에 인쇄된 법적 고지사항'
+  action:
+    submit: 저장
+  success:
+    message: '설정이 저장되었습니다'
+
+bn:
+  group:
+    identity: 'এটি কে'
+    books: 'এর বইগুলো'
+    vat: 'ভ্যাট, আরও'
+    nbb: 'বার্ষিক হিসাব (বেলজিয়ামের জাতীয় ব্যাংক)'
+  field:
+    ossRegistered:
+      label: 'প্রথম দূরত্ব বিক্রির জন্য একক দোকানে (OSS) নিবন্ধিত'
+    ossElectronicServices:
+      label: 'ইলেকট্রনিকভাবে বিতরণ করা পরিষেবাগুলি বিক্রি করে (এগুলি OSS এর জন্য গণনা করা হয়)'
+    vatDeductionRate:
+      label: 'ভ্যাট কাটা যাবে এমন অংশ, %-এ (যখন সবকিছু কাটা যাবে তখন 100)'
+    vatAdmissionRates:
+      label: 'ব্যয় অ্যাকাউন্ট দ্বারা প্রবেশ, প্রতি লাইনে এক: অ্যাকাউন্ট: শতাংশ (যেমন 6257: 0)'
+    nbbCourt:
+      label: 'এন্টারপ্রাইজ আদালত (NBB কোড, যেমন m31)'
+    nbbLastDeedDate:
+      label: 'সর্বশেষ চুক্তির ফাইলিং তারিখ'
+    nbbLegalForm:
+      label: 'আইনি ফর্ম, NBB কোড (শুধুমাত্র যখন SRL, SA বা SC নয়)'
+    vatSubject:
+      label: 'ভ্যাটের আওতাধীন'
+    vatPeriodicity:
+      label: 'ভ্যাট ফেরত'
+      choice:
+        monthly:
+          label: মাসিক
+        quarterly:
+          label: ত্রৈমাসিক
+        annual:
+          label: বার্ষিক
+        none:
+          label: 'কিছুই নয়'
+    vatOnPayments:
+      label: 'পেমেন্টে ভ্যাট প্রযোজ্য'
+    invoicePrefix:
+      label: 'নথির নম্বরের পূর্বপদ'
+    paymentTermDays:
+      label: 'পেমেন্টের মেয়াদ (দিন)'
+    legalMentions:
+      label: 'নথিতে মুদ্রিত আইনগত উল্লেখ'
+  action:
+    submit: 'সংরক্ষণ করুন'
+  success:
+    message: 'সেটিংস সংরক্ষিত হয়েছে'
+
+th:
+  group:
+    identity: ใครคือ
+    books: หนังสือของมัน
+    vat: 'VAT, เพิ่มเติม'
+    nbb: 'งบการเงินประจำปี (ธนาคารแห่งชาติของเบลเยียม)'
+  field:
+    ossRegistered:
+      label: 'ลงทะเบียนกับบริการแบบเบ็ดเสร็จ (OSS) สำหรับการขายทางไกลครั้งแรก'
+    ossElectronicServices:
+      label: 'ขายบริการที่จัดส่งทางอิเล็กทรอนิกส์ (ซึ่งนับรวมสำหรับ OSS)'
+    vatDeductionRate:
+      label: 'สัดส่วนของ VAT ที่สามารถหักได้, เป็น % (100 เมื่อทุกอย่างสามารถหักได้)'
+    vatAdmissionRates:
+      label: 'การอนุญาตโดยบัญชีค่าใช้จ่าย, หนึ่งต่อบรรทัด: บัญชี: เปอร์เซ็นต์ (เช่น 6257: 0)'
+    nbbCourt:
+      label: 'ศาลธุรกิจ (รหัส NBB, เช่น m31)'
+    nbbLastDeedDate:
+      label: วันที่ยื่นเอกสารล่าสุด
+    nbbLegalForm:
+      label: 'รูปแบบทางกฎหมาย, รหัส NBB (เฉพาะเมื่อไม่ใช่ SRL, SA หรือ SC)'
+    vatSubject:
+      label: 'ต้องเสีย VAT'
+    vatPeriodicity:
+      label: 'การคืน VAT'
+      choice:
+        monthly:
+          label: รายเดือน
+        quarterly:
+          label: รายไตรมาส
+        annual:
+          label: รายปี
+        none:
+          label: ไม่มี
+    vatOnPayments:
+      label: 'VAT ที่ต้องชำระจากการชำระเงิน'
+    invoicePrefix:
+      label: คำนำหน้าหมายเลขเอกสาร
+    paymentTermDays:
+      label: 'ระยะเวลาชำระเงิน (วัน)'
+    legalMentions:
+      label: ข้อความทางกฎหมายที่พิมพ์ในเอกสาร
+  action:
+    submit: บันทึก
+  success:
+    message: การตั้งค่าถูกบันทึกแล้ว
+
+de:
+  group:
+    identity: 'Wer es ist'
+    books: 'Seine Bücher'
+    vat: 'USt, weiter'
+    nbb: 'Jahresabschluss (Nationalbank von Belgien)'
+  field:
+    ossRegistered:
+      label: 'Registriert beim One-Stop-Shop (OSS) ab dem ersten Fernverkauf'
+    ossElectronicServices:
+      label: 'Verkauft Dienstleistungen, die elektronisch erbracht werden (zählen für den OSS)'
+    vatDeductionRate:
+      label: 'Anteil der abziehbaren USt, in % (100, wenn alles abziehbar ist)'
+    vatAdmissionRates:
+      label: 'Zulassung nach Kostenrechnung, jeweils eine pro Zeile: Konto: Prozent (z.B. 6257: 0)'
+    nbbCourt:
+      label: 'Unternehmungsgericht (NBB-Code, z.B. m31)'
+    nbbLastDeedDate:
+      label: 'Einreichungsdatum der letzten Urkunde'
+    nbbLegalForm:
+      label: 'Rechtsform, NBB-Code (nur wenn nicht SRL, SA oder SC)'
+    vatSubject:
+      label: USt-pflichtig
+    vatPeriodicity:
+      label: USt-Erklärungen
+      choice:
+        monthly:
+          label: Monatlich
+        quarterly:
+          label: Vierteljährlich
+        annual:
+          label: Jährlich
+        none:
+          label: Keine
+    vatOnPayments:
+      label: 'USt fällig auf Zahlungen'
+    invoicePrefix:
+      label: Dokumentnummern-Präfix
+    paymentTermDays:
+      label: 'Zahlungsfrist (Tage)'
+    legalMentions:
+      label: 'Rechtliche Hinweise auf Dokumenten'
+  action:
+    submit: Speichern
+  success:
+    message: 'Einstellungen gespeichert'
+
+fi:
+  group:
+    identity: 'Kuka se on'
+    books: 'Sen kirjat'
+    vat: 'ALV, lisätietoja'
+    nbb: 'Tilinpäätökset (Belgian kansallispankki)'
+  field:
+    ossRegistered:
+      label: 'Rekisteröity yhden luukun palvelussa (OSS) ensimmäisestä etämyynnistä'
+    ossElectronicServices:
+      label: 'Myy sähköisesti toimitettuja palveluita (ne lasketaan OSS:lle)'
+    vatDeductionRate:
+      label: 'ALV:n vähennettävä osuus, % (100 kun kaikki on vähennettävää)'
+    vatAdmissionRates:
+      label: 'Hyväksyntä kuluerän mukaan, yksi per rivi: tili: prosentti (esim. 6257: 0)'
+    nbbCourt:
+      label: 'Yrittäjäoikeus (NBB-koodi, esim. m31)'
+    nbbLastDeedDate:
+      label: 'Viimeisen asiakirjan jättöpäivämäärä'
+    nbbLegalForm:
+      label: 'Oikeudellinen muoto, NBB-koodi (vain jos ei SRL, SA tai SC)'
+    vatSubject:
+      label: 'ALV:n alainen'
+    vatPeriodicity:
+      label: ALV-ilmoitukset
+      choice:
+        monthly:
+          label: Kuukausittain
+        quarterly:
+          label: Kvartaaleittain
+        annual:
+          label: Vuosittain
+        none:
+          label: 'Ei mitään'
+    vatOnPayments:
+      label: 'ALV maksuille'
+    invoicePrefix:
+      label: 'Asiakirjanumeron etuliite'
+    paymentTermDays:
+      label: 'Maksuaika (päivinä)'
+    legalMentions:
+      label: 'Oikeudelliset maininnat asiakirjoissa'
+  action:
+    submit: Tallenna
+  success:
+    message: 'Asetukset tallennettu'
+
+ru:
+  group:
+    identity: 'Кто это'
+    books: 'Его книги'
+    vat: 'НДС, далее'
+    nbb: 'Годовая отчетность (Национальный банк Бельгии)'
+  field:
+    ossRegistered:
+      label: 'Зарегистрирован в едином окне (OSS) с первой дистанционной продажи'
+    ossElectronicServices:
+      label: 'Продает услуги, предоставляемые в электронной форме (они учитываются для OSS)'
+    vatDeductionRate:
+      label: 'Доля НДС, подлежащая вычету, в % (100, когда всё подлежит вычету)'
+    vatAdmissionRates:
+      label: 'Прием по статье расходов, одна на строку: статья: процент (например, 6257: 0)'
+    nbbCourt:
+      label: 'Предпринимательский суд (код НББ, например, m31)'
+    nbbLastDeedDate:
+      label: 'Дата подачи последнего акта'
+    nbbLegalForm:
+      label: 'Юридическая форма, код НББ (только если не SRL, SA или SC)'
+    vatSubject:
+      label: 'Объект налогообложения НДС'
+    vatPeriodicity:
+      label: 'Декларации по НДС'
+      choice:
+        monthly:
+          label: Ежемесячно
+        quarterly:
+          label: Ежеквартально
+        annual:
+          label: Ежегодно
+        none:
+          label: Нет
+    vatOnPayments:
+      label: 'НДС, подлежащий уплате по платежам'
+    invoicePrefix:
+      label: 'Префикс номера документа'
+    paymentTermDays:
+      label: 'Срок оплаты (дни)'
+    legalMentions:
+      label: 'Юридические упоминания, печатаемые на документах'
+  action:
+    submit: Сохранить
+  success:
+    message: 'Настройки сохранены'
+
+pl:
+  group:
+    identity: 'Kim to jest'
+    books: 'Jego książki'
+    vat: 'VAT, dalej'
+    nbb: 'Roczne sprawozdania (Narodowy Bank Belgii)'
+  field:
+    ossRegistered:
+      label: 'Zarejestrowany w punkcie kompleksowej obsługi (OSS) od pierwszej sprzedaży na odległość'
+    ossElectronicServices:
+      label: 'Sprzedaje usługi dostarczane elektronicznie (liczą się do OSS)'
+    vatDeductionRate:
+      label: 'Udział VAT do odliczenia, w % (100, gdy wszystko jest do odliczenia)'
+    vatAdmissionRates:
+      label: 'Przyjęcie według konta kosztowego, jedno na linię: konto: procent (np. 6257: 0)'
+    nbbCourt:
+      label: 'Sąd gospodarczy (kod NBB, np. m31)'
+    nbbLastDeedDate:
+      label: 'Data złożenia ostatniego aktu'
+    nbbLegalForm:
+      label: 'Forma prawna, kod NBB (tylko gdy nie SRL, SA lub SC)'
+    vatSubject:
+      label: 'Podlegający VAT'
+    vatPeriodicity:
+      label: 'Deklaracje VAT'
+      choice:
+        monthly:
+          label: Miesięcznie
+        quarterly:
+          label: Kwartalnie
+        annual:
+          label: Rocznie
+        none:
+          label: Brak
+    vatOnPayments:
+      label: 'VAT należny od płatności'
+    invoicePrefix:
+      label: 'Prefiks numeru dokumentu'
+    paymentTermDays:
+      label: 'Termin płatności (dni)'
+    legalMentions:
+      label: 'Wzmianki prawne drukowane na dokumentach'
+  action:
+    submit: Zapisz
+  success:
+    message: 'Ustawienia zapisane'
+
+es:
+  group:
+    identity: 'Quién es'
+    books: 'Sus libros'
+    vat: 'IVA, más adelante'
+    nbb: 'Cuentas anuales (Banco Nacional de Bélgica)'
+  field:
+    ossRegistered:
+      label: 'Registrado en el ventanilla única (OSS) desde la primera venta a distancia'
+    ossElectronicServices:
+      label: 'Vende servicios entregados electrónicamente (cuentan para el OSS)'
+    vatDeductionRate:
+      label: 'Porcentaje de IVA deducible, en % (100 cuando todo es deducible)'
+    vatAdmissionRates:
+      label: 'Admisión por cuenta de gastos, una por línea: cuenta: porcentaje (p. ej. 6257: 0)'
+    nbbCourt:
+      label: 'Tribunal de empresa (código NBB, p. ej. m31)'
+    nbbLastDeedDate:
+      label: 'Fecha de presentación de la última escritura'
+    nbbLegalForm:
+      label: 'Forma jurídica, código NBB (solo cuando no es SRL, SA o SC)'
+    vatSubject:
+      label: 'Sujeto a IVA'
+    vatPeriodicity:
+      label: 'Declaraciones de IVA'
+      choice:
+        monthly:
+          label: Mensual
+        quarterly:
+          label: Trimestral
+        annual:
+          label: Anual
+        none:
+          label: Ninguno
+    vatOnPayments:
+      label: 'IVA debido sobre los pagos'
+    invoicePrefix:
+      label: 'Prefijo del número de documento'
+    paymentTermDays:
+      label: 'Plazo de pago (días)'
+    legalMentions:
+      label: 'Menciones legales impresas en documentos'
+  action:
+    submit: Guardar
+  success:
+    message: 'Configuraciones guardadas'
+
+it:
+  group:
+    identity: 'Chi è'
+    books: 'I suoi libri'
+    vat: 'IVA, ulteriori informazioni'
+    nbb: 'Conti annuali (Banca Nazionale del Belgio)'
+  field:
+    ossRegistered:
+      label: 'Registrato presso il punto unico di contatto (OSS) dalla prima vendita a distanza'
+    ossElectronicServices:
+      label: "Vende servizi forniti elettronicamente (contano per l'OSS)"
+    vatDeductionRate:
+      label: 'Quota di IVA deducibile, in % (100 quando tutto è deducibile)'
+    vatAdmissionRates:
+      label: 'Ammissione per conto spese, uno per riga: conto: percentuale (es. 6257: 0)'
+    nbbCourt:
+      label: 'Tribunale delle imprese (codice NBB, es. m31)'
+    nbbLastDeedDate:
+      label: "Data di deposito dell'ultimo atto"
+    nbbLegalForm:
+      label: 'Forma giuridica, codice NBB (solo quando non è SRL, SA o SC)'
+    vatSubject:
+      label: 'Soggetto a IVA'
+    vatPeriodicity:
+      label: 'Dichiarazioni IVA'
+      choice:
+        monthly:
+          label: Mensile
+        quarterly:
+          label: Trimestrale
+        annual:
+          label: Annuale
+        none:
+          label: Nessuno
+    vatOnPayments:
+      label: 'IVA dovuta sui pagamenti'
+    invoicePrefix:
+      label: 'Prefisso numero documento'
+    paymentTermDays:
+      label: 'Termine di pagamento (giorni)'
+    legalMentions:
+      label: 'Riferimenti legali stampati sui documenti'
+  action:
+    submit: Salva
+  success:
+    message: 'Impostazioni salvate'
+
+pt_BR:
+  group:
+    identity: 'Quem é'
+    books: 'Seus livros'
+    vat: 'IVA, mais informações'
+    nbb: 'Demonstrações financeiras anuais (Banco Nacional da Bélgica)'
+  field:
+    ossRegistered:
+      label: 'Registrado na loja única (OSS) desde a primeira venda à distância'
+    ossElectronicServices:
+      label: 'Vende serviços prestados eletronicamente (eles contam para o OSS)'
+    vatDeductionRate:
+      label: 'Parte do IVA dedutível, em % (100 quando tudo é dedutível)'
+    vatAdmissionRates:
+      label: 'Admissão por conta de despesa, uma por linha: conta: percentual (ex.: 6257: 0)'
+    nbbCourt:
+      label: 'Tribunal das empresas (código NBB, ex.: m31)'
+    nbbLastDeedDate:
+      label: 'Data de arquivamento do último ato'
+    nbbLegalForm:
+      label: 'Forma jurídica, código NBB (somente quando não é SRL, SA ou SC)'
+    vatSubject:
+      label: 'Sujeito ao IVA'
+    vatPeriodicity:
+      label: 'Declarações de IVA'
+      choice:
+        monthly:
+          label: Mensal
+        quarterly:
+          label: Trimestral
+        annual:
+          label: Anual
+        none:
+          label: Nenhum
+    vatOnPayments:
+      label: 'IVA devido sobre pagamentos'
+    invoicePrefix:
+      label: 'Prefixo do número do documento'
+    paymentTermDays:
+      label: 'Prazo de pagamento (dias)'
+    legalMentions:
+      label: 'Menções legais impressas nos documentos'
+  action:
+    submit: Salvar
+  success:
+    message: 'Configurações salvas'
+
+tr:
+  group:
+    identity: Kimdir
+    books: Kitapları
+    vat: 'KDV, devam'
+    nbb: 'Yıllık hesaplar (Belçika Ulusal Bankası)'
+  field:
+    ossRegistered:
+      label: 'İlk mesafeli satıştan itibaren tek durak ofisine (OSS) kaydedildi'
+    ossElectronicServices:
+      label: 'Elektronik olarak sunulan hizmetleri satıyor (OSS için geçerli)'
+    vatDeductionRate:
+      label: 'Kesilebilir KDV oranı, % cinsinden (her şey kesilebilir olduğunda 100)'
+    vatAdmissionRates:
+      label: 'Gider hesabı ile kabul, her bir satır için: hesap: yüzde (örn. 6257: 0)'
+    nbbCourt:
+      label: 'İşletme mahkemesi (NBB kodu, örn. m31)'
+    nbbLastDeedDate:
+      label: 'Son senedin dosyalama tarihi'
+    nbbLegalForm:
+      label: 'Hukuki şekil, NBB kodu (yalnızca SRL, SA veya SC olmadığında)'
+    vatSubject:
+      label: "KDV'ye tabi"
+    vatPeriodicity:
+      label: 'KDV beyannameleri'
+      choice:
+        monthly:
+          label: Aylık
+        quarterly:
+          label: 'Üç aylık'
+        annual:
+          label: Yıllık
+        none:
+          label: Yok
+    vatOnPayments:
+      label: 'Ödemelerde KDV'
+    invoicePrefix:
+      label: 'Belge numarası ön eki'
+    paymentTermDays:
+      label: 'Ödeme süresi (gün)'
+    legalMentions:
+      label: 'Belgelerde basılı hukuki notlar'
+  action:
+    submit: Kaydet
+  success:
+    message: 'Ayarlar kaydedildi'
+
+vi:
+  group:
+    identity: 'Ai đây'
+    books: 'Các sách của nó'
+    vat: 'VAT, thêm'
+    nbb: 'Báo cáo tài chính hàng năm (Ngân hàng Quốc gia Bỉ)'
+  field:
+    ossRegistered:
+      label: 'Được đăng ký với cửa hàng một cửa (OSS) từ lần bán hàng từ xa đầu tiên'
+    ossElectronicServices:
+      label: 'Bán dịch vụ được cung cấp điện tử (có tính cho OSS)'
+    vatDeductionRate:
+      label: 'Tỷ lệ VAT được khấu trừ, tính bằng % (100 khi mọi thứ đều có thể khấu trừ)'
+    vatAdmissionRates:
+      label: 'Tham gia theo tài khoản chi phí, một tài khoản mỗi dòng: tài khoản: phần trăm (ví dụ 6257: 0)'
+    nbbCourt:
+      label: 'Tòa án doanh nghiệp (mã NBB, ví dụ m31)'
+    nbbLastDeedDate:
+      label: 'Ngày nộp của văn bản gần đây nhất'
+    nbbLegalForm:
+      label: 'Hình thức pháp lý, mã NBB (chỉ khi không phải là SRL, SA hoặc SC)'
+    vatSubject:
+      label: 'Chịu thuế VAT'
+    vatPeriodicity:
+      label: 'Tờ khai VAT'
+      choice:
+        monthly:
+          label: 'Hàng tháng'
+        quarterly:
+          label: 'Hàng quý'
+        annual:
+          label: 'Hàng năm'
+        none:
+          label: 'Không có'
+    vatOnPayments:
+      label: 'VAT đến hạn trên các khoản thanh toán'
+    invoicePrefix:
+      label: 'Tiền tố số tài liệu'
+    paymentTermDays:
+      label: 'Thời hạn thanh toán (ngày)'
+    legalMentions:
+      label: 'Thông tin pháp lý in trên tài liệu'
+  action:
+    submit: Lưu
+  success:
+    message: 'Cài đặt đã được lưu'
+
+id:
+  group:
+    identity: 'Siapa ini'
+    books: Buku-bukunya
+    vat: 'PPN, lebih lanjut'
+    nbb: 'Laporan tahunan (Bank Nasional Belgia)'
+  field:
+    ossRegistered:
+      label: 'Terdaftar di one-stop shop (OSS) dari penjualan jarak jauh pertama'
+    ossElectronicServices:
+      label: 'Menjual layanan yang disampaikan secara elektronik (itu dihitung untuk OSS)'
+    vatDeductionRate:
+      label: 'Bagian PPN yang dapat dikurangkan, dalam % (100 saat semuanya dapat dikurangkan)'
+    vatAdmissionRates:
+      label: 'Penerimaan berdasarkan akun pengeluaran, satu per baris: akun: persen (contoh: 6257: 0)'
+    nbbCourt:
+      label: 'Pengadilan perusahaan (kode NBB, contoh: m31)'
+    nbbLastDeedDate:
+      label: 'Tanggal pengajuan akta terakhir'
+    nbbLegalForm:
+      label: 'Bentuk hukum, kode NBB (hanya ketika bukan SRL, SA atau SC)'
+    vatSubject:
+      label: 'Terkena PPN'
+    vatPeriodicity:
+      label: 'Pengembalian PPN'
+      choice:
+        monthly:
+          label: Bulanan
+        quarterly:
+          label: Triwulanan
+        annual:
+          label: Tahunan
+        none:
+          label: 'Tidak ada'
+    vatOnPayments:
+      label: 'PPN yang terutang atas pembayaran'
+    invoicePrefix:
+      label: 'Awalan nomor dokumen'
+    paymentTermDays:
+      label: 'Jangka waktu pembayaran (hari)'
+    legalMentions:
+      label: 'Pernyataan hukum yang dicetak pada dokumen'
+  action:
+    submit: Simpan
+  success:
+    message: 'Pengaturan disimpan'
+
+nl:
+  group:
+    identity: 'Wie het is'
+    books: 'Zijn boeken'
+    vat: 'BTW, verder'
+    nbb: 'Jaarrekeningen (Nationale Bank van België)'
+  field:
+    ossRegistered:
+      label: 'Geregistreerd bij de one-stop shop (OSS) vanaf de eerste afstandsverkoop'
+    ossElectronicServices:
+      label: 'Verkoopt diensten die elektronisch worden geleverd (ze tellen voor de OSS)'
+    vatDeductionRate:
+      label: 'Deel van de BTW die aftrekbaar is, in % (100 wanneer alles aftrekbaar is)'
+    vatAdmissionRates:
+      label: 'Toelating per kostenrekening, één per regel: rekening: procent (bijv. 6257: 0)'
+    nbbCourt:
+      label: 'Ondernemingsrechtbank (NBB-code, bijv. m31)'
+    nbbLastDeedDate:
+      label: 'Datum van indiening van de laatste akte'
+    nbbLegalForm:
+      label: 'Juridische vorm, NBB-code (alleen wanneer niet SRL, SA of SC)'
+    vatSubject:
+      label: 'Onderworpen aan BTW'
+    vatPeriodicity:
+      label: BTW-aangiften
+      choice:
+        monthly:
+          label: Maandelijks
+        quarterly:
+          label: Kwartaal
+        annual:
+          label: Jaarlijks
+        none:
+          label: Geen
+    vatOnPayments:
+      label: 'BTW verschuldigd op betalingen'
+    invoicePrefix:
+      label: 'Documentnummer prefix'
+    paymentTermDays:
+      label: 'Betalingstermijn (dagen)'
+    legalMentions:
+      label: 'Juridische vermeldingen op documenten'
+  action:
+    submit: Opslaan
+  success:
+    message: 'Instellingen opgeslagen'

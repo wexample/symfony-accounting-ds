@@ -60,3 +60,423 @@ zh:
     deductible: 可抵扣
     box: 框
     amount: 金额
+
+ar:
+  page_title: 'إقرار ضريبة القيمة المضافة'
+  page_icon: 'ph:bold/percent'
+  empty: 'لا توجد ضرائب في هذه الفترة.'
+  total: الإجمالي
+  previous_credit: 'الرصيد المنقول'
+  deposits: 'الودائع المدفوعة'
+  to_pay: 'المبلغ المستحق للدفع'
+  credit: الرصيد
+  settle: 'تسوية الحساب'
+  confirm_settle: 'تم تسجيل الإقرار، moving what is due to the account paid to the State. هل تريد المتابعة؟'
+  form: 'النموذج %form%'
+  column:
+    code: 'ضريبة القيمة المضافة'
+    rate: المعدل
+    base: الأساس
+    due: 'المجموع المحصل'
+    deductible: 'المبلغ القابل للخصم'
+    box: الصندوق
+    amount: المبلغ
+
+hi:
+  page_title: 'वैट रिटर्न'
+  page_icon: 'ph:bold/percent'
+  empty: 'इस अवधि में कोई कर नहीं लगाया गया।'
+  total: कुल
+  previous_credit: 'उपयुक्त क्रेडिट'
+  deposits: 'भुगतान किए गए जमा'
+  to_pay: 'भुगतान करने के लिए'
+  credit: क्रेडिट
+  settle: 'सेटलमेंट बुक करें'
+  confirm_settle: 'रिटर्न बुक हो गया है, जो राज्य को भुगतान किया जाना है उसे खाते में स्थानांतरित किया जा रहा है। आगे बढ़ें?'
+  form: 'फॉर्म %form%'
+  column:
+    code: वैट
+    rate: दर
+    base: आधार
+    due: संग्रहित
+    deductible: 'कटौती योग्य'
+    box: बॉक्स
+    amount: राशि
+
+he:
+  page_title: 'החזר מע"מ'
+  page_icon: 'ph:bold/percent'
+  empty: 'אין מס בתקופה זו.'
+  total: 'סך הכל'
+  previous_credit: 'זכות שהועברה'
+  deposits: 'הפקדות ששולמו'
+  to_pay: לשלם
+  credit: זכות
+  settle: 'לסגור את ההתחשבנות'
+  confirm_settle: 'ההחזר סודר, מעביר את מה שמגיע לחשבון ששולם למדינה. להמשיך?'
+  form: 'טופס %form%'
+  column:
+    code: 'מע"מ'
+    rate: שיעור
+    base: בסיס
+    due: נאסף
+    deductible: הפחתה
+    box: תיבה
+    amount: סכום
+
+fa:
+  page_title: 'بازگشت مالیات بر ارزش افزوده'
+  page_icon: 'ph:bold/percent'
+  empty: 'هیچ مالیاتی در این دوره وجود ندارد.'
+  total: جمع
+  previous_credit: 'اعتبار منتقل شده'
+  deposits: 'ودیعه‌های پرداخت شده'
+  to_pay: 'مبلغ پرداختی'
+  credit: اعتبار
+  settle: 'تسویه را ثبت کن'
+  confirm_settle: 'بازگشت ثبت شده است، مبلغ معوق به حساب پرداختی به دولت منتقل می‌شود. ادامه دهیم؟'
+  form: 'فرم %form%'
+  column:
+    code: 'مالیات بر ارزش افزوده'
+    rate: نرخ
+    base: پایه
+    due: 'جمع‌آوری شده'
+    deductible: 'قابل کسر'
+    box: جعبه
+    amount: مقدار
+
+ur:
+  page_title: 'VAT واپسی'
+  page_icon: 'ph:bold/percent'
+  empty: 'اس مدت میں کوئی ٹیکس نہیں ہے۔'
+  total: کل
+  previous_credit: 'کریڈٹ آگے بڑھایا گیا'
+  deposits: 'ادا کردہ جمع'
+  to_pay: 'ادا کرنا ہے'
+  credit: کریڈٹ
+  settle: 'مفاہمت کی بکنگ کریں'
+  confirm_settle: 'واپسی بک کر دی گئی ہے، جو رقم ریاست کو ادا کی جائے گی اس کو منتقل کر رہے ہیں۔ کیا آگے بڑھیں؟'
+  form: 'فارم %form%'
+  column:
+    code: VAT
+    rate: شرح
+    base: بنیاد
+    due: 'جمع شدہ'
+    deductible: 'کٹوتی کی جا سکتی ہے'
+    box: خانہ
+    amount: رقم
+
+ja:
+  page_title: VAT申告書
+  page_icon: 'ph:bold/percent'
+  empty: この期間に課税されたものはありません。
+  total: 合計
+  previous_credit: 繰越クレジット
+  deposits: 支払済みの預金
+  to_pay: 支払い額
+  credit: クレジット
+  settle: 決済を記録する
+  confirm_settle: 申告が記録され、支払うべき金額が国に支払われた口座に移動されます。続けますか？
+  form: 'フォーム %form%'
+  column:
+    code: VAT
+    rate: 税率
+    base: 基準額
+    due: 徴収済み
+    deductible: 控除可能
+    box: ボックス
+    amount: 金額
+
+ko:
+  page_title: '부가가치세 신고서'
+  page_icon: 'ph:bold/percent'
+  empty: '이번 기간에 과세된 항목이 없습니다.'
+  total: 합계
+  previous_credit: '이월된 크레딧'
+  deposits: '납입된 예치금'
+  to_pay: '지급할 금액'
+  credit: 크레딧
+  settle: '정산 예약'
+  confirm_settle: '신고가 예약되었습니다. 납부해야 할 금액이 국가에 지급된 계좌로 이동합니다. 계속하시겠습니까?'
+  form: '양식 %form%'
+  column:
+    code: VAT
+    rate: 세율
+    base: 기초
+    due: '수납된 금액'
+    deductible: '공제 가능'
+    box: 박스
+    amount: 금액
+
+bn:
+  page_title: 'ভ্যাট রিটার্ন'
+  page_icon: 'ph:bold/percent'
+  empty: 'এই সময়ে কোন কর ধার্য করা হয়নি।'
+  total: মোট
+  previous_credit: 'আগের ক্রেডিট'
+  deposits: 'জমা দেওয়া হয়েছে'
+  to_pay: 'পরিশোধ করতে হবে'
+  credit: ক্রেডিট
+  settle: 'সমাপন বুক করুন'
+  confirm_settle: 'রিটার্ন বুক করা হয়েছে, রাজ্যের কাছে পরিশোধিত হিসাবে যা পাওনা তা স্থানান্তর করা হচ্ছে। আপনি কি এগিয়ে যেতে চান?'
+  form: 'ফর্ম %form%'
+  column:
+    code: ভ্যাট
+    rate: হার
+    base: ভিত্তি
+    due: সংগ্রহিত
+    deductible: কাটছাঁটযোগ্য
+    box: বক্স
+    amount: পরিমাণ
+
+th:
+  page_title: 'การขอคืน VAT'
+  page_icon: 'ph:bold/percent'
+  empty: ไม่มีการเก็บภาษีในช่วงเวลานี้.
+  total: รวม
+  previous_credit: เครดิตที่นำไปใช้ในอนาคต
+  deposits: เงินฝากที่จ่าย
+  to_pay: ต้องจ่าย
+  credit: เครดิต
+  settle: บันทึกการชำระเงิน
+  confirm_settle: 'การขอคืนถูกบันทึกแล้ว ย้ายจำนวนที่ต้องชำระไปยังบัญชีที่จ่ายให้รัฐ ต้องการดำเนินการต่อหรือไม่?'
+  form: 'แบบฟอร์ม %form%'
+  column:
+    code: VAT
+    rate: อัตรา
+    base: ฐาน
+    due: ที่เก็บ
+    deductible: หักออกได้
+    box: กล่อง
+    amount: จำนวนเงิน
+
+de:
+  page_title: Umsatzsteuerrückmeldung
+  page_icon: 'ph:bold/percent'
+  empty: 'In diesem Zeitraum wurde nichts besteuert.'
+  total: Summe
+  previous_credit: 'Vortragender Kredit'
+  deposits: Zahlungen
+  to_pay: 'Zu zahlen'
+  credit: Kredit
+  settle: 'Abrechnung buchen'
+  confirm_settle: 'Die Rückmeldung ist gebucht, das Fällige wird auf das Konto bezahlt, das an den Staat geht. Fortfahren?'
+  form: 'Formular %form%'
+  column:
+    code: USt
+    rate: Satz
+    base: Basis
+    due: Eingezogen
+    deductible: Abziehbar
+    box: Feld
+    amount: Betrag
+
+fi:
+  page_title: ALV-ilmoitus
+  page_icon: 'ph:bold/percent'
+  empty: 'Tässä jaksossa ei ole verotettavaa.'
+  total: Yhteensä
+  previous_credit: 'Siirretty hyvitys'
+  deposits: 'Maksetut talletukset'
+  to_pay: Maksettavaa
+  credit: Hyvitys
+  settle: 'Varaa selvitys'
+  confirm_settle: 'Ilmoitus on varattu, siirretään maksettava summa valtiolle. Jatketaanko?'
+  form: 'Lomake %form%'
+  column:
+    code: ALV
+    rate: Kanta
+    base: Perus
+    due: Kollektiivinen
+    deductible: Vähennettävä
+    box: Laatikko
+    amount: Summa
+
+ru:
+  page_title: 'Декларация по НДС'
+  page_icon: 'ph:bold/percent'
+  empty: 'В этом периоде нет налогооблагаемых операций.'
+  total: Итого
+  previous_credit: 'Перенесенный кредит'
+  deposits: 'Оплаченные депозиты'
+  to_pay: 'К оплате'
+  credit: Кредит
+  settle: 'Зарегистрировать расчет'
+  confirm_settle: 'Декларация зарегистрирована, сумма, подлежащая оплате, переведена на счет, оплаченный Государству. Продолжить?'
+  form: 'Форма %form%'
+  column:
+    code: НДС
+    rate: Ставка
+    base: База
+    due: Собрано
+    deductible: Вычитаемый
+    box: Ячейка
+    amount: Сумма
+
+pl:
+  page_title: 'Zgłoszenie VAT'
+  page_icon: 'ph:bold/percent'
+  empty: 'Brak opodatkowanych transakcji w tym okresie.'
+  total: Razem
+  previous_credit: 'Nadwyżka przeniesiona'
+  deposits: 'Wpłacone zaliczki'
+  to_pay: 'Do zapłaty'
+  credit: Kredyt
+  settle: 'Zaksięguj rozliczenie'
+  confirm_settle: 'Zgłoszenie zostało zaksięgowane, przenoszę należności na konto opłacone do Państwa. Kontynuować?'
+  form: 'Formularz %form%'
+  column:
+    code: VAT
+    rate: Stawka
+    base: Podstawa
+    due: Zebrano
+    deductible: 'Do odliczenia'
+    box: Pudełko
+    amount: Kwota
+
+es:
+  page_title: 'Declaración de IVA'
+  page_icon: 'ph:bold/percent'
+  empty: 'Nada gravado en este período.'
+  total: Total
+  previous_credit: 'Crédito trasladado'
+  deposits: 'Depósitos pagados'
+  to_pay: 'A pagar'
+  credit: Crédito
+  settle: 'Registrar la liquidación'
+  confirm_settle: 'La declaración está registrada, moviendo lo que se debe a la cuenta pagada al Estado. ¿Continuar?'
+  form: 'Formulario %form%'
+  column:
+    code: IVA
+    rate: Tasa
+    base: Base
+    due: Recaudado
+    deductible: Deducible
+    box: Caja
+    amount: Monto
+
+it:
+  page_title: 'Dichiarazione IVA'
+  page_icon: 'ph:bold/percent'
+  empty: 'Nessuna tassa in questo periodo.'
+  total: Totale
+  previous_credit: 'Credito riportato'
+  deposits: 'Depositi versati'
+  to_pay: 'Da pagare'
+  credit: Credito
+  settle: 'Registrare la liquidazione'
+  confirm_settle: 'La dichiarazione è stata registrata, trasferendo quanto dovuto sul conto pagato allo Stato. Procedere?'
+  form: 'Modulo %form%'
+  column:
+    code: IVA
+    rate: Aliquota
+    base: Base
+    due: Riscossa
+    deductible: Detraibile
+    box: Scatola
+    amount: Importo
+
+pt_BR:
+  page_title: 'Declaração de IVA'
+  page_icon: 'ph:bold/percent'
+  empty: 'Nada tributado neste período.'
+  total: Total
+  previous_credit: 'Crédito transferido'
+  deposits: 'Depósitos pagos'
+  to_pay: 'A pagar'
+  credit: Crédito
+  settle: 'Registrar a liquidação'
+  confirm_settle: 'A declaração está registrada, movendo o que é devido para a conta paga ao Estado. Continuar?'
+  form: 'Formulário %form%'
+  column:
+    code: IVA
+    rate: Alíquota
+    base: Base
+    due: Cobrado
+    deductible: Dedutível
+    box: Caixa
+    amount: Valor
+
+tr:
+  page_title: 'KDV iadesi'
+  page_icon: 'ph:bold/percent'
+  empty: 'Bu dönemde vergilendirilen hiçbir şey yok.'
+  total: Toplam
+  previous_credit: 'Devredilen kredi'
+  deposits: 'Yatırılan depozitolar'
+  to_pay: Ödenecek
+  credit: Kredi
+  settle: 'Hesap kapatmasını kaydet'
+  confirm_settle: 'İade kaydedildi, devlete ödenecek tutar hesap ödenmiş olarak aktarılıyor. Devam edelim mi?'
+  form: 'Form %form%'
+  column:
+    code: KDV
+    rate: Oran
+    base: Temel
+    due: 'Tahsil edilen'
+    deductible: İndirilebilir
+    box: Kutu
+    amount: Tutar
+
+vi:
+  page_title: 'Tờ khai VAT'
+  page_icon: 'ph:bold/percent'
+  empty: 'Không có thuế trong kỳ này.'
+  total: 'Tổng cộng'
+  previous_credit: 'Tín dụng chuyển tiếp'
+  deposits: 'Khoản đặt cọc đã thanh toán'
+  to_pay: 'Phải thanh toán'
+  credit: 'Tín dụng'
+  settle: 'Ghi nhận sự thanh toán'
+  confirm_settle: 'Tờ khai đã được ghi lại, chuyển số tiền phải trả vào tài khoản đã thanh toán cho Nhà nước. Tiếp tục không?'
+  form: 'Mẫu %form%'
+  column:
+    code: VAT
+    rate: 'Tỷ lệ'
+    base: 'Cơ sở'
+    due: 'Đã thu'
+    deductible: 'Có thể khấu trừ'
+    box: Hộp
+    amount: 'Số tiền'
+
+id:
+  page_title: 'Pengembalian PPN'
+  page_icon: 'ph:bold/percent'
+  empty: 'Tidak ada yang dikenakan pajak pada periode ini.'
+  total: Total
+  previous_credit: 'Kredit dibawa ke depan'
+  deposits: 'Setoran yang dibayar'
+  to_pay: 'Untuk dibayar'
+  credit: Kredit
+  settle: 'Buku penyelesaian'
+  confirm_settle: 'Pengembalian telah dicatat, memindahkan yang terutang ke akun yang dibayar ke Negara. Lanjutkan?'
+  form: 'Formulir %form%'
+  column:
+    code: PPN
+    rate: Tarif
+    base: Dasar
+    due: Dikumpulkan
+    deductible: 'Dapat dikurangkan'
+    box: Kotak
+    amount: Jumlah
+
+nl:
+  page_title: BTW-aangifte
+  page_icon: 'ph:bold/percent'
+  empty: 'Niets belast in deze periode.'
+  total: Totaal
+  previous_credit: 'Te verrekenen krediet'
+  deposits: 'Betaalde stortingen'
+  to_pay: 'Te betalen'
+  credit: Krediet
+  settle: 'Boek de afrekening'
+  confirm_settle: 'De aangifte is geboekt, het verschuldigde bedrag wordt overgemaakt naar de rekening betaald aan de Staat. Doorgaan?'
+  form: 'Formulier %form%'
+  column:
+    code: BTW
+    rate: Tarief
+    base: Basis
+    due: Geïnd
+    deductible: Aftrekbaar
+    box: Vak
+    amount: Bedrag

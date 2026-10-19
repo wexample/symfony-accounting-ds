@@ -33,3 +33,243 @@ zh:
     receivable: 客户应收款
     payable: 供应商应付款
     unsettled: 待解释的银行额度
+
+ar:
+  page_title: المحاسبة
+  page_icon: 'ph:bold/calculator'
+  empty: 'لا يوجد سجل مفتوح لك.'
+  column:
+    name: السجل
+    country: البلد
+    fiscal_year: 'السنة المالية'
+    receivable: 'مستحقات العملاء'
+    payable: 'مستحقات الموردين'
+    unsettled: 'خطوط البنك للتفسير'
+
+hi:
+  page_title: लेखांकन
+  page_icon: 'ph:bold/calculator'
+  empty: 'कोई खाता आपकी पहुंच में नहीं है।'
+  column:
+    name: खाता
+    country: देश
+    fiscal_year: 'वित्तीय वर्ष'
+    receivable: 'ग्राहकों द्वारा देना है'
+    payable: 'आपूर्तिकर्ताओं को देना है'
+    unsettled: 'बैंक लाइनों को स्पष्ट करना है'
+
+he:
+  page_title: חשבונאות
+  page_icon: 'ph:bold/calculator'
+  empty: 'אין יומן פתוח עבורך.'
+  column:
+    name: יומן
+    country: מדינה
+    fiscal_year: 'שנת מס'
+    receivable: 'חובות מלקוחות'
+    payable: 'חובות לספקים'
+    unsettled: 'קווי בנק להסבר'
+
+fa:
+  page_title: حسابداری
+  page_icon: 'ph:bold/calculator'
+  empty: 'هیچ دفتر حسابداری برای شما باز نیست.'
+  column:
+    name: 'دفتر حسابداری'
+    country: کشور
+    fiscal_year: 'سال مالی'
+    receivable: 'مبالغ طلب شده از مشتریان'
+    payable: 'مبالغ بدهی به تأمین کنندگان'
+    unsettled: 'خطوط بانکی برای توضیح'
+
+ur:
+  page_title: محاسبانہ
+  page_icon: 'ph:bold/calculator'
+  empty: 'آپ کے لیے کوئی لیجر کھلا نہیں ہے۔'
+  column:
+    name: لیجر
+    country: ملک
+    fiscal_year: 'مالی سال'
+    receivable: 'کسٹمرز کے ذمے'
+    payable: 'سپلائرز کے ذمے'
+    unsettled: 'بینک لائنز کی وضاحت کرنے کے لیے'
+
+ja:
+  page_title: 会計
+  page_icon: 'ph:bold/calculator'
+  empty: 開いている元帳がありません。
+  column:
+    name: 元帳
+    country: 国
+    fiscal_year: 会計年度
+    receivable: 顧客からの未収金
+    payable: 仕入先への未払金
+    unsettled: 説明が必要な銀行ライン
+
+ko:
+  page_title: 회계
+  page_icon: 'ph:bold/calculator'
+  empty: '열려 있는 장부가 없습니다.'
+  column:
+    name: 장부
+    country: 국가
+    fiscal_year: '회계 연도'
+    receivable: '고객이 지불해야 할 금액'
+    payable: '공급자에게 지불해야 할 금액'
+    unsettled: '설명할 은행 라인'
+
+bn:
+  page_title: হিসাবরক্ষণ
+  page_icon: 'ph:bold/calculator'
+  empty: 'আপনার জন্য কোনো লেজার খোলা নেই।'
+  column:
+    name: লেজার
+    country: দেশ
+    fiscal_year: 'অর্থ বছর'
+    receivable: 'গ্রাহকদের দ্বারা পাওনা'
+    payable: 'সরবরাহকারীদের কাছে পাওনা'
+    unsettled: 'ব্যাংক লাইন ব্যাখ্যা করার জন্য'
+
+th:
+  page_title: บัญชี
+  page_icon: 'ph:bold/calculator'
+  empty: ไม่มีสมุดบัญชีที่เปิดให้คุณใช้งาน
+  column:
+    name: สมุดบัญชี
+    country: ประเทศ
+    fiscal_year: ปีงบประมาณ
+    receivable: ที่ลูกค้าต้องชำระ
+    payable: ที่ต้องชำระให้ซัพพลายเออร์
+    unsettled: สายธนาคารที่ต้องชี้แจง
+
+de:
+  page_title: Buchhaltung
+  page_icon: 'ph:bold/calculator'
+  empty: 'Es ist kein Hauptbuch geöffnet.'
+  column:
+    name: Hauptbuch
+    country: Land
+    fiscal_year: Geschäftsjahr
+    receivable: Forderungen
+    payable: Verbindlichkeiten
+    unsettled: 'Banklinien zu klären'
+
+fi:
+  page_title: Kirjanpito
+  page_icon: 'ph:bold/calculator'
+  empty: 'Yhtään pääkirjaa ei ole avoinna.'
+  column:
+    name: Pääkirja
+    country: Maa
+    fiscal_year: Tilikausi
+    receivable: 'Asiakkailta saatavat'
+    payable: 'Toimittajille maksettavat'
+    unsettled: 'Selvittämättömät pankkilinjat'
+
+ru:
+  page_title: Бухгалтерия
+  page_icon: 'ph:bold/calculator'
+  empty: 'У вас нет открытой книги учета.'
+  column:
+    name: 'Книга учета'
+    country: Страна
+    fiscal_year: 'Финансовый год'
+    receivable: 'Долг клиентов'
+    payable: 'Долг поставщикам'
+    unsettled: 'Банковские линии для объяснения'
+
+pl:
+  page_title: Księgowość
+  page_icon: 'ph:bold/calculator'
+  empty: 'Nie masz otwartej księgi.'
+  column:
+    name: Księga
+    country: Kraj
+    fiscal_year: 'Rok podatkowy'
+    receivable: 'Należności od klientów'
+    payable: 'Zobowiązania wobec dostawców'
+    unsettled: 'Linie bankowe do wyjaśnienia'
+
+es:
+  page_title: Contabilidad
+  page_icon: 'ph:bold/calculator'
+  empty: 'No hay libro mayor abierto para ti.'
+  column:
+    name: 'Libro mayor'
+    country: País
+    fiscal_year: 'Año fiscal'
+    receivable: Deudores
+    payable: Acreedores
+    unsettled: 'Líneas bancarias por explicar'
+
+it:
+  page_title: Contabilità
+  page_icon: 'ph:bold/calculator'
+  empty: 'Nessun libro mastro è aperto per te.'
+  column:
+    name: 'Libro mastro'
+    country: Paese
+    fiscal_year: 'Anno fiscale'
+    receivable: 'Dovuto dai clienti'
+    payable: 'Dovuto ai fornitori'
+    unsettled: 'Linee bancarie da spiegare'
+
+pt_BR:
+  page_title: Contabilidade
+  page_icon: 'ph:bold/calculator'
+  empty: 'Nenhum livro razão está aberto para você.'
+  column:
+    name: 'Livro razão'
+    country: País
+    fiscal_year: 'Ano fiscal'
+    receivable: 'Devido por clientes'
+    payable: 'Devido a fornecedores'
+    unsettled: 'Linhas bancárias a explicar'
+
+tr:
+  page_title: Muhasebe
+  page_icon: 'ph:bold/calculator'
+  empty: 'Size açık bir defter yok.'
+  column:
+    name: Defter
+    country: Ülke
+    fiscal_year: 'Mali yıl'
+    receivable: 'Müşterilerden alacak'
+    payable: 'Tedarikçilere borç'
+    unsettled: 'Açıklanacak banka hatları'
+
+vi:
+  page_title: 'Kế toán'
+  page_icon: 'ph:bold/calculator'
+  empty: 'Không có sổ cái nào mở cho bạn.'
+  column:
+    name: 'Sổ cái'
+    country: 'Quốc gia'
+    fiscal_year: 'Năm tài chính'
+    receivable: 'Số tiền khách hàng nợ'
+    payable: 'Số tiền nhà cung cấp nợ'
+    unsettled: 'Các khoản ngân hàng cần giải thích'
+
+id:
+  page_title: Akuntansi
+  page_icon: 'ph:bold/calculator'
+  empty: 'Tidak ada buku besar yang terbuka untuk Anda.'
+  column:
+    name: 'Buku Besar'
+    country: Negara
+    fiscal_year: 'Tahun fiskal'
+    receivable: 'Hutang oleh pelanggan'
+    payable: 'Hutang kepada pemasok'
+    unsettled: 'Saluran bank untuk dijelaskan'
+
+nl:
+  page_title: Boekhouding
+  page_icon: 'ph:bold/calculator'
+  empty: 'Er is geen grootboek geopend voor jou.'
+  column:
+    name: Grootboek
+    country: Land
+    fiscal_year: Boekjaar
+    receivable: 'Te ontvangen van klanten'
+    payable: 'Te betalen aan leveranciers'
+    unsettled: 'Banklijnen om toe te lichten'

@@ -42,3 +42,303 @@ zh:
   status:
     open: 开启
     closed: 已结束
+
+ar:
+  page_title: 'السنوات المالية'
+  page_icon: 'ph:bold/calendar-check'
+  empty: 'لا توجد سنة مالية بعد.'
+  next: 'افتح التالية'
+  column:
+    label: 'السنة المالية'
+    start: من
+    end: إلى
+    result: النتيجة
+    status: الحالة
+  status:
+    open: مفتوحة
+    closed: مغلقة
+
+hi:
+  page_title: 'वित्तीय वर्ष'
+  page_icon: 'ph:bold/calendar-check'
+  empty: 'अभी तक कोई वित्तीय वर्ष नहीं है।'
+  next: 'अगला खोलें'
+  column:
+    label: 'वित्तीय वर्ष'
+    start: से
+    end: तक
+    result: परिणाम
+    status: स्थिति
+  status:
+    open: खुला
+    closed: बंद
+
+he:
+  page_title: 'שנים פיסקליות'
+  page_icon: 'ph:bold/calendar-check'
+  empty: 'אין שנה פיסקלית עדיין.'
+  next: 'פתח את הבאה'
+  column:
+    label: 'שנה פיסקלית'
+    start: מ
+    end: עד
+    result: תוצאה
+    status: סטטוס
+  status:
+    open: פתוח
+    closed: סגור
+
+fa:
+  page_title: 'سال مالی'
+  page_icon: 'ph:bold/calendar-check'
+  empty: 'هنوز سال مالی وجود ندارد.'
+  next: 'سال بعدی را باز کنید'
+  column:
+    label: 'سال مالی'
+    start: از
+    end: تا
+    result: نتیجه
+    status: وضعیت
+  status:
+    open: باز
+    closed: بسته
+
+ur:
+  page_title: 'مالی سال'
+  page_icon: 'ph:bold/calendar-check'
+  empty: 'کوئی مالی سال نہیں ہے۔'
+  next: 'اگلا کھولیں'
+  column:
+    label: 'مالی سال'
+    start: سے
+    end: تک
+    result: نتیجہ
+    status: حالت
+  status:
+    open: کھلا
+    closed: بند
+
+ja:
+  page_title: 会計年度
+  page_icon: 'ph:bold/calendar-check'
+  empty: まだ会計年度はありません。
+  next: 次を開く
+  column:
+    label: 会計年度
+    start: 開始日
+    end: 終了日
+    result: 結果
+    status: ステータス
+  status:
+    open: 開く
+    closed: 閉じる
+
+ko:
+  page_title: '회계 연도'
+  page_icon: 'ph:bold/calendar-check'
+  empty: '아직 회계 연도가 없습니다.'
+  next: '다음 열기'
+  column:
+    label: '회계 연도'
+    start: 시작
+    end: 종료
+    result: 결과
+    status: 상태
+  status:
+    open: 열림
+    closed: 닫힘
+
+bn:
+  page_title: 'আর্থিক বছর'
+  page_icon: 'ph:bold/calendar-check'
+  empty: 'এখনও কোনও আর্থিক বছর নেই।'
+  next: 'পরবর্তীটি খুলুন'
+  column:
+    label: 'আর্থিক বছর'
+    start: থেকে
+    end: যাতে
+    result: ফলাফল
+    status: স্থিতি
+  status:
+    open: খোলা
+    closed: বন্ধ
+
+th:
+  page_title: ปีงบประมาณ
+  page_icon: 'ph:bold/calendar-check'
+  empty: ยังไม่มีปีงบประมาณ
+  next: เปิดปีถัดไป
+  column:
+    label: ปีงบประมาณ
+    start: ตั้งแต่
+    end: ถึง
+    result: ผลลัพธ์
+    status: สถานะ
+  status:
+    open: เปิด
+    closed: ปิด
+
+de:
+  page_title: Geschäftsjahre
+  page_icon: 'ph:bold/calendar-check'
+  empty: 'Noch kein Geschäftsjahr.'
+  next: 'Das nächste öffnen'
+  column:
+    label: Geschäftsjahr
+    start: Von
+    end: Bis
+    result: Ergebnis
+    status: Status
+  status:
+    open: Offen
+    closed: Geschlossen
+
+fi:
+  page_title: Tilikaudet
+  page_icon: 'ph:bold/calendar-check'
+  empty: 'Ei tilikautta vielä.'
+  next: 'Avaa seuraava'
+  column:
+    label: Tilikausi
+    start: Alkaen
+    end: Päätä
+    result: Tulos
+    status: Tila
+  status:
+    open: Avoin
+    closed: Suljettu
+
+ru:
+  page_title: 'Финансовые годы'
+  page_icon: 'ph:bold/calendar-check'
+  empty: 'Пока нет финансового года.'
+  next: 'Открыть следующий'
+  column:
+    label: 'Финансовый год'
+    start: С
+    end: По
+    result: Результат
+    status: Статус
+  status:
+    open: Открыт
+    closed: Закрыт
+
+pl:
+  page_title: 'Lata budżetowe'
+  page_icon: 'ph:bold/calendar-check'
+  empty: 'Brak jeszcze lat budżetowych.'
+  next: 'Otwórz następne'
+  column:
+    label: 'Rok budżetowy'
+    start: Od
+    end: Do
+    result: Wynik
+    status: Status
+  status:
+    open: Otwarte
+    closed: Zamknięte
+
+es:
+  page_title: 'Años fiscales'
+  page_icon: 'ph:bold/calendar-check'
+  empty: 'No hay años fiscales aún.'
+  next: 'Abrir el siguiente'
+  column:
+    label: 'Año fiscal'
+    start: Desde
+    end: Hasta
+    result: Resultado
+    status: Estado
+  status:
+    open: Abierto
+    closed: Cerrado
+
+it:
+  page_title: 'Anni fiscali'
+  page_icon: 'ph:bold/calendar-check'
+  empty: 'Nessun anno fiscale ancora.'
+  next: 'Apri il prossimo'
+  column:
+    label: 'Anno fiscale'
+    start: Da
+    end: A
+    result: Risultato
+    status: Stato
+  status:
+    open: Aperto
+    closed: Chiuso
+
+pt_BR:
+  page_title: 'Anos fiscais'
+  page_icon: 'ph:bold/calendar-check'
+  empty: 'Nenhum ano fiscal ainda.'
+  next: 'Abra o próximo'
+  column:
+    label: 'Ano fiscal'
+    start: De
+    end: Até
+    result: Resultado
+    status: Status
+  status:
+    open: Aberto
+    closed: Fechado
+
+tr:
+  page_title: 'Mali yıllar'
+  page_icon: 'ph:bold/calendar-check'
+  empty: 'Henüz mali yıl yok.'
+  next: 'Sonrakini aç'
+  column:
+    label: 'Mali yıl'
+    start: Başlangıç
+    end: Bitiş
+    result: Sonuç
+    status: Durum
+  status:
+    open: Açık
+    closed: Kapalı
+
+vi:
+  page_title: 'Năm tài chính'
+  page_icon: 'ph:bold/calendar-check'
+  empty: 'Chưa có năm tài chính nào.'
+  next: 'Mở năm tiếp theo'
+  column:
+    label: 'Năm tài chính'
+    start: Từ
+    end: Đến
+    result: 'Kết quả'
+    status: 'Trạng thái'
+  status:
+    open: Mở
+    closed: Đóng
+
+id:
+  page_title: 'Tahun fiskal'
+  page_icon: 'ph:bold/calendar-check'
+  empty: 'Belum ada tahun fiskal.'
+  next: 'Buka yang berikutnya'
+  column:
+    label: 'Tahun fiskal'
+    start: Dari
+    end: Ke
+    result: Hasil
+    status: Status
+  status:
+    open: Terbuka
+    closed: Tertutup
+
+nl:
+  page_title: 'Fiscale jaren'
+  page_icon: 'ph:bold/calendar-check'
+  empty: 'Nog geen fiscaal jaar.'
+  next: 'Open de volgende'
+  column:
+    label: 'Fiscale jaar'
+    start: Van
+    end: Tot
+    result: Resultaat
+    status: Status
+  status:
+    open: Open
+    closed: Gesloten

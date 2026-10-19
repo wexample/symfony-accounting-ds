@@ -57,3 +57,403 @@ zh:
   fiscal_year:
     open: 开启
     closed: 关闭
+
+ar:
+  page_title: 'دفتر الأستاذ'
+  page_icon: 'ph:bold/calculator'
+  open:
+    sale: 'مستحقات العملاء'
+    purchase: 'مستحقات الموردين'
+    count: '%count% مستند(ات) بانتظار الدفع'
+    late: '%amount% متأخر'
+    see: عرضها
+  todo:
+    title: المهام
+    drafts: '%count% مسودة(ات)'
+    unsettled: '%count% خط(وط) مصرفية بحاجة للتوضيح'
+    fiscal_year: 'السنة المالية %label%'
+    new_document: 'مستند جديد'
+    reconcile: 'تسوية الحسابات المصرفية'
+  fiscal_year:
+    open: مفتوحة
+    closed: مغلقة
+
+hi:
+  page_title: लेजर
+  page_icon: 'ph:bold/calculator'
+  open:
+    sale: 'ग्राहकों द्वारा बकाया'
+    purchase: 'आपूर्तिकर्ताओं को बकाया'
+    count: '%count% दस्तावेज़ भुगतान की प्रतीक्षा में'
+    late: '%amount% समय पर नहीं'
+    see: 'इन्हें देखें'
+  todo:
+    title: 'करने के लिए'
+    drafts: '%count% ड्राफ्ट(s)'
+    unsettled: '%count% बैंक लाइन(s) की व्याख्या करने के लिए'
+    fiscal_year: 'वित्तीय वर्ष %label%'
+    new_document: 'नया दस्तावेज़'
+    reconcile: 'बैंक का मिलान करें'
+  fiscal_year:
+    open: खुला
+    closed: बंद
+
+he:
+  page_title: לֶגֶר
+  page_icon: 'ph:bold/calculator'
+  open:
+    sale: 'חובות של לקוחות'
+    purchase: 'חובות לספקים'
+    count: '%count% מסמך(ים) ממתינים לתשלום'
+    late: '%amount% מאחרים'
+    see: 'ראה אותם'
+  todo:
+    title: לבצע
+    drafts: '%count% טיוטה(ות)'
+    unsettled: '%count% שורות בנק שדורשות הסבר'
+    fiscal_year: 'שנה פיסקלית %label%'
+    new_document: 'מסמך חדש'
+    reconcile: 'התאם את הבנק'
+  fiscal_year:
+    open: פתוחה
+    closed: סגורה
+
+fa:
+  page_title: 'دفتر کل'
+  page_icon: 'ph:bold/calculator'
+  open:
+    sale: 'بدهی مشتریان'
+    purchase: 'بدهی تأمین‌کنندگان'
+    count: '%count% سند(ها) در انتظار پرداخت'
+    late: '%amount% سررسید گذشته'
+    see: 'مشاهده آن‌ها'
+  todo:
+    title: کارها
+    drafts: '%count% پیش‌نویس(ها)'
+    unsettled: '%count% خط بانکی برای توضیح'
+    fiscal_year: 'سال مالی %label%'
+    new_document: 'سند جدید'
+    reconcile: 'تطبیق حساب بانکی'
+  fiscal_year:
+    open: باز
+    closed: بسته
+
+ur:
+  page_title: لیجر
+  page_icon: 'ph:bold/calculator'
+  open:
+    sale: 'گاہکوں کی طرف سے واجب الادا'
+    purchase: 'سپلائرز کو واجب الادا'
+    count: '%count% دستاویز(ات) ادائیگی کے منتظر'
+    late: '%amount% مقررہ تاریخ گزر چکی ہے'
+    see: 'ان کو دیکھیں'
+  todo:
+    title: 'کرنا ہے'
+    drafts: '%count% مسودہ(ات)'
+    unsettled: 'شرح(یں) وضاحت کے لئے'
+    fiscal_year: 'مالی سال %label%'
+    new_document: 'نئی دستاویز'
+    reconcile: 'بینک کا تصفیہ کریں'
+  fiscal_year:
+    open: کھلا
+    closed: بند
+
+ja:
+  page_title: 台帳
+  page_icon: 'ph:bold/calculator'
+  open:
+    sale: 顧客からの未払い
+    purchase: 仕入先への未払い
+    count: '%count% 件の支払い待ちの文書'
+    late: '%amount% 件の期限切れ'
+    see: 詳細を見る
+  todo:
+    title: やること
+    drafts: '%count% 件のドラフト'
+    unsettled: '%count% 件の銀行ラインを説明する必要があります'
+    fiscal_year: '会計年度 %label%'
+    new_document: 新しい文書
+    reconcile: 銀行を調整する
+  fiscal_year:
+    open: 開いている
+    closed: 閉じている
+
+ko:
+  page_title: 원장
+  page_icon: 'ph:bold/calculator'
+  open:
+    sale: '고객에게 빚진 금액'
+    purchase: '공급자에게 빚진 금액'
+    count: '%count% 개의 문서가 결제를 기다리고 있습니다'
+    late: '%amount% 건의 연체'
+    see: 확인하기
+  todo:
+    title: '할 일'
+    drafts: '%count% 개의 초안'
+    unsettled: '%count% 개의 은행 라인이 설명을 기다리고 있습니다'
+    fiscal_year: '회계 연도 %label%'
+    new_document: '새 문서'
+    reconcile: '은행 정산'
+  fiscal_year:
+    open: 열림
+    closed: 닫힘
+
+bn:
+  page_title: লেজার
+  page_icon: 'ph:bold/calculator'
+  open:
+    sale: 'গ্রাহকদের দ্বারা বাকি'
+    purchase: 'সরবরাহকারীদের কাছে বাকি'
+    count: '%count% দলিল(গুলি) অর্থ প্রদানের জন্য অপেক্ষা করছে'
+    late: '%amount% সময় অতিক্রান্ত'
+    see: 'তাদের দেখুন'
+  todo:
+    title: 'করতে হবে'
+    drafts: '%count% খসড়া'
+    unsettled: '%count% ব্যাংক লাইন(গুলি) ব্যাখ্যা করার জন্য'
+    fiscal_year: 'অর্থবছর %label%'
+    new_document: 'নতুন দলিল'
+    reconcile: 'ব্যাংক সমন্বয় করুন'
+  fiscal_year:
+    open: খোলা
+    closed: বন্ধ
+
+th:
+  page_title: บัญชีแยกประเภท
+  page_icon: 'ph:bold/calculator'
+  open:
+    sale: ที่ค้างชำระจากลูกค้า
+    purchase: ที่ค้างชำระให้ซัพพลายเออร์
+    count: '%count% เอกสารที่รอการชำระเงิน'
+    late: '%amount% ที่เลยกำหนด'
+    see: ดูเอกสารเหล่านี้
+  todo:
+    title: สิ่งที่ต้องทำ
+    drafts: '%count% ร่าง'
+    unsettled: '%count% สายธนาคารที่ต้องอธิบาย'
+    fiscal_year: 'ปีงบประมาณ %label%'
+    new_document: เอกสารใหม่
+    reconcile: กระทบยอดธนาคาร
+  fiscal_year:
+    open: เปิด
+    closed: ปิด
+
+de:
+  page_title: Hauptbuch
+  page_icon: 'ph:bold/calculator'
+  open:
+    sale: 'Forderungen von Kunden'
+    purchase: 'Verbindlichkeiten gegenüber Lieferanten'
+    count: '%count% Dokument(e) stehen zur Zahlung aus'
+    late: '%amount% überfällig'
+    see: Anzeigen
+  todo:
+    title: Aufgaben
+    drafts: '%count% Entwurf(e)'
+    unsettled: '%count% Banklinie(n) zu erklären'
+    fiscal_year: 'Geschäftsjahr %label%'
+    new_document: 'Neues Dokument'
+    reconcile: 'Bank abstimmen'
+  fiscal_year:
+    open: offen
+    closed: geschlossen
+
+fi:
+  page_title: Tiliote
+  page_icon: 'ph:bold/calculator'
+  open:
+    sale: 'Asiakkailta veloitettavat'
+    purchase: 'Toimittajille veloitettavat'
+    count: '%count% dokumenttia odottaa maksua'
+    late: '%amount% erääntynyttä'
+    see: 'Näytä ne'
+  todo:
+    title: Tehtävälista
+    drafts: '%count% luonnosta'
+    unsettled: '%count% pankkiriviä selvitettävänä'
+    fiscal_year: 'Tilikausi %label%'
+    new_document: 'Uusi asiakirja'
+    reconcile: 'Tee pankkitiliote'
+  fiscal_year:
+    open: avoin
+    closed: suljettu
+
+ru:
+  page_title: Ледгер
+  page_icon: 'ph:bold/calculator'
+  open:
+    sale: 'Долг клиентов'
+    purchase: 'Долг поставщикам'
+    count: '%count% документ(ов) на оплату'
+    late: '%amount% просрочено'
+    see: 'Посмотреть их'
+  todo:
+    title: Сделать
+    drafts: '%count% черновик(ов)'
+    unsettled: '%count% банковская линия(й) для объяснения'
+    fiscal_year: 'Финансовый год %label%'
+    new_document: 'Новый документ'
+    reconcile: 'Согласовать с банком'
+  fiscal_year:
+    open: открыт
+    closed: закрыт
+
+pl:
+  page_title: Księga
+  page_icon: 'ph:bold/calculator'
+  open:
+    sale: 'Zobowiązania od klientów'
+    purchase: 'Zobowiązania wobec dostawców'
+    count: '%count% dokument(y) oczekujące na płatność'
+    late: '%amount% przeterminowane'
+    see: 'Zobacz je'
+  todo:
+    title: 'Do zrobienia'
+    drafts: '%count% szkic(y)'
+    unsettled: '%count% linia(y) bankowa(e) do wyjaśnienia'
+    fiscal_year: 'Rok fiskalny %label%'
+    new_document: 'Nowy dokument'
+    reconcile: 'Uzyskaj zgodność z bankiem'
+  fiscal_year:
+    open: otwarty
+    closed: zamknięty
+
+es:
+  page_title: 'Libro mayor'
+  page_icon: 'ph:bold/calculator'
+  open:
+    sale: 'Deuda de clientes'
+    purchase: 'Deuda a proveedores'
+    count: '%count% documento(s) pendiente(s) de pago'
+    late: '%amount% vencido(s)'
+    see: Verlos
+  todo:
+    title: 'Por hacer'
+    drafts: '%count% borrador(es)'
+    unsettled: '%count% línea(s) bancaria(s) por explicar'
+    fiscal_year: 'Año fiscal %label%'
+    new_document: 'Nuevo documento'
+    reconcile: 'Conciliar el banco'
+  fiscal_year:
+    open: abierto
+    closed: cerrado
+
+it:
+  page_title: Registro
+  page_icon: 'ph:bold/calculator'
+  open:
+    sale: 'Dovuto dai clienti'
+    purchase: 'Dovuto ai fornitori'
+    count: '%count% documento(i) in attesa di pagamento'
+    late: '%amount% scaduti'
+    see: Visualizzali
+  todo:
+    title: 'Da fare'
+    drafts: '%count% bozza(e)'
+    unsettled: '%count% linea(e) bancaria(e) da spiegare'
+    fiscal_year: 'Anno fiscale %label%'
+    new_document: 'Nuovo documento'
+    reconcile: 'Riconcilia la banca'
+  fiscal_year:
+    open: aperto
+    closed: chiuso
+
+pt_BR:
+  page_title: Lançamento
+  page_icon: 'ph:bold/calculator'
+  open:
+    sale: 'Devido por clientes'
+    purchase: 'Devido a fornecedores'
+    count: '%count% documento(s) aguardando pagamento'
+    late: '%amount% vencido(s)'
+    see: Veja-os
+  todo:
+    title: 'A fazer'
+    drafts: '%count% rascunho(s)'
+    unsettled: '%count% linha(s) bancária(s) para explicar'
+    fiscal_year: 'Ano fiscal %label%'
+    new_document: 'Novo documento'
+    reconcile: 'Conciliar o banco'
+  fiscal_year:
+    open: aberto
+    closed: fechado
+
+tr:
+  page_title: Defter
+  page_icon: 'ph:bold/calculator'
+  open:
+    sale: 'Müşterilerden alacak'
+    purchase: 'Tedarikçilere borç'
+    count: '%count% belge ödeme bekliyor'
+    late: '%amount% vadesi geçmiş'
+    see: 'Onları gör'
+  todo:
+    title: Yapılacaklar
+    drafts: '%count% taslak'
+    unsettled: '%count% banka işlemi açıklanacak'
+    fiscal_year: 'Mali yıl %label%'
+    new_document: 'Yeni belge'
+    reconcile: 'Bankayı mutabık hale getir'
+  fiscal_year:
+    open: açık
+    closed: kapalı
+
+vi:
+  page_title: 'Sổ cái'
+  page_icon: 'ph:bold/calculator'
+  open:
+    sale: 'Số tiền khách hàng nợ'
+    purchase: 'Số tiền nhà cung cấp nợ'
+    count: '%count% tài liệu đang chờ thanh toán'
+    late: '%amount% đã quá hạn'
+    see: 'Xem chúng'
+  todo:
+    title: 'Cần làm'
+    drafts: '%count% bản nháp'
+    unsettled: '%count% giao dịch ngân hàng cần giải thích'
+    fiscal_year: 'Năm tài chính %label%'
+    new_document: 'Tài liệu mới'
+    reconcile: 'Đối chiếu ngân hàng'
+  fiscal_year:
+    open: mở
+    closed: 'đã đóng'
+
+id:
+  page_title: 'Buku Besar'
+  page_icon: 'ph:bold/calculator'
+  open:
+    sale: 'Dihutang oleh pelanggan'
+    purchase: 'Dihutang kepada pemasok'
+    count: '%count% dokumen menunggu pembayaran'
+    late: '%amount% jatuh tempo'
+    see: 'Lihat mereka'
+  todo:
+    title: 'Yang perlu dilakukan'
+    drafts: '%count% draf'
+    unsettled: '%count% garis bank yang perlu dijelaskan'
+    fiscal_year: 'Tahun fiskal %label%'
+    new_document: 'Dokumen baru'
+    reconcile: 'Rekonsiliasi bank'
+  fiscal_year:
+    open: dibuka
+    closed: ditutup
+
+nl:
+  page_title: Boekhouding
+  page_icon: 'ph:bold/calculator'
+  open:
+    sale: 'Te vorderen van klanten'
+    purchase: 'Te betalen aan leveranciers'
+    count: '%count% document(en) in afwachting van betaling'
+    late: '%amount% te laat'
+    see: 'Bekijk ze'
+  todo:
+    title: 'Te doen'
+    drafts: '%count% concept(en)'
+    unsettled: '%count% bankpost(en) om uit te leggen'
+    fiscal_year: 'Boekjaar %label%'
+    new_document: 'Nieuw document'
+    reconcile: 'Verzoen de bank'
+  fiscal_year:
+    open: open
+    closed: gesloten

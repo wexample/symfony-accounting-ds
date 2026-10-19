@@ -33,3 +33,243 @@ zh:
   letter: 信件
   reverse: 反转
   confirm_reverse: 已记录相反金额的条目。继续吗？
+
+ar:
+  page_title: إدخال
+  page_icon: 'ph:bold/notebook'
+  account: الحساب
+  label: التسمية
+  party: الطرف
+  debit: مدين
+  credit: دائن
+  letter: خطاب
+  reverse: عكس
+  confirm_reverse: 'تم تسجيل إدخال بالمبالغ المعاكسة. هل تتابع؟'
+
+hi:
+  page_title: प्रवेश
+  page_icon: 'ph:bold/notebook'
+  account: खाता
+  label: लेबल
+  party: पार्टी
+  debit: डेबिट
+  credit: क्रेडिट
+  letter: पत्र
+  reverse: उल्टा
+  confirm_reverse: 'विपरीत राशियों का एक प्रवेश बुक किया गया है। आगे बढ़ें?'
+
+he:
+  page_title: כניסה
+  page_icon: 'ph:bold/notebook'
+  account: חשבון
+  label: תווית
+  party: צד
+  debit: חובה
+  credit: זכות
+  letter: מכתב
+  reverse: הפוך
+  confirm_reverse: 'נרשמה כניסה של סכומים מנוגדים. האם להמשיך?'
+
+fa:
+  page_title: ورود
+  page_icon: 'ph:bold/notebook'
+  account: حساب
+  label: برچسب
+  party: طرف
+  debit: بدهی
+  credit: بستانکاری
+  letter: نامه
+  reverse: معکوس
+  confirm_reverse: 'مقدارهای معکوس ثبت شده است. ادامه می‌دهید؟'
+
+ur:
+  page_title: داخلہ
+  page_icon: 'ph:bold/notebook'
+  account: اکاؤنٹ
+  label: لیبل
+  party: پارٹی
+  debit: ڈیبٹ
+  credit: کریڈٹ
+  letter: خط
+  reverse: عکس
+  confirm_reverse: 'مخالف رقم کا ایک داخلہ بک کیا گیا ہے۔ کیا آگے بڑھنا ہے؟'
+
+ja:
+  page_title: エントリー
+  page_icon: 'ph:bold/notebook'
+  account: アカウント
+  label: ラベル
+  party: パーティー
+  debit: デビット
+  credit: クレジット
+  letter: 手紙
+  reverse: 逆転
+  confirm_reverse: 反対の金額のエントリーが記録されています。続けますか？
+
+ko:
+  page_title: 항목
+  page_icon: 'ph:bold/notebook'
+  account: 계정
+  label: 라벨
+  party: 당사자
+  debit: 차변
+  credit: 대변
+  letter: 편지
+  reverse: 반전
+  confirm_reverse: '반대 금액이 기록되었습니다. 계속하시겠습니까?'
+
+bn:
+  page_title: এন্ট্রি
+  page_icon: 'ph:bold/notebook'
+  account: অ্যাকাউন্ট
+  label: লেবেল
+  party: পার্টি
+  debit: ডেবিট
+  credit: ক্রেডিট
+  letter: চিঠি
+  reverse: রিভার্স
+  confirm_reverse: 'বিপরীত পরিমাণের একটি এন্ট্রি বুক করা হয়েছে। চলতে থাকবেন?'
+
+th:
+  page_title: การบันทึก
+  page_icon: 'ph:bold/notebook'
+  account: บัญชี
+  label: ป้ายชื่อ
+  party: ฝ่าย
+  debit: เดบิต
+  credit: เครดิต
+  letter: จดหมาย
+  reverse: ย้อนกลับ
+  confirm_reverse: 'มีการบันทึกจำนวนเงินตรงข้าม. ต้องการดำเนินการต่อไหม?'
+
+de:
+  page_title: Eintrag
+  page_icon: 'ph:bold/notebook'
+  account: Konto
+  label: Bezeichnung
+  party: Partei
+  debit: Soll
+  credit: Haben
+  letter: Brief
+  reverse: Umkehren
+  confirm_reverse: 'Ein Eintrag mit den gegenteiligen Beträgen wird verbucht. Fortfahren?'
+
+fi:
+  page_title: Tulo
+  page_icon: 'ph:bold/notebook'
+  account: Tili
+  label: Tunnus
+  party: Osapuoli
+  debit: Veloitus
+  credit: Hyvitys
+  letter: Kirje
+  reverse: Käänteinen
+  confirm_reverse: 'Vastakkaisten summien tulo on kirjattu. Jatketaanko?'
+
+ru:
+  page_title: Запись
+  page_icon: 'ph:bold/notebook'
+  account: Счет
+  label: Метка
+  party: Сторона
+  debit: Дебет
+  credit: Кредит
+  letter: Письмо
+  reverse: Отмена
+  confirm_reverse: 'Запись с обратными суммами проведена. Продолжить?'
+
+pl:
+  page_title: Wpis
+  page_icon: 'ph:bold/notebook'
+  account: Konto
+  label: Etykieta
+  party: Strona
+  debit: Debet
+  credit: Kredyt
+  letter: Pismo
+  reverse: Odwróć
+  confirm_reverse: 'Wpis przeciwnych kwot został zarejestrowany. Kontynuować?'
+
+es:
+  page_title: Entrada
+  page_icon: 'ph:bold/notebook'
+  account: Cuenta
+  label: Etiqueta
+  party: Parte
+  debit: Débito
+  credit: Crédito
+  letter: Carta
+  reverse: Invertir
+  confirm_reverse: 'Se ha registrado una entrada con los montos opuestos. ¿Continuar?'
+
+it:
+  page_title: Voce
+  page_icon: 'ph:bold/notebook'
+  account: Account
+  label: Etichetta
+  party: Parte
+  debit: Debito
+  credit: Credito
+  letter: Lettera
+  reverse: Inverti
+  confirm_reverse: "Un'entrata con importi opposti è stata registrata. Vuoi procedere?"
+
+pt_BR:
+  page_title: Entrada
+  page_icon: 'ph:bold/notebook'
+  account: Conta
+  label: Rótulo
+  party: Parte
+  debit: Débito
+  credit: Crédito
+  letter: Carta
+  reverse: Reverter
+  confirm_reverse: 'Uma entrada dos valores opostos foi registrada. Prosseguir?'
+
+tr:
+  page_title: Giriş
+  page_icon: 'ph:bold/notebook'
+  account: Hesap
+  label: Etiket
+  party: Taraf
+  debit: Borç
+  credit: Alacak
+  letter: Mektup
+  reverse: Ters
+  confirm_reverse: 'Zıt tutarların kaydedildiği bir girdi var. Devam etmek istiyor musunuz?'
+
+vi:
+  page_title: 'Nhập liệu'
+  page_icon: 'ph:bold/notebook'
+  account: 'Tài khoản'
+  label: Nhãn
+  party: Bên
+  debit: Nợ
+  credit: Có
+  letter: Thư
+  reverse: 'Đảo ngược'
+  confirm_reverse: 'Một mục với số tiền đối lập đã được ghi lại. Tiếp tục chứ?'
+
+id:
+  page_title: Entri
+  page_icon: 'ph:bold/notebook'
+  account: Akun
+  label: Label
+  party: Pihak
+  debit: Debet
+  credit: Kredit
+  letter: Surat
+  reverse: Balik
+  confirm_reverse: 'Sebuah entri dengan jumlah yang berlawanan telah dicatat. Lanjutkan?'
+
+nl:
+  page_title: Invoer
+  page_icon: 'ph:bold/notebook'
+  account: Account
+  label: Label
+  party: Partij
+  debit: Debet
+  credit: Credit
+  letter: Brief
+  reverse: Omgekeerd
+  confirm_reverse: 'Een invoer van de tegenovergestelde bedragen is geboekt. Doorgaan?'

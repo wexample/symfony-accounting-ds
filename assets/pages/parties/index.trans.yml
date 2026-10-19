@@ -51,3 +51,363 @@ zh:
     roles: 角色
     codes: 辅助代码
     contact: 联系人
+
+ar:
+  page_title: الحفلات
+  page_icon: 'ph:bold/address-book'
+  empty: 'لا توجد حفلات مطابقة.'
+  search: بحث
+  new:
+    name: 'اسم الحفلة الجديدة'
+    submit: إضافة
+  role:
+    customer: عميل
+    supplier: مزود
+    both: كلاهما
+  column:
+    name: الاسم
+    roles: الدور
+    codes: 'الرموز المساعدة'
+    contact: 'جهة الاتصال'
+
+hi:
+  page_title: पार्टीज़
+  page_icon: 'ph:bold/address-book'
+  empty: 'कोई पार्टी मेल नहीं खाती।'
+  search: खोजें
+  new:
+    name: 'नई पार्टी का नाम'
+    submit: जोड़ें
+  role:
+    customer: ग्राहक
+    supplier: आपूर्तिकर्ता
+    both: दोनों
+  column:
+    name: नाम
+    roles: भूमिका
+    codes: 'सहायक कोड'
+    contact: संपर्क
+
+he:
+  page_title: מסיבות
+  page_icon: 'ph:bold/address-book'
+  empty: 'אין מסיבה שמתאימה.'
+  search: חפש
+  new:
+    name: 'שם מסיבה חדשה'
+    submit: הוסף
+  role:
+    customer: לקוח
+    supplier: ספק
+    both: שניהם
+  column:
+    name: שם
+    roles: תפקיד
+    codes: 'קודים עזריים'
+    contact: 'איש קשר'
+
+fa:
+  page_title: جشن‌ها
+  page_icon: 'ph:bold/address-book'
+  empty: 'هیچ جشن‌نامه‌ای مطابقت ندارد.'
+  search: جستجو
+  new:
+    name: 'نام جشن‌نامه جدید'
+    submit: 'اضافه کردن'
+  role:
+    customer: مشتری
+    supplier: تأمین‌کننده
+    both: 'هر دو'
+  column:
+    name: نام
+    roles: نقش
+    codes: 'کدهای کمکی'
+    contact: تماس
+
+ur:
+  page_title: پارٹیاں
+  page_icon: 'ph:bold/address-book'
+  empty: 'کوئی پارٹی میچ نہیں کرتی۔'
+  search: 'تلاش کریں'
+  new:
+    name: 'نئی پارٹی کا نام'
+    submit: 'شامل کریں'
+  role:
+    customer: کسٹمر
+    supplier: سپلائر
+    both: دونوں
+  column:
+    name: نام
+    roles: کردار
+    codes: 'معاون کوڈ'
+    contact: رابطہ
+
+ja:
+  page_title: パーティー
+  page_icon: 'ph:bold/address-book'
+  empty: 該当するパーティーはありません。
+  search: 検索
+  new:
+    name: 新しいパーティーの名前
+    submit: 追加
+  role:
+    customer: 顧客
+    supplier: サプライヤー
+    both: 両方
+  column:
+    name: 名前
+    roles: 役割
+    codes: 補助コード
+    contact: 連絡先
+
+ko:
+  page_title: 파티
+  page_icon: 'ph:bold/address-book'
+  empty: '일치하는 파티가 없습니다.'
+  search: 검색
+  new:
+    name: '새 파티의 이름'
+    submit: 추가
+  role:
+    customer: 고객
+    supplier: 공급자
+    both: '둘 다'
+  column:
+    name: 이름
+    roles: 역할
+    codes: '보조 코드'
+    contact: 연락처
+
+bn:
+  page_title: পক্ষসমূহ
+  page_icon: 'ph:bold/address-book'
+  empty: 'কোনো পক্ষ মেলে না।'
+  search: 'অনুসন্ধান করুন'
+  new:
+    name: 'নতুন পক্ষের নাম'
+    submit: 'যোগ করুন'
+  role:
+    customer: গ্রাহক
+    supplier: সরবরাহকারী
+    both: দুইটি
+  column:
+    name: নাম
+    roles: ভূমিকা
+    codes: 'সহায়ক কোড'
+    contact: যোগাযোগ
+
+th:
+  page_title: ฝ่าย
+  page_icon: 'ph:bold/address-book'
+  empty: ไม่มีงานเลี้ยงที่ตรงกัน.
+  search: ค้นหา
+  new:
+    name: ชื่อของงานเลี้ยงใหม่
+    submit: เพิ่ม
+  role:
+    customer: ลูกค้า
+    supplier: ผู้จัดหา
+    both: ทั้งสอง
+  column:
+    name: ชื่อ
+    roles: บทบาท
+    codes: รหัสเสริม
+    contact: ติดต่อ
+
+de:
+  page_title: Parteien
+  page_icon: 'ph:bold/address-book'
+  empty: 'Keine Partei gefunden.'
+  search: Suche
+  new:
+    name: 'Name einer neuen Partei'
+    submit: Hinzufügen
+  role:
+    customer: Kunde
+    supplier: Lieferant
+    both: Beide
+  column:
+    name: Name
+    roles: Rolle
+    codes: Hilfscodes
+    contact: Kontakt
+
+fi:
+  page_title: Osapuolet
+  page_icon: 'ph:bold/address-book'
+  empty: 'Ei osapuolta, joka vastaa.'
+  search: Etsi
+  new:
+    name: 'Uuden osapuolen nimi'
+    submit: Lisää
+  role:
+    customer: Asiakas
+    supplier: Toimittaja
+    both: Molemmat
+  column:
+    name: Nimi
+    roles: Rooli
+    codes: Lisäkoodit
+    contact: Yhteystieto
+
+ru:
+  page_title: Стороны
+  page_icon: 'ph:bold/address-book'
+  empty: 'Нет подходящих сторон.'
+  search: Поиск
+  new:
+    name: 'Название новой стороны'
+    submit: Добавить
+  role:
+    customer: Клиент
+    supplier: Поставщик
+    both: Оба
+  column:
+    name: Название
+    roles: Роль
+    codes: 'Вспомогательные коды'
+    contact: Контакт
+
+pl:
+  page_title: Strony
+  page_icon: 'ph:bold/address-book'
+  empty: 'Brak pasujących imprez.'
+  search: Szukaj
+  new:
+    name: 'Nazwa nowej imprezy'
+    submit: Dodaj
+  role:
+    customer: Klient
+    supplier: Dostawca
+    both: Oba
+  column:
+    name: Nazwa
+    roles: Rola
+    codes: 'Kody pomocnicze'
+    contact: Kontakt
+
+es:
+  page_title: Fiestas
+  page_icon: 'ph:bold/address-book'
+  empty: 'No hay fiestas que coincidan.'
+  search: Buscar
+  new:
+    name: 'El nombre de una nueva fiesta'
+    submit: Agregar
+  role:
+    customer: Cliente
+    supplier: Proveedor
+    both: Ambos
+  column:
+    name: Nombre
+    roles: Rol
+    codes: 'Códigos auxiliares'
+    contact: Contacto
+
+it:
+  page_title: Feste
+  page_icon: 'ph:bold/address-book'
+  empty: 'Nessuna festa corrisponde.'
+  search: Cerca
+  new:
+    name: 'Il nome di una nuova festa'
+    submit: Aggiungi
+  role:
+    customer: Cliente
+    supplier: Fornitore
+    both: Entrambi
+  column:
+    name: Nome
+    roles: Ruolo
+    codes: 'Codici ausiliari'
+    contact: Contatto
+
+pt_BR:
+  page_title: Partidos
+  page_icon: 'ph:bold/address-book'
+  empty: 'Nenhum partido corresponde.'
+  search: Pesquisar
+  new:
+    name: 'O nome de um novo partido'
+    submit: Adicionar
+  role:
+    customer: Cliente
+    supplier: Fornecedor
+    both: Ambos
+  column:
+    name: Nome
+    roles: Função
+    codes: 'Códigos auxiliares'
+    contact: Contato
+
+tr:
+  page_title: Taraflar
+  page_icon: 'ph:bold/address-book'
+  empty: 'Hiçbir parti eşleşmiyor.'
+  search: Ara
+  new:
+    name: 'Yeni bir partinin adı'
+    submit: Ekle
+  role:
+    customer: Müşteri
+    supplier: Tedarikçi
+    both: 'Her ikisi'
+  column:
+    name: İsim
+    roles: Rol
+    codes: 'Yardımcı kodlar'
+    contact: İletişim
+
+vi:
+  page_title: 'Các bên'
+  page_icon: 'ph:bold/address-book'
+  empty: 'Không có bên nào phù hợp.'
+  search: 'Tìm kiếm'
+  new:
+    name: 'Tên của một bên mới'
+    submit: Thêm
+  role:
+    customer: 'Khách hàng'
+    supplier: 'Nhà cung cấp'
+    both: 'Cả hai'
+  column:
+    name: Tên
+    roles: 'Vai trò'
+    codes: 'Mã phụ'
+    contact: 'Liên hệ'
+
+id:
+  page_title: Pihak
+  page_icon: 'ph:bold/address-book'
+  empty: 'Tidak ada pihak yang cocok.'
+  search: Cari
+  new:
+    name: 'Nama pihak baru'
+    submit: Tambah
+  role:
+    customer: Pelanggan
+    supplier: Pemasok
+    both: Keduanya
+  column:
+    name: Nama
+    roles: Peran
+    codes: 'Kode tambahan'
+    contact: Kontak
+
+nl:
+  page_title: Feesten
+  page_icon: 'ph:bold/address-book'
+  empty: 'Geen feest gevonden.'
+  search: Zoeken
+  new:
+    name: 'De naam van een nieuw feest'
+    submit: Toevoegen
+  role:
+    customer: Klant
+    supplier: Leverancier
+    both: Beide
+  column:
+    name: Naam
+    roles: Rol
+    codes: Hulpcodes
+    contact: Contact

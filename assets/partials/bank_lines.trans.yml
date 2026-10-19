@@ -27,3 +27,203 @@ zh:
   transfer: 转账
   settled: 是
   left: '%amount% 剩余'
+
+ar:
+  date: تاريخ
+  label: خط
+  organization: منظمة
+  amount: مبلغ
+  state: موضح
+  transfer: تحويل
+  settled: نعم
+  left: '%amount% متبقي'
+
+hi:
+  date: तारीख
+  label: रेखा
+  organization: संस्थान
+  amount: राशि
+  state: 'व्याख्या की गई'
+  transfer: हस्तांतरण
+  settled: हाँ
+  left: '%amount% बचे हुए'
+
+he:
+  date: תאריך
+  label: שורה
+  organization: ארגון
+  amount: סכום
+  state: הוסבר
+  transfer: העברה
+  settled: כן
+  left: '%amount% נותרו'
+
+fa:
+  date: تاریخ
+  label: خط
+  organization: سازمان
+  amount: مقدار
+  state: 'توضیح داده شده'
+  transfer: انتقال
+  settled: بله
+  left: '%amount% باقی مانده'
+
+ur:
+  date: تاریخ
+  label: لائن
+  organization: تنظیم
+  amount: رقم
+  state: 'وضاحت کی گئی'
+  transfer: منتقلی
+  settled: 'جی ہاں'
+  left: '%amount% باقی'
+
+ja:
+  date: 日付
+  label: ライン
+  organization: 組織
+  amount: 金額
+  state: 説明済み
+  transfer: 転送
+  settled: はい
+  left: '%amount% 残り'
+
+ko:
+  date: 날짜
+  label: 선
+  organization: 조직
+  amount: 금액
+  state: 설명됨
+  transfer: 전송
+  settled: 예
+  left: '%amount% 남음'
+
+bn:
+  date: তারিখ
+  label: লাইন
+  organization: সংগঠন
+  amount: পরিমাণ
+  state: 'ব্যাখ্যা করা হয়েছে'
+  transfer: স্থানান্তর
+  settled: হ্যাঁ
+  left: '%amount% বাকি'
+
+th:
+  date: วันที่
+  label: แถว
+  organization: องค์กร
+  amount: จำนวนเงิน
+  state: อธิบายแล้ว
+  transfer: โอน
+  settled: ใช่
+  left: '%amount% ที่เหลือ'
+
+de:
+  date: Datum
+  label: Zeile
+  organization: Organisation
+  amount: Betrag
+  state: Erklärt
+  transfer: Überweisung
+  settled: Ja
+  left: '%amount% übrig'
+
+fi:
+  date: Päivämäärä
+  label: Rivi
+  organization: Organisaatio
+  amount: Summa
+  state: Selitetty
+  transfer: Siirto
+  settled: Kyllä
+  left: '%amount% jäljellä'
+
+ru:
+  date: Дата
+  label: Строка
+  organization: Организация
+  amount: Сумма
+  state: Объяснено
+  transfer: Перевод
+  settled: Да
+  left: '%amount% осталось'
+
+pl:
+  date: Data
+  label: Linia
+  organization: Organizacja
+  amount: Kwota
+  state: Wyjaśnione
+  transfer: Przelew
+  settled: Tak
+  left: '%amount% pozostało'
+
+es:
+  date: Fecha
+  label: Línea
+  organization: Organización
+  amount: Cantidad
+  state: Explicado
+  transfer: Transferir
+  settled: Sí
+  left: '%amount% restantes'
+
+it:
+  date: Data
+  label: Linea
+  organization: Organizzazione
+  amount: Importo
+  state: Spiegato
+  transfer: Trasferimento
+  settled: Sì
+  left: '%amount% rimasti'
+
+pt_BR:
+  date: Data
+  label: Linha
+  organization: Organização
+  amount: Valor
+  state: Explicado
+  transfer: Transferência
+  settled: Sim
+  left: '%amount% restantes'
+
+tr:
+  date: Tarih
+  label: Satır
+  organization: Kuruluş
+  amount: Tutar
+  state: Açıklandı
+  transfer: Transfer
+  settled: Evet
+  left: '%amount% kaldı'
+
+vi:
+  date: Ngày
+  label: Dòng
+  organization: 'Tổ chức'
+  amount: 'Số tiền'
+  state: 'Đã giải thích'
+  transfer: 'Chuyển khoản'
+  settled: Có
+  left: '%amount% còn lại'
+
+id:
+  date: Tanggal
+  label: Garis
+  organization: Organisasi
+  amount: Jumlah
+  state: Dijelaskan
+  transfer: Transfer
+  settled: Ya
+  left: '%amount% tersisa'
+
+nl:
+  date: Datum
+  label: Regel
+  organization: Organisatie
+  amount: Bedrag
+  state: Uitleg
+  transfer: Overdracht
+  settled: Ja
+  left: '%amount% over'

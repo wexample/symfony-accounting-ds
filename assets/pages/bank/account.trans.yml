@@ -66,3 +66,463 @@ zh:
     active: 正在使用
     default: 在文件中显示
     submit: 保存
+
+ar:
+  page_title: 'حساب بنكي'
+  page_icon: 'ph:bold/bank'
+  empty: 'لا توجد خطوط هنا.'
+  only_unsettled: 'فقط تلك التي تحتاج إلى تفسير'
+  only_owner: 'فقط مالك الحساب'
+  lines: الخطوط
+  assign:
+    title: 'توجيه الخطوط إلى منظمة'
+    label: 'عبارات التسمية'
+    from: من
+    to: إلى
+    target: المنظمة
+    submit: وجهها
+  edit:
+    title: حساب
+    label: تسمية
+    holder: المالك
+    bank_name: البنك
+    active: 'قيد الاستخدام'
+    default: 'مُعرض على الوثائق'
+    submit: احفظ
+
+hi:
+  page_title: 'बैंक खाता'
+  page_icon: 'ph:bold/bank'
+  empty: 'यहाँ कोई पंक्ति नहीं है।'
+  only_unsettled: 'केवल समझाने के लिए'
+  only_owner: 'केवल मालिक का'
+  lines: पंक्तियाँ
+  assign:
+    title: 'पंक्तियों को एक संगठन के लिए निर्धारित करें'
+    label: 'लेबल के शब्द'
+    from: से
+    to: तक
+    target: संगठन
+    submit: 'निर्धारित करें'
+  edit:
+    title: खाता
+    label: लेबल
+    holder: धारक
+    bank_name: बैंक
+    active: 'उपयोग में'
+    default: 'दस्तावेजों पर दिखाया गया'
+    submit: सहेजें
+
+he:
+  page_title: 'חשבון בנק'
+  page_icon: 'ph:bold/bank'
+  empty: 'אין שורות כאן.'
+  only_unsettled: 'רק אלו להסבר'
+  only_owner: 'רק של בעל החשבון'
+  lines: שורות
+  assign:
+    title: 'קשר שורות לארגון'
+    label: 'מילות התווית'
+    from: מאת
+    to: אל
+    target: ארגון
+    submit: 'קשר אותם'
+  edit:
+    title: חשבון
+    label: תווית
+    holder: בעלים
+    bank_name: בנק
+    active: בשימוש
+    default: 'מוצג במסמכים'
+    submit: שמור
+
+fa:
+  page_title: 'حساب بانکی'
+  page_icon: 'ph:bold/bank'
+  empty: 'هیچ خطی در اینجا نیست.'
+  only_unsettled: 'فقط آنهایی که باید توضیح داده شوند'
+  only_owner: 'فقط متعلق به مالک'
+  lines: خطوط
+  assign:
+    title: 'خطوط را به یک سازمان اختصاص دهید'
+    label: 'متن برچسب'
+    from: از
+    to: به
+    target: سازمان
+    submit: 'اختصاص دهید'
+  edit:
+    title: حساب
+    label: برچسب
+    holder: دارنده
+    bank_name: بانک
+    active: 'در حال استفاده'
+    default: 'در اسناد نمایش داده می‌شود'
+    submit: ذخیره
+
+ur:
+  page_title: 'بینک اکاؤنٹ'
+  page_icon: 'ph:bold/bank'
+  empty: 'یہاں کوئی لائن نہیں ہے۔'
+  only_unsettled: 'صرف وضاحت کے لیے'
+  only_owner: 'صرف مالک کا'
+  lines: لائنیں
+  assign:
+    title: 'لائنوں کو ایک تنظیم کے ساتھ جوڑیں'
+    label: 'لیبل کے الفاظ'
+    from: سے
+    to: تک
+    target: تنظیم
+    submit: جوڑیں
+  edit:
+    title: اکاؤنٹ
+    label: لیبل
+    holder: ہولڈر
+    bank_name: بینک
+    active: 'استعمال میں'
+    default: 'دستاویزات پر دکھایا گیا'
+    submit: 'محفوظ کریں'
+
+ja:
+  page_title: 銀行口座
+  page_icon: 'ph:bold/bank'
+  empty: ここには何もありません。
+  only_unsettled: 説明が必要なもののみ
+  only_owner: オーナーのみ
+  lines: ライン
+  assign:
+    title: ラインを組織に割り当てる
+    label: ラベルの言葉
+    from: から
+    to: へ
+    target: 組織
+    submit: 割り当てる
+  edit:
+    title: 口座
+    label: ラベル
+    holder: 名義人
+    bank_name: 銀行
+    active: 使用中
+    default: 書類に表示
+    submit: 保存
+
+ko:
+  page_title: '은행 계좌'
+  page_icon: 'ph:bold/bank'
+  empty: '여기에 줄이 없습니다.'
+  only_unsettled: '설명할 항목만'
+  only_owner: 소유자만
+  lines: 줄
+  assign:
+    title: '라인을 조직에 지정하기'
+    label: '라벨의 단어'
+    from: 출처
+    to: 대상
+    target: 조직
+    submit: 지정하기
+  edit:
+    title: 계좌
+    label: 라벨
+    holder: 소유자
+    bank_name: 은행
+    active: '사용 중'
+    default: '문서에 표시됨'
+    submit: 저장
+
+bn:
+  page_title: 'ব্যাংক অ্যাকাউন্ট'
+  page_icon: 'ph:bold/bank'
+  empty: 'এখানে কিছুই নেই।'
+  only_unsettled: 'শুধুমাত্র ব্যাখ্যা করার জন্য'
+  only_owner: 'শুধুমাত্র মালিকের'
+  lines: লাইনসমূহ
+  assign:
+    title: 'লাইনগুলো একটি সংস্থার জন্য নির্ধারণ করুন'
+    label: 'লেবেলের শব্দ'
+    from: থেকে
+    to: প্রতি
+    target: সংস্থা
+    submit: 'নির্ধারণ করুন'
+  edit:
+    title: অ্যাকাউন্ট
+    label: লেবেল
+    holder: ধারক
+    bank_name: ব্যাংক
+    active: ব্যবহারে
+    default: 'নথিতে প্রদর্শিত'
+    submit: 'সংরক্ষণ করুন'
+
+th:
+  page_title: บัญชีธนาคาร
+  page_icon: 'ph:bold/bank'
+  empty: ไม่มีรายการที่นี่
+  only_unsettled: เฉพาะที่ต้องชี้แจง
+  only_owner: เฉพาะของเจ้าของ
+  lines: รายการ
+  assign:
+    title: ชี้รายการไปยังองค์กร
+    label: คำของป้าย
+    from: จาก
+    to: ถึง
+    target: องค์กร
+    submit: ชี้ไป
+  edit:
+    title: บัญชี
+    label: ป้าย
+    holder: ผู้ถือ
+    bank_name: ธนาคาร
+    active: ใช้งานอยู่
+    default: แสดงในเอกสาร
+    submit: บันทึก
+
+de:
+  page_title: Bankkonto
+  page_icon: 'ph:bold/bank'
+  empty: 'Hier ist nichts.'
+  only_unsettled: 'Nur die zu erklärenden'
+  only_owner: 'Nur des Eigentümers'
+  lines: Zeilen
+  assign:
+    title: 'Zeilen einer Organisation zuweisen'
+    label: Bezeichnung
+    from: Von
+    to: An
+    target: Organisation
+    submit: Zuweisen
+  edit:
+    title: Konto
+    label: Bezeichnung
+    holder: Inhaber
+    bank_name: Bank
+    active: 'In Verwendung'
+    default: 'Auf Dokumenten angezeigt'
+    submit: Speichern
+
+fi:
+  page_title: Pankkitili
+  page_icon: 'ph:bold/bank'
+  empty: 'Täällä ei ole rivejä.'
+  only_unsettled: 'Vain selitettävät'
+  only_owner: 'Vain omistajan'
+  lines: Rivit
+  assign:
+    title: 'Osoita rivit organisaatiolle'
+    label: 'Labelin sanat'
+    from: Mistä
+    to: Mihin
+    target: Organisaatio
+    submit: 'Osoita ne'
+  edit:
+    title: Tili
+    label: Labeli
+    holder: Haltija
+    bank_name: Pankki
+    active: Käytössä
+    default: 'Näytetään asiakirjoissa'
+    submit: Tallenna
+
+ru:
+  page_title: 'Банковский счет'
+  page_icon: 'ph:bold/bank'
+  empty: 'Здесь нет строк.'
+  only_unsettled: 'Только те, что нужно объяснить'
+  only_owner: 'Только владельца'
+  lines: Строки
+  assign:
+    title: 'Привязать строки к организации'
+    label: 'Слова метки'
+    from: От
+    to: К
+    target: Организация
+    submit: Привязать
+  edit:
+    title: Счет
+    label: Метка
+    holder: Владелец
+    bank_name: Банк
+    active: 'В использовании'
+    default: 'Отображается в документах'
+    submit: Сохранить
+
+pl:
+  page_title: 'Konto bankowe'
+  page_icon: 'ph:bold/bank'
+  empty: 'Brak wpisów.'
+  only_unsettled: 'Tylko te do wyjaśnienia'
+  only_owner: 'Tylko właściciela'
+  lines: Wpisy
+  assign:
+    title: 'Przypisz wpisy do organizacji'
+    label: 'Nazwa etykiety'
+    from: Od
+    to: Do
+    target: Organizacja
+    submit: Przypisz
+  edit:
+    title: Konto
+    label: Etykieta
+    holder: Właściciel
+    bank_name: Bank
+    active: Aktywne
+    default: 'Widoczne na dokumentach'
+    submit: Zapisz
+
+es:
+  page_title: 'Cuenta bancaria'
+  page_icon: 'ph:bold/bank'
+  empty: 'No hay líneas aquí.'
+  only_unsettled: 'Solo aquellos por explicar'
+  only_owner: 'Solo del propietario'
+  lines: Líneas
+  assign:
+    title: 'Asignar líneas a una organización'
+    label: 'Palabras de la etiqueta'
+    from: De
+    to: A
+    target: Organización
+    submit: Asignarlas
+  edit:
+    title: Cuenta
+    label: Etiqueta
+    holder: Titular
+    bank_name: Banco
+    active: 'En uso'
+    default: 'Mostrado en documentos'
+    submit: Guardar
+
+it:
+  page_title: 'Conto bancario'
+  page_icon: 'ph:bold/bank'
+  empty: 'Nessuna riga qui.'
+  only_unsettled: 'Solo quelli da spiegare'
+  only_owner: 'Solo del proprietario'
+  lines: Righe
+  assign:
+    title: "Assegna righe a un'organizzazione"
+    label: "Parole dell'etichetta"
+    from: Da
+    to: A
+    target: Organizzazione
+    submit: Assegna
+  edit:
+    title: Conto
+    label: Etichetta
+    holder: Intestatario
+    bank_name: Banca
+    active: 'In uso'
+    default: 'Mostrato nei documenti'
+    submit: Salva
+
+pt_BR:
+  page_title: 'Conta bancária'
+  page_icon: 'ph:bold/bank'
+  empty: 'Nenhuma linha aqui.'
+  only_unsettled: 'Apenas os que precisam de explicação'
+  only_owner: 'Apenas do proprietário'
+  lines: Linhas
+  assign:
+    title: 'Aponte linhas para uma organização'
+    label: 'Palavras do rótulo'
+    from: De
+    to: Para
+    target: Organização
+    submit: Aponte-os
+  edit:
+    title: Conta
+    label: Rótulo
+    holder: Titular
+    bank_name: Banco
+    active: 'Em uso'
+    default: 'Exibido em documentos'
+    submit: Salvar
+
+tr:
+  page_title: 'Banka hesabı'
+  page_icon: 'ph:bold/bank'
+  empty: 'Burada hiç satır yok.'
+  only_unsettled: 'Sadece açıklanacaklar'
+  only_owner: 'Sadece sahibin'
+  lines: Satırlar
+  assign:
+    title: 'Satırları bir kuruluşa atayın'
+    label: 'Etiketin kelimeleri'
+    from: Kimden
+    to: Kime
+    target: Kuruluş
+    submit: Atayın
+  edit:
+    title: Hesap
+    label: Etiket
+    holder: Sahibi
+    bank_name: Banka
+    active: Kullanımda
+    default: 'Belgelerde gösterilir'
+    submit: Kaydet
+
+vi:
+  page_title: 'Tài khoản ngân hàng'
+  page_icon: 'ph:bold/bank'
+  empty: 'Không có dòng nào ở đây.'
+  only_unsettled: 'Chỉ những cái cần giải thích'
+  only_owner: 'Chỉ của chủ tài khoản'
+  lines: Dòng
+  assign:
+    title: 'Gán dòng cho một tổ chức'
+    label: 'Từ của nhãn'
+    from: Từ
+    to: Đến
+    target: 'Tổ chức'
+    submit: 'Gán chúng'
+  edit:
+    title: 'Tài khoản'
+    label: Nhãn
+    holder: 'Chủ tài khoản'
+    bank_name: 'Ngân hàng'
+    active: 'Đang sử dụng'
+    default: 'Hiển thị trên tài liệu'
+    submit: Lưu
+
+id:
+  page_title: 'Rekening bank'
+  page_icon: 'ph:bold/bank'
+  empty: 'Tidak ada data di sini.'
+  only_unsettled: 'Hanya yang perlu dijelaskan'
+  only_owner: 'Hanya pemilik'
+  lines: Baris
+  assign:
+    title: 'Tunjuk baris ke organisasi'
+    label: 'Kata-kata label'
+    from: Dari
+    to: Ke
+    target: Organisasi
+    submit: 'Tunjuk mereka'
+  edit:
+    title: Rekening
+    label: Label
+    holder: Pemegang
+    bank_name: Bank
+    active: 'Sedang digunakan'
+    default: 'Ditampilkan di dokumen'
+    submit: Simpan
+
+nl:
+  page_title: Bankrekening
+  page_icon: 'ph:bold/bank'
+  empty: 'Geen regels hier.'
+  only_unsettled: 'Alleen de te verklaren'
+  only_owner: 'Alleen van de eigenaar'
+  lines: Regels
+  assign:
+    title: 'Wijs regels toe aan een organisatie'
+    label: 'Woorden van het label'
+    from: Van
+    to: Naar
+    target: Organisatie
+    submit: 'Wijs ze toe'
+  edit:
+    title: Rekening
+    label: Label
+    holder: Houder
+    bank_name: Bank
+    active: 'In gebruik'
+    default: 'Getoond op documenten'
+    submit: Opslaan

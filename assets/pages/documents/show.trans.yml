@@ -207,3 +207,1403 @@ zh:
     whole: 剩余全部
     reason: 原因
     submit: 发出信用票据
+
+ar:
+  page_title: وثيقة
+  page_icon: 'ph:bold/receipt'
+  draft: مسودة
+  party: طرف
+  date: تاريخ
+  date_due: 'تاريخ الاستحقاق'
+  net: صافي
+  vat: 'ضريبة القيمة المضافة'
+  total: الإجمالي
+  credited: مدفوع
+  paid: مدفوع
+  due: 'المتبقي للدفع'
+  payments: 'ما تم دفعه'
+  label: 'خط البنك'
+  amount: المبلغ
+  relations: 'المستندات المرتبطة'
+  no_relation: 'لا يوجد مستند مرتبط.'
+  import_warnings: 'ما تم ملاحظته عند قراءة الفاتورة المستلمة'
+  unrelate: 'فك الارتباط'
+  relate:
+    choose: 'مستند للربط…'
+    rebill: 'إعادة الفوترة (شراء → بيع)'
+    financing: تمويل
+    to: 'هذا هو المصدر'
+    from: 'هذا هو الهدف'
+    submit: اربط
+  relation:
+    quotation:
+      to: 'تم الفوترة كـ'
+      from: 'تم الفوترة من العرض'
+    credit:
+      to: 'تمت الإضافة بواسطة'
+      from: 'إشعار ائتماني من'
+    deposit:
+      to: إيداع
+      from: 'إيداع من'
+    penalty:
+      to: 'رسوم تأخير'
+      from: 'رسوم تأخير من'
+    rebill:
+      to: 'تمت إعادة الفوترة في'
+      from: 'يعيد فوترة الشراء'
+    financing:
+      to: يمول
+      from: 'ممول بواسطة'
+  peppol:
+    reachable: 'العميل يتلقى الفواتير عبر Peppol.'
+    unreachable: 'العميل غير موجود في دليل Peppol.'
+    send: 'إرسال عبر Peppol'
+    confirm: 'تم إرسال الفاتورة إلى نقطة وصول العميل. هل تتابع؟'
+  download:
+    ubl: 'تنزيل كـ UBL (Peppol)'
+    cii: 'تنزيل كـ CII (Factur-X)'
+  action:
+    emit: إصدار
+    duplicate: 'نسخ كمسودة'
+    delete: 'حذف المسودة'
+    bill: فوترتها
+  confirm:
+    emit: 'تم الإصدار، المستند مُرقم ومحجوز، ولا يمكن تغييره بعد الآن. هل تصدره؟'
+    delete: 'هل تريد حذف هذه المسودة؟'
+    credit: 'سيتم إصدار إشعار الائتمان على الفور. هل تتابع؟'
+  credit:
+    title: 'إلغاء بواسطة إشعار ائتماني'
+    amount: 'المبلغ، شامل الضريبة'
+    whole: 'كل ما تبقى'
+    reason: السبب
+    submit: 'إصدار إشعار الائتمان'
+
+hi:
+  page_title: दस्तावेज़
+  page_icon: 'ph:bold/receipt'
+  draft: खाका
+  party: पार्टी
+  date: तारीख
+  date_due: अवधि
+  net: नेट
+  vat: वैट
+  total: कुल
+  credited: श्रेयित
+  paid: 'भुगतान किया गया'
+  due: 'भुगतान करना बाकी'
+  payments: 'क्या भुगतान किया गया'
+  label: 'बैंक लाइन'
+  amount: राशि
+  relations: 'संबंधित दस्तावेज़'
+  no_relation: 'कोई दस्तावेज़ संबंधित नहीं।'
+  import_warnings: 'प्राप्त चालान पढ़ने में क्या नोटिस किया गया'
+  unrelate: 'असंबंधित करें'
+  relate:
+    choose: 'एक दस्तावेज़ लिंक करने के लिए…'
+    rebill: 'फिर से बिल किया गया (खरीद → बिक्री)'
+    financing: वित्तपोषण
+    to: 'यह स्रोत है'
+    from: 'यह लक्ष्य है'
+    submit: 'लिंक करें'
+  relation:
+    quotation:
+      to: 'बिल किया गया है'
+      from: 'उद्धरण से बिल किया गया'
+    credit:
+      to: 'श्रेयित किया गया'
+      from: 'क्रेडिट नोट का'
+    deposit:
+      to: जमा
+      from: 'जमा का'
+    penalty:
+      to: 'विलंब शुल्क'
+      from: 'विलंब शुल्क का'
+    rebill:
+      to: 'फिर से बिल किया गया'
+      from: 'खरीद को फिर से बिल करता है'
+    financing:
+      to: 'वित्तपोषण करता है'
+      from: 'वित्तपोषित किया गया'
+  peppol:
+    reachable: 'ग्राहक Peppol के माध्यम से चालान प्राप्त करता है।'
+    unreachable: 'ग्राहक Peppol निर्देशिका में नहीं मिल रहा है।'
+    send: 'Peppol के माध्यम से भेजें'
+    confirm: 'चालान ग्राहक के प्रवेश बिंदु पर भेजा गया है। जारी रखें?'
+  download:
+    ubl: 'UBL (Peppol) के रूप में डाउनलोड करें'
+    cii: 'CII (Factur-X) के रूप में डाउनलोड करें'
+  action:
+    emit: 'जारी करें'
+    duplicate: 'खाका के रूप में कॉपी करें'
+    delete: 'खाका हटाएं'
+    bill: 'इसका बिल बनाएं'
+  confirm:
+    emit: 'जारी किया गया, दस्तावेज़ क्रमांकित और बुक किया गया है, और अब इसे बदल नहीं सकते। क्या इसे जारी करें?'
+    delete: 'क्या इस खाके को हटाएं?'
+    credit: 'क्रेडिट नोट तुरंत जारी किया जाता है। क्या जारी रखें?'
+  credit:
+    title: 'क्रेडिट नोट द्वारा रद्द करें'
+    amount: 'राशि, कर सहित'
+    whole: 'जो भी बाकी है'
+    reason: कारण
+    submit: 'क्रेडिट नोट जारी करें'
+
+he:
+  page_title: מסמך
+  page_icon: 'ph:bold/receipt'
+  draft: טיוטה
+  party: צד
+  date: תאריך
+  date_due: 'תאריך יעד'
+  net: נטו
+  vat: 'מע"מ'
+  total: 'סך הכל'
+  credited: זוכה
+  paid: שולם
+  due: 'נותר לשלם'
+  payments: 'מה שולם'
+  label: 'שורת בנק'
+  amount: סכום
+  relations: 'מסמכים מקושרים'
+  no_relation: 'אין מסמך מקושר.'
+  import_warnings: 'מה שקריאת החשבונית שהתקבלה ציינה'
+  unrelate: 'הסר קשר'
+  relate:
+    choose: 'מסמך לקישור…'
+    rebill: 'חייב מחדש (רכישה → מכירה)'
+    financing: מימון
+    to: 'זהו המקור'
+    from: 'זהו היעד'
+    submit: קשר
+  relation:
+    quotation:
+      to: 'חייב כ'
+      from: 'חייב מהצעת המחיר'
+    credit:
+      to: 'זוכה על ידי'
+      from: 'הערת זכות של'
+    deposit:
+      to: פיקדון
+      from: 'פיקדון של'
+    penalty:
+      to: 'קנס על איחור'
+      from: 'קנס על איחור של'
+    rebill:
+      to: 'חייב מחדש על'
+      from: 'חייב מחדש את הרכישה'
+    financing:
+      to: מממן
+      from: 'מומן על ידי'
+  peppol:
+    reachable: 'הלקוח מקבל חשבוניות דרך Peppol.'
+    unreachable: 'הלקוח לא נמצא במדריך Peppol.'
+    send: 'שלח דרך Peppol'
+    confirm: 'החשבונית נשלחה לנקודת הגישה של הלקוח. להמשיך?'
+  download:
+    ubl: 'הורד כ-UBL (Peppol)'
+    cii: 'הורד כ-CII (Factur-X)'
+  action:
+    emit: הנפק
+    duplicate: 'העתק כטיוטה'
+    delete: 'מחק את הטיוטה'
+    bill: 'חייב את זה'
+  confirm:
+    emit: 'הונפק, המסמך ממוספר והוזמן, ואי אפשר לשנות אותו יותר. להנפיק אותו?'
+    delete: 'למחוק את הטיוטה הזו?'
+    credit: 'ההערת זכות מונפקת מיד. להמשיך?'
+  credit:
+    title: 'בטל באמצעות הערת זכות'
+    amount: 'סכום, כולל מע"מ'
+    whole: 'כל מה שנותר'
+    reason: סיבה
+    submit: 'הנפק את ההערת זכות'
+
+fa:
+  page_title: سند
+  page_icon: 'ph:bold/receipt'
+  draft: پیش‌نویس
+  party: طرف
+  date: تاریخ
+  date_due: 'تاریخ سررسید'
+  net: خالص
+  vat: 'مالیات بر ارزش افزوده'
+  total: جمع
+  credited: 'اعتبار داده شده'
+  paid: 'پرداخت شده'
+  due: 'باقیمانده پرداخت'
+  payments: 'پرداخت شده توسط'
+  label: 'خط بانکی'
+  amount: مبلغ
+  relations: 'اسناد مرتبط'
+  no_relation: 'هیچ سندی مرتبط نیست.'
+  import_warnings: 'چه چیزی در خواندن فاکتور دریافتی متوجه شدیم'
+  unrelate: 'غیر مرتبط کردن'
+  relate:
+    choose: 'سندی برای لینک کردن…'
+    rebill: 'دوباره فاکتور شده (خرید → فروش)'
+    financing: 'تأمین مالی'
+    to: 'این سند منبع است'
+    from: 'این سند هدف است'
+    submit: 'لینک کردن'
+  relation:
+    quotation:
+      to: 'فاکتور شده به عنوان'
+      from: 'فاکتور شده از نقل قول'
+    credit:
+      to: 'اعتبار داده شده توسط'
+      from: 'یادداشت اعتبار از'
+    deposit:
+      to: سپرده
+      from: 'سپرده از'
+    penalty:
+      to: 'هزینه تأخیر'
+      from: 'هزینه تأخیر از'
+    rebill:
+      to: 'دوباره فاکتور شده در'
+      from: 'فاکتورهای خرید را دوباره فاکتور می‌کند'
+    financing:
+      to: 'تأمین مالی می‌کند'
+      from: 'تأمین مالی شده توسط'
+  peppol:
+    reachable: 'مشتری فاکتورها را از طریق Peppol دریافت می‌کند.'
+    unreachable: 'مشتری در دایرکتوری Peppol یافت نشد.'
+    send: 'ارسال از طریق Peppol'
+    confirm: 'فاکتور به نقطه دسترسی مشتری ارسال شده است. ادامه می‌دهید؟'
+  download:
+    ubl: 'دانلود به عنوان UBL (Peppol)'
+    cii: 'دانلود به عنوان CII (Factur-X)'
+  action:
+    emit: صدور
+    duplicate: 'کپی به عنوان پیش‌نویس'
+    delete: 'حذف پیش‌نویس'
+    bill: 'فاکتور کردن'
+  confirm:
+    emit: 'صادر شد، سند شماره‌گذاری و ثبت شده است و دیگر نمی‌توان آن را تغییر داد. آیا آن را صادر کنیم؟'
+    delete: 'آیا این پیش‌نویس را حذف کنیم؟'
+    credit: 'یادداشت اعتبار به طور همزمان صادر می‌شود. ادامه می‌دهید؟'
+  credit:
+    title: 'ابطال با یادداشت اعتبار'
+    amount: 'مبلغ، شامل مالیات'
+    whole: 'تمامی آنچه باقی مانده است'
+    reason: دلیل
+    submit: 'یادداشت اعتبار را صادر کنید'
+
+ur:
+  page_title: دستاویز
+  page_icon: 'ph:bold/receipt'
+  draft: مسودہ
+  party: پارٹی
+  date: تاریخ
+  date_due: 'مخصوص تاریخ'
+  net: خالص
+  vat: VAT
+  total: کل
+  credited: 'کریڈٹ کیا گیا'
+  paid: 'ادائیگی کی گئی'
+  due: 'ادائیگی باقی ہے'
+  payments: 'کیا ادا کیا گیا'
+  label: 'بینک لائن'
+  amount: رقم
+  relations: 'منسلک دستاویزات'
+  no_relation: 'کوئی دستاویز منسلک نہیں ہے۔'
+  import_warnings: 'موصول شدہ انوائس کی پڑھائی میں کیا نوٹس کیا گیا'
+  unrelate: 'منسلک ہٹائیں'
+  relate:
+    choose: 'منسلک کرنے کے لیے ایک دستاویز…'
+    rebill: 'دوبارہ بلنگ (خرید → فروخت)'
+    financing: 'مالی امداد'
+    to: 'یہی ماخذ ہے'
+    from: 'یہی ہدف ہے'
+    submit: 'منسلک کریں'
+  relation:
+    quotation:
+      to: 'بلنگ کی گئی ہے'
+      from: 'اقتباس سے بلنگ کی گئی ہے'
+    credit:
+      to: 'کریڈٹ کیا گیا'
+      from: 'کریڈٹ نوٹ کا'
+    deposit:
+      to: ڈپازٹ
+      from: 'ڈپازٹ کا'
+    penalty:
+      to: 'لیٹ فیس'
+      from: 'لیٹ فیس کا'
+    rebill:
+      to: 'دوبارہ بلنگ پر'
+      from: 'خریداری کی دوبارہ بلنگ'
+    financing:
+      to: 'مالی امداد'
+      from: 'مالی امداد کی گئی'
+  peppol:
+    reachable: 'کلائنٹ کو Peppol کے ذریعہ انوائس موصول ہوتی ہیں۔'
+    unreachable: 'کلائنٹ Peppol ڈائریکٹری میں نہیں ملا۔'
+    send: 'Peppol کے ذریعہ بھیجیں'
+    confirm: 'انوائس کلائنٹ کے رسائی نقطے پر بھیجی گئی ہے۔ کیا آگے بڑھیں؟'
+  download:
+    ubl: 'UBL (Peppol) کے طور پر ڈاؤن لوڈ کریں'
+    cii: 'CII (Factur-X) کے طور پر ڈاؤن لوڈ کریں'
+  action:
+    emit: 'جاری کریں'
+    duplicate: 'مسودہ کے طور پر کاپی کریں'
+    delete: 'مسودہ حذف کریں'
+    bill: 'اسے بل بنائیں'
+  confirm:
+    emit: 'جاری، دستاویز نمبر دی گئی ہے اور بک کی گئی ہے، اور اب تبدیل نہیں کی جا سکتی۔ کیا اسے جاری کریں؟'
+    delete: 'اس مسودے کو حذف کریں؟'
+    credit: 'کریڈٹ نوٹ ایک ساتھ جاری کیا گیا ہے۔ کیا آگے بڑھیں؟'
+  credit:
+    title: 'کریڈٹ نوٹ کے ذریعہ منسوخ کریں'
+    amount: 'رقم، ٹیکس شامل'
+    whole: 'باقی سب کچھ'
+    reason: وجہ
+    submit: 'کریڈٹ نوٹ جاری کریں'
+
+ja:
+  page_title: ドキュメント
+  page_icon: 'ph:bold/receipt'
+  draft: ドラフト
+  party: 取引先
+  date: 日付
+  date_due: 期限
+  net: ネット
+  vat: VAT
+  total: 合計
+  credited: クレジット済み
+  paid: 支払い済み
+  due: 残りの支払い
+  payments: 支払い内容
+  label: 銀行取引
+  amount: 金額
+  relations: 関連ドキュメント
+  no_relation: 関連ドキュメントはありません。
+  import_warnings: 受け取った請求書の読み取りで気づいたこと
+  unrelate: リンク解除
+  relate:
+    choose: リンクするドキュメント…
+    rebill: '再請求（購入 → 売上）'
+    financing: ファイナンス
+    to: これがソースです
+    from: これがターゲットです
+    submit: リンク
+  relation:
+    quotation:
+      to: 請求書として
+      from: 見積もりから請求
+    credit:
+      to: クレジットによる
+      from: クレジットノートの
+    deposit:
+      to: 預金
+      from: 預金の
+    penalty:
+      to: 遅延料金
+      from: 遅延料金の
+    rebill:
+      to: 再請求日
+      from: 購入を再請求
+    financing:
+      to: ファイナンス
+      from: ファイナンスされた
+  peppol:
+    reachable: クライアントはPeppolを通じて請求書を受け取ります。
+    unreachable: クライアントはPeppolディレクトリに見つかりません。
+    send: Peppol経由で送信
+    confirm: 請求書はクライアントのアクセスポイントに送信されました。続けますか？
+  download:
+    ubl: UBL（Peppol）としてダウンロード
+    cii: CII（Factur-X）としてダウンロード
+  action:
+    emit: 発行
+    duplicate: ドラフトとしてコピー
+    delete: ドラフトを削除
+    bill: 請求する
+  confirm:
+    emit: 発行され、ドキュメントは番号付けされて予約され、変更できなくなります。発行しますか？
+    delete: このドラフトを削除しますか？
+    credit: クレジットノートはすぐに発行されます。続けますか？
+  credit:
+    title: クレジットノートでキャンセル
+    amount: 金額、税金込み
+    whole: 残りのすべて
+    reason: 理由
+    submit: クレジットノートを発行
+
+ko:
+  page_title: 문서
+  page_icon: 'ph:bold/receipt'
+  draft: 초안
+  party: 당사자
+  date: 날짜
+  date_due: 기한
+  net: 순액
+  vat: 부가세
+  total: 총액
+  credited: 신용
+  paid: 지급됨
+  due: '지급할 잔액'
+  payments: '지급된 것'
+  label: '은행 계좌'
+  amount: 금액
+  relations: '연결된 문서'
+  no_relation: '연결된 문서가 없습니다.'
+  import_warnings: '수신된 송장 읽기 시 발견된 사항'
+  unrelate: '연결 해제'
+  relate:
+    choose: '연결할 문서…'
+    rebill: '재청구됨 (구매 → 판매)'
+    financing: '재정 지원'
+    to: '이는 출처입니다'
+    from: '이는 대상입니다'
+    submit: 연결
+  relation:
+    quotation:
+      to: '송장 발행됨'
+      from: '견적서에서 발행됨'
+    credit:
+      to: '신용으로 발행됨'
+      from: '신용 노트의'
+    deposit:
+      to: 예치금
+      from: 예치금의
+    penalty:
+      to: 연체료
+      from: 연체료의
+    rebill:
+      to: 재청구됨
+      from: '구매를 재청구함'
+    financing:
+      to: '재정 지원'
+      from: '재정 지원을 받음'
+  peppol:
+    reachable: '고객은 Peppol을 통해 송장을 수신합니다.'
+    unreachable: '고객이 Peppol 디렉토리에서 찾을 수 없습니다.'
+    send: 'Peppol을 통해 보내기'
+    confirm: '송장이 고객의 접근 지점으로 전송되었습니다. 계속하시겠습니까?'
+  download:
+    ubl: 'UBL로 다운로드 (Peppol)'
+    cii: 'CII로 다운로드 (Factur-X)'
+  action:
+    emit: 발행
+    duplicate: '초안으로 복사'
+    delete: '초안 삭제'
+    bill: 청구하기
+  confirm:
+    emit: '발행됨, 문서는 번호가 매겨지고 예약되며 더 이상 변경할 수 없습니다. 발행하시겠습니까?'
+    delete: '이 초안을 삭제하시겠습니까?'
+    credit: '신용 노트가 즉시 발행됩니다. 계속하시겠습니까?'
+  credit:
+    title: '신용 노트로 취소'
+    amount: '금액, 세금 포함'
+    whole: '남은 모든 것'
+    reason: 이유
+    submit: '신용 노트 발행'
+
+bn:
+  page_title: ডকুমেন্ট
+  page_icon: 'ph:bold/receipt'
+  draft: ড্রাফট
+  party: পার্টি
+  date: তারিখ
+  date_due: 'নির্ধারিত তারিখ'
+  net: নেট
+  vat: ভ্যাট
+  total: মোট
+  credited: 'ক্রেডিট করা হয়েছে'
+  paid: 'পে করা হয়েছে'
+  due: 'বাকি পেমেন্ট'
+  payments: 'কি পেমেন্ট হয়েছে'
+  label: 'ব্যাংক লাইন'
+  amount: পরিমাণ
+  relations: 'লিঙ্ক করা ডকুমেন্ট'
+  no_relation: 'কোন ডকুমেন্ট লিঙ্ক করা হয়নি।'
+  import_warnings: 'যা প্রাপ্ত ইনভয়েস পড়ার সময় লক্ষ্য করা হয়েছে'
+  unrelate: 'লিঙ্ক অপসারণ করুন'
+  relate:
+    choose: 'লিঙ্ক করার জন্য একটি ডকুমেন্ট…'
+    rebill: 'পুনরায় বিলিং (ক্রয় → বিক্রয়)'
+    financing: অর্থায়ন
+    to: 'এটি উত্স'
+    from: 'এটি লক্ষ্য'
+    submit: 'লিঙ্ক করুন'
+  relation:
+    quotation:
+      to: 'বিল করা হয়েছে'
+      from: 'উদ্ধৃতি থেকে বিল করা হয়েছে'
+    credit:
+      to: 'ক্রেডিট করা হয়েছে'
+      from: 'ক্রেডিট নোটের'
+    deposit:
+      to: ডিপোজিট
+      from: ডিপোজিটের
+    penalty:
+      to: 'দেরী ফি'
+      from: 'দেরী ফির'
+    rebill:
+      to: 'পুনরায় বিল করা হয়েছে'
+      from: 'ক্রয় পুনরায় বিল'
+    financing:
+      to: 'অর্থায়ন করে'
+      from: 'অর্থায়িত হয়েছে'
+  peppol:
+    reachable: 'গ্রাহক পেপল-এর মাধ্যমে ইনভয়েস গ্রহণ করে।'
+    unreachable: 'গ্রাহক পেপল ডিরেক্টরিতে পাওয়া যায়নি।'
+    send: 'পেপল-এর মাধ্যমে পাঠান'
+    confirm: 'ইনভয়েসটি গ্রাহকের অ্যাক্সেস পয়েন্টে পাঠানো হয়েছে। এগিয়ে যাবেন?'
+  download:
+    ubl: 'UBL (Peppol) হিসেবে ডাউনলোড করুন'
+    cii: 'CII (Factur-X) হিসেবে ডাউনলোড করুন'
+  action:
+    emit: 'জারি করুন'
+    duplicate: 'ড্রাফট হিসেবে কপি করুন'
+    delete: 'ড্রাফট মুছুন'
+    bill: 'বিল করুন'
+  confirm:
+    emit: 'জারি করা হয়েছে, ডকুমেন্টটি নম্বরিত এবং বুক করা হয়েছে, এবং আর পরিবর্তন করা যাবে না। জারি করবেন?'
+    delete: 'এই ড্রাফট মুছবেন?'
+    credit: 'ক্রেডিট নোট একবারে জারি করা হয়। এগিয়ে যাবেন?'
+  credit:
+    title: 'ক্রেডিট নোট দ্বারা বাতিল করুন'
+    amount: 'পরিমাণ, করসহ'
+    whole: 'বাকি সব'
+    reason: কারণ
+    submit: 'ক্রেডিট নোট জারি করুন'
+
+th:
+  page_title: เอกสาร
+  page_icon: 'ph:bold/receipt'
+  draft: ร่าง
+  party: พรรค
+  date: วันที่
+  date_due: กำหนด
+  net: ยอดสุทธิ
+  vat: ภาษีมูลค่าเพิ่ม
+  total: รวม
+  credited: เครดิตแล้ว
+  paid: ชำระแล้ว
+  due: เหลือที่ต้องจ่าย
+  payments: สิ่งที่ชำระแล้ว
+  label: สายธนาคาร
+  amount: จำนวนเงิน
+  relations: เอกสารที่เชื่อมโยง
+  no_relation: ไม่มีเอกสารที่เชื่อมโยง
+  import_warnings: สิ่งที่อ่านจากใบแจ้งหนี้ที่ได้รับ
+  unrelate: ยกเลิกการเชื่อมโยง
+  relate:
+    choose: เอกสารที่จะเชื่อมโยง…
+    rebill: 'เรียกเก็บใหม่ (ซื้อ → ขาย)'
+    financing: การจัดหาเงินทุน
+    to: เอกสารนี้เป็นแหล่งที่มา
+    from: เอกสารนี้เป็นเป้าหมาย
+    submit: เชื่อมโยง
+  relation:
+    quotation:
+      to: เรียกเก็บตาม
+      from: เรียกเก็บจากใบเสนอราคา
+    credit:
+      to: เครดิตโดย
+      from: ใบแจ้งหนี้เครดิตของ
+    deposit:
+      to: เงินมัดจำ
+      from: เงินมัดจำของ
+    penalty:
+      to: ค่าธรรมเนียมล่าช้า
+      from: ค่าธรรมเนียมล่าช้าของ
+    rebill:
+      to: เรียกเก็บใหม่เมื่อ
+      from: เรียกเก็บเงินจากการซื้อ
+    financing:
+      to: การจัดหาเงินทุน
+      from: ได้รับการจัดหาเงินทุนจาก
+  peppol:
+    reachable: 'ลูกค้าได้รับใบแจ้งหนี้ผ่าน Peppol.'
+    unreachable: 'ไม่พบลูกค้าในไดเรกทอรี Peppol.'
+    send: 'ส่งผ่าน Peppol'
+    confirm: 'ใบแจ้งหนี้ถูกส่งไปยังจุดเข้าถึงของลูกค้า ดำเนินการต่อ?'
+  download:
+    ubl: 'ดาวน์โหลดเป็น UBL (Peppol)'
+    cii: 'ดาวน์โหลดเป็น CII (Factur-X)'
+  action:
+    emit: ออกใบ
+    duplicate: คัดลอกเป็นร่าง
+    delete: ลบร่าง
+    bill: ออกใบแจ้งหนี้
+  confirm:
+    emit: 'ออกแล้ว เอกสารถูกหมายเลขและจองแล้ว และไม่สามารถเปลี่ยนแปลงได้อีก ออกไหม?'
+    delete: 'ลบร่างนี้หรือไม่?'
+    credit: 'ใบแจ้งหนี้เครดิตถูกออกทันที ดำเนินการต่อ?'
+  credit:
+    title: ยกเลิกโดยใบแจ้งหนี้เครดิต
+    amount: 'จำนวนเงิน รวมภาษี'
+    whole: ทั้งหมดที่เหลือ
+    reason: เหตุผล
+    submit: ออกใบแจ้งหนี้เครดิต
+
+de:
+  page_title: Dokument
+  page_icon: 'ph:bold/receipt'
+  draft: Entwurf
+  party: Partei
+  date: Datum
+  date_due: Fällig
+  net: Netto
+  vat: MwSt
+  total: Gesamt
+  credited: Gutschrift
+  paid: Bezahlt
+  due: 'Zu zahlen'
+  payments: 'Was bezahlt wurde'
+  label: Bankverbindung
+  amount: Betrag
+  relations: 'Verknüpfte Dokumente'
+  no_relation: 'Kein Dokument verknüpft.'
+  import_warnings: 'Was beim Lesen der erhaltenen Rechnung aufgefallen ist'
+  unrelate: 'Verknüpfung aufheben'
+  relate:
+    choose: 'Ein Dokument zum Verknüpfen…'
+    rebill: 'Wiederverrechnet (Einkauf → Verkauf)'
+    financing: Finanzierung
+    to: 'Dieses ist die Quelle'
+    from: 'Dieses ist das Ziel'
+    submit: Verknüpfen
+  relation:
+    quotation:
+      to: 'Rechnung als'
+      from: 'Rechnung aus dem Angebot'
+    credit:
+      to: 'Gutgeschrieben durch'
+      from: 'Gutschrift von'
+    deposit:
+      to: Anzahlung
+      from: 'Anzahlung von'
+    penalty:
+      to: Mahngebühr
+      from: 'Mahngebühr von'
+    rebill:
+      to: 'Wiederverrechnet am'
+      from: 'Verrechnet den Einkauf'
+    financing:
+      to: Finanziert
+      from: 'Finanziert von'
+  peppol:
+    reachable: 'Der Kunde erhält Rechnungen über Peppol.'
+    unreachable: 'Der Kunde wurde im Peppol-Verzeichnis nicht gefunden.'
+    send: 'Über Peppol senden'
+    confirm: 'Die Rechnung wurde an den Zugangspunkt des Kunden gesendet. Fortfahren?'
+  download:
+    ubl: 'Als UBL (Peppol) herunterladen'
+    cii: 'Als CII (Factur-X) herunterladen'
+  action:
+    emit: Ausstellen
+    duplicate: 'Als Entwurf kopieren'
+    delete: 'Entwurf löschen'
+    bill: 'Rechnung erstellen'
+  confirm:
+    emit: 'Ausgestellt, das Dokument ist nummeriert und gebucht und kann nicht mehr geändert werden. Ausstellen?'
+    delete: 'Diesen Entwurf löschen?'
+    credit: 'Die Gutschrift wird sofort ausgestellt. Fortfahren?'
+  credit:
+    title: 'Stornierung durch eine Gutschrift'
+    amount: 'Betrag, inklusive Steuern'
+    whole: 'Alles, was übrig ist'
+    reason: Grund
+    submit: 'Die Gutschrift ausstellen'
+
+fi:
+  page_title: Asiakirja
+  page_icon: 'ph:bold/receipt'
+  draft: Luonnos
+  party: Osapuoli
+  date: Päivämäärä
+  date_due: Eräpäivä
+  net: Nettosumma
+  vat: ALV
+  total: Yhteensä
+  credited: Hyvitetty
+  paid: Maksettu
+  due: 'Maksamatta jäänyt'
+  payments: 'Mitä on maksettu'
+  label: Pankkilinja
+  amount: Summa
+  relations: 'Linkitetyt asiakirjat'
+  no_relation: 'Ei linkitettyjä asiakirjoja.'
+  import_warnings: 'Mitä vastaanotetun laskun lukemisessa huomattiin'
+  unrelate: 'Poista linkitys'
+  relate:
+    choose: 'Linkitettävä asiakirja…'
+    rebill: 'Uudelleenlaskutettu (ostos → myynti)'
+    financing: Rahoitus
+    to: 'Tämä on lähde'
+    from: 'Tämä on kohde'
+    submit: Linkitä
+  relation:
+    quotation:
+      to: 'Laskutettu kuin'
+      from: 'Laskutettu tarjouspyynnöstä'
+    credit:
+      to: Hyvitetty
+      from: Hyvityslasku
+    deposit:
+      to: Vakuus
+      from: 'Vakuus summaa'
+    penalty:
+      to: Viivästysmaksu
+      from: Viivästysmaksu
+    rebill:
+      to: Uudelleenlaskutettu
+      from: 'Uudelleenlaskuttaa oston'
+    financing:
+      to: Rahoittaa
+      from: Rahoitettu
+  peppol:
+    reachable: 'Asiakas vastaanottaa laskuja Peppolin kautta.'
+    unreachable: 'Asiakasta ei löydy Peppol-hakemistosta.'
+    send: 'Lähetä Peppolin kautta'
+    confirm: 'Lasku on lähetetty asiakkaan käyttöpaikkaan. Jatketaanko?'
+  download:
+    ubl: 'Lataa UBL-muodossa (Peppol)'
+    cii: 'Lataa CII-muodossa (Factur-X)'
+  action:
+    emit: Laske
+    duplicate: 'Kopioi luonnoksena'
+    delete: 'Poista luonnos'
+    bill: 'Laskuta se'
+  confirm:
+    emit: 'Lasku on annettu, asiakirja on numeroitu ja varattu, eikä sitä voi enää muuttaa. Annetaanko se?'
+    delete: 'Poistetaanko tämä luonnos?'
+    credit: 'Hyvityslasku annetaan heti. Jatketaanko?'
+  credit:
+    title: 'Peruuta hyvityslaskulla'
+    amount: 'Summa, vero mukaan lukien'
+    whole: 'Kaikki, mikä on jäljellä'
+    reason: Syytä
+    submit: 'Anna hyvityslasku'
+
+ru:
+  page_title: Документ
+  page_icon: 'ph:bold/receipt'
+  draft: Черновик
+  party: Сторона
+  date: Дата
+  date_due: Срок
+  net: 'Чистая сумма'
+  vat: НДС
+  total: Итого
+  credited: Зачтено
+  paid: Оплачено
+  due: 'Осталось оплатить'
+  payments: 'Что оплачено'
+  label: 'Банковская строка'
+  amount: Сумма
+  relations: 'Связанные документы'
+  no_relation: 'Документ не связан.'
+  import_warnings: 'Что было замечено при чтении полученного счета'
+  unrelate: Отвязать
+  relate:
+    choose: 'Документ для связи…'
+    rebill: 'Перевыставлен (покупка → продажа)'
+    financing: Финансирование
+    to: 'Этот является источником'
+    from: 'Этот является получателем'
+    submit: Связать
+  relation:
+    quotation:
+      to: 'Выставлен как'
+      from: 'Выставлен из котировки'
+    credit:
+      to: 'Зачтено по'
+      from: 'Счет-фактура на'
+    deposit:
+      to: Депозит
+      from: 'Депозит от'
+    penalty:
+      to: 'Штраф за просрочку'
+      from: 'Штраф за просрочку от'
+    rebill:
+      to: 'Перевыставлено на'
+      from: 'Перевыставляет покупку'
+    financing:
+      to: Финансирует
+      from: 'Финансировано по'
+  peppol:
+    reachable: 'Клиент получает счета через Peppol.'
+    unreachable: 'Клиент не найден в каталоге Peppol.'
+    send: 'Отправить через Peppol'
+    confirm: 'Счет отправлен на точку доступа клиента. Продолжить?'
+  download:
+    ubl: 'Скачать как UBL (Peppol)'
+    cii: 'Скачать как CII (Factur-X)'
+  action:
+    emit: Выписать
+    duplicate: 'Скопировать как черновик'
+    delete: 'Удалить черновик'
+    bill: 'Выставить счет'
+  confirm:
+    emit: 'Выписан, документ пронумерован и забронирован, и больше не может быть изменен. Выписать?'
+    delete: 'Удалить этот черновик?'
+    credit: 'Счет-фактура на кредит выписывается сразу. Продолжить?'
+  credit:
+    title: 'Отменить по кредитной ноте'
+    amount: 'Сумма, включая налог'
+    whole: 'Все, что осталось'
+    reason: Причина
+    submit: 'Выписать кредитную ноту'
+
+pl:
+  page_title: Dokument
+  page_icon: 'ph:bold/receipt'
+  draft: 'Robocza wersja'
+  party: Strona
+  date: Data
+  date_due: Termin
+  net: Netto
+  vat: VAT
+  total: Razem
+  credited: Zaliczono
+  paid: Opłacono
+  due: 'Pozostało do zapłaty'
+  payments: 'Co zostało opłacone'
+  label: 'Linia bankowa'
+  amount: Kwota
+  relations: 'Dokumenty powiązane'
+  no_relation: 'Brak powiązanych dokumentów.'
+  import_warnings: 'Co zauważono podczas odczytywania otrzymanej faktury'
+  unrelate: Odłącz
+  relate:
+    choose: 'Dokument do powiązania…'
+    rebill: 'Ponownie obciążony (zakup → sprzedaż)'
+    financing: Finansowanie
+    to: 'Ten dokument jest źródłem'
+    from: 'Ten dokument jest celem'
+    submit: Powiąż
+  relation:
+    quotation:
+      to: 'Fakturowany jako'
+      from: 'Fakturowany na podstawie oferty'
+    credit:
+      to: 'Zaliczono przez'
+      from: 'Nota kredytowa z'
+    deposit:
+      to: Zaliczka
+      from: 'Zaliczka na'
+    penalty:
+      to: 'Opłata za zwłokę'
+      from: 'Opłata za zwłokę z'
+    rebill:
+      to: 'Ponownie obciążony w dniu'
+      from: 'Ponownie obciąża zakup'
+    financing:
+      to: Finansuje
+      from: 'Finansowane przez'
+  peppol:
+    reachable: 'Klient otrzymuje faktury przez Peppol.'
+    unreachable: 'Klient nie został znaleziony w katalogu Peppol.'
+    send: 'Wyślij przez Peppol'
+    confirm: 'Faktura została wysłana do punktu dostępu klienta. Kontynuować?'
+  download:
+    ubl: 'Pobierz jako UBL (Peppol)'
+    cii: 'Pobierz jako CII (Factur-X)'
+  action:
+    emit: Wystaw
+    duplicate: 'Kopiuj jako roboczą wersję'
+    delete: 'Usuń roboczą wersję'
+    bill: Fakturować
+  confirm:
+    emit: 'Wystawiono, dokument jest numerowany i zarejestrowany, nie można go już zmienić. Wystawić?'
+    delete: 'Usunąć tę roboczą wersję?'
+    credit: 'Nota kredytowa zostanie wystawiona od razu. Kontynuować?'
+  credit:
+    title: 'Anuluj przez notę kredytową'
+    amount: 'Kwota, w tym podatek'
+    whole: 'Całość pozostała'
+    reason: Powód
+    submit: 'Wystaw notę kredytową'
+
+es:
+  page_title: Documento
+  page_icon: 'ph:bold/receipt'
+  draft: Borrador
+  party: Parte
+  date: Fecha
+  date_due: Vencimiento
+  net: Neto
+  vat: IVA
+  total: Total
+  credited: Acreditado
+  paid: Pagado
+  due: 'Por pagar'
+  payments: 'Lo que se pagó'
+  label: 'Línea bancaria'
+  amount: Monto
+  relations: 'Documentos vinculados'
+  no_relation: 'No hay documento vinculado.'
+  import_warnings: 'Lo que se notó al leer la factura recibida'
+  unrelate: Desvincular
+  relate:
+    choose: 'Un documento para vincular…'
+    rebill: 'Refacturado (compra → venta)'
+    financing: Financiación
+    to: 'Este es el origen'
+    from: 'Este es el destino'
+    submit: Vincular
+  relation:
+    quotation:
+      to: 'Facturado como'
+      from: 'Facturado desde la cotización'
+    credit:
+      to: 'Acreditado por'
+      from: 'Nota de crédito de'
+    deposit:
+      to: Depósito
+      from: 'Depósito de'
+    penalty:
+      to: 'Cargo por demora'
+      from: 'Cargo por demora de'
+    rebill:
+      to: 'Refacturado el'
+      from: 'Refactura la compra'
+    financing:
+      to: Financia
+      from: 'Financiado por'
+  peppol:
+    reachable: 'El cliente recibe facturas a través de Peppol.'
+    unreachable: 'El cliente no se encuentra en el directorio de Peppol.'
+    send: 'Enviar por Peppol'
+    confirm: 'La factura se envía al punto de acceso del cliente. ¿Continuar?'
+  download:
+    ubl: 'Descargar como UBL (Peppol)'
+    cii: 'Descargar como CII (Factur-X)'
+  action:
+    emit: Emitir
+    duplicate: 'Copiar como borrador'
+    delete: 'Eliminar el borrador'
+    bill: Facturarlo
+  confirm:
+    emit: 'Emitido, el documento está numerado y contabilizado, y ya no puede cambiarse. ¿Emitirlo?'
+    delete: '¿Eliminar este borrador?'
+    credit: 'La nota de crédito se emite de inmediato. ¿Continuar?'
+  credit:
+    title: 'Cancelar con una nota de crédito'
+    amount: 'Monto, impuestos incluidos'
+    whole: 'Todo lo que queda'
+    reason: Razón
+    submit: 'Emitir la nota de crédito'
+
+it:
+  page_title: Documento
+  page_icon: 'ph:bold/receipt'
+  draft: Bozza
+  party: Parte
+  date: Data
+  date_due: Scadenza
+  net: Netto
+  vat: IVA
+  total: Totale
+  credited: Accreditato
+  paid: Pagato
+  due: 'Rimanente da pagare'
+  payments: 'Cosa è stato pagato'
+  label: 'Voce bancaria'
+  amount: Importo
+  relations: 'Documenti collegati'
+  no_relation: 'Nessun documento collegato.'
+  import_warnings: 'Cosa ha notato leggendo la fattura ricevuta'
+  unrelate: Scollega
+  relate:
+    choose: 'Un documento da collegare…'
+    rebill: 'Rifatturato (acquisto → vendita)'
+    financing: Finanziamento
+    to: 'Questo è la sorgente'
+    from: 'Questo è il destinatario'
+    submit: Collega
+  relation:
+    quotation:
+      to: 'Fatturato come'
+      from: 'Fatturato dalla quotazione'
+    credit:
+      to: 'Accreditato da'
+      from: 'Nota di credito di'
+    deposit:
+      to: Deposito
+      from: 'Deposito di'
+    penalty:
+      to: 'Penale per ritardo'
+      from: 'Penale per ritardo di'
+    rebill:
+      to: 'Rifatturato il'
+      from: "Rifattura l'acquisto"
+    financing:
+      to: Finanzia
+      from: 'Finanziato da'
+  peppol:
+    reachable: 'Il cliente riceve fatture tramite Peppol.'
+    unreachable: 'Il cliente non è trovato nel catalogo Peppol.'
+    send: 'Invia tramite Peppol'
+    confirm: 'La fattura è inviata al punto di accesso del cliente. Procedere?'
+  download:
+    ubl: 'Scarica come UBL (Peppol)'
+    cii: 'Scarica come CII (Factur-X)'
+  action:
+    emit: Emetti
+    duplicate: 'Copia come bozza'
+    delete: 'Elimina la bozza'
+    bill: Fattura
+  confirm:
+    emit: 'Emesso, il documento è numerato e registrato, e non può più essere modificato. Procedere?'
+    delete: 'Eliminare questa bozza?'
+    credit: 'La nota di credito è emessa immediatamente. Procedere?'
+  credit:
+    title: 'Annulla tramite una nota di credito'
+    amount: 'Importo, tasse incluse'
+    whole: 'Tutto ciò che resta'
+    reason: Motivo
+    submit: 'Emetti la nota di credito'
+
+pt_BR:
+  page_title: Documento
+  page_icon: 'ph:bold/receipt'
+  draft: Rascunho
+  party: Parte
+  date: Data
+  date_due: Vencimento
+  net: Líquido
+  vat: IVA
+  total: Total
+  credited: Creditado
+  paid: Pago
+  due: 'Restante a pagar'
+  payments: 'O que foi pago'
+  label: 'Linha bancária'
+  amount: Valor
+  relations: 'Documentos vinculados'
+  no_relation: 'Nenhum documento vinculado.'
+  import_warnings: 'O que a leitura da fatura recebida notou'
+  unrelate: Desvincular
+  relate:
+    choose: 'Um documento para vincular…'
+    rebill: 'Reemitido (compra → venda)'
+    financing: Financiamento
+    to: 'Este é a origem'
+    from: 'Este é o destino'
+    submit: Vincular
+  relation:
+    quotation:
+      to: 'Faturado como'
+      from: 'Faturado da cotação'
+    credit:
+      to: 'Creditado por'
+      from: 'Nota de crédito de'
+    deposit:
+      to: Depósito
+      from: 'Depósito de'
+    penalty:
+      to: 'Multa por atraso'
+      from: 'Multa por atraso de'
+    rebill:
+      to: 'Reemitido em'
+      from: 'Reemite a compra'
+    financing:
+      to: Financia
+      from: 'Financiado por'
+  peppol:
+    reachable: 'O cliente recebe faturas pelo Peppol.'
+    unreachable: 'O cliente não foi encontrado no diretório Peppol.'
+    send: 'Enviar pelo Peppol'
+    confirm: 'A fatura foi enviada para o ponto de acesso do cliente. Continuar?'
+  download:
+    ubl: 'Baixar como UBL (Peppol)'
+    cii: 'Baixar como CII (Factur-X)'
+  action:
+    emit: Emitir
+    duplicate: 'Copiar como rascunho'
+    delete: 'Excluir o rascunho'
+    bill: Cobrar
+  confirm:
+    emit: 'Emitido, o documento está numerado e registrado, e não pode mais ser alterado. Emitir?'
+    delete: 'Excluir este rascunho?'
+    credit: 'A nota de crédito é emitida de uma vez. Continuar?'
+  credit:
+    title: 'Cancelar por uma nota de crédito'
+    amount: 'Valor, imposto incluído'
+    whole: 'Tudo que resta'
+    reason: Razão
+    submit: 'Emitir a nota de crédito'
+
+tr:
+  page_title: Belge
+  page_icon: 'ph:bold/receipt'
+  draft: Taslak
+  party: Taraf
+  date: Tarih
+  date_due: Vade
+  net: Net
+  vat: KDV
+  total: Toplam
+  credited: 'Hesaba geçti'
+  paid: Ödendi
+  due: Ödenecek
+  payments: 'Ne ödendi'
+  label: 'Banka satırı'
+  amount: Tutar
+  relations: 'Bağlı belgeler'
+  no_relation: 'Bağlı belge yok.'
+  import_warnings: 'Alınan faturanın okuduğu şeyler'
+  unrelate: 'Bağlantıyı kes'
+  relate:
+    choose: 'Bağlanacak bir belge…'
+    rebill: 'Yeniden faturalandırıldı (satın alma → satış)'
+    financing: Finansman
+    to: 'Bu kaynak'
+    from: 'Bu hedef'
+    submit: Bağla
+  relation:
+    quotation:
+      to: 'Faturalandırıldı olarak'
+      from: 'Tekliften faturalandırıldı'
+    credit:
+      to: 'Hesaba geçti olarak'
+      from: 'Kredi notu'
+    deposit:
+      to: Depozito
+      from: 'Depozito olarak'
+    penalty:
+      to: 'Gecikme ücreti'
+      from: 'Gecikme ücreti olarak'
+    rebill:
+      to: 'Yeniden faturalandırıldı'
+      from: 'Satın alımı yeniden faturalandırır'
+    financing:
+      to: 'Finansman sağlar'
+      from: 'Finansman sağlayan'
+  peppol:
+    reachable: 'Müşteri, Peppol üzerinden faturalar alır.'
+    unreachable: 'Müşteri Peppol dizininde bulunamadı.'
+    send: 'Peppol üzerinden gönder'
+    confirm: 'Fatura, müşterinin erişim noktasına gönderildi. Devam edelim mi?'
+  download:
+    ubl: 'UBL olarak indir (Peppol)'
+    cii: 'CII olarak indir (Factur-X)'
+  action:
+    emit: Düzenle
+    duplicate: 'Taslak olarak kopyala'
+    delete: 'Taslağı sil'
+    bill: Faturalandır
+  confirm:
+    emit: 'Düzenlendi, belge numaralandırıldı ve kaydedildi, artık değiştirilemez. Düzenleyelim mi?'
+    delete: 'Bu taslağı silmek istiyor musunuz?'
+    credit: 'Kredi notu hemen düzenlenir. Devam edelim mi?'
+  credit:
+    title: 'Kredi notu ile iptal et'
+    amount: 'Tutar, vergi dahil'
+    whole: 'Kalanın tamamı'
+    reason: Sebep
+    submit: 'Kredi notasını düzenle'
+
+vi:
+  page_title: 'Tài liệu'
+  page_icon: 'ph:bold/receipt'
+  draft: 'Bản nháp'
+  party: Bên
+  date: Ngày
+  date_due: 'Hạn thanh toán'
+  net: 'Tiền gốc'
+  vat: VAT
+  total: 'Tổng cộng'
+  credited: 'Đã ghi có'
+  paid: 'Đã thanh toán'
+  due: 'Còn lại phải trả'
+  payments: 'Đã thanh toán bởi'
+  label: 'Ngân hàng'
+  amount: 'Số tiền'
+  relations: 'Tài liệu liên kết'
+  no_relation: 'Không có tài liệu nào được liên kết.'
+  import_warnings: 'Những gì cần lưu ý khi đọc hóa đơn đã nhận'
+  unrelate: 'Hủy liên kết'
+  relate:
+    choose: 'Tài liệu để liên kết…'
+    rebill: 'Hóa đơn lại (mua → bán)'
+    financing: 'Tài chính'
+    to: 'Tài liệu này là nguồn'
+    from: 'Tài liệu này là mục tiêu'
+    submit: 'Liên kết'
+  relation:
+    quotation:
+      to: 'Hóa đơn như'
+      from: 'Hóa đơn từ báo giá'
+    credit:
+      to: 'Được ghi có bởi'
+      from: 'Giấy ghi nợ của'
+    deposit:
+      to: 'Tiền đặt cọc'
+      from: 'Tiền đặt cọc của'
+    penalty:
+      to: 'Phí trễ hạn'
+      from: 'Phí trễ hạn của'
+    rebill:
+      to: 'Hóa đơn lại vào'
+      from: 'Hóa đơn lại việc mua'
+    financing:
+      to: 'Tài trợ'
+      from: 'Được tài trợ bởi'
+  peppol:
+    reachable: 'Khách hàng nhận hóa đơn qua Peppol.'
+    unreachable: 'Khách hàng không được tìm thấy trong danh bạ Peppol.'
+    send: 'Gửi qua Peppol'
+    confirm: 'Hóa đơn đã được gửi đến điểm truy cập của khách hàng. Tiếp tục không?'
+  download:
+    ubl: 'Tải xuống dưới dạng UBL (Peppol)'
+    cii: 'Tải xuống dưới dạng CII (Factur-X)'
+  action:
+    emit: 'Phát hành'
+    duplicate: 'Sao chép dưới dạng bản nháp'
+    delete: 'Xóa bản nháp'
+    bill: 'Lập hóa đơn'
+  confirm:
+    emit: 'Đã phát hành, tài liệu đã được đánh số và ghi sổ, không thể thay đổi nữa. Phát hành không?'
+    delete: 'Xóa bản nháp này?'
+    credit: 'Giấy ghi nợ được phát hành ngay lập tức. Tiếp tục không?'
+  credit:
+    title: 'Hủy bằng giấy ghi nợ'
+    amount: 'Số tiền, đã bao gồm thuế'
+    whole: 'Tất cả những gì còn lại'
+    reason: 'Lý do'
+    submit: 'Phát hành giấy ghi nợ'
+
+id:
+  page_title: Dokumen
+  page_icon: 'ph:bold/receipt'
+  draft: Draf
+  party: Pihak
+  date: Tanggal
+  date_due: 'Jatuh tempo'
+  net: Bersih
+  vat: PPN
+  total: Total
+  credited: Dikreditkan
+  paid: Dibayar
+  due: 'Sisa yang harus dibayar'
+  payments: 'Apa yang dibayarkan'
+  label: 'Rekening bank'
+  amount: Jumlah
+  relations: 'Dokumen terkait'
+  no_relation: 'Tidak ada dokumen yang terkait.'
+  import_warnings: 'Apa yang diperhatikan saat membaca faktur yang diterima'
+  unrelate: 'Putuskan hubungan'
+  relate:
+    choose: 'Dokumen yang ingin dihubungkan…'
+    rebill: 'Dikenakan kembali (pembelian → penjualan)'
+    financing: Pembiayaan
+    to: 'Ini adalah sumber'
+    from: 'Ini adalah target'
+    submit: Hubungkan
+  relation:
+    quotation:
+      to: 'Dikenakan sebagai'
+      from: 'Dikenakan dari kutipan'
+    credit:
+      to: 'Dikreditkan oleh'
+      from: 'Nota kredit dari'
+    deposit:
+      to: Deposit
+      from: 'Deposit dari'
+    penalty:
+      to: 'Biaya keterlambatan'
+      from: 'Biaya keterlambatan dari'
+    rebill:
+      to: 'Dikenakan kembali pada'
+      from: 'Dikenakan kembali untuk pembelian'
+    financing:
+      to: Membiayai
+      from: 'Dibiayai oleh'
+  peppol:
+    reachable: 'Klien menerima faktur melalui Peppol.'
+    unreachable: 'Klien tidak ditemukan di direktori Peppol.'
+    send: 'Kirim melalui Peppol'
+    confirm: 'Faktur telah dikirim ke titik akses klien. Lanjutkan?'
+  download:
+    ubl: 'Unduh sebagai UBL (Peppol)'
+    cii: 'Unduh sebagai CII (Factur-X)'
+  action:
+    emit: Terbitkan
+    duplicate: 'Salin sebagai draf'
+    delete: 'Hapus draf'
+    bill: Tagih
+  confirm:
+    emit: 'Diterbitkan, dokumen telah dinomori dan dicatat, dan tidak dapat diubah lagi. Terbitkan?'
+    delete: 'Hapus draf ini?'
+    credit: 'Nota kredit diterbitkan sekaligus. Lanjutkan?'
+  credit:
+    title: 'Batalkan dengan nota kredit'
+    amount: 'Jumlah, termasuk pajak'
+    whole: 'Semua yang tersisa'
+    reason: Alasan
+    submit: 'Terapkan nota kredit'
+
+nl:
+  page_title: Document
+  page_icon: 'ph:bold/receipt'
+  draft: Concept
+  party: Partij
+  date: Datum
+  date_due: Vervaldatum
+  net: Netto
+  vat: BTW
+  total: Totaal
+  credited: Gecrediteerd
+  paid: Betaald
+  due: 'Te betalen'
+  payments: 'Wat is betaald'
+  label: Bankregel
+  amount: Bedrag
+  relations: 'Gekoppelde documenten'
+  no_relation: 'Geen document gekoppeld.'
+  import_warnings: 'Wat opviel bij het lezen van de ontvangen factuur'
+  unrelate: 'Koppeling verwijderen'
+  relate:
+    choose: 'Een document om te koppelen…'
+    rebill: 'Herfactureren (aankoop → verkoop)'
+    financing: Financiering
+    to: 'Deze is de bron'
+    from: 'Deze is de bestemming'
+    submit: Koppelen
+  relation:
+    quotation:
+      to: 'Gefactureerd als'
+      from: 'Gefactureerd vanuit de offerte'
+    credit:
+      to: 'Gecrediteerd door'
+      from: 'Creditnota van'
+    deposit:
+      to: Waarborg
+      from: 'Waarborg van'
+    penalty:
+      to: Boete
+      from: 'Boete van'
+    rebill:
+      to: 'Herfactureerd op'
+      from: 'Herfactureert de aankoop'
+    financing:
+      to: Financieringen
+      from: 'Gefinancierd door'
+  peppol:
+    reachable: 'De klant ontvangt facturen via Peppol.'
+    unreachable: 'De klant is niet gevonden in de Peppol-directory.'
+    send: 'Verstuur via Peppol'
+    confirm: 'De factuur is verzonden naar het toegangspunt van de klant. Doorgaan?'
+  download:
+    ubl: 'Download als UBL (Peppol)'
+    cii: 'Download als CII (Factur-X)'
+  action:
+    emit: Uitgeven
+    duplicate: 'Kopieer als concept'
+    delete: 'Verwijder het concept'
+    bill: 'Factureer het'
+  confirm:
+    emit: 'Uitgegeven, het document is genummerd en geboekt, en kan niet meer worden gewijzigd. Uitgeven?'
+    delete: 'Dit concept verwijderen?'
+    credit: 'De creditnota wordt onmiddellijk uitgegeven. Doorgaan?'
+  credit:
+    title: 'Annuleren met een creditnota'
+    amount: 'Bedrag, inclusief belasting'
+    whole: 'Al het resterende'
+    reason: Reden
+    submit: 'Geef de creditnota uit'

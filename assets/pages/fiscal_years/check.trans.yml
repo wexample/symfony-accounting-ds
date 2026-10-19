@@ -51,3 +51,363 @@ zh:
   reopen: 重新打开它
   confirm_close: 已关闭，财政年度不再接受任何条目，其余额将被结转。要关闭吗？
   confirm_reopen: 重新打开将移除关闭时记录的内容。要重新打开吗？
+
+ar:
+  page_title: 'السنة المالية'
+  page_icon: 'ph:bold/calendar-check'
+  result: 'النتيجة:'
+  clean: 'الفحص لم يجد شيئاً لتصحيحه.'
+  severity: الخطورة
+  subject: حول
+  finding: النتيجة
+  level:
+    error: خطأ
+    warning: تحذير
+    info: ملاحظة
+  close: أغلقه
+  force: 'أغلقه رغم التحذيرات'
+  reopen: 'أعد فتحه'
+  confirm_close: 'تم الإغلاق، السنة المالية لا تقبل المزيد من الإدخالات وأرصدةها تُرحل. هل ترغب في إغلاقه؟'
+  confirm_reopen: 'إعادة الفتح ستزيل ما تم حجزه عند الإغلاق. هل ترغب في إعادة فتحه؟'
+
+hi:
+  page_title: 'वित्तीय वर्ष'
+  page_icon: 'ph:bold/calendar-check'
+  result: 'परिणाम:'
+  clean: 'जांच में कोई सुधार नहीं मिला।'
+  severity: गंभीरता
+  subject: 'के बारे में'
+  finding: खोज
+  level:
+    error: त्रुटि
+    warning: चेतावनी
+    info: नोट
+  close: 'बंद करें'
+  force: 'चेतावनियों के बावजूद बंद करें'
+  reopen: 'फिर से खोलें'
+  confirm_close: 'बंद किया गया, वित्तीय वर्ष में कोई और प्रविष्टियाँ नहीं की जाएंगी और इसके संतुलन आगे बढ़ाए जाएंगे। क्या इसे बंद करें?'
+  confirm_reopen: 'फिर से खोलने से बंद की गई प्रविष्टियाँ हट जाएंगी। क्या इसे फिर से खोलें?'
+
+he:
+  page_title: 'שנת כספים'
+  page_icon: 'ph:bold/calendar-check'
+  result: 'תוצאה:'
+  clean: 'הבדיקה לא מוצאת מה לתקן.'
+  severity: חומרה
+  subject: 'על אודות'
+  finding: ממצא
+  level:
+    error: שגיאה
+    warning: אזהרה
+    info: הערה
+  close: 'סגור את זה'
+  force: 'סגור את זה למרות האזהרות'
+  reopen: 'פתח את זה מחדש'
+  confirm_close: 'נסגר, שנת הכספים לא מקבלת יותר רשומות והמאזנים שלה מועברים. לסגור את זה?'
+  confirm_reopen: 'פתיחה מחדש מסירה את מה שסגרנו. לפתוח את זה מחדש?'
+
+fa:
+  page_title: 'سال مالی'
+  page_icon: 'ph:bold/calendar-check'
+  result: 'نتیجه:'
+  clean: 'چک هیچ چیز برای اصلاح پیدا نکرد.'
+  severity: شدت
+  subject: درباره
+  finding: 'یافت شده'
+  level:
+    error: خطا
+    warning: هشدار
+    info: یادداشت
+  close: ببندید
+  force: 'با وجود هشدارها ببندید'
+  reopen: بازگشایی
+  confirm_close: 'بسته شد، سال مالی دیگر ورودی نمی‌پذیرد و مانده‌های آن به سال بعد منتقل می‌شود. آیا می‌خواهید ببندید؟'
+  confirm_reopen: 'بازگشایی، آنچه را که بسته شده حذف می‌کند. آیا می‌خواهید بازگشایی کنید؟'
+
+ur:
+  page_title: 'مالی سال'
+  page_icon: 'ph:bold/calendar-check'
+  result: 'نتیجہ:'
+  clean: 'چیک میں کچھ غلطی نہیں ملی۔'
+  severity: شدت
+  subject: 'کے بارے میں'
+  finding: 'پتہ لگانا'
+  level:
+    error: خرابی
+    warning: خبردار
+    info: نوٹ
+  close: 'بند کریں'
+  force: 'خبردارियों کے باوجود بند کریں'
+  reopen: 'دوبارہ کھولیں'
+  confirm_close: 'بند کر دیا گیا، مالی سال میں مزید اندراجات نہیں ہوں گے اور اس کے بیلنس منتقل کر دیے جائیں گے۔ کیا آپ بند کرنا چاہتے ہیں؟'
+  confirm_reopen: 'دوبارہ کھولنے سے بند ہونے والی چیزیں حذف ہو جائیں گی۔ کیا آپ دوبارہ کھولنا چاہتے ہیں؟'
+
+ja:
+  page_title: 会計年度
+  page_icon: 'ph:bold/calendar-check'
+  result: '結果:'
+  clean: チェックで修正する必要はありません。
+  severity: 重大度
+  subject: 概要
+  finding: 調査結果
+  level:
+    error: エラー
+    warning: 警告
+    info: 注記
+  close: 閉じる
+  force: 警告を無視して閉じる
+  reopen: 再オープンする
+  confirm_close: 閉じました。会計年度はこれ以上のエントリーを受け付けず、その残高は繰り越されます。閉じますか？
+  confirm_reopen: 再オープンすると閉じた内容が削除されます。再オープンしますか？
+
+ko:
+  page_title: '회계 연도'
+  page_icon: 'ph:bold/calendar-check'
+  result: '결과:'
+  clean: '점검 결과 수정할 사항이 없습니다.'
+  severity: 심각도
+  subject: 정보
+  finding: '발견 사항'
+  level:
+    error: 오류
+    warning: 경고
+    info: 참고
+  close: 닫기
+  force: '경고에도 불구하고 닫기'
+  reopen: '다시 열기'
+  confirm_close: '닫기, 회계 연도는 더 이상 항목을 받지 않으며 잔액이 이월됩니다. 닫으시겠습니까?'
+  confirm_reopen: '다시 열기는 닫기에서 기록된 내용을 제거합니다. 다시 열겠습니까?'
+
+bn:
+  page_title: 'অর্থিক বছর'
+  page_icon: 'ph:bold/calendar-check'
+  result: 'ফলাফল:'
+  clean: 'চেকটি কোনো সমস্যা খুঁজে পায়নি।'
+  severity: গুরুতরতা
+  subject: সম্পর্কে
+  finding: অনুসন্ধান
+  level:
+    error: ত্রুটি
+    warning: সতর্কতা
+    info: নোট
+  close: 'বন্ধ করুন'
+  force: 'সতর্কতা উপেক্ষা করে বন্ধ করুন'
+  reopen: 'পুনরায় খুলুন'
+  confirm_close: 'বন্ধ করা হয়েছে, অর্থিক বছরে আর কোনো এন্ট্রি নেওয়া হবে না এবং এর ব্যালেন্স স্থানান্তরিত হবে। বন্ধ করবেন?'
+  confirm_reopen: 'পুনরায় খোলার ফলে যে বন্ধকৃত বিষয়গুলো রয়েছে তা মুছে যাবে। পুনরায় খুলবেন?'
+
+th:
+  page_title: ปีงบประมาณ
+  page_icon: 'ph:bold/calendar-check'
+  result: 'ผลลัพธ์:'
+  clean: การตรวจสอบไม่พบสิ่งที่ต้องแก้ไข.
+  severity: ความรุนแรง
+  subject: เกี่ยวกับ
+  finding: ค้นพบ
+  level:
+    error: ข้อผิดพลาด
+    warning: คำเตือน
+    info: หมายเหตุ
+  close: ปิดมัน
+  force: ปิดมันแม้จะมีคำเตือน
+  reopen: เปิดใหม่
+  confirm_close: 'ปิดแล้ว ปีงบประมาณจะไม่รับข้อมูลเพิ่มเติมและยอดเงินจะถูกนำไปคำนวณต่อ ปิดมันไหม?'
+  confirm_reopen: 'การเปิดใหม่จะลบสิ่งที่ได้บันทึกไว้ในการปิด เปิดใหม่ไหม?'
+
+de:
+  page_title: Geschäftsjahr
+  page_icon: 'ph:bold/calendar-check'
+  result: 'Ergebnis:'
+  clean: 'Die Überprüfung findet nichts zu beheben.'
+  severity: Schweregrad
+  subject: Über
+  finding: Feststellung
+  level:
+    error: Fehler
+    warning: Warnung
+    info: Hinweis
+  close: Schließen
+  force: 'Trotz der Warnungen schließen'
+  reopen: Wiedereröffnen
+  confirm_close: 'Geschlossen, das Geschäftsjahr nimmt keine weiteren Eingaben an und die Salden werden übertragen. Schließen?'
+  confirm_reopen: 'Die Wiedereröffnung entfernt, was das Schließen gebucht hat. Wiedereröffnen?'
+
+fi:
+  page_title: Tilikausi
+  page_icon: 'ph:bold/calendar-check'
+  result: 'Tulokset:'
+  clean: 'Tarkistus ei löytänyt mitään korjattavaa.'
+  severity: Vakavuus
+  subject: Tietoja
+  finding: Löydös
+  level:
+    error: Virhe
+    warning: Varoitus
+    info: Huomio
+  close: 'Sulje se'
+  force: 'Sulje se huolimatta varoituksista'
+  reopen: 'Avaa se uudelleen'
+  confirm_close: 'Suljettu, tilikausi ei ota enää merkintöjä vastaan ja sen saldot siirretään eteenpäin. Suljetaanko se?'
+  confirm_reopen: 'Uudelleen avaaminen poistaa sen, mitä sulkeminen varasi. Avataanko se uudelleen?'
+
+ru:
+  page_title: 'Финансовый год'
+  page_icon: 'ph:bold/calendar-check'
+  result: 'Результат:'
+  clean: 'Проверка не обнаружила ничего для исправления.'
+  severity: Серьезность
+  subject: О
+  finding: Находка
+  level:
+    error: Ошибка
+    warning: Предупреждение
+    info: Примечание
+  close: Закрыть
+  force: 'Закрыть, несмотря на предупреждения'
+  reopen: 'Повторно открыть'
+  confirm_close: 'Закрыто, финансовый год больше не принимает записи, и его остатки переносятся. Закрыть?'
+  confirm_reopen: 'Повторное открытие удаляет то, что было зафиксировано при закрытии. Повторно открыть?'
+
+pl:
+  page_title: 'Rok fiskalny'
+  page_icon: 'ph:bold/calendar-check'
+  result: 'Wynik:'
+  clean: 'Kontrola nie znajduje nic do naprawienia.'
+  severity: Powaga
+  subject: O
+  finding: Znalezione
+  level:
+    error: Błąd
+    warning: Ostrzeżenie
+    info: Informacja
+  close: Zamknij
+  force: 'Zamknij mimo ostrzeżeń'
+  reopen: 'Otwórz ponownie'
+  confirm_close: 'Zamknięto, rok fiskalny nie przyjmuje więcej wpisów, a jego salda są przenoszone. Zamknąć?'
+  confirm_reopen: 'Ponowne otwarcie usuwa to, co zostało zarejestrowane przy zamknięciu. Otworzyć ponownie?'
+
+es:
+  page_title: 'Año fiscal'
+  page_icon: 'ph:bold/calendar-check'
+  result: 'Resultado:'
+  clean: 'La verificación no encuentra nada que corregir.'
+  severity: Severidad
+  subject: 'Acerca de'
+  finding: Hallazgo
+  level:
+    error: Error
+    warning: Advertencia
+    info: Nota
+  close: Cerrar
+  force: 'Cerrar a pesar de las advertencias'
+  reopen: Reabrir
+  confirm_close: 'Cerrado, el año fiscal no acepta más entradas y sus saldos se trasladan. ¿Cerrar?'
+  confirm_reopen: 'Reabrir elimina lo que se registró al cerrar. ¿Reabrir?'
+
+it:
+  page_title: 'Anno fiscale'
+  page_icon: 'ph:bold/calendar-check'
+  result: 'Risultato:'
+  clean: 'Il controllo non trova nulla da sistemare.'
+  severity: Gravità
+  subject: 'Informazioni su'
+  finding: Risultato
+  level:
+    error: Errore
+    warning: Avviso
+    info: Nota
+  close: Chiudilo
+  force: 'Chiudilo nonostante gli avvisi'
+  reopen: Riapri
+  confirm_close: "Chiuso, l'anno fiscale non accetta più voci e i suoi saldi vengono riportati. Vuoi chiuderlo?"
+  confirm_reopen: 'La riapertura rimuove quanto è stato registrato alla chiusura. Vuoi riaprirlo?'
+
+pt_BR:
+  page_title: 'Ano fiscal'
+  page_icon: 'ph:bold/calendar-check'
+  result: 'Resultado:'
+  clean: 'A verificação não encontra nada para corrigir.'
+  severity: Severidade
+  subject: Sobre
+  finding: Constatação
+  level:
+    error: Erro
+    warning: Aviso
+    info: Nota
+  close: Fechar
+  force: 'Fechar mesmo com os avisos'
+  reopen: Reabrir
+  confirm_close: 'Fechado, o ano fiscal não aceita mais entradas e seus saldos são transferidos. Fechar?'
+  confirm_reopen: 'Reabrir remove o que foi registrado no fechamento. Reabrir?'
+
+tr:
+  page_title: 'Mali yıl'
+  page_icon: 'ph:bold/calendar-check'
+  result: 'Sonuç:'
+  clean: 'Kontrol hiçbir düzeltme bulamadı.'
+  severity: Ağırılık
+  subject: Hakkında
+  finding: Sonuç
+  level:
+    error: Hata
+    warning: Uyarı
+    info: Not
+  close: Kapat
+  force: 'Uyarılara rağmen kapat'
+  reopen: 'Yeniden aç'
+  confirm_close: 'Kapandı, mali yıla daha fazla giriş yapılmayacak ve bakiyeleri devredilecektir. Kapatilsin mi?'
+  confirm_reopen: 'Yeniden açma, kapanış kaydedilenleri iptal eder. Yeniden açsın mı?'
+
+vi:
+  page_title: 'Năm tài chính'
+  page_icon: 'ph:bold/calendar-check'
+  result: 'Kết quả:'
+  clean: 'Kiểm tra không tìm thấy vấn đề nào cần sửa.'
+  severity: 'Mức độ'
+  subject: Về
+  finding: 'Phát hiện'
+  level:
+    error: Lỗi
+    warning: 'Cảnh báo'
+    info: 'Ghi chú'
+  close: 'Đóng lại'
+  force: 'Đóng bất chấp các cảnh báo'
+  reopen: 'Mở lại'
+  confirm_close: 'Đã đóng, năm tài chính không nhận thêm mục nào và các số dư được chuyển tiếp. Có đóng không?'
+  confirm_reopen: 'Mở lại sẽ xóa những gì đã được ghi nhận khi đóng. Có mở lại không?'
+
+id:
+  page_title: 'Tahun fiskal'
+  page_icon: 'ph:bold/calendar-check'
+  result: 'Hasil:'
+  clean: 'Pemeriksaan tidak menemukan apa-apa untuk diperbaiki.'
+  severity: 'Tingkat keparahan'
+  subject: Tentang
+  finding: Temuan
+  level:
+    error: Kesalahan
+    warning: Peringatan
+    info: Catatan
+  close: Tutup
+  force: 'Tutup meskipun ada peringatan'
+  reopen: 'Buka kembali'
+  confirm_close: 'Ditutup, tahun fiskal tidak menerima entri lagi dan saldonya dibawa ke depan. Tutup ini?'
+  confirm_reopen: 'Membuka kembali menghapus apa yang telah dicatat saat penutupan. Buka kembali?'
+
+nl:
+  page_title: 'Fiscale jaar'
+  page_icon: 'ph:bold/calendar-check'
+  result: 'Resultaat:'
+  clean: 'De controle vindt niets om te repareren.'
+  severity: Ernst
+  subject: Over
+  finding: Vondst
+  level:
+    error: Fout
+    warning: Waarschuwing
+    info: Opmerking
+  close: Sluiten
+  force: 'Sluiten ondanks de waarschuwingen'
+  reopen: Heropenen
+  confirm_close: 'Gesloten, het fiscale jaar accepteert geen verdere invoer en de saldi worden overgedragen. Sluiten?'
+  confirm_reopen: 'Heropenen verwijdert wat de sluiting heeft geboekt. Heropenen?'

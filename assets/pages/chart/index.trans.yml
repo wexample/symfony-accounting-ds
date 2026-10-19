@@ -54,3 +54,383 @@ zh:
     debit: 借方
     credit: 贷方
     both: 任意
+
+ar:
+  page_title: 'جدول الحسابات'
+  page_icon: 'ph:bold/list-numbers'
+  search: 'رقم أو كلمة'
+  search_submit: بحث
+  empty: 'لا يوجد حساب مطابق.'
+  class: 'الفئة %class%'
+  lettrable: 'مرتبة بالحروف'
+  inactive: 'غير نشط'
+  column:
+    number: رقم
+    label: تسمية
+    nature: طبيعة
+    class: فئة
+  nature:
+    debit: مدين
+    credit: دائن
+    both: كلاهما
+
+hi:
+  page_title: 'खाते का चार्ट'
+  page_icon: 'ph:bold/list-numbers'
+  search: 'एक संख्या या एक शब्द'
+  search_submit: खोजें
+  empty: 'कोई खाता मेल नहीं खाता।'
+  class: 'क्लास %class%'
+  lettrable: लेटरड
+  inactive: अक्रिय
+  column:
+    number: संख्या
+    label: लेबल
+    nature: प्रकृति
+    class: क्लास
+  nature:
+    debit: डेबिट
+    credit: क्रेडिट
+    both: 'या दोनों'
+
+he:
+  page_title: 'טבלת חשבונות'
+  page_icon: 'ph:bold/list-numbers'
+  search: 'מספר או מילה'
+  search_submit: חפש
+  empty: 'אין חשבון תואם.'
+  class: 'קטגוריה %class%'
+  lettrable: 'מאוגד באותיות'
+  inactive: 'לא פעיל'
+  column:
+    number: מספר
+    label: תווית
+    nature: סוג
+    class: קטגוריה
+  nature:
+    debit: חובה
+    credit: זכות
+    both: שניהם
+
+fa:
+  page_title: 'چارت حساب‌ها'
+  page_icon: 'ph:bold/list-numbers'
+  search: 'یک شماره یا یک کلمه'
+  search_submit: جستجو
+  empty: 'هیچ حسابی مطابقت ندارد.'
+  class: 'کلاس %class%'
+  lettrable: حروفی
+  inactive: غیرفعال
+  column:
+    number: شماره
+    label: برچسب
+    nature: نوع
+    class: کلاس
+  nature:
+    debit: بدهی
+    credit: بستانکاری
+    both: 'هر دو'
+
+ur:
+  page_title: 'اکاؤنٹس کا چارٹ'
+  page_icon: 'ph:bold/list-numbers'
+  search: 'ایک نمبر یا ایک لفظ'
+  search_submit: 'تلاش کریں'
+  empty: 'کوئی اکاؤنٹ میل نہیں کھاتا۔'
+  class: 'کلاس %class%'
+  lettrable: حروفی
+  inactive: 'غیر فعال'
+  column:
+    number: نمبر
+    label: لیبل
+    nature: نوعیت
+    class: کلاس
+  nature:
+    debit: ڈیبٹ
+    credit: کریڈٹ
+    both: دونوں
+
+ja:
+  page_title: 勘定科目
+  page_icon: 'ph:bold/list-numbers'
+  search: 数字または単語
+  search_submit: 検索
+  empty: 一致するアカウントはありません。
+  class: 'クラス %class%'
+  lettrable: 文字列
+  inactive: 非アクティブ
+  column:
+    number: 番号
+    label: ラベル
+    nature: 性質
+    class: クラス
+  nature:
+    debit: 借方
+    credit: 貸方
+    both: どちらでも
+
+ko:
+  page_title: '계정 차트'
+  page_icon: 'ph:bold/list-numbers'
+  search: '숫자 또는 단어'
+  search_submit: 검색
+  empty: '일치하는 계정이 없습니다.'
+  class: '클래스 %class%'
+  lettrable: 문자
+  inactive: 비활성
+  column:
+    number: 번호
+    label: 라벨
+    nature: 성격
+    class: 클래스
+  nature:
+    debit: 차변
+    credit: 대변
+    both: '둘 다'
+
+bn:
+  page_title: 'অ্যাকাউন্টের তালিকা'
+  page_icon: 'ph:bold/list-numbers'
+  search: 'একটি সংখ্যা বা একটি শব্দ'
+  search_submit: 'অনুসন্ধান করুন'
+  empty: 'কোনও অ্যাকাউন্ট মিলে না।'
+  class: 'ক্লাস %class%'
+  lettrable: লেখ্য
+  inactive: অকার্যকর
+  column:
+    number: নম্বর
+    label: লেবেল
+    nature: প্রকৃতি
+    class: ক্লাস
+  nature:
+    debit: ডেবিট
+    credit: ক্রেডিট
+    both: দুইটি
+
+th:
+  page_title: แผนภูมิบัญชี
+  page_icon: 'ph:bold/list-numbers'
+  search: หมายเลขหรือคำ
+  search_submit: ค้นหา
+  empty: ไม่มีบัญชีที่ตรงกัน
+  class: 'ชั้นเรียน %class%'
+  lettrable: มีตัวอักษร
+  inactive: ไม่อยู่ในสถานะใช้งาน
+  column:
+    number: หมายเลข
+    label: ป้ายชื่อ
+    nature: ประเภท
+    class: ชั้นเรียน
+  nature:
+    debit: เดบิต
+    credit: เครดิต
+    both: ทั้งสอง
+
+de:
+  page_title: Kontenrahmen
+  page_icon: 'ph:bold/list-numbers'
+  search: 'Eine Zahl oder ein Wort'
+  search_submit: Suchen
+  empty: 'Kein Konto gefunden.'
+  class: 'Klasse %class%'
+  lettrable: buchstabiert
+  inactive: inaktiv
+  column:
+    number: Nummer
+    label: Bezeichnung
+    nature: Art
+    class: Klasse
+  nature:
+    debit: Soll
+    credit: Haben
+    both: Beides
+
+fi:
+  page_title: Tililuettelo
+  page_icon: 'ph:bold/list-numbers'
+  search: 'Numero tai sana'
+  search_submit: Hae
+  empty: 'Ei tiliä vastaa.'
+  class: 'Luokka %class%'
+  lettrable: kirjaimellinen
+  inactive: toimimaton
+  column:
+    number: Numero
+    label: Tunnus
+    nature: Luonne
+    class: Luokka
+  nature:
+    debit: Velka
+    credit: Luotto
+    both: Molemmat
+
+ru:
+  page_title: 'Счетная таблица'
+  page_icon: 'ph:bold/list-numbers'
+  search: 'Число или слово'
+  search_submit: Поиск
+  empty: 'Нет совпадающих счетов.'
+  class: 'Класс %class%'
+  lettrable: буквенный
+  inactive: неактивный
+  column:
+    number: Номер
+    label: Метка
+    nature: Природа
+    class: Класс
+  nature:
+    debit: Дебет
+    credit: Кредит
+    both: Любой
+
+pl:
+  page_title: 'Plan kont'
+  page_icon: 'ph:bold/list-numbers'
+  search: 'Numer lub słowo'
+  search_submit: Szukaj
+  empty: 'Brak dopasowanych kont.'
+  class: 'Klasa %class%'
+  lettrable: literowy
+  inactive: nieaktywny
+  column:
+    number: Numer
+    label: Etykieta
+    nature: Rodzaj
+    class: Klasa
+  nature:
+    debit: Debet
+    credit: Kredyt
+    both: Oba
+
+es:
+  page_title: 'Catálogo de cuentas'
+  page_icon: 'ph:bold/list-numbers'
+  search: 'Un número o una palabra'
+  search_submit: Buscar
+  empty: 'No hay cuentas que coincidan.'
+  class: 'Clase %class%'
+  lettrable: alfabetizado
+  inactive: inactivo
+  column:
+    number: Número
+    label: Etiqueta
+    nature: Naturaleza
+    class: Clase
+  nature:
+    debit: Débito
+    credit: Crédito
+    both: Cualquiera
+
+it:
+  page_title: 'Piano dei conti'
+  page_icon: 'ph:bold/list-numbers'
+  search: 'Un numero o una parola'
+  search_submit: Cerca
+  empty: 'Nessun conto corrisponde.'
+  class: 'Classe %class%'
+  lettrable: letterato
+  inactive: inattivo
+  column:
+    number: Numero
+    label: Etichetta
+    nature: Natura
+    class: Classe
+  nature:
+    debit: Debito
+    credit: Credito
+    both: Entrambi
+
+pt_BR:
+  page_title: 'Plano de contas'
+  page_icon: 'ph:bold/list-numbers'
+  search: 'Um número ou uma palavra'
+  search_submit: Pesquisar
+  empty: 'Nenhuma conta corresponde.'
+  class: 'Classe %class%'
+  lettrable: letrável
+  inactive: inativo
+  column:
+    number: Número
+    label: Rótulo
+    nature: Natureza
+    class: Classe
+  nature:
+    debit: Débito
+    credit: Crédito
+    both: Ambos
+
+tr:
+  page_title: 'Hesap Çizelgesi'
+  page_icon: 'ph:bold/list-numbers'
+  search: 'Bir numara veya kelime'
+  search_submit: Ara
+  empty: 'Hiçbir hesap eşleşmiyor.'
+  class: 'Sınıf %class%'
+  lettrable: harfli
+  inactive: 'aktif değil'
+  column:
+    number: Numara
+    label: Etiket
+    nature: Doğa
+    class: Sınıf
+  nature:
+    debit: Borç
+    credit: Alacak
+    both: 'Her ikisi'
+
+vi:
+  page_title: 'Danh sách tài khoản'
+  page_icon: 'ph:bold/list-numbers'
+  search: 'Một số hoặc một từ'
+  search_submit: 'Tìm kiếm'
+  empty: 'Không có tài khoản nào khớp.'
+  class: 'Lớp %class%'
+  lettrable: 'có chữ'
+  inactive: 'không hoạt động'
+  column:
+    number: Số
+    label: Nhãn
+    nature: 'Bản chất'
+    class: Lớp
+  nature:
+    debit: Nợ
+    credit: Có
+    both: 'Cả hai'
+
+id:
+  page_title: 'Daftar akun'
+  page_icon: 'ph:bold/list-numbers'
+  search: 'Sebuah angka atau kata'
+  search_submit: Cari
+  empty: 'Tidak ada akun yang cocok.'
+  class: 'Kelas %class%'
+  lettrable: berhuruf
+  inactive: 'tidak aktif'
+  column:
+    number: Nomor
+    label: Label
+    nature: Sifat
+    class: Kelas
+  nature:
+    debit: Debit
+    credit: Kredit
+    both: Keduanya
+
+nl:
+  page_title: Rekeningoverzicht
+  page_icon: 'ph:bold/list-numbers'
+  search: 'Een nummer of een woord'
+  search_submit: Zoeken
+  empty: 'Geen rekening gevonden.'
+  class: 'Klasse %class%'
+  lettrable: geletterd
+  inactive: inactief
+  column:
+    number: Nummer
+    label: Label
+    nature: Natuur
+    class: Klasse
+  nature:
+    debit: Debet
+    credit: Credit
+    both: Beide

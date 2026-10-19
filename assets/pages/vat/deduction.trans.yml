@@ -33,3 +33,243 @@ zh:
   difference: 进行调整
   regularize: 记录调整
   confirm: 本年度的扣除在最后一天进行调整，最终系数将成为明年的。继续吗？
+
+ar:
+  page_title: 'خصم جزئي'
+  page_icon: 'ph:bold/chart-pie-slice'
+  final_rate: 'المعامل النهائي، بالنسبة المئوية'
+  compute: احسب
+  eligible: 'ضريبة القيمة المضافة المؤهلة للخصم'
+  deducted: 'الخصم خلال السنة'
+  target: 'الخصم عند المعامل النهائي'
+  difference: لتصحيح
+  regularize: 'احجز التسوية'
+  confirm: 'تم تصحيح خصم السنة في آخر يوم منها، ويصبح المعامل النهائي للسنة القادمة. هل تتابع؟'
+
+hi:
+  page_title: 'आंशिक कटौती'
+  page_icon: 'ph:bold/chart-pie-slice'
+  final_rate: 'अंतिम गुणांक, % में'
+  compute: 'गणना करें'
+  eligible: 'कटौती के लिए वैट योग्य'
+  deducted: 'साल के दौरान कट गया'
+  target: 'अंतिम गुणांक पर कटौती योग्य'
+  difference: 'सही करना'
+  regularize: 'नियमितीकरण बुक करें'
+  confirm: 'साल की कटौती इसके अंतिम दिन पर सही की जाती है, और अंतिम गुणांक अगले साल का बन जाता है। आगे बढ़ें?'
+
+he:
+  page_title: 'ניכוי חלקי'
+  page_icon: 'ph:bold/chart-pie-slice'
+  final_rate: 'הקואפיצנט הסופי, באחוזים'
+  compute: חשב
+  eligible: 'מע"מ זכאי לניכוי'
+  deducted: 'נוכה במהלך השנה'
+  target: 'ניכוי בקואפיצנט הסופי'
+  difference: לתקן
+  regularize: 'שריין את ההסדרה'
+  confirm: 'הניכוי של השנה מתוקן ביום האחרון שלה, והקואפיצנט הסופי הופך לשנה הבאה. להמשיך?'
+
+fa:
+  page_title: 'کسر جزئی'
+  page_icon: 'ph:bold/chart-pie-slice'
+  final_rate: 'ضریب نهایی، به %'
+  compute: محاسبه
+  eligible: 'مالیات بر ارزش افزوده واجد شرایط کسر'
+  deducted: 'کسر شده در طول سال'
+  target: 'قابل کسر در ضریب نهایی'
+  difference: 'برای تنظیم درست'
+  regularize: 'ثبت تنظیمات'
+  confirm: 'کسر سال در آخرین روزش تنظیم می‌شود و ضریب نهایی به سال بعد منتقل می‌شود. ادامه می‌دهید؟'
+
+ur:
+  page_title: 'جزوی کٹوتی'
+  page_icon: 'ph:bold/chart-pie-slice'
+  final_rate: 'حتمی شرح، فیصد میں'
+  compute: 'حساب لگائیں'
+  eligible: 'کٹوتی کے لیے VAT اہل'
+  deducted: 'سال کے دوران کٹوتی کی گئی'
+  target: 'حتمی شرح پر کٹوتی'
+  difference: 'درست کرنے کے لیے'
+  regularize: 'باقاعدگی کو بک کریں'
+  confirm: 'سال کی کٹوتی اس کے آخری دن درست کی جاتی ہے، اور حتمی شرح اگلے سال کی بن جاتی ہے۔ کیا جاری رکھیں؟'
+
+ja:
+  page_title: 部分控除
+  page_icon: 'ph:bold/chart-pie-slice'
+  final_rate: 最終係数（%）
+  compute: 計算
+  eligible: 控除対象の消費税
+  deducted: 年度中に控除された
+  target: 最終係数で控除可能
+  difference: 修正するため
+  regularize: 調整を記録する
+  confirm: 年度の控除は最終日に正され、最終係数は来年のものになります。続けますか？
+
+ko:
+  page_title: '부분 공제'
+  page_icon: 'ph:bold/chart-pie-slice'
+  final_rate: '최종 비율 (%)'
+  compute: 계산
+  eligible: '공제 가능한 VAT'
+  deducted: '연도 중 공제됨'
+  target: '최종 비율에 따라 공제 가능'
+  difference: '정산하기 위해'
+  regularize: '정산 예약하기'
+  confirm: '올해의 공제가 마지막 날에 정산되고 최종 비율이 내년으로 넘어갑니다. 계속하시겠습니까?'
+
+bn:
+  page_title: 'আংশিক কর্তন'
+  page_icon: 'ph:bold/chart-pie-slice'
+  final_rate: 'চূড়ান্ত সহগ, শতাংশে'
+  compute: 'হিসাব করুন'
+  eligible: 'কর্তনের জন্য VAT যোগ্য'
+  deducted: 'বছরের মধ্যে কর্তন করা হয়েছে'
+  target: 'চূড়ান্ত সহগে কর্তনযোগ্য'
+  difference: 'সঠিক করতে'
+  regularize: 'নিয়মিতকরণ বুক করুন'
+  confirm: 'বছরের কর্তন তার শেষ দিনে সঠিক করা হয়, এবং চূড়ান্ত সহগ আগামী বছরের হয়ে যায়। এগিয়ে যাবেন?'
+
+th:
+  page_title: การหักภาษีบางส่วน
+  page_icon: 'ph:bold/chart-pie-slice'
+  final_rate: 'อัตราสุดท้าย, เป็น %'
+  compute: คำนวณ
+  eligible: 'VAT ที่สามารถหักได้'
+  deducted: หักในปีนี้แล้ว
+  target: หักได้ที่อัตราสุดท้าย
+  difference: เพื่อปรับให้ถูกต้อง
+  regularize: บันทึกการปรับให้ถูกต้อง
+  confirm: 'การหักในปีนี้ถูกปรับให้ถูกต้องในวันสุดท้าย และอัตราสุดท้ายจะกลายเป็นปีถัดไป คุณต้องการดำเนินการต่อหรือไม่?'
+
+de:
+  page_title: 'Teilweise Abzüge'
+  page_icon: 'ph:bold/chart-pie-slice'
+  final_rate: 'Endgültiger Koeffizient in %'
+  compute: Berechnen
+  eligible: 'Umsatzsteuer abziehbar'
+  deducted: 'Im Jahr abgezogen'
+  target: 'Abziehbar beim endgültigen Koeffizienten'
+  difference: 'Korrektur vornehmen'
+  regularize: 'Die Regularisierung buchen'
+  confirm: 'Der Abzug des Jahres wird am letzten Tag korrigiert, und der endgültige Koeffizient wird für das nächste Jahr übernommen. Fortfahren?'
+
+fi:
+  page_title: 'Osittainen vähennys'
+  page_icon: 'ph:bold/chart-pie-slice'
+  final_rate: 'Lopullinen kerroin, %'
+  compute: Laske
+  eligible: 'ALV-vähennykseen oikeuttava'
+  deducted: 'Vähennetty vuoden aikana'
+  target: 'Vähennettävä lopullisella kertoimella'
+  difference: Korjattavaa
+  regularize: 'Varaa oikaisu'
+  confirm: 'Vuoden vähennys korjataan sen viimeisenä päivänä, ja lopullinen kerroin tulee seuraavaksi vuodeksi. Jatketaanko?'
+
+ru:
+  page_title: 'Частичное вычитание'
+  page_icon: 'ph:bold/chart-pie-slice'
+  final_rate: 'Итоговый коэффициент, в %'
+  compute: Вычислить
+  eligible: 'НДС, подлежащий вычету'
+  deducted: 'Вычтено за год'
+  target: 'Вычитается по итоговому коэффициенту'
+  difference: 'Установить правильно'
+  regularize: 'Забронировать корректировку'
+  confirm: 'Вычет за год устанавливается правильно в последний день, и итоговый коэффициент становится коэффициентом следующего года. Продолжить?'
+
+pl:
+  page_title: 'Częściowe odliczenie'
+  page_icon: 'ph:bold/chart-pie-slice'
+  final_rate: 'Ostateczny współczynnik, w %'
+  compute: Oblicz
+  eligible: 'VAT do odliczenia'
+  deducted: 'Odliczone w ciągu roku'
+  target: 'Odliczalne przy ostatecznym współczynniku'
+  difference: 'Do skorygowania'
+  regularize: 'Zarezerwuj regularizację'
+  confirm: 'Odliczenie za rok jest korygowane w ostatnim dniu, a ostateczny współczynnik staje się współczynnikiem na przyszły rok. Kontynuować?'
+
+es:
+  page_title: 'Deducción parcial'
+  page_icon: 'ph:bold/chart-pie-slice'
+  final_rate: 'Coeficiente final, en %'
+  compute: Calcular
+  eligible: 'IVA elegible para deducción'
+  deducted: 'Deducido durante el año'
+  target: 'Deducible al coeficiente final'
+  difference: 'Para corregir'
+  regularize: 'Registrar la regularización'
+  confirm: 'La deducción del año se corrige en su último día, y el coeficiente final se convierte en el del próximo año. ¿Continuar?'
+
+it:
+  page_title: 'Detrazione parziale'
+  page_icon: 'ph:bold/chart-pie-slice'
+  final_rate: 'Coefficiente finale, in %'
+  compute: Calcola
+  eligible: 'IVA detraibile'
+  deducted: "Detratto durante l'anno"
+  target: 'Detraibile al coefficiente finale'
+  difference: 'Da sistemare'
+  regularize: 'Registra la regolarizzazione'
+  confirm: "La detrazione dell'anno viene sistemata nell'ultimo giorno, e il coefficiente finale diventa quello dell'anno prossimo. Continuare?"
+
+pt_BR:
+  page_title: 'Dedução parcial'
+  page_icon: 'ph:bold/chart-pie-slice'
+  final_rate: 'Coeficiente final, em %'
+  compute: Calcular
+  eligible: 'IVA elegível para dedução'
+  deducted: 'Deduzido durante o ano'
+  target: 'Dedutível no coeficiente final'
+  difference: 'Para corrigir'
+  regularize: 'Registrar a regularização'
+  confirm: 'A dedução do ano é corrigida no seu último dia, e o coeficiente final se torna do ano que vem. Prosseguir?'
+
+tr:
+  page_title: 'Kısmi indirim'
+  page_icon: 'ph:bold/chart-pie-slice'
+  final_rate: 'Son katsayı, % olarak'
+  compute: Hesapla
+  eligible: 'İndirim için KDV uygun'
+  deducted: 'Yıl içinde düşürüldü'
+  target: 'Son katsayıda düşürülebilir'
+  difference: 'Düzeltmek için'
+  regularize: 'Düzenlemeyi kaydet'
+  confirm: 'Yılın indirimi son gününde düzeltilir ve son katsayı gelecek yıl için geçerli olur. Devam edilsin mi?'
+
+vi:
+  page_title: 'Khấu trừ một phần'
+  page_icon: 'ph:bold/chart-pie-slice'
+  final_rate: 'Hệ số cuối cùng, tính bằng %'
+  compute: 'Tính toán'
+  eligible: 'VAT đủ điều kiện khấu trừ'
+  deducted: 'Đã khấu trừ trong năm'
+  target: 'Có thể khấu trừ tại hệ số cuối cùng'
+  difference: 'Để điều chỉnh'
+  regularize: 'Ghi lại việc điều chỉnh'
+  confirm: 'Khấu trừ của năm đã được điều chỉnh vào ngày cuối cùng, và hệ số cuối cùng trở thành của năm sau. Tiếp tục chứ?'
+
+id:
+  page_title: 'Pengurangan parsial'
+  page_icon: 'ph:bold/chart-pie-slice'
+  final_rate: 'Koefisien akhir, dalam %'
+  compute: Hitung
+  eligible: 'PPN yang memenuhi syarat untuk dikurangkan'
+  deducted: 'Dikurangkan selama tahun ini'
+  target: 'Dapat dikurangkan pada koefisien akhir'
+  difference: 'Untuk memperbaiki'
+  regularize: 'Catat regulasi'
+  confirm: 'Pengurangan tahun ini diperbaiki pada hari terakhirnya, dan koefisien akhir menjadi milik tahun depan. Lanjutkan?'
+
+nl:
+  page_title: 'Deeltijd aftrek'
+  page_icon: 'ph:bold/chart-pie-slice'
+  final_rate: 'Eindcoëfficiënt, in %'
+  compute: Berekenen
+  eligible: 'BTW aftrekbaar'
+  deducted: 'Aftrekbaar gedurende het jaar'
+  target: 'Aftrekbaar bij de eindcoëfficiënt'
+  difference: Rechttrekken
+  regularize: 'Boek de regularisatie'
+  confirm: 'De aftrek van het jaar wordt op de laatste dag rechtgezet, en de eindcoëfficiënt wordt die van volgend jaar. Doorgaan?'

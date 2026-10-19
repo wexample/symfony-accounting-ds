@@ -36,3 +36,263 @@ zh:
   debit: 借记
   credit: 贷记
   submit: 记账
+
+ar:
+  page_title: 'اكتب مدخلة'
+  page_icon: 'ph:bold/pencil-line'
+  journal: المجلة
+  date: التاريخ
+  label: التسمية
+  piece: 'مرجع الوثيقة'
+  account: الحساب
+  line_label: 'تسمية السطر'
+  debit: مدين
+  credit: دائن
+  submit: احجزها
+
+hi:
+  page_title: 'एक प्रविष्टि लिखें'
+  page_icon: 'ph:bold/pencil-line'
+  journal: जर्नल
+  date: तारीख
+  label: लेबल
+  piece: 'दस्तावेज़ संदर्भ'
+  account: खाता
+  line_label: 'लाइन लेबल'
+  debit: डेबिट
+  credit: क्रेडिट
+  submit: 'बुक करें'
+
+he:
+  page_title: 'כתוב רשומה'
+  page_icon: 'ph:bold/pencil-line'
+  journal: יומן
+  date: תאריך
+  label: תגית
+  piece: 'הפניה למסמך'
+  account: חשבון
+  line_label: 'תגית שורה'
+  debit: חוב
+  credit: זכות
+  submit: 'רשום את זה'
+
+fa:
+  page_title: 'یک ورودی بنویسید'
+  page_icon: 'ph:bold/pencil-line'
+  journal: ژورنال
+  date: تاریخ
+  label: برچسب
+  piece: 'مرجع سند'
+  account: حساب
+  line_label: 'برچسب خط'
+  debit: بدهی
+  credit: بستانکاری
+  submit: 'ثبت کنید'
+
+ur:
+  page_title: 'داخلہ لکھیں'
+  page_icon: 'ph:bold/pencil-line'
+  journal: جرنل
+  date: تاریخ
+  label: لیبل
+  piece: 'دستاویز حوالہ'
+  account: اکاؤنٹ
+  line_label: 'لائن لیبل'
+  debit: ڈیبٹ
+  credit: کریڈٹ
+  submit: 'کتاب کریں'
+
+ja:
+  page_title: エントリーを書く
+  page_icon: 'ph:bold/pencil-line'
+  journal: ジャーナル
+  date: 日付
+  label: ラベル
+  piece: ドキュメント参照
+  account: アカウント
+  line_label: 行ラベル
+  debit: デビット
+  credit: クレジット
+  submit: 予約する
+
+ko:
+  page_title: '항목 작성'
+  page_icon: 'ph:bold/pencil-line'
+  journal: 일지
+  date: 날짜
+  label: 라벨
+  piece: '문서 참조'
+  account: 계좌
+  line_label: '항목 라벨'
+  debit: 차변
+  credit: 대변
+  submit: 기록하기
+
+bn:
+  page_title: 'একটি এন্ট্রি লিখুন'
+  page_icon: 'ph:bold/pencil-line'
+  journal: জার্নাল
+  date: তারিখ
+  label: লেবেল
+  piece: 'ডকুমেন্ট রেফারেন্স'
+  account: অ্যাকাউন্ট
+  line_label: 'লাইন লেবেল'
+  debit: ডেবিট
+  credit: ক্রেডিট
+  submit: 'বুক করুন'
+
+th:
+  page_title: เขียนรายการ
+  page_icon: 'ph:bold/pencil-line'
+  journal: สมุดบันทึก
+  date: วันที่
+  label: ป้ายกำกับ
+  piece: เอกสารอ้างอิง
+  account: บัญชี
+  line_label: ป้ายกำกับบรรทัด
+  debit: เดบิต
+  credit: เครดิต
+  submit: บันทึก
+
+de:
+  page_title: 'Einen Eintrag schreiben'
+  page_icon: 'ph:bold/pencil-line'
+  journal: Journal
+  date: Datum
+  label: Bezeichnung
+  piece: Dokumentenreferenz
+  account: Konto
+  line_label: Zeilenbezeichnung
+  debit: Soll
+  credit: Haben
+  submit: Buchen
+
+fi:
+  page_title: 'Kirjoita merkintä'
+  page_icon: 'ph:bold/pencil-line'
+  journal: Päiväkirja
+  date: Päivämäärä
+  label: Tunnus
+  piece: 'Asiakirjan viite'
+  account: Tili
+  line_label: 'Rivin tunnus'
+  debit: Velka
+  credit: Laina
+  submit: 'Varaa se'
+
+ru:
+  page_title: 'Написать запись'
+  page_icon: 'ph:bold/pencil-line'
+  journal: Журнал
+  date: Дата
+  label: Метка
+  piece: 'Ссылка на документ'
+  account: Счет
+  line_label: 'Метка строки'
+  debit: Дебет
+  credit: Кредит
+  submit: Зарегистрировать
+
+pl:
+  page_title: 'Napisz wpis'
+  page_icon: 'ph:bold/pencil-line'
+  journal: Dziennik
+  date: Data
+  label: Etykieta
+  piece: 'Referencja dokumentu'
+  account: Konto
+  line_label: 'Etykieta linii'
+  debit: Debet
+  credit: Kredyt
+  submit: Księguj
+
+es:
+  page_title: 'Escribir una entrada'
+  page_icon: 'ph:bold/pencil-line'
+  journal: Diario
+  date: Fecha
+  label: Etiqueta
+  piece: 'Referencia del documento'
+  account: Cuenta
+  line_label: 'Etiqueta de línea'
+  debit: Débito
+  credit: Crédito
+  submit: Registrar
+
+it:
+  page_title: "Scrivi un'entrata"
+  page_icon: 'ph:bold/pencil-line'
+  journal: Giornale
+  date: Data
+  label: Etichetta
+  piece: 'Riferimento documento'
+  account: Conto
+  line_label: 'Etichetta riga'
+  debit: Debito
+  credit: Credito
+  submit: Registralo
+
+pt_BR:
+  page_title: 'Escrever uma entrada'
+  page_icon: 'ph:bold/pencil-line'
+  journal: Diário
+  date: Data
+  label: Rótulo
+  piece: 'Referência do documento'
+  account: Conta
+  line_label: 'Rótulo da linha'
+  debit: Débito
+  credit: Crédito
+  submit: Registrar
+
+tr:
+  page_title: 'Bir kayıt yaz'
+  page_icon: 'ph:bold/pencil-line'
+  journal: Günlük
+  date: Tarih
+  label: Etiket
+  piece: 'Belge referansı'
+  account: Hesap
+  line_label: 'Hizmet etiketi'
+  debit: Borç
+  credit: Alacak
+  submit: Kaydet
+
+vi:
+  page_title: 'Viết một mục'
+  page_icon: 'ph:bold/pencil-line'
+  journal: 'Nhật ký'
+  date: Ngày
+  label: Nhãn
+  piece: 'Tham chiếu tài liệu'
+  account: 'Tài khoản'
+  line_label: 'Nhãn dòng'
+  debit: Nợ
+  credit: Có
+  submit: 'Ghi lại'
+
+id:
+  page_title: 'Tulis entri'
+  page_icon: 'ph:bold/pencil-line'
+  journal: Jurnal
+  date: Tanggal
+  label: Label
+  piece: 'Referensi dokumen'
+  account: Akun
+  line_label: 'Label baris'
+  debit: Debet
+  credit: Kredit
+  submit: 'Buku itu'
+
+nl:
+  page_title: 'Schrijf een invoer'
+  page_icon: 'ph:bold/pencil-line'
+  journal: Journal
+  date: Datum
+  label: Label
+  piece: Documentreferentie
+  account: Rekening
+  line_label: Regellabel
+  debit: Debet
+  credit: Credit
+  submit: 'Boek het'

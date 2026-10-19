@@ -21,3 +21,163 @@ zh:
   gross: 总额
   deduct: 减去
   amount: 净额
+
+ar:
+  page_title: البيان
+  page_icon: 'ph:bold/file-text'
+  line: السطر
+  gross: الإجمالي
+  deduct: ناقص
+  amount: الصافي
+
+hi:
+  page_title: विवरण
+  page_icon: 'ph:bold/file-text'
+  line: लाइन
+  gross: कुल
+  deduct: कम
+  amount: शुद्ध
+
+he:
+  page_title: דוח
+  page_icon: 'ph:bold/file-text'
+  line: שורה
+  gross: ברוטו
+  deduct: בניכוי
+  amount: נטו
+
+fa:
+  page_title: صورتحساب
+  page_icon: 'ph:bold/file-text'
+  line: خط
+  gross: جمع
+  deduct: کسر
+  amount: خالص
+
+ur:
+  page_title: بیان
+  page_icon: 'ph:bold/file-text'
+  line: لائن
+  gross: مجموعی
+  deduct: کم
+  amount: نیٹ
+
+ja:
+  page_title: 明細
+  page_icon: 'ph:bold/file-text'
+  line: 行
+  gross: 総額
+  deduct: 控除
+  amount: 純額
+
+ko:
+  page_title: 명세서
+  page_icon: 'ph:bold/file-text'
+  line: 라인
+  gross: 총액
+  deduct: 차감
+  amount: 순액
+
+bn:
+  page_title: বিবৃতি
+  page_icon: 'ph:bold/file-text'
+  line: লাইন
+  gross: মোট
+  deduct: বিয়োগ
+  amount: নেট
+
+th:
+  page_title: ใบแจ้งยอด
+  page_icon: 'ph:bold/file-text'
+  line: บรรทัด
+  gross: รวม
+  deduct: หัก
+  amount: สุทธิ
+
+de:
+  page_title: Auszug
+  page_icon: 'ph:bold/file-text'
+  line: Zeile
+  gross: Brutto
+  deduct: Weniger
+  amount: Netto
+
+fi:
+  page_title: Tiliote
+  page_icon: 'ph:bold/file-text'
+  line: Rivi
+  gross: Brutto
+  deduct: Vähennä
+  amount: Nettosumma
+
+ru:
+  page_title: Счет
+  page_icon: 'ph:bold/file-text'
+  line: Строка
+  gross: Брутто
+  deduct: Минус
+  amount: Чистый
+
+pl:
+  page_title: Zestawienie
+  page_icon: 'ph:bold/file-text'
+  line: Linia
+  gross: Brutto
+  deduct: Mniej
+  amount: Netto
+
+es:
+  page_title: 'Estado de cuenta'
+  page_icon: 'ph:bold/file-text'
+  line: Línea
+  gross: Bruto
+  deduct: Menos
+  amount: Neto
+
+it:
+  page_title: 'Estratto conto'
+  page_icon: 'ph:bold/file-text'
+  line: Voce
+  gross: Lordo
+  deduct: Meno
+  amount: Netto
+
+pt_BR:
+  page_title: Extrato
+  page_icon: 'ph:bold/file-text'
+  line: Linha
+  gross: Bruto
+  deduct: Menos
+  amount: Líquido
+
+tr:
+  page_title: Açıklama
+  page_icon: 'ph:bold/file-text'
+  line: Satır
+  gross: Brüt
+  deduct: Azalt
+  amount: Net
+
+vi:
+  page_title: 'Báo cáo'
+  page_icon: 'ph:bold/file-text'
+  line: Dòng
+  gross: 'Tổng cộng'
+  deduct: 'Giảm trừ'
+  amount: 'Số tiền ròng'
+
+id:
+  page_title: Pernyataan
+  page_icon: 'ph:bold/file-text'
+  line: Baris
+  gross: Bruto
+  deduct: Kurang
+  amount: Bersih
+
+nl:
+  page_title: Overzicht
+  page_icon: 'ph:bold/file-text'
+  line: Regel
+  gross: Bruto
+  deduct: Min
+  amount: Netto

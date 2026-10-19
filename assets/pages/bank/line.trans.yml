@@ -114,3 +114,783 @@ zh:
     pending: 待检查
     validated: 已检查
     excluded: 已移除
+
+ar:
+  page_title: 'خط البنك'
+  page_icon: 'ph:bold/bank'
+  account: الحساب
+  organization: المنظمة
+  assign:
+    title: 'لمن هذه السطر'
+    submit: 'أشر إلى هناك'
+  date: التاريخ
+  counterparty: 'من أو إلى'
+  reference: المرجع
+  amount: المبلغ
+  left: 'متبقي لشرحه'
+  explained: 'ما يفسره'
+  nothing_yet: 'لا شيء بعد.'
+  transfer_with: 'نقل مع %account%:'
+  to_account: 'الحساب %account%'
+  remove: إزالة
+  confirm_remove: 'تمت إزالة الدفع، وتم عكس إدخاله. هل تتابع؟'
+  unlink: 'فصل التحويل'
+  proposals: 'ما يقترحه المطابقون'
+  confidence: '%confidence% %'
+  apply: قبول
+  by_hand: يدويًا
+  invoice: 'وثيقة يتم دفعها'
+  invoice_amount: 'ما يتم دفعه منها، بعملة الوثيقة'
+  invoice_amount_help: 'فقط لوثيقة بعملة أخرى'
+  or_account: 'أو حساب'
+  account_label: التسمية
+  vat_rate: 'ضريبة القيمة المضافة (نقاط أساس)'
+  allocate_amount: المبلغ
+  all_left: 'كل ما تبقى'
+  allocate: تسجيل
+  link: 'إنها النصف الآخر من هذا التحويل'
+  allocation:
+    pending: للتأكد
+    validated: 'تم التحقق'
+    excluded: 'تمت إزالته'
+
+hi:
+  page_title: 'बैंक लाइन'
+  page_icon: 'ph:bold/bank'
+  account: खाता
+  organization: संस्थान
+  assign:
+    title: 'किसकी लाइन'
+    submit: 'वहाँ इंगित करें'
+  date: तारीख
+  counterparty: 'से या तक'
+  reference: संदर्भ
+  amount: राशि
+  left: 'समझाने के लिए बचा है'
+  explained: 'क्या इसे समझाता है'
+  nothing_yet: 'अभी कुछ नहीं।'
+  transfer_with: 'इसके साथ ट्रांसफर %account%:'
+  to_account: 'खाता %account%'
+  remove: हटाएँ
+  confirm_remove: 'भुगतान हटा दिया गया है, और इसका प्रविष्टि उलट दिया गया है। आगे बढ़ें?'
+  unlink: 'हटाएं ट्रांसफर'
+  proposals: 'मैच करने वालों के प्रस्ताव'
+  confidence: '%confidence% %'
+  apply: 'स्वीकृत करें'
+  by_hand: 'हाथ से'
+  invoice: 'एक दस्तावेज़ जिसका भुगतान होता है'
+  invoice_amount: 'इसका भुगतान क्या है, दस्तावेज़ की मुद्रा में'
+  invoice_amount_help: 'केवल किसी अन्य मुद्रा में दस्तावेज़ के लिए'
+  or_account: 'या एक खाता'
+  account_label: लेबल
+  vat_rate: 'वैट (आधार अंक)'
+  allocate_amount: राशि
+  all_left: 'सभी जो बचा है'
+  allocate: 'रिकॉर्ड करें'
+  link: 'यह इस ट्रांसफर का दूसरा आधा है'
+  allocation:
+    pending: 'जांच करने के लिए'
+    validated: 'जांच किया गया'
+    excluded: 'हटा दिया गया'
+
+he:
+  page_title: 'קו בנק'
+  page_icon: 'ph:bold/bank'
+  account: חשבון
+  organization: ארגון
+  assign:
+    title: 'של מי הקו'
+    submit: 'הצב שם'
+  date: תאריך
+  counterparty: 'מנגד או ל'
+  reference: הפניה
+  amount: סכום
+  left: 'נותר להסביר'
+  explained: 'מה מסביר את זה'
+  nothing_yet: 'עדיין כלום.'
+  transfer_with: 'העברה עם %account%:'
+  to_account: 'חשבון %account%'
+  remove: הסרה
+  confirm_remove: 'התשלום הוסר, והכניסה שלו בוטלה. להמשיך?'
+  unlink: 'לנתק את ההעברה'
+  proposals: 'מה שהמתאימים מציעים'
+  confidence: '%confidence% %'
+  apply: אשר
+  by_hand: ביד
+  invoice: 'מסמך שהוא משלם'
+  invoice_amount: 'מה שהוא משלם ממנו, במטבע המסמך'
+  invoice_amount_help: 'רק למסמך במטבע אחר'
+  or_account: 'או חשבון'
+  account_label: תווית
+  vat_rate: 'מע"מ (נקודות בסיס)'
+  allocate_amount: סכום
+  all_left: 'כל מה שנשאר'
+  allocate: רשום
+  link: 'זה החצי השני של ההעברה הזו'
+  allocation:
+    pending: לבדוק
+    validated: נבדק
+    excluded: הוסר
+
+fa:
+  page_title: 'خط بانکی'
+  page_icon: 'ph:bold/bank'
+  account: حساب
+  organization: سازمان
+  assign:
+    title: 'خط کیست'
+    submit: 'به آنجا اشاره کن'
+  date: تاریخ
+  counterparty: 'از یا به'
+  reference: مرجع
+  amount: مقدار
+  left: 'چیزی برای توضیح باقی مانده'
+  explained: 'چه چیزی آن را توضیح می‌دهد'
+  nothing_yet: 'هنوز هیچ چیزی نیست.'
+  transfer_with: 'انتقال با %account%:'
+  to_account: 'حساب %account%'
+  remove: حذف
+  confirm_remove: 'پرداخت حذف شد و ورودی آن معکوس گردید. ادامه دهیم؟'
+  unlink: 'انتقال را unlink کن'
+  proposals: 'پیشنهادات تطابق‌دهندگان'
+  confidence: '%confidence% %'
+  apply: پذیرفتن
+  by_hand: 'به صورت دستی'
+  invoice: 'مدرکی که پرداخت می‌شود'
+  invoice_amount: 'مقدار پرداختی در ارز مدرک'
+  invoice_amount_help: 'فقط برای مدرکی در ارز دیگر'
+  or_account: 'یا یک حساب'
+  account_label: برچسب
+  vat_rate: 'مالیات بر ارزش افزوده (نقاط اساسی)'
+  allocate_amount: مقدار
+  all_left: 'تمام آنچه باقی مانده'
+  allocate: ضبط
+  link: 'این نیمه دیگر این انتقال است'
+  allocation:
+    pending: 'برای بررسی'
+    validated: 'بررسی شده'
+    excluded: 'حذف شده'
+
+ur:
+  page_title: 'بینک لائن'
+  page_icon: 'ph:bold/bank'
+  account: اکاؤنٹ
+  organization: تنظیم
+  assign:
+    title: 'کون سی لائن'
+    submit: 'وہاں اشارہ کریں'
+  date: تاریخ
+  counterparty: 'سے یا کے لیے'
+  reference: حوالہ
+  amount: رقم
+  left: 'وضاحت کے لیے باقی'
+  explained: 'کیا وضاحت کرتا ہے'
+  nothing_yet: 'ابھی کچھ نہیں۔'
+  transfer_with: 'منتقل کریں %account% کے ساتھ:'
+  to_account: 'اکاؤنٹ %account%'
+  remove: ہٹائیں
+  confirm_remove: 'ادائیگی ہٹا دی گئی ہے، اور اس کا اندراج واپس کر دیا گیا ہے۔ کیا آگے بڑھیں؟'
+  unlink: 'منتقلی کو منسلک نہ کریں'
+  proposals: 'ملاپ کرنے والوں کی تجویزیں'
+  confidence: '%confidence% %'
+  apply: 'قبول کریں'
+  by_hand: 'ہاتھ سے'
+  invoice: 'یہ ایک دستاویز ہے جس کی ادائیگی کی جاتی ہے'
+  invoice_amount: 'یہ اس کی ادائیگی ہے، دستاویز کی کرنسی میں'
+  invoice_amount_help: 'صرف کسی دوسری کرنسی میں دستاویز کے لیے'
+  or_account: 'یا ایک اکاؤنٹ'
+  account_label: لیبل
+  vat_rate: 'ویٹ (بنیادی پوائنٹس)'
+  allocate_amount: رقم
+  all_left: 'جو باقی ہے'
+  allocate: 'ریکارڈ کریں'
+  link: 'یہ اس منتقلی کا دوسرا نصف ہے'
+  allocation:
+    pending: 'چیک کرنے کے لیے'
+    validated: 'چیک کیا گیا'
+    excluded: 'ہٹا دیا گیا'
+
+ja:
+  page_title: 銀行ライン
+  page_icon: 'ph:bold/bank'
+  account: アカウント
+  organization: 組織
+  assign:
+    title: 誰のライン
+    submit: そこに指摘する
+  date: 日付
+  counterparty: 送金先または送金元
+  reference: 参照
+  amount: 金額
+  left: 説明が残っている
+  explained: 何がそれを説明するか
+  nothing_yet: まだ何もありません。
+  transfer_with: '転送先 %account%：'
+  to_account: 'アカウント %account%'
+  remove: 削除
+  confirm_remove: 支払いが削除され、そのエントリーが逆転しました。続けますか？
+  unlink: 転送のリンクを解除する
+  proposals: マッチャーが提案する内容
+  confidence: '%confidence% %'
+  apply: 受け入れる
+  by_hand: 手動で
+  invoice: 支払う文書
+  invoice_amount: 文書の通貨で支払う金額
+  invoice_amount_help: 他の通貨の文書にのみ適用
+  or_account: またはアカウント
+  account_label: ラベル
+  vat_rate: VAT（ベーシスポイント）
+  allocate_amount: 金額
+  all_left: 残っているすべて
+  allocate: 記録する
+  link: これはこの転送のもう一方の半分です
+  allocation:
+    pending: 確認中
+    validated: 確認済み
+    excluded: 削除されました
+
+ko:
+  page_title: '은행 거래'
+  page_icon: 'ph:bold/bank'
+  account: 계좌
+  organization: 조직
+  assign:
+    title: '누구의 거래'
+    submit: '거기로 지정하기'
+  date: 날짜
+  counterparty: '보내는 사람 또는 받는 사람'
+  reference: 참조
+  amount: 금액
+  left: '설명할 잔여'
+  explained: '무엇을 설명하는지'
+  nothing_yet: '아직 아무것도 없음.'
+  transfer_with: '전송 %account%으로:'
+  to_account: '계좌 %account%'
+  remove: 제거
+  confirm_remove: '지불이 제거되고 그 항목이 취소됩니다. 계속하시겠습니까?'
+  unlink: '전송 연결 끊기'
+  proposals: '매칭된 제안'
+  confidence: '%confidence% %'
+  apply: 수락
+  by_hand: 수동으로
+  invoice: '지불할 문서'
+  invoice_amount: '문서 통화로 지불하는 금액'
+  invoice_amount_help: '다른 통화의 문서에만 해당'
+  or_account: '또는 계좌'
+  account_label: 라벨
+  vat_rate: '부가세 (기준 포인트)'
+  allocate_amount: 금액
+  all_left: '남은 모든 것'
+  allocate: 기록
+  link: '이 전송의 또 다른 절반입니다'
+  allocation:
+    pending: '확인 중'
+    validated: 확인됨
+    excluded: 제거됨
+
+bn:
+  page_title: 'ব্যাংক লাইন'
+  page_icon: 'ph:bold/bank'
+  account: অ্যাকাউন্ট
+  organization: সংগঠন
+  assign:
+    title: 'কার লাইন'
+    submit: 'এখানে নির্দেশ দিন'
+  date: তারিখ
+  counterparty: 'থেকে বা উদ্দেশ্যে'
+  reference: রেফারেন্স
+  amount: পরিমাণ
+  left: 'ব্যাখ্যা করার জন্য বাকি'
+  explained: 'এটি কী ব্যাখ্যা করে'
+  nothing_yet: 'এখনো কিছুই নেই।'
+  transfer_with: 'এই সঙ্গে স্থানান্তর করুন %account%:'
+  to_account: 'অ্যাকাউন্ট %account%'
+  remove: 'অপসারণ করুন'
+  confirm_remove: 'পেমেন্টটি অপসারিত হয়েছে এবং এর এন্ট্রি উল্টানো হয়েছে। এগিয়ে যাবেন?'
+  unlink: 'স্থানান্তরটি আনলিঙ্ক করুন'
+  proposals: 'ম্যাচাররা কী প্রস্তাব করে'
+  confidence: '%confidence% %'
+  apply: 'গ্রহণ করুন'
+  by_hand: হাতে
+  invoice: 'একটি নথি যা এটি পরিশোধ করে'
+  invoice_amount: 'এতে এটি কী পরিশোধ করে, নথির মুদ্রায়'
+  invoice_amount_help: 'অন্য মুদ্রায় একটি নথির জন্যই'
+  or_account: 'অথবা একটি অ্যাকাউন্ট'
+  account_label: লেবেল
+  vat_rate: 'ভ্যাট (বেস পয়েন্ট)'
+  allocate_amount: পরিমাণ
+  all_left: 'বাকি সবকিছু'
+  allocate: 'নথিভুক্ত করুন'
+  link: 'এটি এই স্থানান্তরের অপর অর্ধেক'
+  allocation:
+    pending: 'যাচাই করতে'
+    validated: 'যাচাই করা হয়েছে'
+    excluded: অপসারিত
+
+th:
+  page_title: สายธนาคาร
+  page_icon: 'ph:bold/bank'
+  account: บัญชี
+  organization: องค์กร
+  assign:
+    title: สายของใคร
+    submit: ชี้ไปที่นั่น
+  date: วันที่
+  counterparty: จากหรือถึง
+  reference: เอกสารอ้างอิง
+  amount: จำนวนเงิน
+  left: เหลือที่จะอธิบาย
+  explained: สิ่งที่อธิบายมัน
+  nothing_yet: ยังไม่มีอะไรเลย
+  transfer_with: 'โอนพร้อมกับ %account%:'
+  to_account: 'บัญชี %account%'
+  remove: ลบ
+  confirm_remove: 'การชำระเงินถูกลบออก และรายการของมันถูกย้อนกลับ ต้องการดำเนินการต่อหรือไม่?'
+  unlink: ยกเลิกการเชื่อมโยงการโอน
+  proposals: สิ่งที่ผู้จับคู่เสนอ
+  confidence: '%confidence% %'
+  apply: ยอมรับ
+  by_hand: ด้วยมือ
+  invoice: เอกสารที่ต้องชำระ
+  invoice_amount: จำนวนเงินที่ชำระในสกุลเงินของเอกสาร
+  invoice_amount_help: เฉพาะสำหรับเอกสารในสกุลเงินอื่น
+  or_account: หรือบัญชี
+  account_label: ป้ายชื่อ
+  vat_rate: 'VAT (จุดฐาน)'
+  allocate_amount: จำนวนเงิน
+  all_left: ทั้งหมดที่เหลืออยู่
+  allocate: บันทึก
+  link: นี่คืออีกครึ่งหนึ่งของการโอนนี้
+  allocation:
+    pending: กำลังตรวจสอบ
+    validated: ตรวจสอบแล้ว
+    excluded: ถูกลบออก
+
+de:
+  page_title: Banklinie
+  page_icon: 'ph:bold/bank'
+  account: Konto
+  organization: Organisation
+  assign:
+    title: 'Wessen Linie'
+    submit: 'Dorthin zeigen'
+  date: Datum
+  counterparty: 'Von oder zu'
+  reference: Referenz
+  amount: Betrag
+  left: 'Übrig zur Erklärung'
+  explained: 'Was es erklärt'
+  nothing_yet: 'Noch nichts.'
+  transfer_with: 'Überweisung mit %account%:'
+  to_account: 'Konto %account%'
+  remove: Entfernen
+  confirm_remove: 'Die Zahlung wird entfernt und der Eintrag rückgängig gemacht. Fortfahren?'
+  unlink: 'Überweisung entkoppeln'
+  proposals: 'Was die Abgleichenden vorschlagen'
+  confidence: '%confidence% %'
+  apply: Akzeptieren
+  by_hand: 'Von Hand'
+  invoice: 'Ein Dokument, das bezahlt wird'
+  invoice_amount: 'Was es davon in der Währung des Dokuments bezahlt'
+  invoice_amount_help: 'Nur für ein Dokument in einer anderen Währung'
+  or_account: 'Oder ein Konto'
+  account_label: Bezeichnung
+  vat_rate: 'MwSt. (Basispunkte)'
+  allocate_amount: Betrag
+  all_left: 'Alles, was übrig ist'
+  allocate: Aufzeichnen
+  link: 'Es ist die andere Hälfte dieser Überweisung'
+  allocation:
+    pending: 'zu überprüfen'
+    validated: überprüft
+    excluded: entfernt
+
+fi:
+  page_title: Pankkilinja
+  page_icon: 'ph:bold/bank'
+  account: Tili
+  organization: Organisaatio
+  assign:
+    title: 'Kenen linja'
+    submit: 'Osota sinne'
+  date: Päivämäärä
+  counterparty: 'Mistä tai mihin'
+  reference: Viite
+  amount: Summa
+  left: 'Jäljellä selitettävää'
+  explained: 'Mikä sen selittää'
+  nothing_yet: 'Ei vielä mitään.'
+  transfer_with: 'Siirto %account%:'
+  to_account: 'Tili %account%'
+  remove: Poista
+  confirm_remove: 'Maksu poistetaan, ja sen merkintä kumotaan. Jatketaanko?'
+  unlink: 'Poista siirron linkki'
+  proposals: 'Mitä ehdottajat ehdottavat'
+  confidence: '%confidence% %'
+  apply: Hyväksy
+  by_hand: Käsin
+  invoice: 'Maksettava asiakirja'
+  invoice_amount: 'Mikä siitä maksetaan, asiakirjan valuutassa'
+  invoice_amount_help: 'Vain asiakirjalle, jossa on toinen valuutta'
+  or_account: 'Tai tili'
+  account_label: Tunnus
+  vat_rate: 'ALV (peruspisteet)'
+  allocate_amount: Summa
+  all_left: 'Kaikki jäljellä oleva'
+  allocate: Kirjaa
+  link: 'Se on tämän siirron toinen puoli'
+  allocation:
+    pending: tarkistettavana
+    validated: tarkistettu
+    excluded: poistettu
+
+ru:
+  page_title: 'Банковская линия'
+  page_icon: 'ph:bold/bank'
+  account: Счет
+  organization: Организация
+  assign:
+    title: 'Чья линия'
+    submit: 'Указать туда'
+  date: Дата
+  counterparty: 'Откуда или куда'
+  reference: Ссылка
+  amount: Сумма
+  left: 'Осталось объяснить'
+  explained: 'Что это объясняет'
+  nothing_yet: 'Пока ничего.'
+  transfer_with: 'Перевод с %account%:'
+  to_account: 'Счет %account%'
+  remove: Удалить
+  confirm_remove: 'Платеж удален, и его запись отменена. Продолжить?'
+  unlink: 'Отвязать перевод'
+  proposals: 'Что предлагают сопоставители'
+  confidence: '%confidence% %'
+  apply: Принять
+  by_hand: Вручную
+  invoice: 'Документ, который оплачивается'
+  invoice_amount: 'Сумма, которая оплачивается по документу, в валюте документа'
+  invoice_amount_help: 'Только для документа в другой валюте'
+  or_account: 'Или счет'
+  account_label: Метка
+  vat_rate: 'НДС (базисные пункты)'
+  allocate_amount: Сумма
+  all_left: 'Все, что осталось'
+  allocate: Записать
+  link: 'Это другая половина этого перевода'
+  allocation:
+    pending: 'на проверку'
+    validated: проверено
+    excluded: удалено
+
+pl:
+  page_title: 'Linia bankowa'
+  page_icon: 'ph:bold/bank'
+  account: Konto
+  organization: Organizacja
+  assign:
+    title: 'Czyja linia'
+    submit: 'Wskaź to tam'
+  date: Data
+  counterparty: 'Od lub do'
+  reference: Referencja
+  amount: Kwota
+  left: 'Pozostało do wyjaśnienia'
+  explained: 'Co to wyjaśnia'
+  nothing_yet: 'Nic jeszcze.'
+  transfer_with: 'Przelew z %account%:'
+  to_account: 'Konto %account%'
+  remove: Usuń
+  confirm_remove: 'Płatność została usunięta, a jej wpis odwrócony. Kontynuować?'
+  unlink: 'Odłącz przelew'
+  proposals: 'Co proponują dopasowujący'
+  confidence: '%confidence% %'
+  apply: Akceptuj
+  by_hand: Ręcznie
+  invoice: 'Dokument, który opłaca'
+  invoice_amount: 'Kwota, którą opłaca w walucie dokumentu'
+  invoice_amount_help: 'Tylko dla dokumentu w innej walucie'
+  or_account: 'Lub konto'
+  account_label: Etykieta
+  vat_rate: 'VAT (punkty bazowe)'
+  allocate_amount: Kwota
+  all_left: 'Wszystko, co pozostało'
+  allocate: Zapisz
+  link: 'To jest druga połowa tego przelewu'
+  allocation:
+    pending: 'do sprawdzenia'
+    validated: sprawdzone
+    excluded: usunięte
+
+es:
+  page_title: 'Línea bancaria'
+  page_icon: 'ph:bold/bank'
+  account: Cuenta
+  organization: Organización
+  assign:
+    title: '¿De quién es la línea?'
+    submit: 'Apúntalo allí'
+  date: Fecha
+  counterparty: 'De o a'
+  reference: Referencia
+  amount: Monto
+  left: 'Queda por explicar'
+  explained: 'Lo que lo explica'
+  nothing_yet: 'Nada aún.'
+  transfer_with: 'Transferir con %account%:'
+  to_account: 'Cuenta %account%'
+  remove: Eliminar
+  confirm_remove: 'El pago se elimina y su entrada se revierte. ¿Continuar?'
+  unlink: 'Desvincular la transferencia'
+  proposals: 'Lo que proponen los emparejadores'
+  confidence: '%confidence% %'
+  apply: Aceptar
+  by_hand: 'A mano'
+  invoice: 'Un documento que paga'
+  invoice_amount: 'Lo que paga de él, en la moneda del documento'
+  invoice_amount_help: 'Solo para un documento en otra moneda'
+  or_account: 'O una cuenta'
+  account_label: Etiqueta
+  vat_rate: 'IVA (puntos básicos)'
+  allocate_amount: Monto
+  all_left: 'Todo lo que queda'
+  allocate: Registrar
+  link: 'Es la otra mitad de esta transferencia'
+  allocation:
+    pending: 'por verificar'
+    validated: verificado
+    excluded: eliminado
+
+it:
+  page_title: 'Linea bancaria'
+  page_icon: 'ph:bold/bank'
+  account: Conto
+  organization: Organizzazione
+  assign:
+    title: 'Di chi è la linea'
+    submit: 'Indicalo lì'
+  date: Data
+  counterparty: 'Da o a'
+  reference: Riferimento
+  amount: Importo
+  left: 'Rimasto da spiegare'
+  explained: 'Cosa lo spiega'
+  nothing_yet: 'Niente ancora.'
+  transfer_with: 'Trasferisci con %account%:'
+  to_account: 'Conto %account%'
+  remove: Rimuovi
+  confirm_remove: 'Il pagamento è rimosso e la sua voce è annullata. Continuare?'
+  unlink: 'Scollega il trasferimento'
+  proposals: 'Cosa propongono i correlatori'
+  confidence: '%confidence% %'
+  apply: Accetta
+  by_hand: 'A mano'
+  invoice: 'Un documento che paga'
+  invoice_amount: 'Cosa paga di esso, nella valuta del documento'
+  invoice_amount_help: "Solo per un documento in un'altra valuta"
+  or_account: 'O un conto'
+  account_label: Etichetta
+  vat_rate: 'IVA (punti base)'
+  allocate_amount: Importo
+  all_left: 'Tutto ciò che è rimasto'
+  allocate: Registra
+  link: "È l'altra metà di questo trasferimento"
+  allocation:
+    pending: 'da controllare'
+    validated: verificato
+    excluded: rimossa
+
+pt_BR:
+  page_title: 'Linha bancária'
+  page_icon: 'ph:bold/bank'
+  account: Conta
+  organization: Organização
+  assign:
+    title: 'De quem é a linha'
+    submit: 'Aponte para lá'
+  date: Data
+  counterparty: 'De ou para'
+  reference: Referência
+  amount: Valor
+  left: 'Falta explicar'
+  explained: 'O que explica isso'
+  nothing_yet: 'Nada ainda.'
+  transfer_with: 'Transferir com %account%:'
+  to_account: 'Conta %account%'
+  remove: Remover
+  confirm_remove: 'O pagamento foi removido e sua entrada revertida. Prosseguir?'
+  unlink: 'Desvincular a transferência'
+  proposals: 'O que os correspondentes propõem'
+  confidence: '%confidence% %'
+  apply: Aceitar
+  by_hand: 'À mão'
+  invoice: 'Um documento que paga'
+  invoice_amount: 'O que ele paga, na moeda do documento'
+  invoice_amount_help: 'Apenas para um documento em outra moeda'
+  or_account: 'Ou uma conta'
+  account_label: Rótulo
+  vat_rate: 'IVA (pontos base)'
+  allocate_amount: Valor
+  all_left: 'Tudo que resta'
+  allocate: Registrar
+  link: 'É a outra metade desta transferência'
+  allocation:
+    pending: 'para verificar'
+    validated: verificado
+    excluded: removido
+
+tr:
+  page_title: 'Banka hattı'
+  page_icon: 'ph:bold/bank'
+  account: Hesap
+  organization: Organizasyon
+  assign:
+    title: 'Kimin hattı'
+    submit: 'Oraya yönlendir'
+  date: Tarih
+  counterparty: 'Kimden veya kime'
+  reference: Referans
+  amount: Tutar
+  left: 'Açıklanacak kalan'
+  explained: 'Açıklayan nedir'
+  nothing_yet: 'Henüz bir şey yok.'
+  transfer_with: 'Şu ile transfer et %account%:'
+  to_account: 'Hesap %account%'
+  remove: Kaldır
+  confirm_remove: 'Ödeme kaldırıldı ve girişi tersine çevrildi. Devam edelim mi?'
+  unlink: 'Transferi bağlantıyı kes'
+  proposals: 'Eşleştiricilerin önerileri'
+  confidence: '%confidence% %'
+  apply: 'Kabul et'
+  by_hand: Elle
+  invoice: 'Ödeme yaptığı bir belge'
+  invoice_amount: 'Belgedeki para biriminde ödediği tutar'
+  invoice_amount_help: 'Sadece başka bir para birimindeki belge için'
+  or_account: 'Ya da bir hesap'
+  account_label: Etiket
+  vat_rate: 'KDV (baz puan)'
+  allocate_amount: Tutar
+  all_left: 'Kalan her şey'
+  allocate: Kaydet
+  link: 'Bu transferin diğer yarısıdır'
+  allocation:
+    pending: 'kontrol edilecek'
+    validated: 'kontrol edildi'
+    excluded: kaldırıldı
+
+vi:
+  page_title: 'Dòng ngân hàng'
+  page_icon: 'ph:bold/bank'
+  account: 'Tài khoản'
+  organization: 'Tổ chức'
+  assign:
+    title: 'Dòng của ai'
+    submit: 'Chỉ đến đó'
+  date: Ngày
+  counterparty: 'Từ hoặc đến'
+  reference: 'Tham chiếu'
+  amount: 'Số tiền'
+  left: 'Còn lại để giải thích'
+  explained: 'Điều gì giải thích điều đó'
+  nothing_yet: 'Chưa có gì.'
+  transfer_with: 'Chuyển khoản với %account%:'
+  to_account: 'Tài khoản %account%'
+  remove: Xóa
+  confirm_remove: 'Thanh toán đã bị xóa và mục của nó đã bị đảo ngược. Tiếp tục không?'
+  unlink: 'Bỏ liên kết chuyển khoản'
+  proposals: 'Những gì người khớp đề xuất'
+  confidence: '%confidence% %'
+  apply: 'Chấp nhận'
+  by_hand: 'Bằng tay'
+  invoice: 'Một tài liệu thanh toán'
+  invoice_amount: 'Số tiền thanh toán trong tiền tệ của tài liệu'
+  invoice_amount_help: 'Chỉ dành cho tài liệu bằng tiền tệ khác'
+  or_account: 'Hoặc một tài khoản'
+  account_label: Nhãn
+  vat_rate: 'VAT (điểm cơ sở)'
+  allocate_amount: 'Số tiền'
+  all_left: 'Tất cả những gì còn lại'
+  allocate: 'Ghi lại'
+  link: 'Đây là nửa kia của chuyển khoản này'
+  allocation:
+    pending: 'để kiểm tra'
+    validated: 'đã được kiểm tra'
+    excluded: 'đã bị xóa'
+
+id:
+  page_title: 'Garis Bank'
+  page_icon: 'ph:bold/bank'
+  account: Akun
+  organization: Organisasi
+  assign:
+    title: 'Siapa yang punya garis'
+    submit: 'Arahkan ke sana'
+  date: Tanggal
+  counterparty: 'Dari atau ke'
+  reference: Referensi
+  amount: Jumlah
+  left: 'Sisa untuk dijelaskan'
+  explained: 'Apa yang menjelaskannya'
+  nothing_yet: 'Belum ada.'
+  transfer_with: 'Transfer dengan %account%:'
+  to_account: 'Akun %account%'
+  remove: Hapus
+  confirm_remove: 'Pembayaran dihapus, dan entri-nya dibatalkan. Lanjutkan?'
+  unlink: 'Hapus tautan transfer'
+  proposals: 'Apa yang diusulkan oleh pencocok'
+  confidence: '%confidence% %'
+  apply: Terima
+  by_hand: 'Secara manual'
+  invoice: 'Dokumen yang dibayar'
+  invoice_amount: 'Jumlah yang dibayarkan, dalam mata uang dokumen'
+  invoice_amount_help: 'Hanya untuk dokumen dalam mata uang lain'
+  or_account: 'Atau akun'
+  account_label: Label
+  vat_rate: 'PPN (basis poin)'
+  allocate_amount: Jumlah
+  all_left: 'Semua yang tersisa'
+  allocate: Catat
+  link: 'Ini adalah setengah lainnya dari transfer ini'
+  allocation:
+    pending: 'untuk diperiksa'
+    validated: diperiksa
+    excluded: dihapus
+
+nl:
+  page_title: Banklijn
+  page_icon: 'ph:bold/bank'
+  account: Rekening
+  organization: Organisatie
+  assign:
+    title: 'Wiens lijn'
+    submit: 'Wijs het daarheen'
+  date: Datum
+  counterparty: 'Van of naar'
+  reference: Referentie
+  amount: Bedrag
+  left: 'Over om uit te leggen'
+  explained: 'Wat het verklaart'
+  nothing_yet: 'Nog niets.'
+  transfer_with: 'Overdracht met %account%:'
+  to_account: 'Rekening %account%'
+  remove: Verwijderen
+  confirm_remove: 'De betaling is verwijderd en de invoer is omgekeerd. Doorgaan?'
+  unlink: 'Koppel de overdracht los'
+  proposals: 'Wat de matchers voorstellen'
+  confidence: '%confidence% %'
+  apply: Accepteren
+  by_hand: 'Met de hand'
+  invoice: 'Een document dat het betaalt'
+  invoice_amount: 'Wat het betaalt in de valuta van het document'
+  invoice_amount_help: 'Alleen voor een document in een andere valuta'
+  or_account: 'Of een rekening'
+  account_label: Label
+  vat_rate: 'BTW (basispunten)'
+  allocate_amount: Bedrag
+  all_left: 'Alles wat over is'
+  allocate: Registreren
+  link: 'Het is de andere helft van deze overdracht'
+  allocation:
+    pending: 'te controleren'
+    validated: gecontroleerd
+    excluded: verwijderd

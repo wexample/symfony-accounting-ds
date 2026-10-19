@@ -30,3 +30,223 @@ zh:
     vat: 增值税
     reverse_charge: 反向收费
     net: 净值
+
+ar:
+  new: 'سطر جديد…'
+  column:
+    title: السطر
+    description: الوصف
+    quantity: الكمية
+    unit_price: 'سعر الوحدة، صافي'
+    vat: 'ضريبة القيمة المضافة'
+    reverse_charge: 'التحويل العكسي'
+    net: صافي
+
+hi:
+  new: 'एक नई पंक्ति…'
+  column:
+    title: पंक्ति
+    description: विवरण
+    quantity: मात्रा
+    unit_price: 'यूनिट मूल्य, नेट'
+    vat: वैट
+    reverse_charge: 'रिवर्स चार्ज'
+    net: नेट
+
+he:
+  new: 'שורה חדשה…'
+  column:
+    title: שורה
+    description: תיאור
+    quantity: כמות
+    unit_price: 'מחיר יחידה, נטו'
+    vat: 'מע"מ'
+    reverse_charge: 'העברת חיוב'
+    net: נטו
+
+fa:
+  new: 'یک خط جدید…'
+  column:
+    title: خط
+    description: توضیحات
+    quantity: مقدار
+    unit_price: 'قیمت واحد، خالص'
+    vat: 'مالیات بر ارزش افزوده'
+    reverse_charge: 'مالیات معکوس'
+    net: خالص
+
+ur:
+  new: 'نیا لائن…'
+  column:
+    title: لائن
+    description: تفصیل
+    quantity: مقدار
+    unit_price: 'یونٹ قیمت، خالص'
+    vat: 'ویلیو ایڈڈ ٹیکس'
+    reverse_charge: 'ریورس چارج'
+    net: خالص
+
+ja:
+  new: 新しい行…
+  column:
+    title: 行
+    description: 説明
+    quantity: 数量
+    unit_price: 単価（税抜）
+    vat: 消費税
+    reverse_charge: 逆課税
+    net: ネット
+
+ko:
+  new: '새로운 줄…'
+  column:
+    title: 행
+    description: 설명
+    quantity: 수량
+    unit_price: '단가, 순'
+    vat: 부가세
+    reverse_charge: 역청구
+    net: 순
+
+bn:
+  new: 'একটি নতুন লাইন…'
+  column:
+    title: লাইন
+    description: বিবরণ
+    quantity: পরিমাণ
+    unit_price: 'ইউনিট মূল্য, নিট'
+    vat: ভ্যাট
+    reverse_charge: 'রিভার্স চার্জ'
+    net: নিট
+
+th:
+  new: บรรทัดใหม่…
+  column:
+    title: บรรทัด
+    description: คำอธิบาย
+    quantity: จำนวน
+    unit_price: 'ราคาต่อหน่วย, สุทธิ'
+    vat: ภาษีมูลค่าเพิ่ม
+    reverse_charge: ชาร์จย้อนกลับ
+    net: สุทธิ
+
+de:
+  new: 'Eine neue Zeile…'
+  column:
+    title: Zeile
+    description: Beschreibung
+    quantity: Menge
+    unit_price: 'Einheitspreis, netto'
+    vat: USt.
+    reverse_charge: 'Reverse Charge'
+    net: Netto
+
+fi:
+  new: 'Uusi rivi…'
+  column:
+    title: Rivi
+    description: Kuvaus
+    quantity: Määrä
+    unit_price: 'Yksikköhinta, netto'
+    vat: ALV
+    reverse_charge: 'Käänteinen verovelvollisuus'
+    net: Netto
+
+ru:
+  new: 'Новая строка…'
+  column:
+    title: Строка
+    description: Описание
+    quantity: Количество
+    unit_price: 'Цена за единицу, нетто'
+    vat: НДС
+    reverse_charge: 'Обратный налог'
+    net: Нетто
+
+pl:
+  new: 'Nowa linia…'
+  column:
+    title: Linia
+    description: Opis
+    quantity: Ilość
+    unit_price: 'Cena jednostkowa, netto'
+    vat: VAT
+    reverse_charge: 'Odwrócony VAT'
+    net: Netto
+
+es:
+  new: 'Una nueva línea…'
+  column:
+    title: Línea
+    description: Descripción
+    quantity: Cantidad
+    unit_price: 'Precio unitario, neto'
+    vat: IVA
+    reverse_charge: 'Inversión del sujeto pasivo'
+    net: Neto
+
+it:
+  new: 'Una nuova riga…'
+  column:
+    title: Riga
+    description: Descrizione
+    quantity: Quantità
+    unit_price: 'Prezzo unitario, netto'
+    vat: IVA
+    reverse_charge: 'Inversione contabile'
+    net: Netto
+
+pt_BR:
+  new: 'Uma nova linha…'
+  column:
+    title: Linha
+    description: Descrição
+    quantity: Quantidade
+    unit_price: 'Preço unitário, líquido'
+    vat: IVA
+    reverse_charge: 'Cobranca reversa'
+    net: Líquido
+
+tr:
+  new: 'Yeni bir satır…'
+  column:
+    title: Satır
+    description: Açıklama
+    quantity: Miktar
+    unit_price: 'Birim fiyat, net'
+    vat: KDV
+    reverse_charge: 'Ters vergi'
+    net: Net
+
+vi:
+  new: 'Một dòng mới…'
+  column:
+    title: Dòng
+    description: 'Mô tả'
+    quantity: 'Số lượng'
+    unit_price: 'Giá đơn vị, chưa bao gồm thuế'
+    vat: 'Thuế giá trị gia tăng'
+    reverse_charge: 'Chuyển giao ngược'
+    net: Ròng
+
+id:
+  new: Baru…
+  column:
+    title: Baris
+    description: Deskripsi
+    quantity: Kuantitas
+    unit_price: 'Harga satuan, bersih'
+    vat: PPN
+    reverse_charge: 'Pajak terbalik'
+    net: Bersih
+
+nl:
+  new: 'Een nieuwe regel…'
+  column:
+    title: Regel
+    description: Beschrijving
+    quantity: Aantal
+    unit_price: 'Eenheidsprijs, netto'
+    vat: BTW
+    reverse_charge: 'Verlegd belasting'
+    net: Netto

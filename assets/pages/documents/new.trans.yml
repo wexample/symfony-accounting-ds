@@ -42,3 +42,303 @@ zh:
     bill_purchase:
       title: 供应商发票
       help: 供应商发送给你的，记录以便支付和记账。
+
+ar:
+  page_title: 'وثيقة جديدة'
+  page_icon: 'ph:bold/file-plus'
+  create: ابدأ
+  start:
+    bill_sale:
+      title: فاتورة
+      help: 'ترسل إلى العميل، وتكون مرقمة عند إصدارها.'
+    quotation_sale:
+      title: 'عرض سعر'
+      help: 'لا تستحق أبداً؛ تُفوتر عند القبول.'
+    bill_purchase:
+      title: 'فاتورة المورد'
+      help: 'ما أرسله لك المورد، مُدوَّن للدفع والتسجيل.'
+
+hi:
+  page_title: 'नया दस्तावेज़'
+  page_icon: 'ph:bold/file-plus'
+  create: 'शुरू करें'
+  start:
+    bill_sale:
+      title: 'एक इनवॉइस'
+      help: 'एक ग्राहक को भेजा गया, जब इसे जारी किया जाता है तो नंबरित किया जाता है।'
+    quotation_sale:
+      title: 'एक उद्धरण'
+      help: 'कभी भी देय नहीं; स्वीकृत होने पर बिल किया जाता है।'
+    bill_purchase:
+      title: 'एक आपूर्तिकर्ता इनवॉइस'
+      help: 'जो आपूर्तिकर्ता ने आपको भेजा, जिसे भुगतान और बुक करने के लिए लिखा गया है।'
+
+he:
+  page_title: 'מסמך חדש'
+  page_icon: 'ph:bold/file-plus'
+  create: 'התחל את זה'
+  start:
+    bill_sale:
+      title: חשבונית
+      help: 'נשלחת ללקוח, ממוספרת בעת הוצאתה.'
+    quotation_sale:
+      title: 'צעת מחיר'
+      help: 'לעולם לא חייבת; נחשבת לאחר קבלת אישור.'
+    bill_purchase:
+      title: 'חשבונית ספק'
+      help: 'מה שספק שלח לך, נרשם לתשלום ורישום.'
+
+fa:
+  page_title: 'مدرک جدید'
+  page_icon: 'ph:bold/file-plus'
+  create: شروع
+  start:
+    bill_sale:
+      title: فاکتور
+      help: 'به مشتری ارسال می‌شود و هنگام صدور شماره‌گذاری می‌شود.'
+    quotation_sale:
+      title: پیش‌فاکتور
+      help: 'هیچ مهلتی ندارد؛ فقط زمانی که پذیرفته شد، صورتحساب می‌شود.'
+    bill_purchase:
+      title: 'فاکتور تأمین‌کننده'
+      help: 'آنچه تأمین‌کننده برای شما ارسال کرده، برای پرداخت و ثبت نوشته شده است.'
+
+ur:
+  page_title: 'نیا دستاویز'
+  page_icon: 'ph:bold/file-plus'
+  create: 'شروع کریں'
+  start:
+    bill_sale:
+      title: 'ایک انوائس'
+      help: 'ایک گاہک کو بھیجا گیا، جاری ہونے پر نمبر لگایا جاتا ہے۔'
+    quotation_sale:
+      title: 'ایک اقتباس'
+      help: 'کبھی واجب الادا نہیں؛ قبول ہونے پر بل کیا جاتا ہے۔'
+    bill_purchase:
+      title: 'ایک سپلائر انوائس'
+      help: 'جو کچھ سپلائر نے آپ کو بھیجا، ادائیگی اور بکنگ کے لیے لکھا گیا۔'
+
+ja:
+  page_title: 新しいドキュメント
+  page_icon: 'ph:bold/file-plus'
+  create: 始める
+  start:
+    bill_sale:
+      title: 請求書
+      help: 顧客に送信され、発行時に番号が付けられます。
+    quotation_sale:
+      title: 見積もり
+      help: 期限はなく、受け入れられた時に請求されます。
+    bill_purchase:
+      title: 仕入先請求書
+      help: 仕入先から送られたもので、支払いや記帳のために書き留められています。
+
+ko:
+  page_title: '새 문서'
+  page_icon: 'ph:bold/file-plus'
+  create: 시작하기
+  start:
+    bill_sale:
+      title: 송장
+      help: '고객에게 발송되며, 발행 시 번호가 매겨집니다.'
+    quotation_sale:
+      title: 견적서
+      help: '기한이 없으며, 수락되면 청구됩니다.'
+    bill_purchase:
+      title: '공급업체 송장'
+      help: '공급업체가 보낸 것으로, 지불 및 기록을 위해 작성됩니다.'
+
+bn:
+  page_title: 'নতুন ডকুমেন্ট'
+  page_icon: 'ph:bold/file-plus'
+  create: 'শুরু করুন'
+  start:
+    bill_sale:
+      title: 'একটি চালান'
+      help: 'একটি গ্রাহকে পাঠানো হয়, যখন এটি জারি হয় তখন নম্বর দেওয়া হয়।'
+    quotation_sale:
+      title: 'একটি উদ্ধৃতি'
+      help: 'কখনো বিল হয় না; গ্রহণ করার পর একবার বিল করা হয়।'
+    bill_purchase:
+      title: 'একটি সরবরাহকারী চালান'
+      help: 'যা একটি সরবরাহকারী আপনাকে পাঠিয়েছে, যা পরিশোধ ও বুক করার জন্য লিখিত হয়েছে।'
+
+th:
+  page_title: เอกสารใหม่
+  page_icon: 'ph:bold/file-plus'
+  create: เริ่มต้น
+  start:
+    bill_sale:
+      title: ใบแจ้งหนี้
+      help: 'ส่งให้ลูกค้า หมายเลขเมื่อออกใบแจ้งหนี้แล้ว'
+    quotation_sale:
+      title: ใบเสนอราคา
+      help: 'ไม่มีวันครบกำหนด; จะเรียกเก็บเงินเมื่อได้รับการตอบรับ'
+    bill_purchase:
+      title: ใบแจ้งหนี้จากผู้จัดจำหน่าย
+      help: 'สิ่งที่ผู้จัดจำหน่ายส่งมาให้คุณ เขียนลงเพื่อชำระเงินและบันทึก'
+
+de:
+  page_title: 'Neues Dokument'
+  page_icon: 'ph:bold/file-plus'
+  create: Erstellen
+  start:
+    bill_sale:
+      title: 'Eine Rechnung'
+      help: 'An einen Kunden gesendet, nummeriert, wenn sie ausgestellt wird.'
+    quotation_sale:
+      title: 'Ein Angebot'
+      help: 'Nie fällig; in Rechnung gestellt, sobald akzeptiert.'
+    bill_purchase:
+      title: 'Eine Lieferantenrechnung'
+      help: 'Was ein Lieferant Ihnen geschickt hat, um bezahlt und gebucht zu werden.'
+
+fi:
+  page_title: 'Uusi asiakirja'
+  page_icon: 'ph:bold/file-plus'
+  create: 'Aloita se'
+  start:
+    bill_sale:
+      title: Lasku
+      help: 'Lähetetään asiakkaalle, numeroitu kun se annetaan.'
+    quotation_sale:
+      title: Tarjous
+      help: 'Ei erääntyy; laskutetaan kun se hyväksytään.'
+    bill_purchase:
+      title: 'Toimittajan lasku'
+      help: 'Mitä toimittaja lähetti sinulle, kirjattuna maksettavaksi ja varattavaksi.'
+
+ru:
+  page_title: 'Новый документ'
+  page_icon: 'ph:bold/file-plus'
+  create: Начать
+  start:
+    bill_sale:
+      title: Счет-фактура
+      help: 'Отправляется клиенту, нумеруется при выставлении.'
+    quotation_sale:
+      title: 'Коммерческое предложение'
+      help: 'Никогда не подлежит оплате; выставляется после принятия.'
+    bill_purchase:
+      title: 'Счет-фактура от поставщика'
+      help: 'То, что вам отправил поставщик, записано для оплаты и учета.'
+
+pl:
+  page_title: 'Nowy dokument'
+  page_icon: 'ph:bold/file-plus'
+  create: Rozpocznij
+  start:
+    bill_sale:
+      title: Faktura
+      help: 'Wysyłana do klienta, numerowana w momencie wystawienia.'
+    quotation_sale:
+      title: Oferta
+      help: 'Nigdy nie wymagana; fakturowana po zaakceptowaniu.'
+    bill_purchase:
+      title: 'Faktura od dostawcy'
+      help: 'To, co dostawca Ci wysłał, zapisane do zapłaty i zaksięgowania.'
+
+es:
+  page_title: 'Nuevo documento'
+  page_icon: 'ph:bold/file-plus'
+  create: Iniciar
+  start:
+    bill_sale:
+      title: 'Una factura'
+      help: 'Enviada a un cliente, numerada al emitirse.'
+    quotation_sale:
+      title: 'Una cotización'
+      help: 'Nunca vence; facturada una vez aceptada.'
+    bill_purchase:
+      title: 'Una factura de proveedor'
+      help: 'Lo que un proveedor te envió, anotado para ser pagado y contabilizado.'
+
+it:
+  page_title: 'Nuovo documento'
+  page_icon: 'ph:bold/file-plus'
+  create: Inizia
+  start:
+    bill_sale:
+      title: 'Una fattura'
+      help: "Inviata a un cliente, numerata al momento dell'emissione."
+    quotation_sale:
+      title: 'Un preventivo'
+      help: 'Mai scaduto; fatturato una volta accettato.'
+    bill_purchase:
+      title: 'Una fattura fornitore'
+      help: 'Ciò che un fornitore ti ha inviato, scritto per essere pagato e registrato.'
+
+pt_BR:
+  page_title: 'Novo documento'
+  page_icon: 'ph:bold/file-plus'
+  create: Começar
+  start:
+    bill_sale:
+      title: 'Uma fatura'
+      help: 'Enviada a um cliente, numerada quando emitida.'
+    quotation_sale:
+      title: 'Uma cotação'
+      help: 'Nunca vence; faturada uma vez aceita.'
+    bill_purchase:
+      title: 'Uma fatura de fornecedor'
+      help: 'O que um fornecedor te enviou, registrado para ser pago e contabilizado.'
+
+tr:
+  page_title: 'Yeni belge'
+  page_icon: 'ph:bold/file-plus'
+  create: Başlat
+  start:
+    bill_sale:
+      title: 'Bir fatura'
+      help: 'Bir müşteriye gönderilir, verildiğinde numaralandırılır.'
+    quotation_sale:
+      title: 'Bir teklif'
+      help: 'Asla vadesi gelmez; kabul edildiğinde faturalandırılır.'
+    bill_purchase:
+      title: 'Bir tedarikçi faturası'
+      help: 'Bir tedarikçinin size gönderdiği, ödenecek ve kaydedilecek şekilde yazılmıştır.'
+
+vi:
+  page_title: 'Tài liệu mới'
+  page_icon: 'ph:bold/file-plus'
+  create: 'Bắt đầu'
+  start:
+    bill_sale:
+      title: 'Hóa đơn'
+      help: 'Gửi cho khách hàng, được đánh số khi phát hành.'
+    quotation_sale:
+      title: 'Báo giá'
+      help: 'Không bao giờ đến hạn; được lập hóa đơn khi được chấp nhận.'
+    bill_purchase:
+      title: 'Hóa đơn nhà cung cấp'
+      help: 'Những gì nhà cung cấp đã gửi cho bạn, được ghi lại để thanh toán và ghi sổ.'
+
+id:
+  page_title: 'Dokumen baru'
+  page_icon: 'ph:bold/file-plus'
+  create: Mulai
+  start:
+    bill_sale:
+      title: 'Sebuah faktur'
+      help: 'Dikirim ke pelanggan, dinomori saat diterbitkan.'
+    quotation_sale:
+      title: 'Sebuah penawaran'
+      help: 'Tidak pernah jatuh tempo; ditagih setelah diterima.'
+    bill_purchase:
+      title: 'Faktur pemasok'
+      help: 'Apa yang dikirimkan pemasok kepada Anda, dicatat untuk dibayar dan dibukukan.'
+
+nl:
+  page_title: 'Nieuw document'
+  page_icon: 'ph:bold/file-plus'
+  create: 'Start het'
+  start:
+    bill_sale:
+      title: 'Een factuur'
+      help: 'Verstuurd naar een klant, genummerd wanneer het wordt uitgegeven.'
+    quotation_sale:
+      title: 'Een offerte'
+      help: 'Nooit vervaldatum; gefactureerd zodra geaccepteerd.'
+    bill_purchase:
+      title: 'Een leveranciersfactuur'
+      help: 'Wat een leverancier je heeft gestuurd, opgeschreven om betaald en geboekt te worden.'

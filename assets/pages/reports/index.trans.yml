@@ -72,3 +72,503 @@ zh:
     debit: 借方
     credit: 贷方
     balance: 余额
+
+ar:
+  page_title: التقارير
+  page_icon: 'ph:bold/chart-bar'
+  statements: 'البيانات المالية'
+  general_ledger: 'دفتر الأستاذ العام'
+  exports: التصدير
+  no_export: 'لا يوجد تصدير لهذا العام المالي.'
+  trial_balance: 'ميزان المراجعة'
+  nbb:
+    title: 'الحسابات السنوية للبنك الوطني'
+    model: نموذج
+    micro: ميكرو
+    abridged: مختصر
+    approval: 'تم الموافقة عليه من قبل الجمعية العامة في'
+    submit: 'تحميل XBRL'
+  empty: 'لا يوجد أي سجل حتى الآن.'
+  total: الإجمالي
+  no_fiscal_year: 'دفتر الأستاذ ليس لديه عام مالي بعد.'
+  column:
+    number: الحساب
+    label: التسمية
+    debit: مدين
+    credit: دائن
+    balance: الرصيد
+
+hi:
+  page_title: रिपोर्ट
+  page_icon: 'ph:bold/chart-bar'
+  statements: बयान
+  general_ledger: 'जनरल लेज़र'
+  exports: निर्यात
+  no_export: 'इस वित्तीय वर्ष के लिए कोई निर्यात नहीं।'
+  trial_balance: 'परीक्षण संतुलन'
+  nbb:
+    title: 'राष्ट्रीय बैंक के लिए वार्षिक खाते'
+    model: मॉडल
+    micro: सूक्ष्म
+    abridged: संक्षिप्त
+    approval: 'सामान्य सभा द्वारा अनुमोदित'
+    submit: 'XBRL डाउनलोड करें'
+  empty: 'अभी तक कुछ भी बुक नहीं किया गया है।'
+  total: कुल
+  no_fiscal_year: 'लेज़र में अभी तक कोई वित्तीय वर्ष नहीं है।'
+  column:
+    number: खाता
+    label: लेबल
+    debit: डेबिट
+    credit: क्रेडिट
+    balance: बैलेंस
+
+he:
+  page_title: דוחות
+  page_icon: 'ph:bold/chart-bar'
+  statements: דיווחים
+  general_ledger: 'ספר ראשי'
+  exports: ייצוא
+  no_export: 'אין ייצוא לשנה הפיסקלית הזו.'
+  trial_balance: 'מאזן בוחן'
+  nbb:
+    title: 'דוחות שנתיים של בנק ישראל'
+    model: מודל
+    micro: מיקרו
+    abridged: מקוצר
+    approval: 'מאושר על ידי האסיפה הכללית בתאריך'
+    submit: 'הורד את ה-XBRL'
+  empty: 'עדיין לא הוזן דבר.'
+  total: 'סך הכל'
+  no_fiscal_year: 'לספר אין עדיין שנה פיסקלית.'
+  column:
+    number: חשבון
+    label: תווית
+    debit: חובה
+    credit: זכות
+    balance: יתרה
+
+fa:
+  page_title: گزارشات
+  page_icon: 'ph:bold/chart-bar'
+  statements: صورت‌ها
+  general_ledger: 'دفتر کل'
+  exports: صادرات
+  no_export: 'در این سال مالی صادراتی وجود ندارد.'
+  trial_balance: 'تراز trial'
+  nbb:
+    title: 'صورت‌های مالی سالانه برای بانک ملی'
+    model: مدل
+    micro: ریز
+    abridged: 'خلاصه شده'
+    approval: 'تأیید شده توسط مجمع عمومی در'
+    submit: 'دانلود XBRL'
+  empty: 'هنوز چیزی ثبت نشده است.'
+  total: جمع
+  no_fiscal_year: 'دفتر کل هنوز سال مالی ندارد.'
+  column:
+    number: حساب
+    label: برچسب
+    debit: بدهکار
+    credit: بستانکار
+    balance: مانده
+
+ur:
+  page_title: رپورٹس
+  page_icon: 'ph:bold/chart-bar'
+  statements: بیانات
+  general_ledger: 'جنرل لیجر'
+  exports: برآمدات
+  no_export: 'اس مالی سال کے لیے کوئی برآمدات نہیں۔'
+  trial_balance: 'ٹرائل بیلنس'
+  nbb:
+    title: 'قومی بینک کے لیے سالانہ اکاؤنٹس'
+    model: ماڈل
+    micro: مائیکرو
+    abridged: خلاصہ
+    approval: 'جنرل میٹنگ کی طرف سے منظور شدہ'
+    submit: 'XBRL ڈاؤن لوڈ کریں'
+  empty: 'ابھی تک کچھ بھی بک نہیں ہوا۔'
+  total: مجموعی
+  no_fiscal_year: 'لیجر میں ابھی تک کوئی مالی سال نہیں ہے۔'
+  column:
+    number: اکاؤنٹ
+    label: لیبل
+    debit: ڈیبٹ
+    credit: کریڈٹ
+    balance: بیلنس
+
+ja:
+  page_title: レポート
+  page_icon: 'ph:bold/chart-bar'
+  statements: ステートメント
+  general_ledger: 総勘定元帳
+  exports: エクスポート
+  no_export: この会計年度のエクスポートはありません。
+  trial_balance: 試算表
+  nbb:
+    title: 国立銀行の年次報告書
+    model: モデル
+    micro: マイクロ
+    abridged: 要約
+    approval: 総会で承認された日付
+    submit: XBRLをダウンロード
+  empty: まだ何も記帳されていません。
+  total: 合計
+  no_fiscal_year: 元帳にはまだ会計年度が設定されていません。
+  column:
+    number: 口座
+    label: ラベル
+    debit: 借方
+    credit: 貸方
+    balance: 残高
+
+ko:
+  page_title: 보고서
+  page_icon: 'ph:bold/chart-bar'
+  statements: 명세서
+  general_ledger: 총계정원장
+  exports: 수출
+  no_export: '이번 회계 연도에는 수출이 없습니다.'
+  trial_balance: 시산표
+  nbb:
+    title: '국립은행 연간 계정'
+    model: 모델
+    micro: 마이크로
+    abridged: 요약
+    approval: '총회에서 승인됨'
+    submit: 'XBRL 다운로드'
+  empty: '아직 예약된 항목이 없습니다.'
+  total: 총계
+  no_fiscal_year: '원장에 회계 연도가 아직 없습니다.'
+  column:
+    number: 계정
+    label: 라벨
+    debit: 차변
+    credit: 대변
+    balance: 잔액
+
+bn:
+  page_title: রিপোর্ট
+  page_icon: 'ph:bold/chart-bar'
+  statements: বিবৃতি
+  general_ledger: 'সাধারণ খাতা'
+  exports: রপ্তানি
+  no_export: 'এই অর্থবছরে কোনো রপ্তানি নেই।'
+  trial_balance: 'পরীক্ষামূলক ভারসাম্য'
+  nbb:
+    title: 'জাতীয় ব্যাংকের বার্ষিক হিসাব'
+    model: মডেল
+    micro: মাইক্রো
+    abridged: সংক্ষিপ্ত
+    approval: 'সাধারণ সভায় অনুমোদিত'
+    submit: 'XBRL ডাউনলোড করুন'
+  empty: 'এখনো কিছু বুক করা হয়নি।'
+  total: মোট
+  no_fiscal_year: 'খাতায় এখনও কোনো অর্থবছর নেই।'
+  column:
+    number: অ্যাকাউন্ট
+    label: লেবেল
+    debit: ডেবিট
+    credit: ক্রেডিট
+    balance: ভারসাম্য
+
+th:
+  page_title: รายงาน
+  page_icon: 'ph:bold/chart-bar'
+  statements: รายการ
+  general_ledger: บัญชีแยกประเภททั่วไป
+  exports: การส่งออก
+  no_export: ไม่มีการส่งออกในปีงบประมาณนี้
+  trial_balance: งบแสดงฐานะการเงินเบื้องต้น
+  nbb:
+    title: งบการเงินประจำปีของธนาคารแห่งชาติ
+    model: แบบจำลอง
+    micro: ไมโคร
+    abridged: ย่อ
+    approval: ได้รับการอนุมัติโดยการประชุมสามัญเมื่อ
+    submit: 'ดาวน์โหลด XBRL'
+  empty: ยังไม่มีการบันทึก
+  total: ยอดรวม
+  no_fiscal_year: บัญชีแยกประเภทยังไม่มีปีงบประมาณ
+  column:
+    number: บัญชี
+    label: ป้ายชื่อ
+    debit: เดบิต
+    credit: เครดิต
+    balance: ยอดคงเหลือ
+
+de:
+  page_title: Berichte
+  page_icon: 'ph:bold/chart-bar'
+  statements: Aussagen
+  general_ledger: Hauptbuch
+  exports: Exporte
+  no_export: 'In diesem Geschäftsjahr sind keine Exporte vorhanden.'
+  trial_balance: Summenbilanz
+  nbb:
+    title: 'Jahresabschlüsse der Nationalbank'
+    model: Modell
+    micro: Mikro
+    abridged: Abgekürzt
+    approval: 'Genehmigt durch die Hauptversammlung am'
+    submit: 'XBRL herunterladen'
+  empty: 'Noch nichts gebucht.'
+  total: Gesamt
+  no_fiscal_year: 'Das Hauptbuch hat noch kein Geschäftsjahr.'
+  column:
+    number: Konto
+    label: Bezeichnung
+    debit: Soll
+    credit: Haben
+    balance: Saldo
+
+fi:
+  page_title: Raportit
+  page_icon: 'ph:bold/chart-bar'
+  statements: Väitteet
+  general_ledger: Pääkirja
+  exports: Vienti
+  no_export: 'Tälle tilikaudelle ei ole vientiä.'
+  trial_balance: 'Kokeellinen tasapaino'
+  nbb:
+    title: 'Kansallisen pankin vuositilit'
+    model: Malli
+    micro: Mikro
+    abridged: Lyhennetty
+    approval: 'Hyväksytty yhtiökokouksessa'
+    submit: 'Lataa XBRL'
+  empty: 'Ei vielä varattu.'
+  total: Yhteensä
+  no_fiscal_year: 'Pääkirjalla ei ole vielä tilikautta.'
+  column:
+    number: Tili
+    label: Otsikko
+    debit: Velka
+    credit: Laina
+    balance: Saldo
+
+ru:
+  page_title: Отчеты
+  page_icon: 'ph:bold/chart-bar'
+  statements: Отчеты
+  general_ledger: 'Главная книга'
+  exports: Экспорт
+  no_export: 'Нет экспорта за этот финансовый год.'
+  trial_balance: 'Пробный баланс'
+  nbb:
+    title: 'Годовая отчетность Национального банка'
+    model: Модель
+    micro: Микро
+    abridged: Сокращенная
+    approval: 'Утверждено общим собранием'
+    submit: 'Скачать XBRL'
+  empty: 'Пока ничего не забронировано.'
+  total: Итого
+  no_fiscal_year: 'В главной книге пока нет финансового года.'
+  column:
+    number: Счет
+    label: Наименование
+    debit: Дебет
+    credit: Кредит
+    balance: Баланс
+
+pl:
+  page_title: Raporty
+  page_icon: 'ph:bold/chart-bar'
+  statements: Dokumenty
+  general_ledger: 'Księga główna'
+  exports: Eksporty
+  no_export: 'Brak eksportu na ten rok obrachunkowy.'
+  trial_balance: 'Bilans próbny'
+  nbb:
+    title: 'Roczne sprawozdania dla Narodowego Banku'
+    model: Model
+    micro: Mikro
+    abridged: Skrócone
+    approval: 'Zatwierdzone przez walne zgromadzenie w dniu'
+    submit: 'Pobierz XBRL'
+  empty: 'Nic jeszcze nie zarejestrowano.'
+  total: Suma
+  no_fiscal_year: 'Księga nie ma jeszcze roku obrachunkowego.'
+  column:
+    number: Konto
+    label: Etykieta
+    debit: Debet
+    credit: Kredyt
+    balance: Saldo
+
+es:
+  page_title: Informes
+  page_icon: 'ph:bold/chart-bar'
+  statements: Declaraciones
+  general_ledger: 'Libro mayor'
+  exports: Exportaciones
+  no_export: 'No hay exportación para este año fiscal.'
+  trial_balance: 'Balance de prueba'
+  nbb:
+    title: 'Cuentas anuales del Banco Nacional'
+    model: Modelo
+    micro: Micro
+    abridged: Abreviado
+    approval: 'Aprobado por la junta general el'
+    submit: 'Descargar el XBRL'
+  empty: 'Nada registrado aún.'
+  total: Total
+  no_fiscal_year: 'El libro mayor no tiene año fiscal aún.'
+  column:
+    number: Cuenta
+    label: Etiqueta
+    debit: Débito
+    credit: Crédito
+    balance: Saldo
+
+it:
+  page_title: Rapporti
+  page_icon: 'ph:bold/chart-bar'
+  statements: 'Estratti conto'
+  general_ledger: 'Libro mastro'
+  exports: Esportazioni
+  no_export: 'Nessuna esportazione per questo esercizio fiscale.'
+  trial_balance: 'Bilancio di verifica'
+  nbb:
+    title: 'Conti annuali per la Banca Nazionale'
+    model: Modello
+    micro: Micro
+    abridged: Sintetico
+    approval: "Approvato dall'assemblea generale il"
+    submit: "Scarica l'XBRL"
+  empty: 'Niente di registrato ancora.'
+  total: Totale
+  no_fiscal_year: 'Il libro mastro non ha ancora un esercizio fiscale.'
+  column:
+    number: Conto
+    label: Etichetta
+    debit: Debito
+    credit: Credito
+    balance: Saldo
+
+pt_BR:
+  page_title: Relatórios
+  page_icon: 'ph:bold/chart-bar'
+  statements: Extratos
+  general_ledger: 'Livro razão'
+  exports: Exportações
+  no_export: 'Nenhuma exportação para este exercício fiscal.'
+  trial_balance: 'Balanço de teste'
+  nbb:
+    title: 'Demonstrações anuais do Banco Nacional'
+    model: Modelo
+    micro: Micro
+    abridged: Resumido
+    approval: 'Aprovado pela assembleia geral em'
+    submit: 'Baixar o XBRL'
+  empty: 'Nada reservado ainda.'
+  total: Total
+  no_fiscal_year: 'O livro razão ainda não possui exercício fiscal.'
+  column:
+    number: Conta
+    label: Rótulo
+    debit: Débito
+    credit: Crédito
+    balance: Saldo
+
+tr:
+  page_title: Raporlar
+  page_icon: 'ph:bold/chart-bar'
+  statements: 'Hesap Özeti'
+  general_ledger: 'Genel defter'
+  exports: İhracatlar
+  no_export: 'Bu mali yıl için ihracat yok.'
+  trial_balance: 'Deneme bilançosu'
+  nbb:
+    title: 'Merkez Bankası için Yıllık Hesaplar'
+    model: Model
+    micro: Mikro
+    abridged: Kısa
+    approval: 'Genel kurul tarafından onaylandı'
+    submit: "XBRL'yi indir"
+  empty: 'Henüz hiçbir kayıt yok.'
+  total: Toplam
+  no_fiscal_year: 'Defterin henüz mali yılı yok.'
+  column:
+    number: Hesap
+    label: Etiket
+    debit: Borç
+    credit: Alacak
+    balance: Bakiye
+
+vi:
+  page_title: 'Báo cáo'
+  page_icon: 'ph:bold/chart-bar'
+  statements: 'Các báo cáo'
+  general_ledger: 'Sổ cái tổng hợp'
+  exports: 'Xuất khẩu'
+  no_export: 'Không có xuất khẩu cho năm tài chính này.'
+  trial_balance: 'Bảng cân đối thử'
+  nbb:
+    title: 'Báo cáo tài chính hàng năm cho Ngân hàng Quốc gia'
+    model: 'Mô hình'
+    micro: 'Vi mô'
+    abridged: 'Rút gọn'
+    approval: 'Được phê duyệt bởi cuộc họp đại hội vào'
+    submit: 'Tải xuống XBRL'
+  empty: 'Chưa có giao dịch nào được ghi.'
+  total: 'Tổng cộng'
+  no_fiscal_year: 'Sổ cái chưa có năm tài chính nào.'
+  column:
+    number: 'Tài khoản'
+    label: Nhãn
+    debit: Nợ
+    credit: Có
+    balance: 'Số dư'
+
+id:
+  page_title: Laporan
+  page_icon: 'ph:bold/chart-bar'
+  statements: Pernyataan
+  general_ledger: 'Buku besar umum'
+  exports: Ekspor
+  no_export: 'Tidak ada ekspor untuk tahun fiskal ini.'
+  trial_balance: 'Neraca percobaan'
+  nbb:
+    title: 'Laporan tahunan untuk Bank Nasional'
+    model: Model
+    micro: Mikro
+    abridged: Singkat
+    approval: 'Disetujui oleh rapat umum pada'
+    submit: 'Unduh XBRL'
+  empty: 'Belum ada yang dicatat.'
+  total: Total
+  no_fiscal_year: 'Buku besar belum memiliki tahun fiskal.'
+  column:
+    number: Akun
+    label: Label
+    debit: Debit
+    credit: Kredit
+    balance: Saldo
+
+nl:
+  page_title: Rapporten
+  page_icon: 'ph:bold/chart-bar'
+  statements: Verklaringen
+  general_ledger: 'Algemene grootboek'
+  exports: Exporten
+  no_export: 'Geen export voor dit boekjaar.'
+  trial_balance: Proefbalans
+  nbb:
+    title: 'Jaarrekening voor de Nationale Bank'
+    model: Model
+    micro: Micro
+    abridged: Samengevoegd
+    approval: 'Goedgekeurd door de algemene vergadering op'
+    submit: 'Download de XBRL'
+  empty: 'Nog niets geboekt.'
+  total: Totaal
+  no_fiscal_year: 'Het grootboek heeft nog geen boekjaar.'
+  column:
+    number: Rekening
+    label: Label
+    debit: Debet
+    credit: Credit
+    balance: Saldo

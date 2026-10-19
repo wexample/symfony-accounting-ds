@@ -57,3 +57,403 @@ zh:
     vat: 增值税
     total: 总计
   pdf: '预览 PDF'
+
+ar:
+  head:
+    party: حزب
+    no_party: 'لم يتم الاختيار بعد'
+    title: الموضوع
+    date: التاريخ
+    valid_until: 'صالح حتى'
+    term: 'مدة الدفع (أيام)'
+    note: 'ملاحظة مطبوعة على الوثيقة'
+    currency: العملة
+    rate: 'السعر: وحدة واحدة في %currency%'
+    rate_at_emission: 'مأخوذ عند الإصدار'
+  line:
+    paste_hint: 'يمكن لصق الصفوف المنسوخة من جدول بيانات في السطر الجديد؛ يمكن استيراد ملف يحتوي على جدول.'
+  total:
+    net: صافي
+    vat: 'ضريبة القيمة المضافة'
+    total: الإجمالي
+  pdf: 'معاينة PDF'
+
+hi:
+  head:
+    party: पार्टी
+    no_party: 'अभी तक चुना नहीं गया'
+    title: विषय
+    date: तारीख
+    valid_until: 'मान्यता समाप्त होने की तारीख'
+    term: 'भुगतान की शर्त (दिन)'
+    note: 'दस्तावेज़ पर मुद्रित नोट'
+    currency: मुद्रा
+    rate: 'दर: एक इकाई में %currency%'
+    rate_at_emission: 'जारी करते समय लिया गया'
+  line:
+    paste_hint: 'एक स्प्रेडशीट से कॉपी की गई पंक्तियाँ नई पंक्ति में चिपकाई जा सकती हैं; एक तालिका रखने वाली फ़ाइल आयात की जा सकती है।'
+  total:
+    net: नेट
+    vat: वैट
+    total: कुल
+  pdf: 'PDF का पूर्वावलोकन करें'
+
+he:
+  head:
+    party: מסיבה
+    no_party: 'לא נבחר עדיין'
+    title: נושא
+    date: תאריך
+    valid_until: 'בתוקף עד'
+    term: 'תקופת תשלום (ימים)'
+    note: 'הערה מודפסת על המסמך'
+    currency: מטבע
+    rate: 'שיעור: יחידה אחת ב-%currency%'
+    rate_at_emission: 'נלקח בהנפקה'
+  line:
+    paste_hint: 'שורות שהועתקו מגיליון אלקטרוני יכולות להיות מודבקות בשורה החדשה; ניתן לייבא קובץ שמכיל טבלה.'
+  total:
+    net: נטו
+    vat: 'מע"מ'
+    total: 'סך הכל'
+  pdf: 'הצג את ה-PDF'
+
+fa:
+  head:
+    party: جلسه
+    no_party: 'هنوز انتخاب نشده'
+    title: موضوع
+    date: تاریخ
+    valid_until: 'معتبر تا'
+    term: 'مدت زمان پرداخت (روز)'
+    note: 'یادداشت چاپ شده روی سند'
+    currency: 'واحد پول'
+    rate: 'نرخ: یک واحد در %currency%'
+    rate_at_emission: 'در زمان صدور گرفته شده'
+  line:
+    paste_hint: 'ردیف‌های کپی‌شده از یک صفحه‌گسترده می‌توانند در خط جدید چسبانده شوند؛ یک فایل حاوی جدول می‌تواند وارد شود.'
+  total:
+    net: خالص
+    vat: 'مالیات بر ارزش افزوده'
+    total: 'جمع کل'
+  pdf: 'پیش‌نمایش PDF'
+
+ur:
+  head:
+    party: پارٹی
+    no_party: 'ابھی منتخب نہیں کیا'
+    title: موضوع
+    date: تاریخ
+    valid_until: 'تاریخ تک قابل قبول'
+    term: 'ادائیگی کی مدت (دن)'
+    note: 'دستاویز پر چھپی ہوئی نوٹ'
+    currency: کرنسی
+    rate: 'شرح: ایک یونٹ میں %currency%'
+    rate_at_emission: 'جاری ہونے پر لیا گیا'
+  line:
+    paste_hint: 'اسپریڈشیٹ سے کاپی کی گئی قطاریں نئی لائن میں پیسٹ کی جا سکتی ہیں؛ ایک جدول پر مشتمل فائل کو درآمد کیا جا سکتا ہے۔'
+  total:
+    net: نیٹ
+    vat: ویٹ
+    total: مجموعی
+  pdf: 'PDF کا پیش منظر'
+
+ja:
+  head:
+    party: パーティー
+    no_party: まだ選択されていません
+    title: 件名
+    date: 日付
+    valid_until: 有効期限
+    term: 支払い条件（日）
+    note: 文書に印刷されるメモ
+    currency: 通貨
+    rate: 'レート：1単位あたり %currency%'
+    rate_at_emission: 発行時のレート
+  line:
+    paste_hint: スプレッドシートからコピーした行を新しい行に貼り付けることができます。テーブルを含むファイルをインポートできます。
+  total:
+    net: ネット
+    vat: VAT
+    total: 合計
+  pdf: PDFのプレビュー
+
+ko:
+  head:
+    party: 당사
+    no_party: '아직 선택되지 않음'
+    title: 주제
+    date: 날짜
+    valid_until: '유효 기간'
+    term: '지불 조건 (일)'
+    note: '문서에 인쇄된 노트'
+    currency: 통화
+    rate: '환율: %currency%의 한 단위'
+    rate_at_emission: '발행 시 적용'
+  line:
+    paste_hint: '스프레드시트에서 복사한 행을 새 줄에 붙여넣을 수 있습니다; 테이블을 포함한 파일을 가져올 수 있습니다.'
+  total:
+    net: 순액
+    vat: 부가세
+    total: 총액
+  pdf: 'PDF 미리보기'
+
+bn:
+  head:
+    party: পার্টি
+    no_party: 'এখনও নির্বাচিত হয়নি'
+    title: বিষয়
+    date: তারিখ
+    valid_until: 'যা পর্যন্ত বৈধ'
+    term: 'পেমেন্টের মেয়াদ (দিন)'
+    note: 'ডকুমেন্টে মুদ্রিত নোট'
+    currency: মুদ্রা
+    rate: 'হার: একটি ইউনিটের জন্য %currency%'
+    rate_at_emission: 'এমিশনের সময় নেওয়া হয়েছে'
+  line:
+    paste_hint: 'স্প্রেডশিট থেকে কপিকৃত সারিগুলি নতুন লাইনে পেস্ট করা যেতে পারে; একটি টেবিল ধারণকারী ফাইল আমদানি করা যেতে পারে।'
+  total:
+    net: নেট
+    vat: ভ্যাট
+    total: মোট
+  pdf: 'পিডিএফের প্রিভিউ'
+
+th:
+  head:
+    party: งานเลี้ยง
+    no_party: ยังไม่ได้เลือก
+    title: หัวข้อ
+    date: วันที่
+    valid_until: ใช้ได้จนถึง
+    term: 'ระยะเวลาการชำระเงิน (วัน)'
+    note: หมายเหตุที่พิมพ์ในเอกสาร
+    currency: สกุลเงิน
+    rate: 'อัตรา: หนึ่งหน่วยใน %currency%'
+    rate_at_emission: ใช้ในขณะออก
+  line:
+    paste_hint: 'แถวที่คัดลอกจากสเปรดชีตสามารถวางลงในแถวใหม่ได้; ไฟล์ที่มีตารางสามารถนำเข้าได้.'
+  total:
+    net: สุทธิ
+    vat: ภาษีมูลค่าเพิ่ม
+    total: รวม
+  pdf: 'ตัวอย่าง PDF'
+
+de:
+  head:
+    party: Partei
+    no_party: 'Noch nicht ausgewählt'
+    title: Betreff
+    date: Datum
+    valid_until: 'Gültig bis'
+    term: 'Zahlungsfrist (Tage)'
+    note: 'Hinweis auf dem Dokument'
+    currency: Währung
+    rate: 'Kurs: eine Einheit in %currency%'
+    rate_at_emission: 'Zum Zeitpunkt der Emission genommen'
+  line:
+    paste_hint: 'Zeilen, die aus einer Tabelle kopiert wurden, können in die neue Zeile eingefügt werden; eine Datei mit einer Tabelle kann importiert werden.'
+  total:
+    net: Netto
+    vat: MwSt.
+    total: Gesamt
+  pdf: PDF-Vorschau
+
+fi:
+  head:
+    party: Osapuoli
+    no_party: 'Ei valittu vielä'
+    title: Aihe
+    date: Päivämäärä
+    valid_until: 'Voimassa asti'
+    term: 'Maksuehto (päivinä)'
+    note: 'Huomautus asiakirjassa'
+    currency: Valuutta
+    rate: 'Korko: yksi yksikkö %currency% kohti'
+    rate_at_emission: 'Otetaan liikkeeseenlaskussa'
+  line:
+    paste_hint: 'Rivien kopiointi taulukosta voidaan liittää uuteen riviin; taulukon sisältävä tiedosto voidaan tuoda.'
+  total:
+    net: Netto
+    vat: ALV
+    total: Yhteensä
+  pdf: 'Esikatsele PDF'
+
+ru:
+  head:
+    party: Вечеринка
+    no_party: 'Не выбрано'
+    title: Тема
+    date: Дата
+    valid_until: 'Действительно до'
+    term: 'Срок оплаты (дни)'
+    note: 'Заметка на документе'
+    currency: Валюта
+    rate: 'Ставка: одна единица в %currency%'
+    rate_at_emission: 'Установлено при эмиссии'
+  line:
+    paste_hint: 'Строки, скопированные из таблицы, можно вставить в новую строку; файл с таблицей можно импортировать.'
+  total:
+    net: 'Чистая сумма'
+    vat: НДС
+    total: Итого
+  pdf: 'Предварительный просмотр PDF'
+
+pl:
+  head:
+    party: Impreza
+    no_party: 'Nie wybrano jeszcze'
+    title: Temat
+    date: Data
+    valid_until: 'Ważne do'
+    term: 'Termin płatności (dni)'
+    note: 'Uwaga wydrukowana na dokumencie'
+    currency: Waluta
+    rate: 'Stawka: jedna jednostka w %currency%'
+    rate_at_emission: 'Wzięta przy emisji'
+  line:
+    paste_hint: 'Wiersze skopiowane z arkusza kalkulacyjnego można wkleić do nowego wiersza; plik zawierający tabelę można zaimportować.'
+  total:
+    net: Netto
+    vat: VAT
+    total: Razem
+  pdf: 'Podgląd PDF'
+
+es:
+  head:
+    party: Fiesta
+    no_party: 'No seleccionado aún'
+    title: Asunto
+    date: Fecha
+    valid_until: 'Válido hasta'
+    term: 'Plazo de pago (días)'
+    note: 'Nota impresa en el documento'
+    currency: Moneda
+    rate: 'Tasa: una unidad en %currency%'
+    rate_at_emission: 'Tomado al momento de emisión'
+  line:
+    paste_hint: 'Las filas copiadas de una hoja de cálculo se pueden pegar en la nueva línea; se puede importar un archivo que contenga una tabla.'
+  total:
+    net: Neto
+    vat: IVA
+    total: Total
+  pdf: 'Vista previa del PDF'
+
+it:
+  head:
+    party: Festa
+    no_party: 'Non ancora scelto'
+    title: Oggetto
+    date: Data
+    valid_until: 'Valido fino a'
+    term: 'Termine di pagamento (giorni)'
+    note: 'Nota stampata sul documento'
+    currency: Valuta
+    rate: 'Tariffa: una unità in %currency%'
+    rate_at_emission: "Preso all'emissione"
+  line:
+    paste_hint: 'Le righe copiate da un foglio di calcolo possono essere incollate nella nuova riga; un file contenente una tabella può essere importato.'
+  total:
+    net: Netto
+    vat: IVA
+    total: Totale
+  pdf: 'Anteprima del PDF'
+
+pt_BR:
+  head:
+    party: Grupo
+    no_party: 'Não escolhido ainda'
+    title: Assunto
+    date: Data
+    valid_until: 'Válido até'
+    term: 'Prazo de pagamento (dias)'
+    note: 'Nota impressa no documento'
+    currency: Moeda
+    rate: 'Taxa: uma unidade em %currency%'
+    rate_at_emission: 'Tomada na emissão'
+  line:
+    paste_hint: 'Linhas copiadas de uma planilha podem ser coladas na nova linha; um arquivo contendo uma tabela pode ser importado.'
+  total:
+    net: Líquido
+    vat: IVA
+    total: Total
+  pdf: 'Visualizar o PDF'
+
+tr:
+  head:
+    party: Taraf
+    no_party: 'Henüz seçilmedi'
+    title: Konu
+    date: Tarih
+    valid_until: 'Geçerlilik tarihi'
+    term: 'Ödeme süresi (gün)'
+    note: 'Belge üzerindeki not'
+    currency: 'Para birimi'
+    rate: 'Oran: %currency% birim'
+    rate_at_emission: 'İhraç sırasında alınan'
+  line:
+    paste_hint: 'Bir elektronik tabloya kopyalanan satırlar yeni satıra yapıştırılabilir; bir tablo içeren bir dosya içe aktarılabilir.'
+  total:
+    net: Net
+    vat: KDV
+    total: Toplam
+  pdf: "PDF'nin önizlemesi"
+
+vi:
+  head:
+    party: Bên
+    no_party: 'Chưa chọn'
+    title: 'Chủ đề'
+    date: Ngày
+    valid_until: 'Có hiệu lực đến'
+    term: 'Thời hạn thanh toán (ngày)'
+    note: 'Ghi chú in trên tài liệu'
+    currency: 'Tiền tệ'
+    rate: 'Tỷ lệ: một đơn vị trong %currency%'
+    rate_at_emission: 'Được ghi nhận khi phát hành'
+  line:
+    paste_hint: 'Các hàng được sao chép từ bảng tính có thể được dán vào dòng mới; một tệp chứa bảng có thể được nhập khẩu.'
+  total:
+    net: 'Số tiền ròng'
+    vat: VAT
+    total: 'Tổng cộng'
+  pdf: 'Xem trước PDF'
+
+id:
+  head:
+    party: Pesta
+    no_party: 'Belum dipilih'
+    title: Subjek
+    date: Tanggal
+    valid_until: 'Berlaku sampai'
+    term: 'Jangka waktu pembayaran (hari)'
+    note: 'Catatan yang dicetak di dokumen'
+    currency: 'Mata uang'
+    rate: 'Tarif: satu unit di %currency%'
+    rate_at_emission: 'Diambil pada saat penerbitan'
+  line:
+    paste_hint: 'Baris yang disalin dari spreadsheet dapat ditempelkan ke dalam baris baru; file yang berisi tabel dapat diimpor.'
+  total:
+    net: Bersih
+    vat: PPN
+    total: Total
+  pdf: 'Pratinjau PDF'
+
+nl:
+  head:
+    party: Partij
+    no_party: 'Nog niet gekozen'
+    title: Onderwerp
+    date: Datum
+    valid_until: 'Geldig tot'
+    term: 'Betalingstermijn (dagen)'
+    note: 'Opmerking op het document'
+    currency: Valuta
+    rate: 'Tarief: één eenheid in %currency%'
+    rate_at_emission: 'Vastgelegd bij emissie'
+  line:
+    paste_hint: 'Rijen gekopieerd uit een spreadsheet kunnen in de nieuwe regel worden geplakt; een bestand met een tabel kan worden geïmporteerd.'
+  total:
+    net: Netto
+    vat: BTW
+    total: Totaal
+  pdf: 'Voorbeeld van de PDF'

@@ -45,3 +45,323 @@ zh:
     rate: 税率
     base: 基数
     vat: 增值税
+
+ar:
+  page_title: 'متجر شامل'
+  page_icon: 'ph:bold/globe-hemisphere-west'
+  previous: 'الربع السابق'
+  next: 'الربع القادم'
+  threshold: 'مبيعات المسافة هذا العام: %sales%، لحد %threshold%.'
+  empty: 'لا توجد مبيعات مسافة خاضعة للضريبة في دولة أخرى هذا الربع.'
+  csv: 'تحميل ملف CSV للبوابة'
+  settle: 'احجز التسوية'
+  confirm_settle: 'تذهب ضريبة القيمة المضافة للربع إلى الضريبة المستحقة. هل تتابع؟'
+  column:
+    country: الدولة
+    rate: المعدل
+    base: الأساس
+    vat: 'ضريبة القيمة المضافة'
+
+hi:
+  page_title: 'एक ही स्थान पर दुकान'
+  page_icon: 'ph:bold/globe-hemisphere-west'
+  previous: 'पिछला तिमाही'
+  next: 'अगला तिमाही'
+  threshold: 'इस वर्ष की दूरी बिक्री: %sales%, एक सीमा के लिए %threshold%.'
+  empty: 'इस तिमाही में किसी अन्य देश में कोई दूरी बिक्री कर योग्य नहीं है।'
+  csv: 'पोर्टल के लिए CSV डाउनलोड करें'
+  settle: 'सेटेलमेंट बुक करें'
+  confirm_settle: 'तिमाही का OSS VAT VAT देय में स्थानांतरित हो जाता है। आगे बढ़ें?'
+  column:
+    country: देश
+    rate: दर
+    base: आधार
+    vat: VAT
+
+he:
+  page_title: 'חנות אחת'
+  page_icon: 'ph:bold/globe-hemisphere-west'
+  previous: 'רבעון קודם'
+  next: 'רבעון הבא'
+  threshold: 'מכירות מרחוק השנה: %sales%, עבור סף של %threshold%.'
+  empty: 'אין מכירות מרחוק שהוטלו מס במדינה אחרת ברבעון הזה.'
+  csv: 'הורד את ה-CSV לפורטל'
+  settle: 'שריין את ההתחשבנות'
+  confirm_settle: 'מעברי ה-VAT של OSS לרבעון הופכים ל-VAT שיש לשלם. להמשיך?'
+  column:
+    country: מדינה
+    rate: שיעור
+    base: בסיס
+    vat: מע״מ
+
+fa:
+  page_title: 'مرکز خرید یکپارچه'
+  page_icon: 'ph:bold/globe-hemisphere-west'
+  previous: 'فصل قبل'
+  next: 'فصل بعد'
+  threshold: 'فروش از راه دور امسال: %sales%، برای آستانه %threshold%.'
+  empty: 'هیچ فروش از راه دوری در کشور دیگر در این فصل مالیات ندارد.'
+  csv: 'CSV را برای پورتال دانلود کنید'
+  settle: 'تسویه را رزرو کنید'
+  confirm_settle: 'مالیات بر ارزش افزوده OSS این فصل به مالیات بر ارزش افزوده قابل پرداخت منتقل می‌شود. ادامه بدهید؟'
+  column:
+    country: کشور
+    rate: نرخ
+    base: پایه
+    vat: 'مالیات بر ارزش افزوده'
+
+ur:
+  page_title: 'ایک ہی جگہ پر خریداری'
+  page_icon: 'ph:bold/globe-hemisphere-west'
+  previous: 'پچھلا سہ ماہی'
+  next: 'اگلا سہ ماہی'
+  threshold: 'اس سال کی فاصلاتی فروخت: %sales%، ایک حد کے لیے %threshold%۔'
+  empty: 'اس سہ ماہی میں دوسرے ملک میں کوئی فاصلاتی فروخت پر ٹیکس نہیں ہے۔'
+  csv: 'پورٹل کے لیے CSV ڈاؤن لوڈ کریں'
+  settle: 'مکمل کرنے کی بکنگ کریں'
+  confirm_settle: 'سہ ماہی کا OSS VAT قابل ادائیگی VAT میں منتقل ہو جاتا ہے۔ کیا آگے بڑھیں؟'
+  column:
+    country: ملک
+    rate: شرح
+    base: بنیاد
+    vat: VAT
+
+ja:
+  page_title: ワンストップショップ
+  page_icon: 'ph:bold/globe-hemisphere-west'
+  previous: 前の四半期
+  next: 次の四半期
+  threshold: '今年の距離売上: %sales%, 閾値: %threshold%。'
+  empty: 今四半期に他国で課税された距離売上はありません。
+  csv: ポータル用のCSVをダウンロード
+  settle: 決済を予約
+  confirm_settle: '四半期のOSS VATが支払うべきVATに移動します。続けますか？'
+  column:
+    country: 国
+    rate: 税率
+    base: 基準
+    vat: VAT
+
+ko:
+  page_title: '원스톱 샵'
+  page_icon: 'ph:bold/globe-hemisphere-west'
+  previous: '이전 분기'
+  next: '다음 분기'
+  threshold: '올해의 거리 판매: %sales%, 기준 %threshold%.'
+  empty: '이번 분기에 다른 나라에서 과세된 거리 판매가 없습니다.'
+  csv: '포털용 CSV 다운로드'
+  settle: '정산 예약'
+  confirm_settle: '분기의 OSS VAT가 납부할 VAT로 이동합니다. 진행하시겠습니까?'
+  column:
+    country: 국가
+    rate: 비율
+    base: 기준
+    vat: VAT
+
+bn:
+  page_title: 'একক স্থানে দোকান'
+  page_icon: 'ph:bold/globe-hemisphere-west'
+  previous: 'পূর্ববর্তী ত্রৈমাসিক'
+  next: 'পরবর্তী ত্রৈমাসিক'
+  threshold: 'এই বছরের দূরত্ব বিক্রয়: %sales%, একটি থ্রেশহোল্ডের জন্য %threshold%.'
+  empty: 'এই ত্রৈমাসিকে অন্য দেশে কোনো দূরত্ব বিক্রয় কর করা হয়নি।'
+  csv: 'পোর্টালের জন্য CSV ডাউনলোড করুন'
+  settle: 'বসতি বুক করুন'
+  confirm_settle: 'ত্রৈমাসিকের OSS VAT VAT প্রদেয়তে চলে যাবে। এগিয়ে যাবেন?'
+  column:
+    country: দেশ
+    rate: 'হারের পরিমাণ'
+    base: মৌলিক
+    vat: VAT
+
+th:
+  page_title: ร้านค้าแบบครบวงจร
+  page_icon: 'ph:bold/globe-hemisphere-west'
+  previous: ไตรมาสก่อนหน้า
+  next: ไตรมาสถัดไป
+  threshold: 'ยอดขายระยะทางในปีนี้: %sales%, สำหรับเกณฑ์ %threshold%.'
+  empty: ไม่มีการขายระยะทางที่เสียภาษีในประเทศอื่นในไตรมาสนี้.
+  csv: 'ดาวน์โหลด CSV สำหรับพอร์ทัล'
+  settle: จองการตั้งถิ่นฐาน
+  confirm_settle: 'การเคลื่อนไหว VAT OSS ของไตรมาสจะไปที่ VAT ที่ต้องชำระ ดำเนินการต่อ?'
+  column:
+    country: ประเทศ
+    rate: อัตรา
+    base: ฐาน
+    vat: VAT
+
+de:
+  page_title: 'Zentrale Anlaufstelle'
+  page_icon: 'ph:bold/globe-hemisphere-west'
+  previous: 'Vorheriges Quartal'
+  next: 'Nächstes Quartal'
+  threshold: 'Distanzverkäufe in diesem Jahr: %sales%, bei einer Schwelle von %threshold%.'
+  empty: 'In diesem Quartal keine distanzverkäufe in ein anderes Land besteuert.'
+  csv: 'CSV für das Portal herunterladen'
+  settle: 'Die Abrechnung buchen'
+  confirm_settle: 'Die OSS-Umsatzsteuer des Quartals geht in die zu zahlende Umsatzsteuer über. Weiter?'
+  column:
+    country: Land
+    rate: Satz
+    base: Basis
+    vat: USt
+
+fi:
+  page_title: 'Keskitetty palvelu'
+  page_icon: 'ph:bold/globe-hemisphere-west'
+  previous: 'Edellinen neljännes'
+  next: 'Seuraava neljännes'
+  threshold: 'Etämyynnit tänä vuonna: %sales%, raja-arvo %threshold%.'
+  empty: 'Ei etämyyntejä verotettu toisessa maassa tällä neljänneksellä.'
+  csv: 'Lataa CSV-portaalille'
+  settle: 'Varaa selvitys'
+  confirm_settle: 'Neljäntoista OSS ALV siirtyy maksettavaksi ALV:ksi. Jatketaanko?'
+  column:
+    country: Maa
+    rate: Verokanta
+    base: Peruste
+    vat: ALV
+
+ru:
+  page_title: 'Универсальный магазин'
+  page_icon: 'ph:bold/globe-hemisphere-west'
+  previous: 'Предыдущий квартал'
+  next: 'Следующий квартал'
+  threshold: 'Дистанционные продажи в этом году: %sales%, для порога %threshold%.'
+  empty: 'Нет дистанционных продаж, облагаемых налогом в другой стране в этом квартале.'
+  csv: 'Скачать CSV для портала'
+  settle: 'Забронировать расчет'
+  confirm_settle: 'НДС OSS за квартал переходит в подлежащий уплате НДС. Продолжить?'
+  column:
+    country: Страна
+    rate: Ставка
+    base: База
+    vat: НДС
+
+pl:
+  page_title: 'Sklep uniwersalny'
+  page_icon: 'ph:bold/globe-hemisphere-west'
+  previous: 'Poprzedni kwartał'
+  next: 'Następny kwartał'
+  threshold: 'Sprzedaż zdalna w tym roku: %sales%, dla progu %threshold%.'
+  empty: 'Brak sprzedaży zdalnej opodatkowanej w innym kraju w tym kwartale.'
+  csv: 'Pobierz CSV dla portalu'
+  settle: 'Zarezerwuj rozliczenie'
+  confirm_settle: 'VAT OSS za kwartał przechodzi do VAT do zapłacenia. Kontynuować?'
+  column:
+    country: Kraj
+    rate: Stawka
+    base: Podstawa
+    vat: VAT
+
+es:
+  page_title: 'Tienda integral'
+  page_icon: 'ph:bold/globe-hemisphere-west'
+  previous: 'Trimestre anterior'
+  next: 'Próximo trimestre'
+  threshold: 'Ventas a distancia este año: %sales%, para un umbral de %threshold%.'
+  empty: 'No hay ventas a distancia gravadas en otro país este trimestre.'
+  csv: 'Descargar el CSV para el portal'
+  settle: 'Reservar la liquidación'
+  confirm_settle: 'El IVA OSS del trimestre se traslada al IVA a pagar. ¿Continuar?'
+  column:
+    country: País
+    rate: Tasa
+    base: Base
+    vat: IVA
+
+it:
+  page_title: 'Negozio unico'
+  page_icon: 'ph:bold/globe-hemisphere-west'
+  previous: 'Trimestre precedente'
+  next: 'Trimestre successivo'
+  threshold: "Vendite a distanza quest'anno: %sales%, per una soglia di %threshold%."
+  empty: 'Nessuna vendita a distanza tassata in un altro paese questo trimestre.'
+  csv: 'Scarica il CSV per il portale'
+  settle: 'Prenota il regolamento'
+  confirm_settle: "L'IVA OSS del trimestre passa all'IVA da pagare. Procedere?"
+  column:
+    country: Paese
+    rate: Aliquota
+    base: Base
+    vat: IVA
+
+pt_BR:
+  page_title: 'Loja única'
+  page_icon: 'ph:bold/globe-hemisphere-west'
+  previous: 'Trimestre anterior'
+  next: 'Próximo trimestre'
+  threshold: 'Vendas à distância este ano: %sales%, para um limite de %threshold%.'
+  empty: 'Nenhuma venda à distância tributada em outro país neste trimestre.'
+  csv: 'Baixar o CSV para o portal'
+  settle: 'Registrar a liquidação'
+  confirm_settle: 'O IVA do OSS deste trimestre será transferido para o IVA a pagar. Prosseguir?'
+  column:
+    country: País
+    rate: Taxa
+    base: Base
+    vat: IVA
+
+tr:
+  page_title: 'Tek durak mağazası'
+  page_icon: 'ph:bold/globe-hemisphere-west'
+  previous: 'Önceki çeyrek'
+  next: 'Sonraki çeyrek'
+  threshold: 'Bu yılki mesafeli satışlar: %sales%, eşiği için %threshold%.'
+  empty: 'Bu çeyrekte başka bir ülkede vergilendirilen mesafeli satış yok.'
+  csv: "Portal için CSV'yi indir"
+  settle: 'Uzlaşmayı rezerve et'
+  confirm_settle: "Çeyreğin OSS KDV'si ödenecek KDV'ye geçiyor. Devam edelim mi?"
+  column:
+    country: Ülke
+    rate: Oran
+    base: Temel
+    vat: KDV
+
+vi:
+  page_title: 'Cửa hàng một điểm đến'
+  page_icon: 'ph:bold/globe-hemisphere-west'
+  previous: 'Quý trước'
+  next: 'Quý sau'
+  threshold: 'Doanh số bán hàng từ xa năm nay: %sales%, cho ngưỡng %threshold%.'
+  empty: 'Không có giao dịch bán hàng từ xa nào bị đánh thuế ở quốc gia khác trong quý này.'
+  csv: 'Tải xuống CSV cho cổng thông tin'
+  settle: 'Đặt lịch thanh toán'
+  confirm_settle: 'VAT OSS của quý này sẽ chuyển sang VAT phải trả. Tiếp tục không?'
+  column:
+    country: 'Quốc gia'
+    rate: 'Tỷ lệ'
+    base: 'Cơ sở'
+    vat: VAT
+
+id:
+  page_title: 'Toko serba ada'
+  page_icon: 'ph:bold/globe-hemisphere-west'
+  previous: 'Kuartal sebelumnya'
+  next: 'Kuartal berikutnya'
+  threshold: 'Penjualan jarak tahun ini: %sales%, untuk ambang batas %threshold%.'
+  empty: 'Tidak ada penjualan jarak yang dikenakan pajak di negara lain kuartal ini.'
+  csv: 'Unduh CSV untuk portal'
+  settle: 'Pesan penyelesaian'
+  confirm_settle: 'Pajak OSS kuartal ini akan dipindahkan ke PPN yang harus dibayar. Lanjutkan?'
+  column:
+    country: Negara
+    rate: Tarif
+    base: Dasar
+    vat: PPN
+
+nl:
+  page_title: Eénloket
+  page_icon: 'ph:bold/globe-hemisphere-west'
+  previous: 'Vorige kwartaal'
+  next: 'Volgende kwartaal'
+  threshold: 'Afstandverkoop dit jaar: %sales%, voor een drempel van %threshold%.'
+  empty: 'Geen afstandsverkopen belast in een ander land dit kwartaal.'
+  csv: 'Download de CSV voor het portaal'
+  settle: 'Boek de afrekening'
+  confirm_settle: 'De OSS-BTW van het kwartaal gaat naar de te betalen BTW. Doorgaan?'
+  column:
+    country: Land
+    rate: Tarief
+    base: Basis
+    vat: BTW

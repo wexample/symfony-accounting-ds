@@ -39,3 +39,283 @@ zh:
   letter: 字母化已勾选的行
   letters: 已分配的字母
   unletter: 撤回
+
+ar:
+  page_title: الكتابة
+  page_icon: 'ph:bold/link'
+  auto: 'اكتب كل ما يتطابق'
+  date: تاريخ
+  label: ملصق
+  party: طرف
+  debit: دين
+  credit: ائتمان
+  all_lettered: 'كل سطر في هذا الحساب مكتوب.'
+  letter: 'اكتب الأسطر المحددة'
+  letters: 'الحروف المعطاة'
+  unletter: استرجعها
+
+hi:
+  page_title: लेटरिंग
+  page_icon: 'ph:bold/link'
+  auto: 'सभी मेल खाने वाले को लेटर करें'
+  date: तारीख
+  label: लेबल
+  party: पार्टी
+  debit: डेबिट
+  credit: क्रेडिट
+  all_lettered: 'इस खाते की हर पंक्ति को लेटर किया गया है।'
+  letter: 'चिन्हित पंक्तियों को लेटर करें'
+  letters: 'दिए गए लेटर'
+  unletter: 'उसे वापस लें'
+
+he:
+  page_title: כתוביות
+  page_icon: 'ph:bold/link'
+  auto: 'כתב כל מה שמתאים'
+  date: תאריך
+  label: תווית
+  party: מסיבה
+  debit: זכות
+  credit: חובה
+  all_lettered: 'כל שורה בחשבון הזה כתובה.'
+  letter: 'כתוב את השורות שסומנו'
+  letters: 'אותיות שניתנו'
+  unletter: החזר
+
+fa:
+  page_title: حروف‌نگاری
+  page_icon: 'ph:bold/link'
+  auto: 'تمام مواردی که مطابقت دارند را حروف‌نگاری کن'
+  date: تاریخ
+  label: برچسب
+  party: طرف
+  debit: بدهی
+  credit: بستانکاری
+  all_lettered: 'هر خط از این حساب حروف‌نگاری شده است.'
+  letter: 'خطوط انتخاب شده را حروف‌نگاری کن'
+  letters: 'حروف‌نگاری شده'
+  unletter: برگردانید
+
+ur:
+  page_title: 'حروف نگاری'
+  page_icon: 'ph:bold/link'
+  auto: 'ہر چیز کو حروف کریں جو ملتی ہے'
+  date: تاریخ
+  label: لیبل
+  party: پارٹی
+  debit: ڈیبٹ
+  credit: کریڈٹ
+  all_lettered: 'اس اکاؤنٹ کی ہر لائن حروف کی گئی ہے۔'
+  letter: 'چیک کی گئی لائنوں کو حروف کریں'
+  letters: 'دئے گئے حروف'
+  unletter: 'واپس لیں'
+
+ja:
+  page_title: レタリング
+  page_icon: 'ph:bold/link'
+  auto: 一致するすべてをレタリングします
+  date: 日付
+  label: ラベル
+  party: パーティー
+  debit: デビット
+  credit: クレジット
+  all_lettered: この口座のすべての行はレタリングされています。
+  letter: チェックされた行をレタリングする
+  letters: 与えられたレター
+  unletter: 取り消す
+
+ko:
+  page_title: 문자화
+  page_icon: 'ph:bold/link'
+  auto: '일치하는 모든 항목을 문자화합니다.'
+  date: 날짜
+  label: 라벨
+  party: 당사자
+  debit: 차변
+  credit: 대변
+  all_lettered: '이 계좌의 모든 항목이 문자화되었습니다.'
+  letter: '선택된 항목을 문자화'
+  letters: '주어진 문자'
+  unletter: 되돌리기
+
+bn:
+  page_title: লেখা
+  page_icon: 'ph:bold/link'
+  auto: 'যে সব মেলে সেগুলো লেখুন'
+  date: তারিখ
+  label: লেবেল
+  party: পার্টি
+  debit: ডেবিট
+  credit: ক্রেডিট
+  all_lettered: 'এই অ্যাকাউন্টের প্রতিটি লাইন লেখা হয়েছে।'
+  letter: 'টিক করা লাইনগুলো লিখুন'
+  letters: 'দেওয়া লেখা'
+  unletter: 'ফিরিয়ে নিন'
+
+th:
+  page_title: การพิมพ์ตัวอักษร
+  page_icon: 'ph:bold/link'
+  auto: พิมพ์ทุกอย่างที่ตรงกัน
+  date: วันที่
+  label: ป้ายกำกับ
+  party: พรรค
+  debit: หนี้
+  credit: เครดิต
+  all_lettered: ทุกบรรทัดในบัญชีนี้ได้รับการพิมพ์ตัวอักษรแล้ว
+  letter: พิมพ์บรรทัดที่ทำเครื่องหมายไว้
+  letters: ตัวอักษรที่ให้
+  unletter: นำกลับ
+
+de:
+  page_title: Buchstaben
+  page_icon: 'ph:bold/link'
+  auto: 'Alles, was übereinstimmt, beschriften'
+  date: Datum
+  label: Bezeichnung
+  party: Partei
+  debit: Soll
+  credit: Haben
+  all_lettered: 'Jede Zeile dieses Kontos ist beschriftet.'
+  letter: 'Die markierten Zeilen beschriften'
+  letters: 'Vergebene Buchstaben'
+  unletter: Zurücknehmen
+
+fi:
+  page_title: Kirjoittaminen
+  page_icon: 'ph:bold/link'
+  auto: 'Kirjoita kaikki, jotka täsmäävät'
+  date: Päivämäärä
+  label: Tunnus
+  party: Osapuoli
+  debit: Velka
+  credit: Luotto
+  all_lettered: 'Kaikki tämän tilin rivit on kirjoitettu.'
+  letter: 'Kirjoita merkitsevät rivit'
+  letters: 'Annetut kirjaimet'
+  unletter: 'Ota se takaisin'
+
+ru:
+  page_title: Надписи
+  page_icon: 'ph:bold/link'
+  auto: 'Надписать все, что соответствует'
+  date: Дата
+  label: Ярлык
+  party: Сторона
+  debit: Дебет
+  credit: Кредит
+  all_lettered: 'Каждая строка этого счета надписана.'
+  letter: 'Надпишите отмеченные строки'
+  letters: 'Выданные надписи'
+  unletter: 'Вернуть обратно'
+
+pl:
+  page_title: Liternictwo
+  page_icon: 'ph:bold/link'
+  auto: 'Zliteruj wszystko, co pasuje'
+  date: Data
+  label: Etykieta
+  party: Strona
+  debit: Debet
+  credit: Kredyt
+  all_lettered: 'Każda linia tego konta jest zliternowana.'
+  letter: 'Zliteruj zaznaczone linie'
+  letters: 'Przyznane litery'
+  unletter: Cofnij
+
+es:
+  page_title: Rotulación
+  page_icon: 'ph:bold/link'
+  auto: 'Rotule todo lo que coincida'
+  date: Fecha
+  label: Etiqueta
+  party: Parte
+  debit: Débito
+  credit: Crédito
+  all_lettered: 'Cada línea de esta cuenta está rotulada.'
+  letter: 'Rotule las líneas marcadas'
+  letters: 'Cartas dadas'
+  unletter: Retíralo
+
+it:
+  page_title: Scrittura
+  page_icon: 'ph:bold/link'
+  auto: 'Scrivi tutto ciò che corrisponde'
+  date: Data
+  label: Etichetta
+  party: Partito
+  debit: Debito
+  credit: Credito
+  all_lettered: 'Ogni riga di questo conto è scritta.'
+  letter: 'Scrivi le righe selezionate'
+  letters: 'Lettere assegnate'
+  unletter: Riprendi
+
+pt_BR:
+  page_title: Letreiramento
+  page_icon: 'ph:bold/link'
+  auto: 'Letreirar tudo que corresponder'
+  date: Data
+  label: Rótulo
+  party: Partido
+  debit: Débito
+  credit: Crédito
+  all_lettered: 'Cada linha desta conta está letreirada.'
+  letter: 'Letreire as linhas marcadas'
+  letters: 'Letreiras dadas'
+  unletter: Desfazer
+
+tr:
+  page_title: 'Yazı Tipi'
+  page_icon: 'ph:bold/link'
+  auto: 'Eşleşen her şeyi yazın'
+  date: Tarih
+  label: Etiket
+  party: Taraf
+  debit: Borç
+  credit: Alacak
+  all_lettered: 'Bu hesabın her satırı yazılmıştır.'
+  letter: 'Seçilen satırları yazın'
+  letters: 'Verilen yazılar'
+  unletter: 'Geri al'
+
+vi:
+  page_title: 'Chữ viết'
+  page_icon: 'ph:bold/link'
+  auto: 'Chữ mọi thứ phù hợp'
+  date: Ngày
+  label: Nhãn
+  party: Đảng
+  debit: Nợ
+  credit: Có
+  all_lettered: 'Mỗi dòng trong tài khoản này đều đã được viết chữ.'
+  letter: 'Viết chữ cho các dòng đã đánh dấu'
+  letters: 'Các chữ đã được cung cấp'
+  unletter: 'Lấy lại'
+
+id:
+  page_title: Penulisan
+  page_icon: 'ph:bold/link'
+  auto: 'Tuliskan semua yang sesuai'
+  date: Tanggal
+  label: Label
+  party: Pihak
+  debit: Debit
+  credit: Kredit
+  all_lettered: 'Setiap baris akun ini telah ditulis.'
+  letter: 'Tulis baris yang dicentang'
+  letters: 'Surat yang diberikan'
+  unletter: 'Ambil kembali'
+
+nl:
+  page_title: Letteren
+  page_icon: 'ph:bold/link'
+  auto: 'Letter alles wat overeenkomt'
+  date: Datum
+  label: Label
+  party: Partij
+  debit: Debet
+  credit: Credit
+  all_lettered: 'Elke regel van deze rekening is gelabeld.'
+  letter: 'Label de aangekruiste regels'
+  letters: 'Gegeven labels'
+  unletter: Terugnemen

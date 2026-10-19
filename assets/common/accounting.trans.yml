@@ -195,3 +195,1323 @@ zh:
     sent: 已通过Peppol发送。
     related: 文件已链接。
     unrelated: 链接已移除。
+
+ar:
+  tab:
+    overview: 'نظرة عامة'
+    accounting: المحاسبة
+    documents: المستندات
+    parties: الأطراف
+    bank: البنك
+    entries: المدخلات
+    fiscal_years: 'السنوات المالية'
+    vat: 'ضريبة القيمة المضافة'
+    reports: التقارير
+    chart: 'دليل الحسابات'
+    settings: الإعدادات
+  status:
+    draft: مسودة
+    model: نموذج
+    waiting: 'في انتظار الموافقة'
+    approved: 'تم الموافقة'
+    emitted: 'تم إصدارها'
+    partially_paid: 'مدفوع جزئياً'
+    paid: مدفوع
+    canceled: ملغى
+    accepted: مقبول
+    refused: مرفوض
+    late: متأخر
+  type:
+    bill: فاتورة
+    credit_note: 'إشعار ائتماني'
+    quotation: 'عرض أسعار'
+    penalty: 'رسوم تأخير'
+    receipt: إيصال
+    pro_forma: 'نموذج أولي'
+  direction:
+    sale: بيع
+    purchase: شراء
+  refused:
+    token: 'تم ترك الصفحة مفتوحة لفترة طويلة. حاول مرة أخرى.'
+  done:
+    created: 'تم الإنشاء.'
+    saved: 'تم الحفظ.'
+    deleted: 'تم الحذف.'
+    emitted: 'تم إصدار المستند.'
+    credited: 'تم إصدار إشعار ائتماني.'
+    billed: 'تم إعداد الفاتورة من عرض الأسعار.'
+    duplicated: 'تم إنشاء نسخة كمسودة.'
+    imported: 'تم استيراد البيان.'
+    matched: 'تم التوافق.'
+    assigned: 'تم تحديد الخطوط.'
+    allocated: 'تم تسجيل الدفع.'
+    unallocated: 'تم إزالة الدفع.'
+    linked: 'تم ربط التحويل.'
+    unlinked: 'تم إلغاء ربط التحويل.'
+    posted: 'تم تسجيل المدخل.'
+    reversed: 'تم عكس المدخل.'
+    lettered: 'تم ترقيم الخطوط.'
+    unlettered: 'تمت إزالة الترقيم.'
+    closed: 'تم إغلاق السنة المالية.'
+    reopened: 'تم إعادة فتح السنة المالية.'
+    next: 'تم فتح السنة المالية التالية.'
+    settled: 'تم تسوية ضريبة القيمة المضافة.'
+    regularized: 'تم تصحيح الخصم.'
+    received: 'تم استلام الفاتورة كمسودة شراء.'
+    sent: 'تم الإرسال عبر Peppol.'
+    related: 'تم ربط المستندات.'
+    unrelated: 'تمت إزالة الرابط.'
+
+hi:
+  tab:
+    overview: सारांश
+    accounting: लेखांकन
+    documents: दस्तावेज़
+    parties: पार्टीज़
+    bank: बैंक
+    entries: प्रविष्टियाँ
+    fiscal_years: 'वित्तीय वर्ष'
+    vat: वैट
+    reports: रिपोर्ट्स
+    chart: 'खाते का चार्ट'
+    settings: सेटिंग्स
+  status:
+    draft: खाका
+    model: मॉडल
+    waiting: 'स्वीकृति की प्रतीक्षा में'
+    approved: स्वीकृत
+    emitted: 'जारी किया गया'
+    partially_paid: 'आंशिक रूप से भुगतान किया गया'
+    paid: 'भुगतान किया गया'
+    canceled: 'रद्द किया गया'
+    accepted: स्वीकृत
+    refused: अस्वीकृत
+    late: देरी
+  type:
+    bill: चालान
+    credit_note: 'क्रेडिट नोट'
+    quotation: उद्धरण
+    penalty: 'देरी शुल्क'
+    receipt: रसीद
+    pro_forma: 'प्रो फ़ार्मा'
+  direction:
+    sale: बिक्री
+    purchase: खरीद
+  refused:
+    token: 'पृष्ठ बहुत लंबे समय तक खुला रहा। फिर से प्रयास करें।'
+  done:
+    created: निर्मित।
+    saved: 'सहेजा गया।'
+    deleted: 'हटाया गया।'
+    emitted: 'दस्तावेज़ जारी किया गया।'
+    credited: 'क्रेडिट नोट जारी किया गया।'
+    billed: 'उद्धरण से चालान निकाला गया।'
+    duplicated: 'एक खाका के रूप में प्रतिलिपि बनाई गई।'
+    imported: 'ब्यौरा आयातित।'
+    matched: 'मिलान पूरा।'
+    assigned: 'लाइनें निर्दिष्ट की गईं।'
+    allocated: 'भुगतान रिकॉर्ड किया गया।'
+    unallocated: 'भुगतान हटा दिया गया।'
+    linked: 'हस्तांतरण जोड़ा गया।'
+    unlinked: 'हस्तांतरण हटाया गया।'
+    posted: 'प्रविष्टि रिकॉर्ड की गई।'
+    reversed: 'प्रविष्टि उलटी।'
+    lettered: 'लाइनें पत्रांकित की गईं।'
+    unlettered: 'पत्रांकन हटा दिया गया।'
+    closed: 'वित्तीय वर्ष बंद।'
+    reopened: 'वित्तीय वर्ष फिर से खोला गया।'
+    next: 'अगला वित्तीय वर्ष खोला गया।'
+    settled: 'वैट निपटाया गया।'
+    regularized: 'कटौती को सही किया गया।'
+    received: 'चालान खरीद खाका के रूप में प्राप्त हुआ।'
+    sent: 'Peppol पर भेजा गया।'
+    related: 'दस्तावेज़ जोड़े गए।'
+    unrelated: 'कड़ी हटा दी गई।'
+
+he:
+  tab:
+    overview: סקירה
+    accounting: חשבונאות
+    documents: מסמכים
+    parties: צדדים
+    bank: בנק
+    entries: פריטים
+    fiscal_years: 'שנים פיסקליות'
+    vat: 'מע"מ'
+    reports: דוחות
+    chart: מאזן
+    settings: הגדרות
+  status:
+    draft: טיוטה
+    model: מודל
+    waiting: 'ממתין לאישור'
+    approved: מאושר
+    emitted: מנופק
+    partially_paid: 'שולם חלקית'
+    paid: שולם
+    canceled: בוטל
+    accepted: התקבל
+    refused: נדחה
+    late: מאוחר
+  type:
+    bill: חשבונית
+    credit_note: החזר
+    quotation: ציטוט
+    penalty: 'קנס על איחור'
+    receipt: קבלה
+    pro_forma: 'פרו פורמה'
+  direction:
+    sale: מכירה
+    purchase: רכישה
+  refused:
+    token: 'העמוד נותר פתוח יותר מדי זמן. נסה שוב.'
+  done:
+    created: נוצר.
+    saved: נשמר.
+    deleted: נמחק.
+    emitted: 'המסמך הונפק.'
+    credited: 'ההחזר הונפק.'
+    billed: 'חשבונית הופקה מהציטוט.'
+    duplicated: 'העתק נוצר כטיוטה.'
+    imported: 'דוח יובא.'
+    matched: 'התאמה בוצעה.'
+    assigned: 'שורות צוין.'
+    allocated: 'תשלום נרשם.'
+    unallocated: 'תשלום הוסר.'
+    linked: 'העברה מקושרת.'
+    unlinked: 'העברה לא מקושרת.'
+    posted: 'רישום נרשם.'
+    reversed: 'רישום בוטל.'
+    lettered: 'שורות נכתבו.'
+    unlettered: 'כתיבה הוסרה.'
+    closed: 'השנה הפיסקלית נסגרה.'
+    reopened: 'השנה הפיסקלית נפתחה מחדש.'
+    next: 'השנה הפיסקלית הבאה נפתחה.'
+    settled: 'מע"מ סודר.'
+    regularized: 'ניכוי הוסדר.'
+    received: 'חשבונית התקבלה כטיוטת רכישה.'
+    sent: 'נשלח דרך Peppol.'
+    related: 'מסמכים מקושרים.'
+    unrelated: 'קישור הוסר.'
+
+fa:
+  tab:
+    overview: 'نمای کلی'
+    accounting: حسابداری
+    documents: اسناد
+    parties: طرفین
+    bank: بانک
+    entries: ورودی‌ها
+    fiscal_years: 'سال‌های مالی'
+    vat: 'مالیات بر ارزش افزوده'
+    reports: گزارش‌ها
+    chart: 'چارت حساب‌ها'
+    settings: تنظیمات
+  status:
+    draft: پیش‌نویس
+    model: مدل
+    waiting: 'در انتظار تأیید'
+    approved: 'تأیید شده'
+    emitted: 'صادر شده'
+    partially_paid: 'جزئی پرداخت شده'
+    paid: 'پرداخت شده'
+    canceled: 'لغو شده'
+    accepted: 'پذیرفته شده'
+    refused: 'رد شده'
+    late: معوق
+  type:
+    bill: فاکتور
+    credit_note: 'یادداشت اعتباری'
+    quotation: 'پیشنهاد قیمت'
+    penalty: 'جریمه دیرکرد'
+    receipt: رسید
+    pro_forma: پروفرما
+  direction:
+    sale: فروش
+    purchase: خرید
+  refused:
+    token: 'صفحه مدت طولانی باز مانده است. دوباره تلاش کنید.'
+  done:
+    created: 'ایجاد شد.'
+    saved: 'ذخیره شد.'
+    deleted: 'حذف شد.'
+    emitted: 'مدرک صادر شد.'
+    credited: 'یادداشت اعتباری صادر شد.'
+    billed: 'فاکتور از پیشنهاد قیمت استخراج شد.'
+    duplicated: 'کپی به عنوان پیش‌نویس ایجاد شد.'
+    imported: 'صورت‌حساب وارد شد.'
+    matched: 'مطابقت انجام شد.'
+    assigned: 'خطوط مشخص شد.'
+    allocated: 'پرداخت ثبت شد.'
+    unallocated: 'پرداخت حذف شد.'
+    linked: 'انتقال متصل شد.'
+    unlinked: 'انتقال جدا شد.'
+    posted: 'ورودی ثبت شد.'
+    reversed: 'ورودی معکوس شد.'
+    lettered: 'خطوط شماره‌گذاری شدند.'
+    unlettered: 'شماره‌گذاری حذف شد.'
+    closed: 'سال مالی بسته شد.'
+    reopened: 'سال مالی دوباره باز شد.'
+    next: 'سال مالی بعدی باز شد.'
+    settled: 'مالیات بر ارزش افزوده تسویه شد.'
+    regularized: 'کسر به درستی تنظیم شد.'
+    received: 'فاکتور به عنوان پیش‌نویس خرید دریافت شد.'
+    sent: 'از طریق Peppol ارسال شد.'
+    related: 'اسناد مرتبط شدند.'
+    unrelated: 'پیوند حذف شد.'
+
+ur:
+  tab:
+    overview: جائزہ
+    accounting: محاسباتی
+    documents: دستاویزات
+    parties: فریقین
+    bank: بینک
+    entries: داخلے
+    fiscal_years: 'مالی سال'
+    vat: VAT
+    reports: رپورٹس
+    chart: 'اکاؤنٹس کا چارٹ'
+    settings: ترتیبات
+  status:
+    draft: مسودہ
+    model: ماڈل
+    waiting: 'منظوری کا انتظار'
+    approved: 'منظور شدہ'
+    emitted: 'جاری شدہ'
+    partially_paid: 'جزوی طور پر ادا کیا گیا'
+    paid: 'ادائیگی کی گئی'
+    canceled: 'منسوخ کر دیا گیا'
+    accepted: 'قبول کر لیا گیا'
+    refused: 'رد کر دیا گیا'
+    late: 'دیر سے'
+  type:
+    bill: انوائس
+    credit_note: 'کریڈٹ نوٹ'
+    quotation: اقتباس
+    penalty: 'دیر سے فیس'
+    receipt: رسید
+    pro_forma: 'پرو فارما'
+  direction:
+    sale: فروخت
+    purchase: خریداری
+  refused:
+    token: 'صفحات کو بہت دیر تک کھلا چھوڑ دیا گیا۔ دوبارہ کوشش کریں۔'
+  done:
+    created: 'تخلیق کیا گیا۔'
+    saved: 'محفوظ کیا گیا۔'
+    deleted: 'حذف کر دیا گیا۔'
+    emitted: 'دستاویز جاری کی گئی۔'
+    credited: 'کریڈٹ نوٹ جاری کیا گیا۔'
+    billed: 'اقتباس سے انوائس تیار کی گئی۔'
+    duplicated: 'مسودے کے طور پر کاپی بنائی گئی۔'
+    imported: 'بیان درآمد کیا گیا۔'
+    matched: 'میل کیا گیا۔'
+    assigned: 'لائنیں اشارہ کی گئی ہیں۔'
+    allocated: 'ادائیگی ریکارڈ کی گئی۔'
+    unallocated: 'ادائیگی ہٹا دی گئی۔'
+    linked: 'منتقلی منسلک کی گئی۔'
+    unlinked: 'منتقلی منقطع کی گئی۔'
+    posted: 'داخلہ ریکارڈ کیا گیا۔'
+    reversed: 'داخلہ پلٹا دیا گیا۔'
+    lettered: 'لائنیں خط دار کی گئی ہیں۔'
+    unlettered: 'خط داری ہٹا دی گئی۔'
+    closed: 'مالی سال بند کر دیا گیا۔'
+    reopened: 'مالی سال دوبارہ کھولا گیا۔'
+    next: 'اگلا مالی سال کھولا گیا۔'
+    settled: 'VAT طے کر دیا گیا۔'
+    regularized: 'کٹوتی درست کی گئی۔'
+    received: 'انوائس خریداری کے مسودے کے طور پر موصول ہوئی۔'
+    sent: 'Peppol کے ذریعے بھیجی گئی۔'
+    related: 'دستاویزات منسلک کی گئی ہیں۔'
+    unrelated: 'لنک ہٹا دیا گیا۔'
+
+ja:
+  tab:
+    overview: 概要
+    accounting: 会計
+    documents: 書類
+    parties: 関係者
+    bank: 銀行
+    entries: エントリ
+    fiscal_years: 会計年度
+    vat: 付加価値税
+    reports: レポート
+    chart: 勘定科目表
+    settings: 設定
+  status:
+    draft: ドラフト
+    model: モデル
+    waiting: 承認待ち
+    approved: 承認済み
+    emitted: 発行済み
+    partially_paid: 一部支払い済み
+    paid: 支払い済み
+    canceled: キャンセル済み
+    accepted: 受け入れ済み
+    refused: 拒否済み
+    late: 遅延
+  type:
+    bill: 請求書
+    credit_note: クレジットノート
+    quotation: 見積
+    penalty: 遅延料金
+    receipt: 領収書
+    pro_forma: プロフォーマ
+  direction:
+    sale: 販売
+    purchase: 購入
+  refused:
+    token: ページが長時間開かれたままです。再試行してください。
+  done:
+    created: 作成済み。
+    saved: 保存済み。
+    deleted: 削除済み。
+    emitted: 書類が発行されました。
+    credited: クレジットノートが発行されました。
+    billed: 見積から請求書が作成されました。
+    duplicated: ドラフトとしてコピーが作成されました。
+    imported: 明細がインポートされました。
+    matched: 一致が完了しました。
+    assigned: 行が指定されました。
+    allocated: 支払いが記録されました。
+    unallocated: 支払いが削除されました。
+    linked: 転送がリンクされました。
+    unlinked: 転送のリンクが解除されました。
+    posted: エントリが記録されました。
+    reversed: エントリが逆転されました。
+    lettered: 行に文字が付けられました。
+    unlettered: 文字付けが解除されました。
+    closed: 会計年度が閉じられました。
+    reopened: 会計年度が再開されました。
+    next: 次の会計年度が開かれました。
+    settled: 付加価値税が清算されました。
+    regularized: 控除が正されました。
+    received: 請求書が購入ドラフトとして受け取られました。
+    sent: Peppol経由で送信されました。
+    related: 書類がリンクされました。
+    unrelated: リンクが削除されました。
+
+ko:
+  tab:
+    overview: 개요
+    accounting: 회계
+    documents: 문서
+    parties: 당사자
+    bank: 은행
+    entries: 항목
+    fiscal_years: '회계 연도'
+    vat: 부가세
+    reports: 보고서
+    chart: '계정 차트'
+    settings: 설정
+  status:
+    draft: 초안
+    model: 모델
+    waiting: '승인 대기 중'
+    approved: 승인됨
+    emitted: 발행됨
+    partially_paid: '부분 지불됨'
+    paid: 지불됨
+    canceled: 취소됨
+    accepted: 수락됨
+    refused: 거부됨
+    late: 지연됨
+  type:
+    bill: 청구서
+    credit_note: '크레딧 노트'
+    quotation: 견적서
+    penalty: 연체료
+    receipt: 영수증
+    pro_forma: '견적 송장'
+  direction:
+    sale: 판매
+    purchase: 구매
+  refused:
+    token: '페이지가 너무 오랫동안 열려 있었습니다. 다시 시도하세요.'
+  done:
+    created: 생성됨.
+    saved: 저장됨.
+    deleted: 삭제됨.
+    emitted: '문서가 발행됨.'
+    credited: '크레딧 노트가 발행됨.'
+    billed: '청구서가 견적서에서 작성됨.'
+    duplicated: '초안으로 복사본이 생성됨.'
+    imported: '명세서가 가져와짐.'
+    matched: '일치 완료.'
+    assigned: '항목이 지정됨.'
+    allocated: '지불이 기록됨.'
+    unallocated: '지불이 제거됨.'
+    linked: '전송이 연결됨.'
+    unlinked: '전송이 연결 해제됨.'
+    posted: '항목이 기록됨.'
+    reversed: '항목이 취소됨.'
+    lettered: '항목에 문자 부여됨.'
+    unlettered: '문자 부여가 제거됨.'
+    closed: '회계 연도 종료됨.'
+    reopened: '회계 연도 재개됨.'
+    next: '다음 회계 연도 개시됨.'
+    settled: '부가세 정산됨.'
+    regularized: '공제가 정상화됨.'
+    received: '영수증이 구매 초안으로 수령됨.'
+    sent: 'Peppol을 통해 전송됨.'
+    related: '문서가 연결됨.'
+    unrelated: '연결이 제거됨.'
+
+bn:
+  tab:
+    overview: পর্যালোচনা
+    accounting: 'হিসাব রক্ষণ'
+    documents: ডকুমেন্টস
+    parties: পক্ষসমূহ
+    bank: ব্যাংক
+    entries: এন্ট্রিস
+    fiscal_years: 'আর্থিক বছর'
+    vat: ভ্যাট
+    reports: রিপোর্টস
+    chart: 'হিসাবের তালিকা'
+    settings: সেটিংস
+  status:
+    draft: খসড়া
+    model: মডেল
+    waiting: 'অনুমোদনের জন্য অপেক্ষমাণ'
+    approved: অনুমোদিত
+    emitted: 'জারি করা হয়েছে'
+    partially_paid: 'আংশিকভাবে পরিশোধিত'
+    paid: পরিশোধিত
+    canceled: 'বাতিল করা হয়েছে'
+    accepted: গৃহীত
+    refused: 'অস্বীকার করা হয়েছে'
+    late: বিলম্বিত
+  type:
+    bill: চালান
+    credit_note: 'ক্রেডিট নোট'
+    quotation: কোটেশন
+    penalty: 'বিলম্ব ফি'
+    receipt: রসিদ
+    pro_forma: 'প্রো ফর্মা'
+  direction:
+    sale: বিক্রি
+    purchase: ক্রয়
+  refused:
+    token: 'পৃষ্ঠাটি слишком долго খোলা ছিল। আবার চেষ্টা করুন।'
+  done:
+    created: 'তৈরি করা হয়েছে।'
+    saved: 'সংরক্ষিত হয়েছে।'
+    deleted: 'মুছে ফেলা হয়েছে।'
+    emitted: 'ডকুমেন্ট জারি করা হয়েছে।'
+    credited: 'ক্রেডিট নোট জারি করা হয়েছে।'
+    billed: 'কোটেশন থেকে চালান তৈরি করা হয়েছে।'
+    duplicated: 'একটি খসড়া হিসেবে কপি তৈরি করা হয়েছে।'
+    imported: 'বার্তা আমদানি করা হয়েছে।'
+    matched: 'মিলানো সম্পন্ন হয়েছে।'
+    assigned: 'লাইনগুলি নির্দেশিত হয়েছে।'
+    allocated: 'পেমেন্ট রেকর্ড করা হয়েছে।'
+    unallocated: 'পেমেন্ট মুছে ফেলা হয়েছে।'
+    linked: 'স্থানান্তর সংযুক্ত হয়েছে।'
+    unlinked: 'স্থানান্তর বিচ্ছিন্ন করা হয়েছে।'
+    posted: 'এন্ট্রি রেকর্ড করা হয়েছে।'
+    reversed: 'এন্ট্রি রিভার্স করা হয়েছে।'
+    lettered: 'লাইনগুলি অক্ষরিত হয়েছে।'
+    unlettered: 'অক্ষর অপসারিত হয়েছে।'
+    closed: 'আর্থিক বছর বন্ধ হয়েছে।'
+    reopened: 'আর্থিক বছর পুনরায় খোলা হয়েছে।'
+    next: 'পরবর্তী আর্থিক বছর খোলা হয়েছে।'
+    settled: 'ভ্যাট নিষ্পত্তি করা হয়েছে।'
+    regularized: 'সংশোধন সঠিক করা হয়েছে।'
+    received: 'চালান ক্রয় খসড়া হিসেবে গ্রহণ করা হয়েছে।'
+    sent: 'পেপল এর মাধ্যমে পাঠানো হয়েছে।'
+    related: 'ডকুমেন্টগুলি সংযুক্ত হয়েছে।'
+    unrelated: 'সংযোগ মুছে ফেলা হয়েছে।'
+
+th:
+  tab:
+    overview: ภาพรวม
+    accounting: บัญชี
+    documents: เอกสาร
+    parties: คู่ค้า
+    bank: ธนาคาร
+    entries: รายการ
+    fiscal_years: ปีการเงิน
+    vat: ภาษีมูลค่าเพิ่ม
+    reports: รายงาน
+    chart: แผนภูมิบัญชี
+    settings: การตั้งค่า
+  status:
+    draft: ร่าง
+    model: แบบจำลอง
+    waiting: รอการอนุมัติ
+    approved: อนุมัติแล้ว
+    emitted: ออกแล้ว
+    partially_paid: ชำระเงินบางส่วน
+    paid: ชำระแล้ว
+    canceled: ยกเลิก
+    accepted: รับรอง
+    refused: ปฏิเสธ
+    late: ล่าช้า
+  type:
+    bill: ใบแจ้งหนี้
+    credit_note: ใบลดหนี้
+    quotation: ใบเสนอราคา
+    penalty: ค่าปรับล่าช้า
+    receipt: ใบเสร็จรับเงิน
+    pro_forma: ใบแจ้งหนี้เบื้องต้น
+  direction:
+    sale: ขาย
+    purchase: ซื้อ
+  refused:
+    token: 'หน้าเว็บถูกเปิดทิ้งไว้นานเกินไป ลองอีกครั้ง.'
+  done:
+    created: สร้างเรียบร้อยแล้ว.
+    saved: บันทึกเรียบร้อยแล้ว.
+    deleted: ลบเรียบร้อยแล้ว.
+    emitted: เอกสารออกแล้ว.
+    credited: ออกใบลดหนี้แล้ว.
+    billed: ออกใบแจ้งหนี้จากใบเสนอราคาแล้ว.
+    duplicated: สร้างสำเนาเป็นร่าง.
+    imported: นำเข้ารายการเรียบร้อยแล้ว.
+    matched: การจับคู่เสร็จสิ้น.
+    assigned: ชี้เส้นทางแล้ว.
+    allocated: บันทึกการชำระเงินแล้ว.
+    unallocated: ลบการชำระเงินออกแล้ว.
+    linked: การโอนเชื่อมโยงแล้ว.
+    unlinked: การโอนไม่เชื่อมโยงแล้ว.
+    posted: บันทึกรายการเรียบร้อยแล้ว.
+    reversed: ย้อนกลับรายการแล้ว.
+    lettered: ระบุเส้นทางแล้ว.
+    unlettered: ลบการระบุเส้นทางออกแล้ว.
+    closed: ปีการเงินปิดแล้ว.
+    reopened: ปีการเงินเปิดใหม่แล้ว.
+    next: ปีการเงินถัดไปเปิดแล้ว.
+    settled: ภาษีมูลค่าเพิ่มชำระแล้ว.
+    regularized: การหักเงินถูกปรับให้ถูกต้องแล้ว.
+    received: ใบแจ้งหนี้ได้รับเป็นร่างการซื้อแล้ว.
+    sent: 'ส่งผ่าน Peppol แล้ว.'
+    related: เอกสารเชื่อมโยงแล้ว.
+    unrelated: ลบการเชื่อมโยงออก.
+
+de:
+  tab:
+    overview: Übersicht
+    accounting: Buchhaltung
+    documents: Dokumente
+    parties: Parteien
+    bank: Bank
+    entries: Buchungen
+    fiscal_years: Geschäftsjahre
+    vat: USt
+    reports: Berichte
+    chart: Kontenplan
+    settings: Einstellungen
+  status:
+    draft: Entwurf
+    model: Modell
+    waiting: 'Wartet auf Genehmigung'
+    approved: Genehmigt
+    emitted: Ausgestellt
+    partially_paid: 'Teilweise bezahlt'
+    paid: Bezahlt
+    canceled: Storniert
+    accepted: Akzeptiert
+    refused: Abgelehnt
+    late: Verspätet
+  type:
+    bill: Rechnung
+    credit_note: Gutschrift
+    quotation: Angebot
+    penalty: Verspätungsgebühr
+    receipt: Quittung
+    pro_forma: 'Pro forma'
+  direction:
+    sale: Verkauf
+    purchase: Einkauf
+  refused:
+    token: 'Die Seite wurde zu lange offen gelassen. Bitte erneut versuchen.'
+  done:
+    created: Erstellt.
+    saved: Gespeichert.
+    deleted: Gelöscht.
+    emitted: 'Dokument ausgestellt.'
+    credited: 'Gutschrift ausgestellt.'
+    billed: 'Rechnung aus dem Angebot erstellt.'
+    duplicated: 'Kopie als Entwurf erstellt.'
+    imported: 'Abrechnung importiert.'
+    matched: 'Zuordnung abgeschlossen.'
+    assigned: 'Zeilen zugewiesen.'
+    allocated: 'Zahlung erfasst.'
+    unallocated: 'Zahlung entfernt.'
+    linked: 'Übertragung verknüpft.'
+    unlinked: 'Übertragung entknüpft.'
+    posted: 'Buchung erfasst.'
+    reversed: 'Buchung rückgängig gemacht.'
+    lettered: 'Zeilen beschriftet.'
+    unlettered: 'Beschriftung entfernt.'
+    closed: 'Geschäftsjahr geschlossen.'
+    reopened: 'Geschäftsjahr wiedereröffnet.'
+    next: 'Nächstes Geschäftsjahr eröffnet.'
+    settled: 'USt abgewickelt.'
+    regularized: 'Abzug korrigiert.'
+    received: 'Rechnung als Einkauf Entwurf erhalten.'
+    sent: 'Über Peppol gesendet.'
+    related: 'Dokumente verknüpft.'
+    unrelated: 'Verknüpfung entfernt.'
+
+fi:
+  tab:
+    overview: Yhteenveto
+    accounting: Kirjanpito
+    documents: Asiakirjat
+    parties: Osapuolet
+    bank: Pankki
+    entries: Kirjaukset
+    fiscal_years: Verovuodet
+    vat: ALV
+    reports: Raportit
+    chart: Tililuettelo
+    settings: Asetukset
+  status:
+    draft: Luonnos
+    model: Malli
+    waiting: 'Odottaa hyväksyntää'
+    approved: Hyväksytty
+    emitted: Julkaistu
+    partially_paid: 'Osittain maksettu'
+    paid: Maksettu
+    canceled: Peruttu
+    accepted: Hyväksytty
+    refused: Hylätty
+    late: Myöhässä
+  type:
+    bill: Lasku
+    credit_note: Luottokuitti
+    quotation: Tarjous
+    penalty: Viivästysmaksu
+    receipt: Kuitti
+    pro_forma: 'Pro forma'
+  direction:
+    sale: Myynti
+    purchase: Osto
+  refused:
+    token: 'Sivu oli auki liian pitkään. Yritä uudelleen.'
+  done:
+    created: Luotu.
+    saved: Tallennettu.
+    deleted: Poistettu.
+    emitted: 'Asiakirja julkaistu.'
+    credited: 'Luottokuitti julkaistu.'
+    billed: 'Lasku laadittu tarjouksesta.'
+    duplicated: 'Kopio luotu luonnoksena.'
+    imported: 'Tiliote tuotu.'
+    matched: 'Vastaavuus suoritettu.'
+    assigned: 'Rivit osoitettu.'
+    allocated: 'Maksu kirjattu.'
+    unallocated: 'Maksu poistettu.'
+    linked: 'Siirto linkitetty.'
+    unlinked: 'Siirto poistettu linkityksestä.'
+    posted: 'Kirjaus kirjattu.'
+    reversed: 'Kirjaus kumottu.'
+    lettered: 'Rivit numeroitu.'
+    unlettered: 'Numerointi poistettu.'
+    closed: 'Verovuosi suljettu.'
+    reopened: 'Verovuosi avattu uudelleen.'
+    next: 'Seuraava verovuosi avattu.'
+    settled: 'ALV selvitetty.'
+    regularized: 'Vähennys oikaistu.'
+    received: 'Lasku vastaanotettu osto luonnoksena.'
+    sent: 'Lähetetty Peppolin kautta.'
+    related: 'Asiakirjat linkitetty.'
+    unrelated: 'Linkki poistettu.'
+
+ru:
+  tab:
+    overview: Обзор
+    accounting: Бухгалтерия
+    documents: Документы
+    parties: Стороны
+    bank: Банк
+    entries: Записи
+    fiscal_years: 'Финансовые годы'
+    vat: НДС
+    reports: Отчеты
+    chart: 'План счетов'
+    settings: Настройки
+  status:
+    draft: Черновик
+    model: Модель
+    waiting: 'Ожидает утверждения'
+    approved: Утверждено
+    emitted: Выпущено
+    partially_paid: 'Частично оплачено'
+    paid: Оплачено
+    canceled: Отменено
+    accepted: Принято
+    refused: Отклонено
+    late: Просрочено
+  type:
+    bill: Счет-фактура
+    credit_note: Кредит-нота
+    quotation: Котировка
+    penalty: 'Штраф за просрочку'
+    receipt: Квитанция
+    pro_forma: Проформа
+  direction:
+    sale: Продажа
+    purchase: Покупка
+  refused:
+    token: 'Страница была открыта слишком долго. Попробуйте снова.'
+  done:
+    created: Создано.
+    saved: Сохранено.
+    deleted: Удалено.
+    emitted: 'Документ выпущен.'
+    credited: 'Кредит-нота выпущена.'
+    billed: 'Счет-фактура выставлен по котировке.'
+    duplicated: 'Создана копия в черновике.'
+    imported: 'Выписка импортирована.'
+    matched: 'Сопоставление выполнено.'
+    assigned: 'Строки указаны.'
+    allocated: 'Оплата зарегистрирована.'
+    unallocated: 'Оплата удалена.'
+    linked: 'Перевод связан.'
+    unlinked: 'Перевод отвязан.'
+    posted: 'Запись зарегистрирована.'
+    reversed: 'Запись отменена.'
+    lettered: 'Строки пронумерованы.'
+    unlettered: 'Нумерация удалена.'
+    closed: 'Финансовый год закрыт.'
+    reopened: 'Финансовый год повторно открыт.'
+    next: 'Открыт следующий финансовый год.'
+    settled: 'НДС урегулирован.'
+    regularized: 'Вычет исправлен.'
+    received: 'Счет-фактура получена как черновик покупки.'
+    sent: 'Отправлено через Peppol.'
+    related: 'Документы связаны.'
+    unrelated: 'Связь удалена.'
+
+pl:
+  tab:
+    overview: Podsumowanie
+    accounting: Księgowość
+    documents: Dokumenty
+    parties: Strony
+    bank: Bank
+    entries: Wpisy
+    fiscal_years: 'Lata podatkowe'
+    vat: VAT
+    reports: Raporty
+    chart: 'Plan kont'
+    settings: Ustawienia
+  status:
+    draft: Roboczy
+    model: Model
+    waiting: 'Oczekuje na zatwierdzenie'
+    approved: Zatwierdzony
+    emitted: Wydany
+    partially_paid: 'Częściowo opłacony'
+    paid: Opłacony
+    canceled: Anulowany
+    accepted: Zaakceptowany
+    refused: Odrzucony
+    late: Zaległy
+  type:
+    bill: Faktura
+    credit_note: 'Nota kredytowa'
+    quotation: Oferta
+    penalty: 'Opłata za zwłokę'
+    receipt: Paragon
+    pro_forma: 'Pro forma'
+  direction:
+    sale: Sprzedaż
+    purchase: Zakup
+  refused:
+    token: 'Strona była otwarta zbyt długo. Spróbuj ponownie.'
+  done:
+    created: Utworzono.
+    saved: Zapisano.
+    deleted: Usunięto.
+    emitted: 'Dokument wydany.'
+    credited: 'Nota kredytowa wydana.'
+    billed: 'Faktura wystawiona na podstawie oferty.'
+    duplicated: 'Kopia utworzona jako robocza.'
+    imported: 'Wyciąg zaimportowany.'
+    matched: 'Dopasowanie zakończone.'
+    assigned: 'Linie przypisane.'
+    allocated: 'Płatność zarejestrowana.'
+    unallocated: 'Płatność usunięta.'
+    linked: 'Przelew powiązany.'
+    unlinked: 'Przelew odłączony.'
+    posted: 'Wpis zarejestrowany.'
+    reversed: 'Wpis odwrócony.'
+    lettered: 'Linie ponumerowane.'
+    unlettered: 'Numeracja usunięta.'
+    closed: 'Rok podatkowy zamknięty.'
+    reopened: 'Rok podatkowy otwarty na nowo.'
+    next: 'Otwarto kolejny rok podatkowy.'
+    settled: 'VAT rozliczony.'
+    regularized: 'Odliczenie poprawione.'
+    received: 'Faktura otrzymana jako projekt zakupu.'
+    sent: 'Wysłano przez Peppol.'
+    related: 'Dokumenty powiązane.'
+    unrelated: 'Link usunięty.'
+
+es:
+  tab:
+    overview: Resumen
+    accounting: Contabilidad
+    documents: Documentos
+    parties: Partes
+    bank: Banco
+    entries: Entradas
+    fiscal_years: 'Años fiscales'
+    vat: IVA
+    reports: Informes
+    chart: 'Plan de cuentas'
+    settings: Configuraciones
+  status:
+    draft: Borrador
+    model: Modelo
+    waiting: 'Esperando aprobación'
+    approved: Aprobado
+    emitted: Emitido
+    partially_paid: 'Parcialmente pagado'
+    paid: Pagado
+    canceled: Cancelado
+    accepted: Aceptado
+    refused: Rechazado
+    late: Tarde
+  type:
+    bill: Factura
+    credit_note: 'Nota de crédito'
+    quotation: Cotización
+    penalty: 'Cargo por demora'
+    receipt: Recibo
+    pro_forma: 'Pro forma'
+  direction:
+    sale: Venta
+    purchase: Compra
+  refused:
+    token: 'La página estuvo abierta demasiado tiempo. Inténtalo de nuevo.'
+  done:
+    created: Creado.
+    saved: Guardado.
+    deleted: Eliminado.
+    emitted: 'Documento emitido.'
+    credited: 'Nota de crédito emitida.'
+    billed: 'Factura generada a partir de la cotización.'
+    duplicated: 'Copia creada como borrador.'
+    imported: 'Estado importado.'
+    matched: 'Coincidencia realizada.'
+    assigned: 'Líneas apuntadas.'
+    allocated: 'Pago registrado.'
+    unallocated: 'Pago eliminado.'
+    linked: 'Transferencia vinculada.'
+    unlinked: 'Transferencia desvinculada.'
+    posted: 'Entrada registrada.'
+    reversed: 'Entrada revertida.'
+    lettered: 'Líneas etiquetadas.'
+    unlettered: 'Etiqueta eliminada.'
+    closed: 'Año fiscal cerrado.'
+    reopened: 'Año fiscal reabierto.'
+    next: 'Próximo año fiscal abierto.'
+    settled: 'IVA liquidado.'
+    regularized: 'Deducción corregida.'
+    received: 'Factura recibida como borrador de compra.'
+    sent: 'Enviado a través de Peppol.'
+    related: 'Documentos vinculados.'
+    unrelated: 'Vínculo eliminado.'
+
+it:
+  tab:
+    overview: Panoramica
+    accounting: Contabilità
+    documents: Documenti
+    parties: Parti
+    bank: Banca
+    entries: Voci
+    fiscal_years: 'Anni fiscali'
+    vat: IVA
+    reports: Report
+    chart: 'Piano dei conti'
+    settings: Impostazioni
+  status:
+    draft: Bozza
+    model: Modello
+    waiting: 'In attesa di approvazione'
+    approved: Approvato
+    emitted: Emesso
+    partially_paid: 'Parzialmente pagato'
+    paid: Pagato
+    canceled: Annullato
+    accepted: Accettato
+    refused: Rifiutato
+    late: 'In ritardo'
+  type:
+    bill: Fattura
+    credit_note: 'Nota di credito'
+    quotation: Preventivo
+    penalty: 'Penale per ritardo'
+    receipt: Ricevuta
+    pro_forma: 'Pro forma'
+  direction:
+    sale: Vendita
+    purchase: Acquisto
+  refused:
+    token: 'La pagina è rimasta aperta troppo a lungo. Riprova.'
+  done:
+    created: Creato.
+    saved: Salvato.
+    deleted: Eliminato.
+    emitted: 'Documento emesso.'
+    credited: 'Nota di credito emessa.'
+    billed: 'Fattura redatta dal preventivo.'
+    duplicated: 'Copia creata come bozza.'
+    imported: 'Estratto conto importato.'
+    matched: 'Abbinamento completato.'
+    assigned: 'Linee assegnate.'
+    allocated: 'Pagamento registrato.'
+    unallocated: 'Pagamento rimosso.'
+    linked: 'Trasferimento collegato.'
+    unlinked: 'Trasferimento scollegato.'
+    posted: 'Voce registrata.'
+    reversed: 'Voce annullata.'
+    lettered: 'Linee etichettate.'
+    unlettered: 'Etichettatura rimossa.'
+    closed: 'Anno fiscale chiuso.'
+    reopened: 'Anno fiscale riaperto.'
+    next: 'Prossimo anno fiscale aperto.'
+    settled: 'IVA regolata.'
+    regularized: 'Detrazione sistemata.'
+    received: 'Fattura ricevuta come bozza di acquisto.'
+    sent: 'Inviato tramite Peppol.'
+    related: 'Documenti collegati.'
+    unrelated: 'Collegamento rimosso.'
+
+pt_BR:
+  tab:
+    overview: 'Visão geral'
+    accounting: Contabilidade
+    documents: Documentos
+    parties: Partes
+    bank: Banco
+    entries: Lançamentos
+    fiscal_years: 'Anos fiscais'
+    vat: IVA
+    reports: Relatórios
+    chart: 'Plano de contas'
+    settings: Configurações
+  status:
+    draft: Rascunho
+    model: Modelo
+    waiting: 'Aguardando aprovação'
+    approved: Aprovado
+    emitted: Emitido
+    partially_paid: 'Parcialmente pago'
+    paid: Pago
+    canceled: Cancelado
+    accepted: Aceito
+    refused: Recusado
+    late: Atrasado
+  type:
+    bill: Fatura
+    credit_note: 'Nota de crédito'
+    quotation: Orçamento
+    penalty: 'Multa por atraso'
+    receipt: Recibo
+    pro_forma: 'Pro forma'
+  direction:
+    sale: Venda
+    purchase: Compra
+  refused:
+    token: 'A página foi deixada aberta por muito tempo. Tente novamente.'
+  done:
+    created: Criado.
+    saved: Salvo.
+    deleted: Deletado.
+    emitted: 'Documento emitido.'
+    credited: 'Nota de crédito emitida.'
+    billed: 'Fatura gerada a partir do orçamento.'
+    duplicated: 'Cópia criada como rascunho.'
+    imported: 'Extrato importado.'
+    matched: 'Correspondência feita.'
+    assigned: 'Linhas apontadas.'
+    allocated: 'Pagamento registrado.'
+    unallocated: 'Pagamento removido.'
+    linked: 'Transferência vinculada.'
+    unlinked: 'Transferência desvinculada.'
+    posted: 'Lançamento registrado.'
+    reversed: 'Lançamento revertido.'
+    lettered: 'Linhas numeradas.'
+    unlettered: 'Numeração removida.'
+    closed: 'Ano fiscal encerrado.'
+    reopened: 'Ano fiscal reaberto.'
+    next: 'Próximo ano fiscal aberto.'
+    settled: 'IVA liquidado.'
+    regularized: 'Dedução regularizada.'
+    received: 'Fatura recebida como rascunho de compra.'
+    sent: 'Enviado pelo Peppol.'
+    related: 'Documentos vinculados.'
+    unrelated: 'Vínculo removido.'
+
+tr:
+  tab:
+    overview: 'Genel Bakış'
+    accounting: Muhasebe
+    documents: Belgeler
+    parties: Taraflar
+    bank: Banka
+    entries: Kayıtlar
+    fiscal_years: 'Mali yıllar'
+    vat: KDV
+    reports: Raporlar
+    chart: 'Hesap Planı'
+    settings: Ayarlar
+  status:
+    draft: Taslak
+    model: Model
+    waiting: 'Onay bekleniyor'
+    approved: Onaylandı
+    emitted: Düzenlendi
+    partially_paid: 'Kısmen ödendi'
+    paid: Ödendi
+    canceled: 'İptal edildi'
+    accepted: 'Kabul edildi'
+    refused: Reddedildi
+    late: Gecikmeli
+  type:
+    bill: Fatura
+    credit_note: 'Kredi notu'
+    quotation: Teklif
+    penalty: 'Gecikme ücreti'
+    receipt: Makbuz
+    pro_forma: 'Pro forma'
+  direction:
+    sale: Satış
+    purchase: Alım
+  refused:
+    token: 'Sayfa çok uzun süre açık kaldı. Tekrar deneyin.'
+  done:
+    created: Oluşturuldu.
+    saved: Kaydedildi.
+    deleted: Silindi.
+    emitted: 'Belge düzenlendi.'
+    credited: 'Kredi notu düzenlendi.'
+    billed: 'Fatura teklif üzerinden oluşturuldu.'
+    duplicated: 'Taslak olarak kopya oluşturuldu.'
+    imported: 'Bildirge içe aktarıldı.'
+    matched: 'Eşleştirme yapıldı.'
+    assigned: 'Satırlar işaretlendi.'
+    allocated: 'Ödeme kaydedildi.'
+    unallocated: 'Ödeme kaldırıldı.'
+    linked: 'Transfer bağlantısı yapıldı.'
+    unlinked: 'Transfer bağlantısı kaldırıldı.'
+    posted: 'Kayıt yapıldı.'
+    reversed: 'Kayıt geri alındı.'
+    lettered: 'Satırlar numaralandırıldı.'
+    unlettered: 'Numaralandırma kaldırıldı.'
+    closed: 'Mali yıl kapatıldı.'
+    reopened: 'Mali yıl yeniden açıldı.'
+    next: 'Sonraki mali yıl açıldı.'
+    settled: 'KDV hesaplandı.'
+    regularized: 'İndirim düzeltildi.'
+    received: 'Fatura satın alma taslağı olarak alındı.'
+    sent: 'Peppol üzerinden gönderildi.'
+    related: 'Belgeler bağlantılı.'
+    unrelated: 'Bağlantı kaldırıldı.'
+
+vi:
+  tab:
+    overview: 'Tổng quan'
+    accounting: 'Kế toán'
+    documents: 'Tài liệu'
+    parties: 'Các bên'
+    bank: 'Ngân hàng'
+    entries: 'Ghi chép'
+    fiscal_years: 'Năm tài chính'
+    vat: 'Thuế VAT'
+    reports: 'Báo cáo'
+    chart: 'Sơ đồ tài khoản'
+    settings: 'Cài đặt'
+  status:
+    draft: Nháp
+    model: Mẫu
+    waiting: 'Đang chờ phê duyệt'
+    approved: 'Đã phê duyệt'
+    emitted: 'Đã phát hành'
+    partially_paid: 'Đã thanh toán một phần'
+    paid: 'Đã thanh toán'
+    canceled: 'Đã hủy'
+    accepted: 'Đã chấp nhận'
+    refused: 'Đã từ chối'
+    late: 'Trễ hạn'
+  type:
+    bill: 'Hóa đơn'
+    credit_note: 'Phiếu tín dụng'
+    quotation: 'Báo giá'
+    penalty: 'Phí trễ'
+    receipt: 'Biên lai'
+    pro_forma: 'Tạm tính'
+  direction:
+    sale: 'Bán hàng'
+    purchase: 'Mua hàng'
+  refused:
+    token: 'Trang đã để mở quá lâu. Thử lại.'
+  done:
+    created: 'Đã tạo.'
+    saved: 'Đã lưu.'
+    deleted: 'Đã xóa.'
+    emitted: 'Tài liệu đã được phát hành.'
+    credited: 'Phiếu tín dụng đã được phát hành.'
+    billed: 'Hóa đơn được lập từ báo giá.'
+    duplicated: 'Bản sao đã được tạo dưới dạng nháp.'
+    imported: 'Báo cáo đã được nhập.'
+    matched: 'Đã hoàn thành việc đối chiếu.'
+    assigned: 'Các dòng đã được chỉ định.'
+    allocated: 'Thanh toán đã được ghi nhận.'
+    unallocated: 'Thanh toán đã được xóa.'
+    linked: 'Chuyển đã được liên kết.'
+    unlinked: 'Chuyển đã được hủy liên kết.'
+    posted: 'Ghi chép đã được ghi nhận.'
+    reversed: 'Ghi chép đã bị đảo ngược.'
+    lettered: 'Các dòng đã được đánh số.'
+    unlettered: 'Đánh số đã bị xóa.'
+    closed: 'Năm tài chính đã đóng.'
+    reopened: 'Năm tài chính đã được mở lại.'
+    next: 'Năm tài chính tiếp theo đã được mở.'
+    settled: 'Thuế VAT đã được thanh toán.'
+    regularized: 'Khấu trừ đã được điều chỉnh đúng.'
+    received: 'Hóa đơn đã được nhận dưới dạng nháp mua hàng.'
+    sent: 'Đã gửi qua Peppol.'
+    related: 'Các tài liệu đã được liên kết.'
+    unrelated: 'Liên kết đã bị xóa.'
+
+id:
+  tab:
+    overview: Ikhtisar
+    accounting: Akuntansi
+    documents: Dokumen
+    parties: Pihak
+    bank: Bank
+    entries: Entri
+    fiscal_years: 'Tahun fiskal'
+    vat: PPN
+    reports: Laporan
+    chart: 'Grafik akun'
+    settings: Pengaturan
+  status:
+    draft: Draf
+    model: Model
+    waiting: 'Menunggu persetujuan'
+    approved: Disetujui
+    emitted: Diterbitkan
+    partially_paid: 'Sebagian dibayar'
+    paid: Dibayar
+    canceled: Dibatalkan
+    accepted: Diterima
+    refused: Ditolak
+    late: Terlambat
+  type:
+    bill: Faktur
+    credit_note: 'Nota kredit'
+    quotation: Penawaran
+    penalty: 'Denda keterlambatan'
+    receipt: Struk
+    pro_forma: 'Pro forma'
+  direction:
+    sale: Penjualan
+    purchase: Pembelian
+  refused:
+    token: 'Halaman dibiarkan terbuka terlalu lama. Coba lagi.'
+  done:
+    created: Dibuat.
+    saved: Disimpan.
+    deleted: Dihapus.
+    emitted: 'Dokumen diterbitkan.'
+    credited: 'Nota kredit diterbitkan.'
+    billed: 'Faktur ditarik dari penawaran.'
+    duplicated: 'Salinan dibuat sebagai draf.'
+    imported: 'Pernyataan diimpor.'
+    matched: 'Pencocokan selesai.'
+    assigned: 'Baris ditunjuk.'
+    allocated: 'Pembayaran dicatat.'
+    unallocated: 'Pembayaran dihapus.'
+    linked: 'Transfer terhubung.'
+    unlinked: 'Transfer terputus.'
+    posted: 'Entri dicatat.'
+    reversed: 'Entri dibatalkan.'
+    lettered: 'Baris diberi huruf.'
+    unlettered: 'Huruf dihapus.'
+    closed: 'Tahun fiskal ditutup.'
+    reopened: 'Tahun fiskal dibuka kembali.'
+    next: 'Tahun fiskal berikutnya dibuka.'
+    settled: 'PPN diselesaikan.'
+    regularized: 'Pengurangan disesuaikan.'
+    received: 'Faktur diterima sebagai draf pembelian.'
+    sent: 'Dikirim melalui Peppol.'
+    related: 'Dokumen terhubung.'
+    unrelated: 'Tautan dihapus.'
+
+nl:
+  tab:
+    overview: Overzicht
+    accounting: Boekhouding
+    documents: Documenten
+    parties: Partijen
+    bank: Bank
+    entries: Invoer
+    fiscal_years: 'Fiscale jaren'
+    vat: BTW
+    reports: Rapporten
+    chart: Rekeningoverzicht
+    settings: Instellingen
+  status:
+    draft: Concept
+    model: Model
+    waiting: 'In afwachting van goedkeuring'
+    approved: Goedgekeurd
+    emitted: Uitgegeven
+    partially_paid: 'Deels betaald'
+    paid: Betaald
+    canceled: Geannuleerd
+    accepted: Geaccepteerd
+    refused: Weigerd
+    late: 'Te laat'
+  type:
+    bill: Factuur
+    credit_note: Kredietnota
+    quotation: Offerte
+    penalty: 'Te laat vergoeding'
+    receipt: Ontvangstbewijs
+    pro_forma: 'Pro forma'
+  direction:
+    sale: Verkoop
+    purchase: Aankoop
+  refused:
+    token: 'De pagina is te lang opengehouden. Probeer opnieuw.'
+  done:
+    created: Aangemaakt.
+    saved: Opgeslagen.
+    deleted: Verwijderd.
+    emitted: 'Document uitgegeven.'
+    credited: 'Kredietnota uitgegeven.'
+    billed: 'Factuur opgemaakt uit de offerte.'
+    duplicated: 'Kopie aangemaakt als concept.'
+    imported: 'Uittreksel geïmporteerd.'
+    matched: 'Matching voltooid.'
+    assigned: 'Regels toegewezen.'
+    allocated: 'Betaling geregistreerd.'
+    unallocated: 'Betaling verwijderd.'
+    linked: 'Overdracht gelinkt.'
+    unlinked: 'Overdracht ontkoppeld.'
+    posted: 'Invoer geregistreerd.'
+    reversed: 'Invoer omgedraaid.'
+    lettered: 'Regels gelabeld.'
+    unlettered: 'Labeling verwijderd.'
+    closed: 'Fiscale jaar afgesloten.'
+    reopened: 'Fiscale jaar heropend.'
+    next: 'Volgend fiscaal jaar geopend.'
+    settled: 'BTW afgewikkeld.'
+    regularized: 'Aftrek gecorrigeerd.'
+    received: 'Factuur ontvangen als aankoopconcept.'
+    sent: 'Verzonden via Peppol.'
+    related: 'Documenten gelinkt.'
+    unrelated: 'Koppeling verwijderd.'

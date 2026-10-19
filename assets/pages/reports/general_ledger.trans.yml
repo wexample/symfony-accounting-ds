@@ -39,3 +39,283 @@ zh:
   credit: 贷方
   balance: 余额
   total: 总计
+
+ar:
+  page_title: 'دفتر الأستاذ العام'
+  page_icon: 'ph:bold/book-open'
+  account: 'حساب، أو بداية رقم الحساب'
+  show: عرض
+  empty: 'لا توجد حجزات عليه.'
+  date: تاريخ
+  journal: 'دفتر اليومية'
+  label: ملصق
+  debit: مدين
+  credit: دائن
+  balance: رصيد
+  total: إجمالي
+
+hi:
+  page_title: 'सामान्य लेजर'
+  page_icon: 'ph:bold/book-open'
+  account: 'एक खाता, या इसके नंबर की शुरुआत'
+  show: दिखाएँ
+  empty: 'इस पर कुछ भी बुक नहीं किया गया।'
+  date: तारीख
+  journal: जर्नल
+  label: लेबल
+  debit: डेबिट
+  credit: क्रेडिट
+  balance: बैलेंस
+  total: कुल
+
+he:
+  page_title: 'ספר ראשי'
+  page_icon: 'ph:bold/book-open'
+  account: 'חשבון, או התחלות של המספר שלו'
+  show: הצג
+  empty: 'לא רשום כלום עליו.'
+  date: תאריך
+  journal: יומן
+  label: תווית
+  debit: זיכוי
+  credit: חיוב
+  balance: יתרה
+  total: 'סך הכל'
+
+fa:
+  page_title: 'دفتر کل'
+  page_icon: 'ph:bold/book-open'
+  account: 'حساب یا شروع شماره آن'
+  show: نمایش
+  empty: 'هیچ موردی روی آن ثبت نشده است.'
+  date: تاریخ
+  journal: ژورنال
+  label: برچسب
+  debit: بدهکار
+  credit: بستانکار
+  balance: مانده
+  total: جمع
+
+ur:
+  page_title: 'جنرل لیجر'
+  page_icon: 'ph:bold/book-open'
+  account: 'ایک اکاؤنٹ، یا اس کی تعداد کا آغاز'
+  show: دکھائیں
+  empty: 'اس پر کچھ بھی بک نہیں ہوا۔'
+  date: تاریخ
+  journal: جرنل
+  label: لیبل
+  debit: ڈیبٹ
+  credit: کریڈٹ
+  balance: بیلنس
+  total: کل
+
+ja:
+  page_title: 総勘定元帳
+  page_icon: 'ph:bold/book-open'
+  account: アカウントまたはその番号の開始
+  show: 表示
+  empty: 何も記録されていません。
+  date: 日付
+  journal: 帳簿
+  label: ラベル
+  debit: 借方
+  credit: 貸方
+  balance: 残高
+  total: 合計
+
+ko:
+  page_title: 총계정원장
+  page_icon: 'ph:bold/book-open'
+  account: '계정 또는 계정 번호의 시작'
+  show: 보기
+  empty: '예약된 항목이 없습니다.'
+  date: 날짜
+  journal: 일지
+  label: 라벨
+  debit: 차변
+  credit: 대변
+  balance: 잔액
+  total: 총계
+
+bn:
+  page_title: 'সাধারণ খাতা'
+  page_icon: 'ph:bold/book-open'
+  account: 'একটি একাউন্ট, অথবা এর সংখ্যা শুরু'
+  show: দেখান
+  empty: 'এতে কিছু বুক করা হয়নি।'
+  date: তারিখ
+  journal: জার্নাল
+  label: লেবেল
+  debit: ডেবিট
+  credit: ক্রেডিট
+  balance: ব্যালেন্স
+  total: মোট
+
+th:
+  page_title: บัญชีแยกประเภททั่วไป
+  page_icon: 'ph:bold/book-open'
+  account: 'บัญชี หรือหมายเลขเริ่มต้นของบัญชี'
+  show: แสดง
+  empty: ไม่มีรายการบันทึกในนี้
+  date: วันที่
+  journal: สมุดบัญชี
+  label: ป้าย
+  debit: เดบิต
+  credit: เครดิต
+  balance: ยอดคงเหลือ
+  total: รวม
+
+de:
+  page_title: Hauptbuch
+  page_icon: 'ph:bold/book-open'
+  account: 'Ein Konto oder der Beginn seiner Nummer'
+  show: Anzeigen
+  empty: 'Nichts gebucht.'
+  date: Datum
+  journal: Journal
+  label: Bezeichnung
+  debit: Soll
+  credit: Haben
+  balance: Saldo
+  total: Gesamt
+
+fi:
+  page_title: Pääkirja
+  page_icon: 'ph:bold/book-open'
+  account: 'Tili tai sen numeron alkupiste'
+  show: Näytä
+  empty: 'Ei mitään varattu.'
+  date: Päivämäärä
+  journal: Päiväkirja
+  label: Tunnus
+  debit: Velka
+  credit: Luotto
+  balance: Saldo
+  total: Yhteensä
+
+ru:
+  page_title: 'Главная книга'
+  page_icon: 'ph:bold/book-open'
+  account: 'Счет или начало его номера'
+  show: Показать
+  empty: 'На нем ничего не забронировано.'
+  date: Дата
+  journal: Журнал
+  label: Метка
+  debit: Дебет
+  credit: Кредит
+  balance: Баланс
+  total: Итого
+
+pl:
+  page_title: 'Księga główna'
+  page_icon: 'ph:bold/book-open'
+  account: 'Konto lub początek jego numeru'
+  show: Pokaż
+  empty: 'Nic na nim nie zarejestrowano.'
+  date: Data
+  journal: Dziennik
+  label: Etykieta
+  debit: Debet
+  credit: Kredyt
+  balance: Saldo
+  total: Suma
+
+es:
+  page_title: 'Libro mayor'
+  page_icon: 'ph:bold/book-open'
+  account: 'Una cuenta, o el inicio de su número'
+  show: Mostrar
+  empty: 'Nada registrado en él.'
+  date: Fecha
+  journal: Diario
+  label: Etiqueta
+  debit: Débito
+  credit: Crédito
+  balance: Saldo
+  total: Total
+
+it:
+  page_title: 'Libro mastro'
+  page_icon: 'ph:bold/book-open'
+  account: "Un conto, o l'inizio del suo numero"
+  show: Mostra
+  empty: 'Niente registrato.'
+  date: Data
+  journal: Giornale
+  label: Etichetta
+  debit: Debito
+  credit: Credito
+  balance: Saldo
+  total: Totale
+
+pt_BR:
+  page_title: 'Livro razão'
+  page_icon: 'ph:bold/book-open'
+  account: 'Uma conta, ou o início do seu número'
+  show: Mostrar
+  empty: 'Nada registrado nela.'
+  date: Data
+  journal: Jornal
+  label: Rótulo
+  debit: Débito
+  credit: Crédito
+  balance: Saldo
+  total: Total
+
+tr:
+  page_title: 'Genel defter'
+  page_icon: 'ph:bold/book-open'
+  account: 'Bir hesap veya numarasının başlangıcı'
+  show: Göster
+  empty: 'Üzerinde hiçbir kayıt yok.'
+  date: Tarih
+  journal: Defter
+  label: Etiket
+  debit: Borç
+  credit: Alacak
+  balance: Bakiye
+  total: Toplam
+
+vi:
+  page_title: 'Sổ cái tổng hợp'
+  page_icon: 'ph:bold/book-open'
+  account: 'Một tài khoản, hoặc bắt đầu từ số của nó'
+  show: 'Hiển thị'
+  empty: 'Không có gì được ghi trên đó.'
+  date: Ngày
+  journal: 'Nhật ký'
+  label: Nhãn
+  debit: Nợ
+  credit: Có
+  balance: 'Số dư'
+  total: 'Tổng cộng'
+
+id:
+  page_title: 'Buku besar umum'
+  page_icon: 'ph:bold/book-open'
+  account: 'Sebuah akun, atau awal dari nomornya'
+  show: Tampilkan
+  empty: 'Tidak ada yang dicatat di sini.'
+  date: Tanggal
+  journal: Jurnal
+  label: Label
+  debit: Debet
+  credit: Kredit
+  balance: Saldo
+  total: Total
+
+nl:
+  page_title: 'Algemene grootboek'
+  page_icon: 'ph:bold/book-open'
+  account: 'Een rekening, of het begin van het nummer'
+  show: Toon
+  empty: 'Er is niets geboekt.'
+  date: Datum
+  journal: Journaal
+  label: Label
+  debit: Debet
+  credit: Credit
+  balance: Saldo
+  total: Totaal

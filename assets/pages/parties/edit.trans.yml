@@ -30,3 +30,223 @@ zh:
     date: 日期
     total: 总计
     status: 状态
+
+ar:
+  page_title: حفلة
+  page_icon: 'ph:bold/address-book'
+  documents: 'المستندات الخاصة به'
+  empty: 'لا يوجد مستند بعد.'
+  column:
+    number: المستند
+    date: التاريخ
+    total: الإجمالي
+    status: الحالة
+
+hi:
+  page_title: पार्टी
+  page_icon: 'ph:bold/address-book'
+  documents: 'इसके दस्तावेज़'
+  empty: 'अभी तक कोई दस्तावेज़ नहीं।'
+  column:
+    number: दस्तावेज़
+    date: तारीख
+    total: कुल
+    status: स्थिति
+
+he:
+  page_title: מסיבה
+  page_icon: 'ph:bold/address-book'
+  documents: 'המסמכים שלה'
+  empty: 'אין מסמך עדיין.'
+  column:
+    number: מסמך
+    date: תאריך
+    total: 'סך הכל'
+    status: סטטוס
+
+fa:
+  page_title: مهمانی
+  page_icon: 'ph:bold/address-book'
+  documents: 'مدارک آن'
+  empty: 'هنوز مدرکی وجود ندارد.'
+  column:
+    number: مدرک
+    date: تاریخ
+    total: جمع
+    status: وضعیت
+
+ur:
+  page_title: پارٹی
+  page_icon: 'ph:bold/address-book'
+  documents: 'اس کے دستاویزات'
+  empty: 'ابھی تک کوئی دستاویز نہیں۔'
+  column:
+    number: دستاویز
+    date: تاریخ
+    total: کل
+    status: حالت
+
+ja:
+  page_title: パーティ
+  page_icon: 'ph:bold/address-book'
+  documents: そのドキュメント
+  empty: まだドキュメントはありません。
+  column:
+    number: ドキュメント
+    date: 日付
+    total: 合計
+    status: ステータス
+
+ko:
+  page_title: 파티
+  page_icon: 'ph:bold/address-book'
+  documents: 문서
+  empty: '아직 문서가 없습니다.'
+  column:
+    number: 문서
+    date: 날짜
+    total: 합계
+    status: 상태
+
+bn:
+  page_title: পার্টি
+  page_icon: 'ph:bold/address-book'
+  documents: 'এর নথি'
+  empty: 'এখনও কোনও নথি নেই।'
+  column:
+    number: নথি
+    date: তারিখ
+    total: মোট
+    status: স্থিতি
+
+th:
+  page_title: งานเลี้ยง
+  page_icon: 'ph:bold/address-book'
+  documents: เอกสารของมัน
+  empty: ยังไม่มีเอกสาร.
+  column:
+    number: เอกสาร
+    date: วันที่
+    total: รวม
+    status: สถานะ
+
+de:
+  page_title: Party
+  page_icon: 'ph:bold/address-book'
+  documents: 'Seine Dokumente'
+  empty: 'Noch kein Dokument.'
+  column:
+    number: Dokument
+    date: Datum
+    total: Gesamt
+    status: Status
+
+fi:
+  page_title: Juhla
+  page_icon: 'ph:bold/address-book'
+  documents: 'Sen asiakirjat'
+  empty: 'Ei asiakirjoja vielä.'
+  column:
+    number: Asiakirja
+    date: Päivämäärä
+    total: Yhteensä
+    status: Tila
+
+ru:
+  page_title: Вечеринка
+  page_icon: 'ph:bold/address-book'
+  documents: 'Его документы'
+  empty: 'Документов пока нет.'
+  column:
+    number: Документ
+    date: Дата
+    total: Всего
+    status: Статус
+
+pl:
+  page_title: Impreza
+  page_icon: 'ph:bold/address-book'
+  documents: Dokumenty
+  empty: 'Brak dokumentów.'
+  column:
+    number: Dokument
+    date: Data
+    total: Łącznie
+    status: Status
+
+es:
+  page_title: Fiesta
+  page_icon: 'ph:bold/address-book'
+  documents: 'Sus documentos'
+  empty: 'Aún no hay documentos.'
+  column:
+    number: Documento
+    date: Fecha
+    total: Total
+    status: Estado
+
+it:
+  page_title: Festa
+  page_icon: 'ph:bold/address-book'
+  documents: 'I suoi documenti'
+  empty: 'Nessun documento ancora.'
+  column:
+    number: Documento
+    date: Data
+    total: Totale
+    status: Stato
+
+pt_BR:
+  page_title: Festa
+  page_icon: 'ph:bold/address-book'
+  documents: 'Seus documentos'
+  empty: 'Nenhum documento ainda.'
+  column:
+    number: Documento
+    date: Data
+    total: Total
+    status: Status
+
+tr:
+  page_title: Parti
+  page_icon: 'ph:bold/address-book'
+  documents: Belgeleri
+  empty: 'Henüz belge yok.'
+  column:
+    number: Belge
+    date: Tarih
+    total: Toplam
+    status: Durum
+
+vi:
+  page_title: Tiệc
+  page_icon: 'ph:bold/address-book'
+  documents: 'Các tài liệu của nó'
+  empty: 'Chưa có tài liệu nào.'
+  column:
+    number: 'Tài liệu'
+    date: Ngày
+    total: Tổng
+    status: 'Trạng thái'
+
+id:
+  page_title: Pesta
+  page_icon: 'ph:bold/address-book'
+  documents: Dokumennya
+  empty: 'Belum ada dokumen.'
+  column:
+    number: Dokumen
+    date: Tanggal
+    total: Total
+    status: Status
+
+nl:
+  page_title: Feest
+  page_icon: 'ph:bold/address-book'
+  documents: 'De documenten'
+  empty: 'Nog geen document.'
+  column:
+    number: Document
+    date: Datum
+    total: Totaal
+    status: Status

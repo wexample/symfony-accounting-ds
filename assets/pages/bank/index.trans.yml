@@ -63,3 +63,443 @@ zh:
   action:
     match: 匹配项目
   unsettled_more: '%shown% 最旧的 %count%；账户页面会按年份显示它们所有。'
+
+ar:
+  page_title: البنك
+  page_icon: 'ph:bold/bank'
+  accounts: الحسابات
+  no_account: 'لا يوجد حساب بنكي بعد.'
+  unsettled: 'خطوط تحتاج إلى توضيح'
+  all_settled: 'كل الخطوط تم توضيحها.'
+  column:
+    account: الحساب
+    balance: الرصيد
+    unsettled: للتوضيح
+  new:
+    label: 'اسم الحساب الجديد'
+    submit: 'إضافة الحساب'
+  import:
+    title: 'استيراد كشف حساب'
+    detect: 'تم العثور على التنسيق من الملف'
+    submit: استيراد
+  action:
+    match: 'مطابقة الخطوط'
+  unsettled_more: 'الأقدم %shown% من %count%؛ صفحة الحساب تعرضها جميعًا، حسب السنة.'
+
+hi:
+  page_title: बैंक
+  page_icon: 'ph:bold/bank'
+  accounts: खाते
+  no_account: 'अभी तक कोई बैंक खाता नहीं।'
+  unsettled: 'व्याख्या करने के लिए रेखाएँ'
+  all_settled: 'प्रत्येक रेखा की व्याख्या की गई है।'
+  column:
+    account: खाता
+    balance: बैलेंस
+    unsettled: 'व्याख्या के लिए'
+  new:
+    label: 'एक नए खाते का नाम'
+    submit: 'खाता जोड़ें'
+  import:
+    title: 'एक स्टेटमेंट आयात करें'
+    detect: 'फाइल से प्रारूप मिला'
+    submit: 'आयात करें'
+  action:
+    match: 'रेखाओं को मिलाएं'
+  unsettled_more: '%shown% सबसे पुराना %count%; एक खाते का पृष्ठ उन्हें सभी, वर्ष के अनुसार दिखाता है।'
+
+he:
+  page_title: בנק
+  page_icon: 'ph:bold/bank'
+  accounts: חשבונות
+  no_account: 'עדיין אין חשבון בנק.'
+  unsettled: 'שורות להסבר'
+  all_settled: 'כל השורות הוסברו.'
+  column:
+    account: חשבון
+    balance: יתרה
+    unsettled: להסביר
+  new:
+    label: 'שם חשבון חדש'
+    submit: 'הוסף את החשבון'
+  import:
+    title: 'ייבוא דוח'
+    detect: 'פורמט שנמצא מהקובץ'
+    submit: ייבוא
+  action:
+    match: 'התאם את השורות'
+  unsettled_more: 'ה[-0] הכי ישן מ[-1]; דף של חשבון מציג את כולם, לפי שנה.'
+
+fa:
+  page_title: بانک
+  page_icon: 'ph:bold/bank'
+  accounts: حساب‌ها
+  no_account: 'هنوز حساب بانکی نیست.'
+  unsettled: 'خطوط برای توضیح'
+  all_settled: 'هر خط توضیح داده شده است.'
+  column:
+    account: حساب
+    balance: مانده
+    unsettled: 'برای توضیح'
+  new:
+    label: 'نام حساب جدید'
+    submit: 'حساب را اضافه کن'
+  import:
+    title: 'وارد کردن صورت‌حساب'
+    detect: 'فرمت پیدا شده از فایل'
+    submit: 'وارد کردن'
+  action:
+    match: 'تطبیق خطوط'
+  unsettled_more: 'قدیمی‌ترین %shown% از %count%؛ صفحه یک حساب همه آن‌ها را به تفکیک سال نشان می‌دهد.'
+
+ur:
+  page_title: بینک
+  page_icon: 'ph:bold/bank'
+  accounts: اکاؤنٹس
+  no_account: 'ابھی تک کوئی بینک اکاؤنٹ نہیں۔'
+  unsettled: 'وضاحت کرنے کے لئے لائنیں'
+  all_settled: 'ہر لائن کی وضاحت کی گئی ہے۔'
+  column:
+    account: اکاؤنٹ
+    balance: بیلنس
+    unsettled: 'وضاحت کرنے کے لئے'
+  new:
+    label: 'نئے اکاؤنٹ کا نام'
+    submit: 'اکاؤنٹ شامل کریں'
+  import:
+    title: 'ایک بیان درآمد کریں'
+    detect: 'فائل سے ملنے والا فارمیٹ'
+    submit: 'درآمد کریں'
+  action:
+    match: 'لائنوں کا میچ کریں'
+  unsettled_more: '%shown% میں سے سب سے پرانی؛ ایک اکاؤنٹ کا صفحہ انہیں سب دکھاتا ہے، سال کے لحاظ سے.'
+
+ja:
+  page_title: 銀行
+  page_icon: 'ph:bold/bank'
+  accounts: アカウント
+  no_account: まだ銀行口座はありません。
+  unsettled: 説明が必要な行
+  all_settled: すべての行が説明されています。
+  column:
+    account: アカウント
+    balance: 残高
+    unsettled: 説明が必要
+  new:
+    label: 新しいアカウント名
+    submit: アカウントを追加
+  import:
+    title: 明細書をインポート
+    detect: ファイルから見つかった形式
+    submit: インポート
+  action:
+    match: 行を照合
+  unsettled_more: '最も古い %shown% 件のうち %count% 件；アカウントのページには、すべて年ごとに表示されます。'
+
+ko:
+  page_title: 은행
+  page_icon: 'ph:bold/bank'
+  accounts: 계좌
+  no_account: '아직 은행 계좌가 없습니다.'
+  unsettled: '설명할 항목'
+  all_settled: '모든 항목이 설명되었습니다.'
+  column:
+    account: 계좌
+    balance: 잔액
+    unsettled: '설명할 항목'
+  new:
+    label: '새 계좌의 이름'
+    submit: '계좌 추가'
+  import:
+    title: '명세서 가져오기'
+    detect: '파일에서 찾은 형식'
+    submit: 가져오기
+  action:
+    match: '항목 일치'
+  unsettled_more: '가장 오래된 %shown% 항목 중 %count%; 계좌 페이지에서 모든 항목을 연도별로 확인할 수 있습니다.'
+
+bn:
+  page_title: ব্যাংক
+  page_icon: 'ph:bold/bank'
+  accounts: অ্যাকাউন্টগুলি
+  no_account: 'এখনো কোনো ব্যাংক অ্যাকাউন্ট নেই।'
+  unsettled: 'ব্যাখ্যা করার জন্য লাইনগুলি'
+  all_settled: 'প্রতিটি লাইন ব্যাখ্যা করা হয়েছে।'
+  column:
+    account: অ্যাকাউন্ট
+    balance: ব্যালেন্স
+    unsettled: 'ব্যাখ্যা করার জন্য'
+  new:
+    label: 'একটি নতুন অ্যাকাউন্টের নাম'
+    submit: 'অ্যাকাউন্ট যোগ করুন'
+  import:
+    title: 'একটি বিবৃতি আমদানি করুন'
+    detect: 'ফাইল থেকে পাওয়া ফর্ম্যাট'
+    submit: 'আমদানি করুন'
+  action:
+    match: 'লাইনগুলো মিলান'
+  unsettled_more: '%shown% পুরানো %count%; একটি অ্যাকাউন্টের পৃষ্ঠা সেগুলি সকলকে বছর অনুযায়ী দেখায়।'
+
+th:
+  page_title: ธนาคาร
+  page_icon: 'ph:bold/bank'
+  accounts: บัญชี
+  no_account: ยังไม่มีบัญชีธนาคาร
+  unsettled: รายการที่ต้องอธิบาย
+  all_settled: รายการทุกอย่างถูกอธิบายแล้ว
+  column:
+    account: บัญชี
+    balance: ยอดเงิน
+    unsettled: ต้องอธิบาย
+  new:
+    label: ชื่อบัญชีใหม่
+    submit: เพิ่มบัญชี
+  import:
+    title: นำเข้ารายงาน
+    detect: รูปแบบที่พบจากไฟล์
+    submit: นำเข้า
+  action:
+    match: จับคู่รายการ
+  unsettled_more: 'รายการที่เก่าที่สุด %shown% จาก %count%; หน้าบัญชีจะแสดงทั้งหมดตามปี.'
+
+de:
+  page_title: Bank
+  page_icon: 'ph:bold/bank'
+  accounts: Konten
+  no_account: 'Noch kein Bankkonto.'
+  unsettled: 'Zeilen zu erklären'
+  all_settled: 'Jede Zeile ist erklärt.'
+  column:
+    account: Konto
+    balance: Kontostand
+    unsettled: 'Zu erklären'
+  new:
+    label: 'Name des neuen Kontos'
+    submit: 'Konto hinzufügen'
+  import:
+    title: 'Eine Abrechnung importieren'
+    detect: 'Format aus der Datei erkannt'
+    submit: Importieren
+  action:
+    match: 'Die Zeilen abgleichen'
+  unsettled_more: 'Die %shown% älteste von %count%; eine Kontoseite zeigt sie alle, nach Jahr.'
+
+fi:
+  page_title: Pankki
+  page_icon: 'ph:bold/bank'
+  accounts: Tilini
+  no_account: 'Ei pankkitiliä vielä.'
+  unsettled: 'Selvitettävät rivit'
+  all_settled: 'Kaikki rivit on selitetty.'
+  column:
+    account: Tili
+    balance: Saldo
+    unsettled: Selvittämättömät
+  new:
+    label: 'Uuden tilin nimi'
+    submit: 'Lisää tili'
+  import:
+    title: 'Tuo tiliote'
+    detect: 'Tiedostosta löytynyt muoto'
+    submit: Tuo
+  action:
+    match: 'Vastaavat rivit'
+  unsettled_more: 'Vanhin %shown% %count%:ssä; tilin sivulta näkyvät kaikki, vuosittain.'
+
+ru:
+  page_title: Банк
+  page_icon: 'ph:bold/bank'
+  accounts: Счета
+  no_account: 'Еще нет банковского счета.'
+  unsettled: 'Линии для объяснения'
+  all_settled: 'Каждая линия объяснена.'
+  column:
+    account: Счет
+    balance: Баланс
+    unsettled: 'Для объяснения'
+  new:
+    label: 'Название нового счета'
+    submit: 'Добавить счет'
+  import:
+    title: 'Импортировать выписку'
+    detect: 'Формат найден из файла'
+    submit: Импортировать
+  action:
+    match: 'Сопоставить строки'
+  unsettled_more: 'Самый %shown% старый из %count%; страница счета показывает их все, по годам.'
+
+pl:
+  page_title: Bank
+  page_icon: 'ph:bold/bank'
+  accounts: Konta
+  no_account: 'Brak konta bankowego.'
+  unsettled: 'Linie do wyjaśnienia'
+  all_settled: 'Wszystkie linie są wyjaśnione.'
+  column:
+    account: Konto
+    balance: Saldo
+    unsettled: 'Do wyjaśnienia'
+  new:
+    label: 'Nazwa nowego konta'
+    submit: 'Dodaj konto'
+  import:
+    title: 'Importuj wyciąg'
+    detect: 'Znaleziony format z pliku'
+    submit: Importuj
+  action:
+    match: 'Dopasuj linie'
+  unsettled_more: 'Najstarszy z %shown% z %count%; strona konta pokazuje je wszystkie, według roku.'
+
+es:
+  page_title: Banco
+  page_icon: 'ph:bold/bank'
+  accounts: Cuentas
+  no_account: 'Aún no hay cuenta bancaria.'
+  unsettled: 'Líneas por explicar'
+  all_settled: 'Cada línea está explicada.'
+  column:
+    account: Cuenta
+    balance: Saldo
+    unsettled: 'Por explicar'
+  new:
+    label: 'Nombre de una nueva cuenta'
+    submit: 'Agregar la cuenta'
+  import:
+    title: 'Importar un estado de cuenta'
+    detect: 'Formato encontrado en el archivo'
+    submit: Importar
+  action:
+    match: 'Coincidir las líneas'
+  unsettled_more: 'El %shown% más antiguo de %count%; la página de una cuenta los muestra todos, por año.'
+
+it:
+  page_title: Banca
+  page_icon: 'ph:bold/bank'
+  accounts: Conti
+  no_account: 'Nessun conto bancario ancora.'
+  unsettled: 'Righe da spiegare'
+  all_settled: 'Ogni riga è spiegata.'
+  column:
+    account: Conto
+    balance: Saldo
+    unsettled: 'Da spiegare'
+  new:
+    label: 'Nome di un nuovo conto'
+    submit: 'Aggiungi il conto'
+  import:
+    title: 'Importa un estratto conto'
+    detect: 'Formato trovato nel file'
+    submit: Importa
+  action:
+    match: 'Abbina le righe'
+  unsettled_more: 'Il %shown% più vecchio di %count%; la pagina di un conto li mostra tutti, per anno.'
+
+pt_BR:
+  page_title: Banco
+  page_icon: 'ph:bold/bank'
+  accounts: Contas
+  no_account: 'Nenhuma conta bancária ainda.'
+  unsettled: 'Linhas a explicar'
+  all_settled: 'Todas as linhas estão explicadas.'
+  column:
+    account: Conta
+    balance: Saldo
+    unsettled: 'A explicar'
+  new:
+    label: 'Nome de uma nova conta'
+    submit: 'Adicionar a conta'
+  import:
+    title: 'Importar um extrato'
+    detect: 'Formato encontrado no arquivo'
+    submit: Importar
+  action:
+    match: 'Combinar as linhas'
+  unsettled_more: 'O %shown% mais antigo de %count%; a página de uma conta mostra todos, por ano.'
+
+tr:
+  page_title: Banka
+  page_icon: 'ph:bold/bank'
+  accounts: Hesaplar
+  no_account: 'Henüz banka hesabı yok.'
+  unsettled: 'Açıklanacak satırlar'
+  all_settled: 'Her satır açıklanmıştır.'
+  column:
+    account: Hesap
+    balance: Bakiye
+    unsettled: Açıklanacak
+  new:
+    label: 'Yeni bir hesabın adı'
+    submit: 'Hesabı ekle'
+  import:
+    title: 'Bir ekstreyi içe aktar'
+    detect: 'Dosyadan bulunan format'
+    submit: 'İçe aktar'
+  action:
+    match: 'Satırları eşleştir'
+  unsettled_more: 'En %shown% eski olan %count%; bir hesabın sayfası hepsini yıl bazında gösterir.'
+
+vi:
+  page_title: 'Ngân hàng'
+  page_icon: 'ph:bold/bank'
+  accounts: 'Tài khoản'
+  no_account: 'Chưa có tài khoản ngân hàng nào.'
+  unsettled: 'Các dòng cần giải thích'
+  all_settled: 'Mọi dòng đã được giải thích.'
+  column:
+    account: 'Tài khoản'
+    balance: 'Số dư'
+    unsettled: 'Cần giải thích'
+  new:
+    label: 'Tên của tài khoản mới'
+    submit: 'Thêm tài khoản'
+  import:
+    title: 'Nhập sao kê'
+    detect: 'Định dạng được tìm thấy từ tệp'
+    submit: Nhập
+  action:
+    match: 'Khớp các dòng'
+  unsettled_more: 'Dòng %shown% cũ nhất trong số %count%; trang tài khoản hiển thị tất cả, theo năm.'
+
+id:
+  page_title: Bank
+  page_icon: 'ph:bold/bank'
+  accounts: Akun
+  no_account: 'Belum ada rekening bank.'
+  unsettled: 'Baris untuk dijelaskan'
+  all_settled: 'Setiap baris sudah dijelaskan.'
+  column:
+    account: Rekening
+    balance: Saldo
+    unsettled: 'Untuk dijelaskan'
+  new:
+    label: 'Nama rekening baru'
+    submit: 'Tambah rekening'
+  import:
+    title: 'Impor laporan'
+    detect: 'Format ditemukan dari file'
+    submit: Impor
+  action:
+    match: 'Cocokkan baris'
+  unsettled_more: 'Yang %shown% tertua dari %count%; halaman rekening menunjukkan semuanya, berdasarkan tahun.'
+
+nl:
+  page_title: Bank
+  page_icon: 'ph:bold/bank'
+  accounts: Rekeningen
+  no_account: 'Nog geen bankrekening.'
+  unsettled: 'Regels om uit te leggen'
+  all_settled: 'Elke regel is uitgelegd.'
+  column:
+    account: Rekening
+    balance: Saldo
+    unsettled: 'Te verklaren'
+  new:
+    label: 'De naam van een nieuwe rekening'
+    submit: 'Voeg de rekening toe'
+  import:
+    title: 'Importeer een afschrift'
+    detect: 'Formaat gevonden in het bestand'
+    submit: Importeren
+  action:
+    match: 'Koppel de regels'
+  unsettled_more: 'De %shown% oudste van %count%; een rekeningpagina toont ze allemaal, per jaar.'

@@ -9,3 +9,83 @@ fr:
 zh:
   page_title: 设置
   page_icon: 'ph:bold/gear'
+
+ar:
+  page_title: الإعدادات
+  page_icon: 'ph:bold/gear'
+
+hi:
+  page_title: सेटिंग्स
+  page_icon: 'ph:bold/gear'
+
+he:
+  page_title: הגדרות
+  page_icon: 'ph:bold/gear'
+
+fa:
+  page_title: تنظیمات
+  page_icon: 'ph:bold/gear'
+
+ur:
+  page_title: سیٹنگز
+  page_icon: 'ph:bold/gear'
+
+ja:
+  page_title: 設定
+  page_icon: 'ph:bold/gear'
+
+ko:
+  page_title: 설정
+  page_icon: 'ph:bold/gear'
+
+bn:
+  page_title: সেটিংস
+  page_icon: 'ph:bold/gear'
+
+th:
+  page_title: การตั้งค่า
+  page_icon: 'ph:bold/gear'
+
+de:
+  page_title: Einstellungen
+  page_icon: 'ph:bold/gear'
+
+fi:
+  page_title: Asetukset
+  page_icon: 'ph:bold/gear'
+
+ru:
+  page_title: Настройки
+  page_icon: 'ph:bold/gear'
+
+pl:
+  page_title: Ustawienia
+  page_icon: 'ph:bold/gear'
+
+es:
+  page_title: Configuración
+  page_icon: 'ph:bold/gear'
+
+it:
+  page_title: Impostazioni
+  page_icon: 'ph:bold/gear'
+
+pt_BR:
+  page_title: Configurações
+  page_icon: 'ph:bold/gear'
+
+tr:
+  page_title: Ayarlar
+  page_icon: 'ph:bold/gear'
+
+vi:
+  page_title: 'Cài đặt'
+  page_icon: 'ph:bold/gear'
+
+id:
+  page_title: Pengaturan
+  page_icon: 'ph:bold/gear'
+
+nl:
+  page_title: Instellingen
+  page_icon: 'ph:bold/gear'

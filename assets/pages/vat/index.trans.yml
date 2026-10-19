@@ -45,3 +45,323 @@ zh:
     deductible: 可扣除
     net: 应付（如果为负则为信用）
     deposits: 已支付/预计支付的存款
+
+ar:
+  page_title: 'ضريبة القيمة المضافة'
+  page_icon: 'ph:bold/percent'
+  empty: 'لا توجد إقرار ضريبة قيمة مضافة في السجلات.'
+  total: السنة
+  action:
+    oss: 'متجر شامل'
+    deduction: 'خصم جزئي'
+  previous_credit: 'الرصيد المنقول من السنة الماضية: %amount%'
+  column:
+    period: الفترة
+    collected: 'المبلغ المحصل'
+    deductible: 'المبلغ القابل للخصم'
+    net: 'المبلغ المستحق (رصيد إذا كان سالبًا)'
+    deposits: 'الودائع المدفوعة / المتوقعة'
+
+hi:
+  page_title: वैट
+  page_icon: 'ph:bold/percent'
+  empty: 'लेज़र फ़ाइलों में कोई वैट रिटर्न नहीं है।'
+  total: वर्ष
+  action:
+    oss: 'एक-स्टॉप शॉप'
+    deduction: 'आंशिक कटौती'
+  previous_credit: 'पिछले वर्ष से स्थानांतरित क्रेडिट: %amount%'
+  column:
+    period: अवधि
+    collected: संकलित
+    deductible: 'कटौती योग्य'
+    net: 'देय (यदि नकारात्मक तो क्रेडिट)'
+    deposits: 'जमा किए गए / अपेक्षित'
+
+he:
+  page_title: 'מע"מ'
+  page_icon: 'ph:bold/percent'
+  empty: 'בחשבונות לא הוגש דוח מע"מ.'
+  total: השנה
+  action:
+    oss: 'חנות אחת'
+    deduction: 'ניכוי חלקי'
+  previous_credit: 'זכות שהועברה מהשנה שעברה: %amount%'
+  column:
+    period: תקופה
+    collected: נאסף
+    deductible: 'ניתן לניכוי'
+    net: 'סכום לתשלום (זכות אם שלילית)'
+    deposits: 'פיקדונות ששולמו / צפויים'
+
+fa:
+  page_title: 'مالیات بر ارزش افزوده'
+  page_icon: 'ph:bold/percent'
+  empty: 'هیچ بازگشت مالیات بر ارزش افزوده‌ای در دفتر ثبت نشده است.'
+  total: سال
+  action:
+    oss: 'مرکز خدمات یک‌جا'
+    deduction: 'کسر جزئی'
+  previous_credit: 'اعتباری که از سال گذشته منتقل شده: %amount%'
+  column:
+    period: دوره
+    collected: جمع‌آوری‌شده
+    deductible: 'قابل کسر'
+    net: 'مبلغ قابل پرداخت (اعتبار در صورت منفی بودن)'
+    deposits: 'سپرده‌های پرداخت‌شده / پیش‌بینی‌شده'
+
+ur:
+  page_title: ویٹ
+  page_icon: 'ph:bold/percent'
+  empty: 'لےجر میں کوئی ویٹ واپسی نہیں ہے۔'
+  total: سال
+  action:
+    oss: 'ایک جگہ کی دکان'
+    deduction: 'جزوی کٹوتی'
+  previous_credit: 'پچھلے سال سے منتقل کردہ کریڈٹ: %amount%'
+  column:
+    period: مدت
+    collected: 'جمع شدہ'
+    deductible: 'کٹوتی کے قابل'
+    net: 'مقررہ (اگر منفی تو کریڈٹ)'
+    deposits: 'جمع کردہ / متوقع جمع'
+
+ja:
+  page_title: VAT
+  page_icon: 'ph:bold/percent'
+  empty: 元帳ファイルにはVAT申告がありません。
+  total: 年度
+  action:
+    oss: ワンストップショップ
+    deduction: 部分的控除
+  previous_credit: '前年から繰越されたクレジット: %amount%'
+  column:
+    period: 期間
+    collected: 収集済み
+    deductible: 控除可能
+    net: 支払額（負の場合はクレジット）
+    deposits: 支払済み/予想される預金
+
+ko:
+  page_title: 부가가치세
+  page_icon: 'ph:bold/percent'
+  empty: '장부에 부가가치세 신고가 없습니다.'
+  total: 연도
+  action:
+    oss: '원스톱 샵'
+    deduction: '부분 공제'
+  previous_credit: '지난 해 이월된 크레딧: %amount%'
+  column:
+    period: 기간
+    collected: 수집됨
+    deductible: '공제 가능'
+    net: '납부액 (부정일 경우 크레딧)'
+    deposits: '지급된 / 예상된 예치금'
+
+bn:
+  page_title: ভ্যাট
+  page_icon: 'ph:bold/percent'
+  empty: 'লেজার ফাইলে কোনো ভ্যাট রিটার্ন নেই।'
+  total: বছর
+  action:
+    oss: 'ওয়ান-স্টপ শপ'
+    deduction: 'আংশিক কাটছাঁট'
+  previous_credit: 'গত বছরের পরিশোধিত ক্রেডিট: %amount%'
+  column:
+    period: কাল
+    collected: সংগ্রহিত
+    deductible: কাটছাঁটযোগ্য
+    net: 'বাকী (নেগেটিভ হলে ক্রেডিট)'
+    deposits: 'জমা দেওয়া / প্রত্যাশিত'
+
+th:
+  page_title: ภาษีมูลค่าเพิ่ม
+  page_icon: 'ph:bold/percent'
+  empty: ไม่มีการคืนภาษีมูลค่าเพิ่มในบันทึกบัญชี
+  total: ปี
+  action:
+    oss: ศูนย์บริการแบบเบ็ดเสร็จ
+    deduction: การหักภาษีบางส่วน
+  previous_credit: 'เครดิตที่นำมาจากปีที่แล้ว: %amount%'
+  column:
+    period: ระยะเวลา
+    collected: รวบรวม
+    deductible: หักภาษีได้
+    net: 'ยอดที่ต้องชำระ (เครดิตถ้าติดลบ)'
+    deposits: 'เงินฝากที่ชำระ / คาดว่าจะได้รับ'
+
+de:
+  page_title: USt
+  page_icon: 'ph:bold/percent'
+  empty: 'Das Hauptbuch enthält keine USt-Erklärung.'
+  total: 'Das Jahr'
+  action:
+    oss: One-Stop-Shop
+    deduction: 'Teilweise Abzug'
+  previous_credit: 'Guthaben aus dem letzten Jahr: %amount%'
+  column:
+    period: Zeitraum
+    collected: Eingezogen
+    deductible: Abziehbar
+    net: 'Fällig (Guthaben, wenn negativ)'
+    deposits: 'Einzahlungen bezahlt / erwartet'
+
+fi:
+  page_title: ALV
+  page_icon: 'ph:bold/percent'
+  empty: 'Kirjanpidossa ei ole ALV-ilmoitusta.'
+  total: Vuosi
+  action:
+    oss: 'Yhden luukun palvelu'
+    deduction: 'Osittainen vähennys'
+  previous_credit: 'Edellisvuodelta siirretty hyvitys: %amount%'
+  column:
+    period: Jakso
+    collected: Kerätty
+    deductible: Vähennyskelpoinen
+    net: 'Maksettava (hyvitys, jos negatiivinen)'
+    deposits: 'Maksut / odotettavissa olevat maksut'
+
+ru:
+  page_title: НДС
+  page_icon: 'ph:bold/percent'
+  empty: 'В реестре нет декларации по НДС.'
+  total: Год
+  action:
+    oss: 'Единый магазин'
+    deduction: 'Частичное вычитание'
+  previous_credit: 'Кредит, перенесенный с прошлого года: %amount%'
+  column:
+    period: Период
+    collected: Собрано
+    deductible: 'Подлежит вычету'
+    net: 'К оплате (кредит, если отрицательный)'
+    deposits: 'Внесенные / ожидаемые депозиты'
+
+pl:
+  page_title: VAT
+  page_icon: 'ph:bold/percent'
+  empty: 'Brak deklaracji VAT w księdze.'
+  total: Rok
+  action:
+    oss: 'Jednolity punkt kontaktowy'
+    deduction: 'Częściowe odliczenie'
+  previous_credit: 'Kredyt przeniesiony z poprzedniego roku: %amount%'
+  column:
+    period: Okres
+    collected: Zebrane
+    deductible: Odliczalne
+    net: 'Kwota do zapłaty (kredyt jeśli ujemna)'
+    deposits: 'Wpłaty dokonane / oczekiwane'
+
+es:
+  page_title: IVA
+  page_icon: 'ph:bold/percent'
+  empty: 'El libro contable no tiene declaración de IVA.'
+  total: 'El año'
+  action:
+    oss: 'Ventana única'
+    deduction: 'Deducción parcial'
+  previous_credit: 'Crédito trasladado del año pasado: %amount%'
+  column:
+    period: Período
+    collected: Recaudado
+    deductible: Deducible
+    net: 'A pagar (crédito si es negativo)'
+    deposits: 'Depósitos pagados / esperados'
+
+it:
+  page_title: IVA
+  page_icon: 'ph:bold/percent'
+  empty: 'Non ci sono dichiarazioni IVA nel registro.'
+  total: "L'anno"
+  action:
+    oss: 'Sportello unico'
+    deduction: 'Detrazione parziale'
+  previous_credit: "Credito riportato dall'anno scorso: %amount%"
+  column:
+    period: Periodo
+    collected: Raccolto
+    deductible: Detraibile
+    net: 'Dovuto (credito se negativo)'
+    deposits: 'Depositi pagati / previsti'
+
+pt_BR:
+  page_title: IVA
+  page_icon: 'ph:bold/percent'
+  empty: 'Os arquivos do livro razão não apresentam declaração de IVA.'
+  total: 'O ano'
+  action:
+    oss: 'Loja única'
+    deduction: 'Dedução parcial'
+  previous_credit: 'Crédito transportado do ano passado: %amount%'
+  column:
+    period: Período
+    collected: Coletado
+    deductible: Dedutível
+    net: 'Devido (crédito se negativo)'
+    deposits: 'Depósitos pagos / esperados'
+
+tr:
+  page_title: KDV
+  page_icon: 'ph:bold/percent'
+  empty: 'Defterde KDV iadesi yok.'
+  total: Yıl
+  action:
+    oss: 'Tek durak noktası'
+    deduction: 'Kısmi indirim'
+  previous_credit: 'Geçen yıldan devredilen kredi: %amount%'
+  column:
+    period: Dönem
+    collected: 'Tahsil edilen'
+    deductible: İndirilebilir
+    net: 'Net (negatifse kredi)'
+    deposits: 'Ödenen / beklenen depozito'
+
+vi:
+  page_title: VAT
+  page_icon: 'ph:bold/percent'
+  empty: 'Tài liệu không có hóa đơn VAT.'
+  total: Năm
+  action:
+    oss: 'Cửa hàng một cửa'
+    deduction: 'Khấu trừ một phần'
+  previous_credit: 'Tín dụng chuyển từ năm trước: %amount%'
+  column:
+    period: 'Thời gian'
+    collected: 'Đã thu'
+    deductible: 'Có thể khấu trừ'
+    net: 'Số tiền phải trả (tín dụng nếu âm)'
+    deposits: 'Tiền gửi đã trả / dự kiến'
+
+id:
+  page_title: PPN
+  page_icon: 'ph:bold/percent'
+  empty: 'Buku besar tidak memiliki pengembalian PPN.'
+  total: Tahun
+  action:
+    oss: 'Toko satu atap'
+    deduction: 'Pengurangan sebagian'
+  previous_credit: 'Kredit dibawa dari tahun lalu: %amount%'
+  column:
+    period: Periode
+    collected: Dikumpulkan
+    deductible: 'Dapat dikurangkan'
+    net: 'Terutang (kredit jika negatif)'
+    deposits: 'Setoran dibayar / diharapkan'
+
+nl:
+  page_title: BTW
+  page_icon: 'ph:bold/percent'
+  empty: 'De boekhoudbestanden bevatten geen BTW-aangifte.'
+  total: 'Het jaar'
+  action:
+    oss: Eén-loket
+    deduction: 'Deeltijd aftrek'
+  previous_credit: 'Te verrekenen kredieten van vorig jaar: %amount%'
+  column:
+    period: Periode
+    collected: Verzameld
+    deductible: Aftrekbaar
+    net: 'Te betalen (krediet als negatief)'
+    deposits: 'Betaalde / verwachte stortingen'

@@ -69,3 +69,483 @@ zh:
     title: 接收发票
     help: 'Factur-X PDF、CII或UBL文件将变为采购草稿——其供应商在未知时创建。'
     submit: 接收
+
+ar:
+  page_title: المستندات
+  page_icon: 'ph:bold/receipt'
+  empty: 'لا توجد مستندات مطابقة.'
+  draft: مسودة
+  search: بحث
+  action:
+    new: 'مستند جديد'
+  filter:
+    direction: الطريقة
+    year: السنة
+  column:
+    number: رقم
+    type: ما
+    party: الطرف
+    date: التاريخ
+    total: الإجمالي
+    due: 'المتبقي للدفع'
+    status: الحالة
+  receive:
+    title: 'استلام فاتورة'
+    help: 'ملف PDF من نوع Factur-X، أو ملف CII أو UBL، يصبح مسودة شراء - يتم إنشاؤه من قبل المورد عندما يكون غير معروف.'
+    submit: استلام
+
+hi:
+  page_title: दस्तावेज़
+  page_icon: 'ph:bold/receipt'
+  empty: 'कोई दस्तावेज़ मेल नहीं खाता।'
+  draft: ड्राफ्ट
+  search: खोजें
+  action:
+    new: 'नया दस्तावेज़'
+  filter:
+    direction: मार्ग
+    year: वर्ष
+  column:
+    number: संख्या
+    type: क्या
+    party: पार्टी
+    date: तारीख
+    total: कुल
+    due: 'भुगतान करना बाकी'
+    status: स्थिति
+  receive:
+    title: 'इनवॉइस प्राप्त करें'
+    help: 'एक Factur-X PDF, या CII या UBL फ़ाइल, एक खरीद ड्राफ्ट बन जाती है - इसका आपूर्तिकर्ता तब बनाया जाता है जब अज्ञात होता है।'
+    submit: 'प्राप्त करें'
+
+he:
+  page_title: מסמכים
+  page_icon: 'ph:bold/receipt'
+  empty: 'אין מסמך התואם.'
+  draft: טיוטה
+  search: חיפוש
+  action:
+    new: 'מסמך חדש'
+  filter:
+    direction: כיוון
+    year: שנה
+  column:
+    number: מספר
+    type: סוג
+    party: צד
+    date: תאריך
+    total: 'סך הכל'
+    due: 'נשאר לשלם'
+    status: סטטוס
+  receive:
+    title: 'קבל חשבונית'
+    help: 'PDF של Factur-X, או קובץ CII או UBL, הופך לטיוטת רכישה — הספק שלו נוצר כאשר הוא לא ידוע.'
+    submit: קבל
+
+fa:
+  page_title: اسناد
+  page_icon: 'ph:bold/receipt'
+  empty: 'هیچ سندی مطابقت ندارد.'
+  draft: پیش‌نویس
+  search: جستجو
+  action:
+    new: 'سند جدید'
+  filter:
+    direction: مسیر
+    year: سال
+  column:
+    number: شماره
+    type: نوع
+    party: طرف
+    date: تاریخ
+    total: مجموع
+    due: 'باقیمانده پرداخت'
+    status: وضعیت
+  receive:
+    title: 'دریافت فاکتور'
+    help: 'یک PDF از نوع Factur-X، یا یک فایل CII یا UBL، به یک پیش‌نویس خرید تبدیل می‌شود — تأمین‌کننده آن زمانی که ناشناخته باشد ایجاد می‌شود.'
+    submit: دریافت
+
+ur:
+  page_title: دستاویزات
+  page_icon: 'ph:bold/receipt'
+  empty: 'کوئی دستاویز میل نہیں کھاتی۔'
+  draft: مسودہ
+  search: 'تلاش کریں'
+  action:
+    new: 'نئی دستاویز'
+  filter:
+    direction: راستہ
+    year: سال
+  column:
+    number: نمبر
+    type: کیا
+    party: پارٹی
+    date: تاریخ
+    total: کل
+    due: 'ادا کرنے کے لیے باقی'
+    status: حالت
+  receive:
+    title: 'انوائس وصول کریں'
+    help: 'ایک Factur-X PDF، یا CII یا UBL فائل، ایک خریداری کے مسودے میں تبدیل ہو جاتی ہے — اس کا فراہم کنندہ جب نامعلوم ہو تو بنایا جاتا ہے۔'
+    submit: 'وصول کریں'
+
+ja:
+  page_title: ドキュメント
+  page_icon: 'ph:bold/receipt'
+  empty: 一致するドキュメントはありません。
+  draft: ドラフト
+  search: 検索
+  action:
+    new: 新しいドキュメント
+  filter:
+    direction: 方向
+    year: 年
+  column:
+    number: 番号
+    type: 種類
+    party: パーティ
+    date: 日付
+    total: 合計
+    due: 支払い残高
+    status: ステータス
+  receive:
+    title: 請求書を受け取る
+    help: 'Factur-X PDF、CII、またはUBLファイルは、購入ドラフトになります — 未知のサプライヤーが作成されます。'
+    submit: 受け取る
+
+ko:
+  page_title: 문서
+  page_icon: 'ph:bold/receipt'
+  empty: '일치하는 문서가 없습니다.'
+  draft: 초안
+  search: 검색
+  action:
+    new: '새 문서'
+  filter:
+    direction: 방향
+    year: 연도
+  column:
+    number: 번호
+    type: 종류
+    party: 당사자
+    date: 날짜
+    total: 합계
+    due: '지급해야 할 금액'
+    status: 상태
+  receive:
+    title: '송장 받기'
+    help: 'Factur-X PDF 또는 CII 또는 UBL 파일이 구매 초안이 됩니다 — 공급자가 미확인일 때 생성됩니다.'
+    submit: 받기
+
+bn:
+  page_title: ডকুমেন্টস
+  page_icon: 'ph:bold/receipt'
+  empty: 'কোনো ডকুমেন্ট মেলে না।'
+  draft: ড্রাফট
+  search: 'অনুসন্ধান করুন'
+  action:
+    new: 'নতুন ডকুমেন্ট'
+  filter:
+    direction: মাধ্যম
+    year: বছর
+  column:
+    number: নম্বর
+    type: কি
+    party: পার্টি
+    date: তারিখ
+    total: মোট
+    due: 'পেমেন্ট বাকি'
+    status: স্থিতি
+  receive:
+    title: 'একটি ইনভয়েস গ্রহণ করুন'
+    help: 'একটি Factur-X PDF, অথবা একটি CII বা UBL ফাইল, একটি ক্রয় ড্রাফটে পরিণত হয় — এটি অজানা হলে এর সরবরাহকারী তৈরি হয়।'
+    submit: গৃহীত
+
+th:
+  page_title: เอกสาร
+  page_icon: 'ph:bold/receipt'
+  empty: ไม่มีเอกสารที่ตรงกัน
+  draft: ร่าง
+  search: ค้นหา
+  action:
+    new: เอกสารใหม่
+  filter:
+    direction: วิธีการ
+    year: ปี
+  column:
+    number: หมายเลข
+    type: ประเภท
+    party: ฝ่าย
+    date: วันที่
+    total: รวม
+    due: คงเหลือที่ต้องชำระ
+    status: สถานะ
+  receive:
+    title: รับใบแจ้งหนี้
+    help: 'ไฟล์ Factur-X PDF หรือไฟล์ CII หรือ UBL จะกลายเป็นร่างการซื้อ — ผู้จัดจำหน่ายของมันถูกสร้างขึ้นเมื่อไม่รู้จัก'
+    submit: รับ
+
+de:
+  page_title: Dokumente
+  page_icon: 'ph:bold/receipt'
+  empty: 'Kein Dokument entspricht den Kriterien.'
+  draft: Entwurf
+  search: Suche
+  action:
+    new: 'Neues Dokument'
+  filter:
+    direction: Richtung
+    year: Jahr
+  column:
+    number: Nummer
+    type: Typ
+    party: Partei
+    date: Datum
+    total: Gesamt
+    due: Offen
+    status: Status
+  receive:
+    title: 'Rechnung empfangen'
+    help: 'Eine Factur-X PDF, oder eine CII oder UBL Datei, wird zu einem Kaufentwurf — sein Lieferant wird erstellt, wenn unbekannt.'
+    submit: Empfangen
+
+fi:
+  page_title: Asiakirjat
+  page_icon: 'ph:bold/receipt'
+  empty: 'Ei asiakirjoja vastaavia.'
+  draft: Luonnos
+  search: Hae
+  action:
+    new: 'Uusi asiakirja'
+  filter:
+    direction: Suunta
+    year: Vuosi
+  column:
+    number: Numero
+    type: Mikä
+    party: Osapuoli
+    date: Päivämäärä
+    total: Yhteensä
+    due: 'Maksettavaa jäljellä'
+    status: Tila
+  receive:
+    title: 'Vastaanota lasku'
+    help: 'Factur-X PDF tai CII tai UBL-tiedosto muuttuu ostoluonnokseksi - sen toimittaja luodaan, kun se on tuntematon.'
+    submit: Vastaanota
+
+ru:
+  page_title: Документы
+  page_icon: 'ph:bold/receipt'
+  empty: 'Документы не найдены.'
+  draft: Черновик
+  search: Поиск
+  action:
+    new: 'Новый документ'
+  filter:
+    direction: Направление
+    year: Год
+  column:
+    number: Номер
+    type: Тип
+    party: Сторона
+    date: Дата
+    total: Итого
+    due: 'Осталось оплатить'
+    status: Статус
+  receive:
+    title: 'Получить счет'
+    help: 'PDF в формате Factur-X, или файл CII или UBL, становится черновиком покупки — его поставщик создан, когда неизвестен.'
+    submit: Получить
+
+pl:
+  page_title: Dokumenty
+  page_icon: 'ph:bold/receipt'
+  empty: 'Brak dokumentów pasujących do kryteriów.'
+  draft: Szkic
+  search: Szukaj
+  action:
+    new: 'Nowy dokument'
+  filter:
+    direction: Kierunek
+    year: Rok
+  column:
+    number: Numer
+    type: Rodzaj
+    party: Strona
+    date: Data
+    total: Całkowity
+    due: 'Pozostało do zapłaty'
+    status: Status
+  receive:
+    title: 'Odbierz fakturę'
+    help: 'Plik PDF Factur-X, lub plik CII lub UBL staje się projektem zakupu — jego dostawca został stworzony, gdy jest nieznany.'
+    submit: Odbierz
+
+es:
+  page_title: Documentos
+  page_icon: 'ph:bold/receipt'
+  empty: 'No hay documentos que coincidan.'
+  draft: Borrador
+  search: Buscar
+  action:
+    new: 'Nuevo documento'
+  filter:
+    direction: Forma
+    year: Año
+  column:
+    number: Número
+    type: Tipo
+    party: Parte
+    date: Fecha
+    total: Total
+    due: 'Restante por pagar'
+    status: Estado
+  receive:
+    title: 'Recibir una factura'
+    help: 'Un PDF de Factur-X, o un archivo CII o UBL, se convierte en un borrador de compra — su proveedor se crea cuando es desconocido.'
+    submit: Recibir
+
+it:
+  page_title: Documenti
+  page_icon: 'ph:bold/receipt'
+  empty: 'Nessun documento corrisponde.'
+  draft: Bozza
+  search: Cerca
+  action:
+    new: 'Nuovo documento'
+  filter:
+    direction: Direzione
+    year: Anno
+  column:
+    number: Numero
+    type: Tipo
+    party: Parte
+    date: Data
+    total: Totale
+    due: 'Da pagare'
+    status: Stato
+  receive:
+    title: 'Ricevi una fattura'
+    help: "Un PDF Factur-X, o un file CII o UBL, diventa una bozza d'acquisto — il suo fornitore è creato quando sconosciuto."
+    submit: Ricevi
+
+pt_BR:
+  page_title: Documentos
+  page_icon: 'ph:bold/receipt'
+  empty: 'Nenhum documento encontrado.'
+  draft: Rascunho
+  search: Pesquisar
+  action:
+    new: 'Novo documento'
+  filter:
+    direction: Direção
+    year: Ano
+  column:
+    number: Número
+    type: Tipo
+    party: Parte
+    date: Data
+    total: Total
+    due: 'Faltando pagar'
+    status: Status
+  receive:
+    title: 'Receber uma fatura'
+    help: 'Um PDF Factur-X, ou um arquivo CII ou UBL, se torna um rascunho de compra — seu fornecedor é criado quando desconhecido.'
+    submit: Receber
+
+tr:
+  page_title: Belgeler
+  page_icon: 'ph:bold/receipt'
+  empty: 'Hiçbir belge eşleşmiyor.'
+  draft: Taslak
+  search: Ara
+  action:
+    new: 'Yeni belge'
+  filter:
+    direction: Yön
+    year: Yıl
+  column:
+    number: Numara
+    type: Tür
+    party: Taraf
+    date: Tarih
+    total: Toplam
+    due: 'Ödenecek kalan'
+    status: Durum
+  receive:
+    title: 'Bir fatura al'
+    help: "Bir Factur-X PDF'si veya bir CII ya da UBL dosyası, bilinmeyen tedarikçisi ile bir satın alma taslağı haline gelir."
+    submit: Al
+
+vi:
+  page_title: 'Tài liệu'
+  page_icon: 'ph:bold/receipt'
+  empty: 'Không có tài liệu nào phù hợp.'
+  draft: 'Bản nháp'
+  search: 'Tìm kiếm'
+  action:
+    new: 'Tài liệu mới'
+  filter:
+    direction: Hướng
+    year: Năm
+  column:
+    number: Số
+    type: Loại
+    party: 'Đối tác'
+    date: Ngày
+    total: Tổng
+    due: 'Còn phải trả'
+    status: 'Trạng thái'
+  receive:
+    title: 'Nhận hóa đơn'
+    help: 'Một tệp PDF Factur-X, hoặc tệp CII hoặc UBL, trở thành một bản nháp mua hàng — nhà cung cấp của nó được tạo ra khi không xác định.'
+    submit: Nhận
+
+id:
+  page_title: Dokumen
+  page_icon: 'ph:bold/receipt'
+  empty: 'Tidak ada dokumen yang cocok.'
+  draft: Draf
+  search: Cari
+  action:
+    new: 'Dokumen baru'
+  filter:
+    direction: Arah
+    year: Tahun
+  column:
+    number: Nomor
+    type: Jenis
+    party: Pihak
+    date: Tanggal
+    total: Total
+    due: 'Sisa yang harus dibayar'
+    status: Status
+  receive:
+    title: 'Terima faktur'
+    help: 'PDF Factur-X, atau file CII atau UBL, menjadi draf pembelian — pemasoknya dibuat saat tidak dikenal.'
+    submit: Terima
+
+nl:
+  page_title: Documenten
+  page_icon: 'ph:bold/receipt'
+  empty: 'Geen documenten gevonden.'
+  draft: Concept
+  search: Zoeken
+  action:
+    new: 'Nieuw document'
+  filter:
+    direction: Wijze
+    year: Jaar
+  column:
+    number: Nummer
+    type: Type
+    party: Partij
+    date: Datum
+    total: Totaal
+    due: 'Te betalen'
+    status: Status
+  receive:
+    title: 'Ontvang een factuur'
+    help: 'Een Factur-X PDF, of een CII of UBL bestand, wordt een aankoopconcept — de leverancier wordt aangemaakt wanneer onbekend.'
+    submit: Ontvangen

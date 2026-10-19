@@ -63,3 +63,443 @@ zh:
     draft: 草稿
     posted: 已记账
     validated: 已验证
+
+ar:
+  page_title: المدخلات
+  page_icon: 'ph:bold/notebook'
+  empty: 'لا توجد مدخلات هنا.'
+  action:
+    new: 'اكتب مدخلاً'
+    lettering: الكتابة
+  filter:
+    fiscal_year: 'السنة المالية'
+  column:
+    date: التاريخ
+    journal: السجل
+    number: رقم
+    label: التسمية
+    piece: المستند
+    amount: المبلغ
+    status: الحالة
+  status:
+    draft: مسودة
+    posted: محجوزة
+    validated: 'تم التحقق منها'
+
+hi:
+  page_title: प्रविष्टियाँ
+  page_icon: 'ph:bold/notebook'
+  empty: 'यहाँ कोई प्रविष्टि नहीं है।'
+  action:
+    new: 'एक प्रविष्टि लिखें'
+    lettering: लेटरिंग
+  filter:
+    fiscal_year: 'वित्तीय वर्ष'
+  column:
+    date: तारीख
+    journal: जर्नल
+    number: क्र.
+    label: लेबल
+    piece: दस्तावेज़
+    amount: राशि
+    status: स्थिति
+  status:
+    draft: ड्राफ्ट
+    posted: 'बुक किया गया'
+    validated: 'मान्य किया गया'
+
+he:
+  page_title: רשומות
+  page_icon: 'ph:bold/notebook'
+  empty: 'אין רשומה כאן.'
+  action:
+    new: 'כתוב רשומה'
+    lettering: 'כתיבה בעיצוב'
+  filter:
+    fiscal_year: 'שנת תקציב'
+  column:
+    date: תאריך
+    journal: יומן
+    number: מס.
+    label: תיוג
+    piece: מסמך
+    amount: סכום
+    status: סטטוס
+  status:
+    draft: טיוטה
+    posted: מוזן
+    validated: מאושר
+
+fa:
+  page_title: ورودها
+  page_icon: 'ph:bold/notebook'
+  empty: 'اینجا هیچ ورودی وجود ندارد.'
+  action:
+    new: 'یک ورودی بنویسید'
+    lettering: 'حروف نگاری'
+  filter:
+    fiscal_year: 'سال مالی'
+  column:
+    date: تاریخ
+    journal: ژورنال
+    number: شماره
+    label: برچسب
+    piece: مدرک
+    amount: مقدار
+    status: وضعیت
+  status:
+    draft: 'پیش نویس'
+    posted: 'ثبت شده'
+    validated: 'تأیید شده'
+
+ur:
+  page_title: داخلے
+  page_icon: 'ph:bold/notebook'
+  empty: 'یہاں کوئی داخلہ نہیں ہے۔'
+  action:
+    new: 'داخلہ لکھیں'
+    lettering: 'حروف نگاری'
+  filter:
+    fiscal_year: 'مالی سال'
+  column:
+    date: تاریخ
+    journal: جرنل
+    number: نمبر
+    label: لیبل
+    piece: دستاویز
+    amount: رقم
+    status: حیثیت
+  status:
+    draft: مسودہ
+    posted: 'بک کیا گیا'
+    validated: 'تصدیق شدہ'
+
+ja:
+  page_title: エントリー
+  page_icon: 'ph:bold/notebook'
+  empty: ここにはエントリーがありません。
+  action:
+    new: エントリーを書く
+    lettering: レタリング
+  filter:
+    fiscal_year: 会計年度
+  column:
+    date: 日付
+    journal: ジャーナル
+    number: 番号
+    label: ラベル
+    piece: 文書
+    amount: 金額
+    status: ステータス
+  status:
+    draft: 下書き
+    posted: 予約済み
+    validated: 確認済み
+
+ko:
+  page_title: 항목
+  page_icon: 'ph:bold/notebook'
+  empty: '여기에 항목이 없습니다.'
+  action:
+    new: '항목 작성'
+    lettering: 서예
+  filter:
+    fiscal_year: '회계 연도'
+  column:
+    date: 날짜
+    journal: 저널
+    number: 번호
+    label: 라벨
+    piece: 문서
+    amount: 금액
+    status: 상태
+  status:
+    draft: 초안
+    posted: 예약됨
+    validated: 검증됨
+
+bn:
+  page_title: এন্ট্রি
+  page_icon: 'ph:bold/notebook'
+  empty: 'এখানে কোন এন্ট্রি নেই।'
+  action:
+    new: 'একটি এন্ট্রি লিখুন'
+    lettering: লেটারিং
+  filter:
+    fiscal_year: 'অর্থ বছর'
+  column:
+    date: তারিখ
+    journal: জার্নাল
+    number: নং
+    label: লেবেল
+    piece: ডকুমেন্ট
+    amount: পরিমাণ
+    status: অবস্থা
+  status:
+    draft: ড্রাফট
+    posted: বুকড
+    validated: ভ্যালিডেটেড
+
+th:
+  page_title: รายการ
+  page_icon: 'ph:bold/notebook'
+  empty: ไม่มีรายการที่นี่
+  action:
+    new: เขียนรายการ
+    lettering: ตัวอักษร
+  filter:
+    fiscal_year: ปีงบประมาณ
+  column:
+    date: วันที่
+    journal: สมุดบันทึก
+    number: เลขที่
+    label: ป้ายกำกับ
+    piece: เอกสาร
+    amount: จำนวนเงิน
+    status: สถานะ
+  status:
+    draft: ร่าง
+    posted: จองแล้ว
+    validated: ได้รับการตรวจสอบแล้ว
+
+de:
+  page_title: Einträge
+  page_icon: 'ph:bold/notebook'
+  empty: 'Hier sind keine Einträge.'
+  action:
+    new: 'Einen Eintrag schreiben'
+    lettering: Beschriftung
+  filter:
+    fiscal_year: Geschäftsjahr
+  column:
+    date: Datum
+    journal: Journal
+    number: Nr.
+    label: Etikett
+    piece: Dokument
+    amount: Betrag
+    status: Status
+  status:
+    draft: Entwurf
+    posted: Gebucht
+    validated: Validiert
+
+fi:
+  page_title: Merkinnät
+  page_icon: 'ph:bold/notebook'
+  empty: 'Ei merkintöjä.'
+  action:
+    new: 'Kirjoita merkintä'
+    lettering: Kirjoitus
+  filter:
+    fiscal_year: Tilikausi
+  column:
+    date: Päivämäärä
+    journal: Lehti
+    number: Nro.
+    label: Tunniste
+    piece: Asiakirja
+    amount: Summa
+    status: Tila
+  status:
+    draft: Luonnos
+    posted: Vahvistettu
+    validated: Hyväksytty
+
+ru:
+  page_title: Записи
+  page_icon: 'ph:bold/notebook'
+  empty: 'Здесь нет записей.'
+  action:
+    new: 'Создать запись'
+    lettering: Надпись
+  filter:
+    fiscal_year: 'Финансовый год'
+  column:
+    date: Дата
+    journal: Журнал
+    number: №
+    label: Метка
+    piece: Документ
+    amount: Сумма
+    status: Статус
+  status:
+    draft: Черновик
+    posted: Зарегистрировано
+    validated: Подтверждено
+
+pl:
+  page_title: Wpisy
+  page_icon: 'ph:bold/notebook'
+  empty: 'Brak wpisów.'
+  action:
+    new: 'Napisz wpis'
+    lettering: Liternictwo
+  filter:
+    fiscal_year: 'Rok fiskalny'
+  column:
+    date: Data
+    journal: Dziennik
+    number: Nr
+    label: Etykieta
+    piece: Dokument
+    amount: Kwota
+    status: Status
+  status:
+    draft: Roboczy
+    posted: Zaksięgowany
+    validated: Zatwierdzony
+
+es:
+  page_title: Entradas
+  page_icon: 'ph:bold/notebook'
+  empty: 'No hay entradas aquí.'
+  action:
+    new: 'Escribir una entrada'
+    lettering: Rotulación
+  filter:
+    fiscal_year: 'Año fiscal'
+  column:
+    date: Fecha
+    journal: Diario
+    number: N°
+    label: Etiqueta
+    piece: Documento
+    amount: Monto
+    status: Estado
+  status:
+    draft: Borrador
+    posted: Registrado
+    validated: Validado
+
+it:
+  page_title: 'Vo entries'
+  page_icon: 'ph:bold/notebook'
+  empty: 'Nessuna voce qui.'
+  action:
+    new: 'Scrivi una voce'
+    lettering: Lettering
+  filter:
+    fiscal_year: 'Anno fiscale'
+  column:
+    date: Data
+    journal: Giornale
+    number: N.
+    label: Etichetta
+    piece: Documento
+    amount: Importo
+    status: Stato
+  status:
+    draft: Bozza
+    posted: Registrato
+    validated: Validato
+
+pt_BR:
+  page_title: Entradas
+  page_icon: 'ph:bold/notebook'
+  empty: 'Nenhuma entrada aqui.'
+  action:
+    new: 'Escrever uma entrada'
+    lettering: Letra
+  filter:
+    fiscal_year: 'Ano fiscal'
+  column:
+    date: Data
+    journal: Diário
+    number: Nº
+    label: Rótulo
+    piece: Documento
+    amount: Valor
+    status: Status
+  status:
+    draft: Rascunho
+    posted: Reservado
+    validated: Validado
+
+tr:
+  page_title: Kayıtlar
+  page_icon: 'ph:bold/notebook'
+  empty: 'Burada kayıt yok.'
+  action:
+    new: 'Yeni bir kayıt yaz'
+    lettering: 'Yazı Tipi'
+  filter:
+    fiscal_year: 'Mali yıl'
+  column:
+    date: Tarih
+    journal: Defter
+    number: No.
+    label: Etiket
+    piece: Belge
+    amount: Tutar
+    status: Durum
+  status:
+    draft: Taslak
+    posted: Kaydedildi
+    validated: Onaylandı
+
+vi:
+  page_title: 'Nhập liệu'
+  page_icon: 'ph:bold/notebook'
+  empty: 'Chưa có mục nào.'
+  action:
+    new: 'Viết một mục'
+    lettering: 'Chữ viết'
+  filter:
+    fiscal_year: 'Năm tài chính'
+  column:
+    date: Ngày
+    journal: Sổ
+    number: Số
+    label: Nhãn
+    piece: 'Tài liệu'
+    amount: 'Số tiền'
+    status: 'Trạng thái'
+  status:
+    draft: 'Bản nháp'
+    posted: 'Đã đặt'
+    validated: 'Đã xác nhận'
+
+id:
+  page_title: Entri
+  page_icon: 'ph:bold/notebook'
+  empty: 'Tidak ada entri di sini.'
+  action:
+    new: 'Buat entri'
+    lettering: Huruf
+  filter:
+    fiscal_year: 'Tahun fiskal'
+  column:
+    date: Tanggal
+    journal: Jurnal
+    number: No.
+    label: Label
+    piece: Dokumen
+    amount: Jumlah
+    status: Status
+  status:
+    draft: Draf
+    posted: Dipesan
+    validated: Divalidasi
+
+nl:
+  page_title: Invoeren
+  page_icon: 'ph:bold/notebook'
+  empty: 'Geen invoer hier.'
+  action:
+    new: 'Schrijf een invoer'
+    lettering: Lettering
+  filter:
+    fiscal_year: Boekjaar
+  column:
+    date: Datum
+    journal: Journaal
+    number: Nr.
+    label: Label
+    piece: Document
+    amount: Bedrag
+    status: Status
+  status:
+    draft: Concept
+    posted: Boekingen
+    validated: Gevalideerd
