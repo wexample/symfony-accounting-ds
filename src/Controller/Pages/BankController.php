@@ -55,9 +55,9 @@ final class BankController extends AbstractAccountingController
      */
     private const int UNSETTLED_SHOWN = 200;
 
-    private BankAccountRepository $bankAccountRepository;
+    private readonly BankAccountRepository $bankAccountRepository;
 
-    private LedgerAccessService $ledgerAccess;
+    private readonly LedgerAccessService $ledgerAccess;
 
     #[Required]
     public function setBankServices(

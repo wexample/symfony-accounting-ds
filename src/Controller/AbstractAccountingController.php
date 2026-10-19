@@ -36,9 +36,9 @@ abstract class AbstractAccountingController extends AbstractPagesController
      */
     final public const string MESSAGES = 'WexampleSymfonyAccountingDsBundle.common.accounting::';
 
-    protected EntityManagerInterface $entityManager;
+    protected readonly EntityManagerInterface $entityManager;
 
-    protected LedgerRepository $ledgerRepository;
+    protected readonly LedgerRepository $ledgerRepository;
 
     #[Required]
     public function setAccountingServices(
