@@ -15,7 +15,7 @@ fr:
   amount: Net
 
 zh:
-  page_title: 声明
+  page_title: '报表'
   page_icon: 'ph:bold/file-text'
   line: 行
   gross: 总额
@@ -23,7 +23,7 @@ zh:
   amount: 净额
 
 ar:
-  page_title: البيان
+  page_title: 'القائمة المالية'
   page_icon: 'ph:bold/file-text'
   line: السطر
   gross: الإجمالي
@@ -55,7 +55,7 @@ fa:
   amount: خالص
 
 ur:
-  page_title: بیان
+  page_title: 'گوشوارہ'
   page_icon: 'ph:bold/file-text'
   line: لائن
   gross: مجموعی
@@ -79,7 +79,7 @@ ko:
   amount: 순액
 
 bn:
-  page_title: বিবৃতি
+  page_title: 'বিবরণী'
   page_icon: 'ph:bold/file-text'
   line: লাইন
   gross: মোট
@@ -111,7 +111,7 @@ fi:
   amount: Nettosumma
 
 ru:
-  page_title: Счет
+  page_title: 'Отчёт'
   page_icon: 'ph:bold/file-text'
   line: Строка
   gross: Брутто
@@ -151,7 +151,7 @@ pt_BR:
   amount: Líquido
 
 tr:
-  page_title: Açıklama
+  page_title: 'Mali tablo'
   page_icon: 'ph:bold/file-text'
   line: Satır
   gross: Brüt
@@ -167,7 +167,7 @@ vi:
   amount: 'Số tiền ròng'
 
 id:
-  page_title: Pernyataan
+  page_title: 'Laporan'
   page_icon: 'ph:bold/file-text'
   line: Baris
   gross: Bruto
