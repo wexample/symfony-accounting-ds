@@ -14,20 +14,22 @@ en:
 
 fr:
   page_title: Comptabilité
+  document_title: 'Comptabilité en partie double — livres'
   page_description: "Une comptabilité en partie double à l'œuvre : dossiers, écritures, TVA, rapprochement bancaire, exercices et états financiers, dans une démo à parcourir."
-  page_icon: ph:bold/calculator
-  empty: Aucun dossier ne vous est ouvert.
+  page_icon: 'ph:bold/calculator'
+  empty: 'Aucun dossier ne vous est ouvert.'
   column:
     name: Dossier
     country: Pays
     fiscal_year: Exercice
-    receivable: Dû par les clients
-    payable: Dû aux fournisseurs
-    unsettled: Lignes bancaires à expliquer
+    receivable: 'Dû par les clients'
+    payable: 'Dû aux fournisseurs'
+    unsettled: 'Lignes bancaires à expliquer'
 
 zh:
   page_title: 会计
-  page_description: "复式记账实际运行：账本、会计分录、增值税、银行对账、财年与财务报表，均可在演示中浏览。"
+  document_title: '复式记账 — 分类账'
+  page_description: 复式记账实际运行：账本、会计分录、增值税、银行对账、财年与财务报表，均可在演示中浏览。
   page_icon: 'ph:bold/calculator'
   empty: 没有打开的账本。
   column:
@@ -40,7 +42,8 @@ zh:
 
 ar:
   page_title: المحاسبة
-  page_description: "محاسبة بالقيد المزدوج قيد العمل: السجلات، القيود اليومية، ضريبة القيمة المضافة، التسوية البنكية، السنوات المالية والتقارير المالية، في عرض توضيحي يمكنك تصفحه."
+  document_title: 'المحاسبة ذات القيد المزدوج - دفاتر الحسابات'
+  page_description: 'محاسبة بالقيد المزدوج قيد العمل: السجلات، القيود اليومية، ضريبة القيمة المضافة، التسوية البنكية، السنوات المالية والتقارير المالية، في عرض توضيحي يمكنك تصفحه.'
   page_icon: 'ph:bold/calculator'
   empty: 'لا يوجد سجل مفتوح لك.'
   column:
@@ -53,7 +56,8 @@ ar:
 
 hi:
   page_title: लेखांकन
-  page_description: "डबल-एंट्री लेखांकन काम करते हुए: लेजर, जर्नल प्रविष्टियाँ, VAT, बैंक मिलान, वित्तीय वर्ष और वित्तीय रिपोर्ट, एक डेमो में जिसे आप देख सकते हैं।"
+  document_title: 'डबल-एंट्री अकाउंटिंग — लेज़र'
+  page_description: 'डबल-एंट्री लेखांकन काम करते हुए: लेजर, जर्नल प्रविष्टियाँ, VAT, बैंक मिलान, वित्तीय वर्ष और वित्तीय रिपोर्ट, एक डेमो में जिसे आप देख सकते हैं।'
   page_icon: 'ph:bold/calculator'
   empty: 'कोई खाता आपकी पहुंच में नहीं है।'
   column:
@@ -66,7 +70,8 @@ hi:
 
 he:
   page_title: חשבונאות
-  page_description: "הנהלת חשבונות כפולה בפעולה: פנקסים, פקודות יומן, מע״מ, התאמות בנק, שנות כספים ודוחות כספיים, בהדגמה שאפשר לדפדף בה."
+  document_title: 'חשבונאות כפולה — ספרים'
+  page_description: 'הנהלת חשבונות כפולה בפעולה: פנקסים, פקודות יומן, מע״מ, התאמות בנק, שנות כספים ודוחות כספיים, בהדגמה שאפשר לדפדף בה.'
   page_icon: 'ph:bold/calculator'
   empty: 'אין יומן פתוח עבורך.'
   column:
@@ -79,7 +84,8 @@ he:
 
 fa:
   page_title: حسابداری
-  page_description: "حسابداری دوطرفه در عمل: دفاتر، اسناد حسابداری، مالیات بر ارزش افزوده، تطبیق بانکی، سال‌های مالی و گزارش‌های مالی، در یک دموی قابل مرور."
+  document_title: 'حسابداری دوطرفه — دفترها'
+  page_description: 'حسابداری دوطرفه در عمل: دفاتر، اسناد حسابداری، مالیات بر ارزش افزوده، تطبیق بانکی، سال‌های مالی و گزارش‌های مالی، در یک دموی قابل مرور.'
   page_icon: 'ph:bold/calculator'
   empty: 'هیچ دفتر حسابداری برای شما باز نیست.'
   column:
@@ -92,7 +98,8 @@ fa:
 
 ur:
   page_title: محاسبانہ
-  page_description: "ڈبل انٹری اکاؤنٹنگ عملی صورت میں: لیجرز، جرنل اندراجات، VAT، بینک مطابقت، مالی سال اور مالیاتی رپورٹس، ایک ڈیمو میں جسے آپ دیکھ سکتے ہیں۔"
+  document_title: 'ڈبل انٹری اکاؤنٹنگ — لیجر'
+  page_description: 'ڈبل انٹری اکاؤنٹنگ عملی صورت میں: لیجرز، جرنل اندراجات، VAT، بینک مطابقت، مالی سال اور مالیاتی رپورٹس، ایک ڈیمو میں جسے آپ دیکھ سکتے ہیں۔'
   page_icon: 'ph:bold/calculator'
   empty: 'آپ کے لیے کوئی لیجر کھلا نہیں ہے۔'
   column:
@@ -105,7 +112,8 @@ ur:
 
 ja:
   page_title: 会計
-  page_description: "実際に動く複式簿記：元帳、仕訳、VAT、銀行照合、会計年度、財務報告を、自由に閲覧できるデモで。"
+  document_title: '複式簿記 — 元帳'
+  page_description: 実際に動く複式簿記：元帳、仕訳、VAT、銀行照合、会計年度、財務報告を、自由に閲覧できるデモで。
   page_icon: 'ph:bold/calculator'
   empty: 開いている元帳がありません。
   column:
@@ -118,7 +126,8 @@ ja:
 
 ko:
   page_title: 회계
-  page_description: "실제로 동작하는 복식부기: 원장, 분개, 부가세, 은행 대사, 회계연도, 재무 보고서를 둘러볼 수 있는 데모로."
+  document_title: '복식부기 — 원장'
+  page_description: '실제로 동작하는 복식부기: 원장, 분개, 부가세, 은행 대사, 회계연도, 재무 보고서를 둘러볼 수 있는 데모로.'
   page_icon: 'ph:bold/calculator'
   empty: '열려 있는 장부가 없습니다.'
   column:
@@ -131,7 +140,8 @@ ko:
 
 bn:
   page_title: হিসাবরক্ষণ
-  page_description: "কাজে থাকা দ্বৈত-প্রবেশ হিসাবরক্ষণ: খতিয়ান, জার্নাল এন্ট্রি, VAT, ব্যাংক মিলকরণ, অর্থবছর ও আর্থিক প্রতিবেদন, একটি ডেমোতে যা আপনি ঘুরে দেখতে পারেন।"
+  document_title: 'ডাবল-এন্ট্রি অ্যাকাউন্টিং — লেজার'
+  page_description: 'কাজে থাকা দ্বৈত-প্রবেশ হিসাবরক্ষণ: খতিয়ান, জার্নাল এন্ট্রি, VAT, ব্যাংক মিলকরণ, অর্থবছর ও আর্থিক প্রতিবেদন, একটি ডেমোতে যা আপনি ঘুরে দেখতে পারেন।'
   page_icon: 'ph:bold/calculator'
   empty: 'আপনার জন্য কোনো লেজার খোলা নেই।'
   column:
@@ -144,7 +154,8 @@ bn:
 
 th:
   page_title: บัญชี
-  page_description: "ระบบบัญชีคู่ที่ทำงานจริง: สมุดบัญชี รายการบันทึกบัญชี ภาษีมูลค่าเพิ่ม การกระทบยอดธนาคาร ปีบัญชี และรายงานการเงิน ในเดโมที่คุณเข้าไปดูได้"
+  document_title: 'การบัญชีแบบสองรายการ — เล่มบัญชี'
+  page_description: 'ระบบบัญชีคู่ที่ทำงานจริง: สมุดบัญชี รายการบันทึกบัญชี ภาษีมูลค่าเพิ่ม การกระทบยอดธนาคาร ปีบัญชี และรายงานการเงิน ในเดโมที่คุณเข้าไปดูได้'
   page_icon: 'ph:bold/calculator'
   empty: ไม่มีสมุดบัญชีที่เปิดให้คุณใช้งาน
   column:
@@ -157,7 +168,8 @@ th:
 
 de:
   page_title: Buchhaltung
-  page_description: "Doppelte Buchführung in Aktion: Mandanten, Buchungen, Umsatzsteuer, Bankabgleich, Geschäftsjahre und Finanzberichte, in einer Demo zum Durchstöbern."
+  document_title: 'Doppelte Buchführung — Hauptbücher'
+  page_description: 'Doppelte Buchführung in Aktion: Mandanten, Buchungen, Umsatzsteuer, Bankabgleich, Geschäftsjahre und Finanzberichte, in einer Demo zum Durchstöbern.'
   page_icon: 'ph:bold/calculator'
   empty: 'Es ist kein Hauptbuch geöffnet.'
   column:
@@ -170,7 +182,8 @@ de:
 
 fi:
   page_title: Kirjanpito
-  page_description: "Kahdenkertainen kirjanpito toiminnassa: kirjanpidot, tositteet, ALV, pankkitäsmäytys, tilikaudet ja tilinpäätösraportit selattavassa demossa."
+  document_title: 'Kaksinkertainen kirjanpito — pääkirjat'
+  page_description: 'Kahdenkertainen kirjanpito toiminnassa: kirjanpidot, tositteet, ALV, pankkitäsmäytys, tilikaudet ja tilinpäätösraportit selattavassa demossa.'
   page_icon: 'ph:bold/calculator'
   empty: 'Yhtään pääkirjaa ei ole avoinna.'
   column:
@@ -183,7 +196,8 @@ fi:
 
 ru:
   page_title: Бухгалтерия
-  page_description: "Двойная запись в действии: книги учёта, проводки, НДС, сверка с банком, финансовые годы и отчётность — в демо, которое можно изучить."
+  document_title: 'Двойная бухгалтерия — учетные книги'
+  page_description: 'Двойная запись в действии: книги учёта, проводки, НДС, сверка с банком, финансовые годы и отчётность — в демо, которое можно изучить.'
   page_icon: 'ph:bold/calculator'
   empty: 'У вас нет открытой книги учета.'
   column:
@@ -196,7 +210,8 @@ ru:
 
 pl:
   page_title: Księgowość
-  page_description: "Księgowość podwójnego zapisu w działaniu: księgi, zapisy, VAT, uzgadnianie bankowe, lata obrotowe i sprawozdania finansowe, w demo do przejrzenia."
+  document_title: 'Księgowość podwójna — księgi'
+  page_description: 'Księgowość podwójnego zapisu w działaniu: księgi, zapisy, VAT, uzgadnianie bankowe, lata obrotowe i sprawozdania finansowe, w demo do przejrzenia.'
   page_icon: 'ph:bold/calculator'
   empty: 'Nie masz otwartej księgi.'
   column:
@@ -209,7 +224,8 @@ pl:
 
 es:
   page_title: Contabilidad
-  page_description: "Contabilidad por partida doble en funcionamiento: libros, asientos, IVA, conciliación bancaria, ejercicios e informes financieros, en una demo que puede recorrer."
+  document_title: 'Contabilidad por partida doble — libros contables'
+  page_description: 'Contabilidad por partida doble en funcionamiento: libros, asientos, IVA, conciliación bancaria, ejercicios e informes financieros, en una demo que puede recorrer.'
   page_icon: 'ph:bold/calculator'
   empty: 'No hay libro mayor abierto para ti.'
   column:
@@ -222,6 +238,7 @@ es:
 
 it:
   page_title: Contabilità
+  document_title: 'Contabilità per partita doppia — libri contabili'
   page_description: "Contabilità in partita doppia all'opera: registri, scritture, IVA, riconciliazione bancaria, esercizi e rendiconti finanziari, in una demo da esplorare."
   page_icon: 'ph:bold/calculator'
   empty: 'Nessun libro mastro è aperto per te.'
@@ -235,7 +252,8 @@ it:
 
 pt_BR:
   page_title: Contabilidade
-  page_description: "Contabilidade por partidas dobradas em funcionamento: livros, lançamentos, impostos, conciliação bancária, exercícios e relatórios financeiros, em uma demonstração para explorar."
+  document_title: 'Contabilidade de partidas dobradas — livros contábeis'
+  page_description: 'Contabilidade por partidas dobradas em funcionamento: livros, lançamentos, impostos, conciliação bancária, exercícios e relatórios financeiros, em uma demonstração para explorar.'
   page_icon: 'ph:bold/calculator'
   empty: 'Nenhum livro razão está aberto para você.'
   column:
@@ -248,7 +266,8 @@ pt_BR:
 
 tr:
   page_title: Muhasebe
-  page_description: "Çift taraflı muhasebe iş başında: defterler, yevmiye kayıtları, KDV, banka mutabakatı, mali yıllar ve finansal raporlar, gezebileceğiniz bir demoda."
+  document_title: 'Çift taraflı muhasebe — defterler'
+  page_description: 'Çift taraflı muhasebe iş başında: defterler, yevmiye kayıtları, KDV, banka mutabakatı, mali yıllar ve finansal raporlar, gezebileceğiniz bir demoda.'
   page_icon: 'ph:bold/calculator'
   empty: 'Size açık bir defter yok.'
   column:
@@ -261,7 +280,8 @@ tr:
 
 vi:
   page_title: 'Kế toán'
-  page_description: "Kế toán kép đang vận hành: sổ cái, bút toán, VAT, đối chiếu ngân hàng, năm tài chính và báo cáo tài chính, trong một bản demo để bạn khám phá."
+  document_title: 'Kế toán kép — sổ cái'
+  page_description: 'Kế toán kép đang vận hành: sổ cái, bút toán, VAT, đối chiếu ngân hàng, năm tài chính và báo cáo tài chính, trong một bản demo để bạn khám phá.'
   page_icon: 'ph:bold/calculator'
   empty: 'Không có sổ cái nào mở cho bạn.'
   column:
@@ -274,7 +294,8 @@ vi:
 
 id:
   page_title: Akuntansi
-  page_description: "Akuntansi berpasangan yang sedang bekerja: buku besar, jurnal, PPN, rekonsiliasi bank, tahun buku, dan laporan keuangan, dalam demo yang bisa Anda jelajahi."
+  document_title: 'Akuntansi double-entry — buku besar'
+  page_description: 'Akuntansi berpasangan yang sedang bekerja: buku besar, jurnal, PPN, rekonsiliasi bank, tahun buku, dan laporan keuangan, dalam demo yang bisa Anda jelajahi.'
   page_icon: 'ph:bold/calculator'
   empty: 'Tidak ada buku besar yang terbuka untuk Anda.'
   column:
@@ -287,7 +308,8 @@ id:
 
 nl:
   page_title: Boekhouding
-  page_description: "Dubbel boekhouden in actie: administraties, boekingen, btw, bankafstemming, boekjaren en financiële rapporten, in een demo om door te bladeren."
+  document_title: 'Dubbel boekhouden — grootboeken'
+  page_description: 'Dubbel boekhouden in actie: administraties, boekingen, btw, bankafstemming, boekjaren en financiële rapporten, in een demo om door te bladeren.'
   page_icon: 'ph:bold/calculator'
   empty: 'Er is geen grootboek geopend voor jou.'
   column:

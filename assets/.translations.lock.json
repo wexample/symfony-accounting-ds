@@ -30600,6 +30600,10 @@
             "hash": "834dcb5eab59ba05280279eeacba3dbd",
             "engine": "syrtis"
         },
+        "document_title": {
+            "hash": "fd129d593472f3caf47a69a4432bc927",
+            "engine": "syrtis"
+        },
         "empty": {
             "hash": "b65b1bcc3fabd37e8fa25e890038b2df",
             "engine": "syrtis"
@@ -30636,6 +30640,10 @@
         },
         "column.unsettled": {
             "hash": "834dcb5eab59ba05280279eeacba3dbd",
+            "engine": "syrtis"
+        },
+        "document_title": {
+            "hash": "fd129d593472f3caf47a69a4432bc927",
             "engine": "syrtis"
         },
         "empty": {
@@ -30676,6 +30684,10 @@
             "hash": "834dcb5eab59ba05280279eeacba3dbd",
             "engine": "syrtis"
         },
+        "document_title": {
+            "hash": "fd129d593472f3caf47a69a4432bc927",
+            "engine": "syrtis"
+        },
         "empty": {
             "hash": "b65b1bcc3fabd37e8fa25e890038b2df",
             "engine": "syrtis"
@@ -30712,6 +30724,10 @@
         },
         "column.unsettled": {
             "hash": "834dcb5eab59ba05280279eeacba3dbd",
+            "engine": "syrtis"
+        },
+        "document_title": {
+            "hash": "fd129d593472f3caf47a69a4432bc927",
             "engine": "syrtis"
         },
         "empty": {
@@ -30752,6 +30768,10 @@
             "hash": "834dcb5eab59ba05280279eeacba3dbd",
             "engine": "syrtis"
         },
+        "document_title": {
+            "hash": "fd129d593472f3caf47a69a4432bc927",
+            "engine": "syrtis"
+        },
         "empty": {
             "hash": "b65b1bcc3fabd37e8fa25e890038b2df",
             "engine": "syrtis"
@@ -30790,6 +30810,10 @@
             "hash": "834dcb5eab59ba05280279eeacba3dbd",
             "engine": "syrtis"
         },
+        "document_title": {
+            "hash": "fd129d593472f3caf47a69a4432bc927",
+            "engine": "syrtis"
+        },
         "empty": {
             "hash": "b65b1bcc3fabd37e8fa25e890038b2df",
             "engine": "syrtis"
@@ -30800,6 +30824,12 @@
         },
         "page_title": {
             "hash": "c46ec8c012eaebfe023022e5e031d0e7",
+            "engine": "syrtis"
+        }
+    },
+    "pages/ledgers/index.fr.yml": {
+        "document_title": {
+            "hash": "fd129d593472f3caf47a69a4432bc927",
             "engine": "syrtis"
         }
     },
@@ -30826,6 +30856,10 @@
         },
         "column.unsettled": {
             "hash": "834dcb5eab59ba05280279eeacba3dbd",
+            "engine": "syrtis"
+        },
+        "document_title": {
+            "hash": "fd129d593472f3caf47a69a4432bc927",
             "engine": "syrtis"
         },
         "empty": {
@@ -30866,6 +30900,10 @@
             "hash": "834dcb5eab59ba05280279eeacba3dbd",
             "engine": "syrtis"
         },
+        "document_title": {
+            "hash": "fd129d593472f3caf47a69a4432bc927",
+            "engine": "syrtis"
+        },
         "empty": {
             "hash": "b65b1bcc3fabd37e8fa25e890038b2df",
             "engine": "syrtis"
@@ -30902,6 +30940,10 @@
         },
         "column.unsettled": {
             "hash": "834dcb5eab59ba05280279eeacba3dbd",
+            "engine": "syrtis"
+        },
+        "document_title": {
+            "hash": "fd129d593472f3caf47a69a4432bc927",
             "engine": "syrtis"
         },
         "empty": {
@@ -30942,6 +30984,10 @@
             "hash": "834dcb5eab59ba05280279eeacba3dbd",
             "engine": "syrtis"
         },
+        "document_title": {
+            "hash": "fd129d593472f3caf47a69a4432bc927",
+            "engine": "syrtis"
+        },
         "empty": {
             "hash": "b65b1bcc3fabd37e8fa25e890038b2df",
             "engine": "syrtis"
@@ -30978,6 +31024,10 @@
         },
         "column.unsettled": {
             "hash": "834dcb5eab59ba05280279eeacba3dbd",
+            "engine": "syrtis"
+        },
+        "document_title": {
+            "hash": "fd129d593472f3caf47a69a4432bc927",
             "engine": "syrtis"
         },
         "empty": {
@@ -31018,6 +31068,10 @@
             "hash": "834dcb5eab59ba05280279eeacba3dbd",
             "engine": "syrtis"
         },
+        "document_title": {
+            "hash": "fd129d593472f3caf47a69a4432bc927",
+            "engine": "syrtis"
+        },
         "empty": {
             "hash": "b65b1bcc3fabd37e8fa25e890038b2df",
             "engine": "syrtis"
@@ -31054,6 +31108,10 @@
         },
         "column.unsettled": {
             "hash": "834dcb5eab59ba05280279eeacba3dbd",
+            "engine": "syrtis"
+        },
+        "document_title": {
+            "hash": "fd129d593472f3caf47a69a4432bc927",
             "engine": "syrtis"
         },
         "empty": {
@@ -31094,6 +31152,10 @@
             "hash": "834dcb5eab59ba05280279eeacba3dbd",
             "engine": "syrtis"
         },
+        "document_title": {
+            "hash": "fd129d593472f3caf47a69a4432bc927",
+            "engine": "syrtis"
+        },
         "empty": {
             "hash": "b65b1bcc3fabd37e8fa25e890038b2df",
             "engine": "syrtis"
@@ -31130,6 +31192,10 @@
         },
         "column.unsettled": {
             "hash": "834dcb5eab59ba05280279eeacba3dbd",
+            "engine": "syrtis"
+        },
+        "document_title": {
+            "hash": "fd129d593472f3caf47a69a4432bc927",
             "engine": "syrtis"
         },
         "empty": {
@@ -31170,6 +31236,10 @@
             "hash": "834dcb5eab59ba05280279eeacba3dbd",
             "engine": "syrtis"
         },
+        "document_title": {
+            "hash": "fd129d593472f3caf47a69a4432bc927",
+            "engine": "syrtis"
+        },
         "empty": {
             "hash": "b65b1bcc3fabd37e8fa25e890038b2df",
             "engine": "syrtis"
@@ -31206,6 +31276,10 @@
         },
         "column.unsettled": {
             "hash": "834dcb5eab59ba05280279eeacba3dbd",
+            "engine": "syrtis"
+        },
+        "document_title": {
+            "hash": "fd129d593472f3caf47a69a4432bc927",
             "engine": "syrtis"
         },
         "empty": {
@@ -31246,6 +31320,10 @@
             "hash": "834dcb5eab59ba05280279eeacba3dbd",
             "engine": "syrtis"
         },
+        "document_title": {
+            "hash": "fd129d593472f3caf47a69a4432bc927",
+            "engine": "syrtis"
+        },
         "empty": {
             "hash": "b65b1bcc3fabd37e8fa25e890038b2df",
             "engine": "syrtis"
@@ -31282,6 +31360,10 @@
         },
         "column.unsettled": {
             "hash": "834dcb5eab59ba05280279eeacba3dbd",
+            "engine": "syrtis"
+        },
+        "document_title": {
+            "hash": "fd129d593472f3caf47a69a4432bc927",
             "engine": "syrtis"
         },
         "empty": {
@@ -31322,6 +31404,10 @@
             "hash": "834dcb5eab59ba05280279eeacba3dbd",
             "engine": "syrtis"
         },
+        "document_title": {
+            "hash": "fd129d593472f3caf47a69a4432bc927",
+            "engine": "syrtis"
+        },
         "empty": {
             "hash": "b65b1bcc3fabd37e8fa25e890038b2df",
             "engine": "syrtis"
@@ -31358,6 +31444,10 @@
         },
         "column.unsettled": {
             "hash": "834dcb5eab59ba05280279eeacba3dbd",
+            "engine": "syrtis"
+        },
+        "document_title": {
+            "hash": "fd129d593472f3caf47a69a4432bc927",
             "engine": "syrtis"
         },
         "empty": {
