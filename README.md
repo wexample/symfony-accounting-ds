@@ -1,6 +1,6 @@
 # symfony-accounting-ds
 
-Version: 2.1.3
+Version: 2.1.4
 
 The interface of symfony-accounting: ledgers, documents and their editor, parties, chart, bank and reconciliation, entries, fiscal years, VAT, statements and exports
 
@@ -25,7 +25,7 @@ The suite includes packages for configuration management, file handling, prompts
 
 - php: >=8.5
 - wexample/symfony-helpers: >=18.0.0
-- wexample/symfony-loader: >=24.0.0
+- wexample/symfony-loader: >=25.0.0
 - wexample/symfony-design-system: >=39.0.0
 - wexample/symfony-api: >=14.0.0
 - wexample/symfony-forms: >=14.0.0
