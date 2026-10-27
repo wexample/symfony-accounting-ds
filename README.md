@@ -1,6 +1,6 @@
 # symfony-accounting-ds
 
-Version: 2.1.7
+Version: 2.1.8
 
 The interface of symfony-accounting: ledgers, documents and their editor, parties, chart, bank and reconciliation, entries, fiscal years, VAT, statements and exports
 
