@@ -1,6 +1,6 @@
 {
   "name": "wexample/symfony-accounting-ds",
-  "version": "2.1.8",
+  "version": "2.1.9",
   "type": "library",
   "license": "MIT",
   "description": "The interface of symfony-accounting: ledgers, documents and their editor, parties, chart, bank and reconciliation, entries, fiscal years, VAT, statements and exports",
@@ -24,7 +24,7 @@
     "php": ">=8.5",
     "wexample/symfony-helpers": ">=18.0.2",
     "wexample/symfony-loader": ">=25.3.0",
-    "wexample/symfony-design-system": ">=39.0.3",
+    "wexample/symfony-design-system": ">=40.0.0",
     "wexample/symfony-api": ">=15.0.0",
     "wexample/symfony-forms": ">=14.0.2",
     "wexample/symfony-money": ">=8.0.0",
