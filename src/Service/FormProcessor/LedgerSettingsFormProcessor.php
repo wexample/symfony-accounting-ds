@@ -5,6 +5,7 @@ namespace Wexample\SymfonyAccountingDs\Service\FormProcessor;
 use Symfony\Component\Form\FormInterface;
 use Wexample\SymfonyAccounting\Entity\Ledger;
 use Wexample\SymfonyAccounting\Enum\LedgerPermission;
+use Wexample\SymfonyAccountingDs\Helper\TypedAmountHelper;
 
 /**
  * The settings of a ledger, written by whoever may administer it: its
@@ -32,17 +33,17 @@ class LedgerSettingsFormProcessor extends AbstractAccountingEntityFormProcessor
         $settings['oss_registered'] = (bool) $form->get('ossRegistered')->getData();
         $settings['oss_electronic_services'] = (bool) $form->get('ossElectronicServices')->getData();
 
-        $rate = $form->get('vatDeductionRate')->getData();
-        if (null === $rate || '' === $rate) {
+        $rate = TypedAmountHelper::basisPoints($form->get('vatDeductionRate')->getData());
+        if (null === $rate) {
             unset($settings['vat_deduction_rate']);
         } else {
-            $settings['vat_deduction_rate'] = (int) round((float) $rate * 100);
+            $settings['vat_deduction_rate'] = $rate;
         }
 
         $admissions = [];
         foreach (preg_split('/\R/', (string) $form->get('vatAdmissionRates')->getData()) as $line) {
             if (preg_match('/^\s*(\d+)\s*[:=]\s*([\d.,]+)\s*%?\s*$/', $line, $match)) {
-                $admissions[$match[1]] = (int) round((float) str_replace(',', '.', $match[2]) * 100);
+                $admissions[$match[1]] = TypedAmountHelper::basisPoints($match[2]);
             }
         }
         $settings['vat_admission_rates'] = $admissions;

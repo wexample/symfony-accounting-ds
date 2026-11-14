@@ -21,6 +21,7 @@ use Wexample\SymfonyAccounting\Repository\JournalRepository;
 use Wexample\SymfonyAccounting\Service\Ledger\LetteringService;
 use Wexample\SymfonyAccounting\Service\Ledger\PostingService;
 use Wexample\SymfonyAccountingDs\Controller\AbstractAccountingController;
+use Wexample\SymfonyAccountingDs\Helper\TypedAmountHelper;
 use Wexample\SymfonyHelpers\Helper\VariableHelper;
 
 /**
@@ -112,7 +113,8 @@ final class EntriesController extends AbstractAccountingController
 
             foreach ($request->request->all('lines') as $line) {
                 $account = trim((string) ($line['account'] ?? ''));
-                $amount = $this->minor((string) ($line['debit'] ?? '')) - $this->minor((string) ($line['credit'] ?? ''));
+                $amount = (TypedAmountHelper::minor((string) ($line['debit'] ?? ''), $ledger->getCurrencyCode()) ?? 0)
+                    - (TypedAmountHelper::minor((string) ($line['credit'] ?? ''), $ledger->getCurrencyCode()) ?? 0);
 
                 if ('' !== $account && 0 !== $amount) {
                     $draft->add($account, $amount, trim((string) ($line['label'] ?? '')) ?: null);
@@ -296,12 +298,5 @@ final class EntriesController extends AbstractAccountingController
         JournalEntry $entry
     ): string {
         return $this->generateUrl('accounting_entries_show', ['ledger' => (string) $ledger->getId(), 'id' => (string) $entry->getId()]);
-    }
-
-    private function minor(string $typed): int
-    {
-        $typed = trim(str_replace(["\u{a0}", "\u{202f}", ' '], '', $typed));
-
-        return '' === $typed ? 0 : (int) round((float) str_replace(',', '.', $typed) * 100);
     }
 }

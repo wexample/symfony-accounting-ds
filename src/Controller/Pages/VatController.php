@@ -14,6 +14,7 @@ use Wexample\SymfonyAccounting\Service\Vat\VatDeductionRegularizationService;
 use Wexample\SymfonyAccounting\Service\Vat\VatPositionService;
 use Wexample\SymfonyAccounting\Service\Vat\VatReturnService;
 use Wexample\SymfonyAccountingDs\Controller\AbstractAccountingController;
+use Wexample\SymfonyAccountingDs\Helper\TypedAmountHelper;
 use Wexample\SymfonyHelpers\Helper\VariableHelper;
 
 /**
@@ -151,11 +152,9 @@ final class VatController extends AbstractAccountingController
     ): Response {
         $ledger = $this->ledger($ledger);
         $year = $request->query->getInt('year', (int) date('Y'));
-        $final = $request->query->getString('rate');
         // The final coefficient as typed, in percent; else the one set for the year.
-        $rate = '' === $final
-            ? (int) ($ledger->getSetting('vat_deduction_rates', [])[$year] ?? $ledger->getSetting('vat_deduction_rate', 10000))
-            : (int) round((float) str_replace(',', '.', $final) * 100);
+        $rate = TypedAmountHelper::basisPoints($request->query->getString('rate'))
+            ?? (int) ($ledger->getSetting('vat_deduction_rates', [])[$year] ?? $ledger->getSetting('vat_deduction_rate', 10000));
 
         return $this->renderPage('deduction', [
             'ledger' => $ledger,

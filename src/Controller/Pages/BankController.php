@@ -28,6 +28,7 @@ use Wexample\SymfonyAccounting\Service\Bank\MatchingService;
 use Wexample\SymfonyAccounting\Service\Ledger\ChartService;
 use Wexample\SymfonyAccounting\Service\Ledger\LedgerAccessService;
 use Wexample\SymfonyAccountingDs\Controller\AbstractAccountingController;
+use Wexample\SymfonyAccountingDs\Helper\TypedAmountHelper;
 use Wexample\SymfonyHelpers\Helper\VariableHelper;
 
 /**
@@ -382,7 +383,7 @@ final class BankController extends AbstractAccountingController
         $line = $this->ownedLine($ledger, $transactions->find($id));
 
         return $this->act($request, function () use ($ledger, $line, $request, $invoices, $allocations) {
-            $amount = $this->minor($request->request->getString('amount'));
+            $amount = TypedAmountHelper::minor($request->request->getString('amount'), $line->getBankAccount()->getCurrencyCode());
 
             if ('' !== $request->request->getString('invoice')) {
                 $invoice = $invoices->find($request->request->getString('invoice'));
@@ -393,7 +394,7 @@ final class BankController extends AbstractAccountingController
 
                 // A document in another currency is settled in its own: what
                 // this payment pays of it, when the line does not pay it all.
-                $allocations->allocate($line, $invoice, $amount, invoiceAmount: $this->minor($request->request->getString('invoiceAmount')));
+                $allocations->allocate($line, $invoice, $amount, invoiceAmount: TypedAmountHelper::minor($request->request->getString('invoiceAmount'), $invoice->getCurrencyCode()));
             } else {
                 $number = trim($request->request->getString('accountNumber'));
 
@@ -512,15 +513,5 @@ final class BankController extends AbstractAccountingController
         }
 
         return $line;
-    }
-
-    /**
-     * An amount as typed — `1 234,50` —, in minor units; nothing typed, null.
-     */
-    private function minor(string $typed): ?int
-    {
-        $typed = trim(str_replace(["\u{a0}", "\u{202f}", ' '], '', $typed));
-
-        return '' === $typed ? null : (int) round((float) str_replace(',', '.', $typed) * 100);
     }
 }

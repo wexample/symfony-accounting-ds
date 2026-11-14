@@ -25,6 +25,7 @@ use Wexample\SymfonyAccounting\Service\Invoice\InvoiceEmissionService;
 use Wexample\SymfonyAccounting\Service\Invoice\InvoiceFactory;
 use Wexample\SymfonyAccounting\Service\Jurisdiction\JurisdictionRegistry;
 use Wexample\SymfonyAccountingDs\Controller\AbstractAccountingController;
+use Wexample\SymfonyAccountingDs\Helper\TypedAmountHelper;
 use Wexample\SymfonyHelpers\Helper\VariableHelper;
 
 /**
@@ -304,10 +305,9 @@ final class DocumentsController extends AbstractAccountingController
         $bill = $this->document($this->ledger($ledger, LedgerPermission::EDIT), $id, $invoices);
 
         return $this->act($request, function () use ($bill, $request, $factory, $emission): string {
-            $amount = trim($request->request->getString('amount'));
             $credit = $factory->createCreditNote(
                 $bill,
-                '' === $amount ? null : (int) round((float) str_replace([' ', ','], ['', '.'], $amount) * 100),
+                TypedAmountHelper::minor($request->request->getString('amount'), $bill->getCurrencyCode()),
                 $request->request->getString('reason') ?: null,
             );
             $this->entityManager->flush();
