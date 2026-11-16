@@ -1,6 +1,6 @@
 {
   "name": "wexample/symfony-accounting-ds",
-  "version": "2.1.17",
+  "version": "3.0.0",
   "type": "library",
   "license": "MIT",
   "description": "The interface of symfony-accounting: ledgers, documents and their editor, parties, chart, bank and reconciliation, entries, fiscal years, VAT, statements and exports",
@@ -22,15 +22,15 @@
   ],
   "require": {
     "php": ">=8.5",
-    "wexample/symfony-helpers": ">=19.1.0",
-    "wexample/symfony-loader": ">=27.2.0",
-    "wexample/symfony-design-system": ">=44.0.0",
-    "wexample/symfony-api": ">=17.0.0",
-    "wexample/symfony-forms": ">=16.0.0",
+    "wexample/symfony-helpers": ">=19.3.0",
+    "wexample/symfony-loader": ">=28.0.0",
+    "wexample/symfony-design-system": ">=45.0.0",
+    "wexample/symfony-api": ">=18.0.0",
+    "wexample/symfony-forms": ">=17.0.0",
     "wexample/symfony-money": ">=8.0.0",
-    "wexample/symfony-geo": ">=8.0.2",
-    "wexample/symfony-accounting": ">=9.0.0",
-    "wexample/symfony-organization": ">=3.0.3",
+    "wexample/symfony-geo": ">=9.0.0",
+    "wexample/symfony-accounting": ">=10.0.0",
+    "wexample/symfony-organization": ">=4.0.0",
     "wexample/symfony-organization-ds": ">=3.0.5"
   },
   "require-dev": {
